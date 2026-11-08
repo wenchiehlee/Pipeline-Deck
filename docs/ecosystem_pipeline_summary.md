@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)
 
-> **全域統計**：涵蓋 **4 大核心組織**，共有 **122 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **227 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-08 10:28:36 UTC`）
+> **全域統計**：涵蓋 **4 大核心組織**，共有 **122 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **227 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-08 11:19:03 UTC`）
 
 ### 📊 組織與工作流程總覽
 
@@ -18,27 +18,22 @@
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
 - **常態排程監測總數**：`65` 個工作流程
-- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`2` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`6` 個
-- **🟢 正常運行（最新一次執行成功）**：`57` 個
+- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`1` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
+- **🟢 正常運行（最新一次執行成功）**：`62` 個
 
 #### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/GoogleAnalytics](https://github.com/ZhongZheng782/GoogleAnalytics) | Daily GA Monitor Report | `daily-ga-monitor.yml` | **36 次** | `❌❌❌❌` | `2026-11-07T14:07:31` | [Run ↗](https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/42380107982) |
-| 2 | [ZhongZheng782/andy](https://github.com/ZhongZheng782/andy) | Runner Monitor | `runner-monitor.yml` | **24 次** | `❌❌❌❌` | `2026-11-08T03:48:56` | [Run ↗](https://github.com/ZhongZheng782/andy/actions/runs/42444264309) |
+| 1 | [ZhongZheng782/Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | Hybrid Scrape & Stage1 Extraction (main) | `hybrid-fetch-and-analyze.yml` | **5 次** | `❌❌❌❌` | `2026-11-08T11:15:46` | [Run ↗](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42474957069) |
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/Win11](https://github.com/ZhongZheng782/Win11) | Powershell | `powershell.yml` | **2 次** | `❌❌` | `2026-11-04T03:34:52` | [Run ↗](https://github.com/ZhongZheng782/Win11/actions/runs/41768000736) |
-| 2 | [ZhongZheng782/Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | Hybrid Scrape & Stage1 Extraction (main) | `hybrid-fetch-and-analyze.yml` | **1 次** | `❌✅❌❌` | `2026-11-07T18:08:28` | [Run ↗](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42399767830) |
-| 3 | [ZhongZheng782/Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | Daily Yahoo Finance Wayback Fetch | `Actions-fetch-wayback.yaml` | **1 次** | `❌✅✅✅` | `2026-11-08T06:28:31` | [Run ↗](https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/42454889835) |
-| 4 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | Fetch Alerts | `fetch.yml` | **1 次** | `❌✅✅✅` | `2026-11-08T10:00:23` | [Run ↗](https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42469543922) |
-| 5 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | Daily Update Financials & Valuation | `daily_update.yml` | **1 次** | `❌✅✅✅` | `2026-11-08T08:27:37` | [Run ↗](https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112) |
-| 6 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **1 次** | `❌✅❌❌` | `2026-11-08T10:09:45` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42470230981) |
+| 1 | [ZhongZheng782/Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | Daily Yahoo Finance Wayback Fetch | `Actions-fetch-wayback.yaml` | **3 次** | `❌❌❌✅` | `2026-11-08T11:14:23` | [Run ↗](https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/42474855433) |
+| 2 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | Daily Update Financials & Valuation | `daily_update.yml` | **1 次** | `❌✅✅✅` | `2026-11-08T08:27:37` | [Run ↗](https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112) |
 
 ---
 
