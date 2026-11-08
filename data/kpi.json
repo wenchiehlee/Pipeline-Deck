@@ -1,0 +1,30 @@
+{
+  "deck": "Pipeline-Deck",
+  "symbol": "⚙️",
+  "north_star": "227 / 75 / 0 / 1",
+  "metrics": {
+    "workflows": 227,
+    "repos_with_actions": 75,
+    "total_repos": 122,
+    "critical_alerts": 0,
+    "warning_alerts": 1,
+    "monitored_schedules": 65
+  },
+  "card": {
+    "title": "Pipeline-Deck",
+    "tag": "227/75/0/1",
+    "theme": "theme-pipeline",
+    "stat1": {
+      "label": "北極星指標",
+      "value": "227/75/0/1"
+    },
+    "stat2": {
+      "label": "CI/CD 規模",
+      "value": "227 WFs · 75 Repos"
+    },
+    "bottom_line": "⚡ CI/CD: 227/75/0/1",
+    "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+    "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
+  },
+  "updated_at": "2026-11-08T12:50:56Z"
+}

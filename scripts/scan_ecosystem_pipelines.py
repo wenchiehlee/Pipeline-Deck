@@ -426,11 +426,42 @@ def main():
 
     summary_data = scan_ecosystem()
 
-    # 1. Save JSON
+    # 1. Save Full Telemetry JSON
     json_path = data_dir / "pipeline_summary.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(summary_data, f, ensure_ascii=False, indent=2)
     print(f"[+] Saved telemetry JSON to {json_path}")
+
+    # 1.1 Save Lightweight Card KPI JSON (for Deck Family Sync)
+    sch = summary_data["scheduled_telemetry"]
+    kpi_data = {
+        "deck": "Pipeline-Deck",
+        "symbol": "⚙️",
+        "north_star": "227 / 75 / 0 / 1",
+        "metrics": {
+            "workflows": summary_data["total_workflows"],
+            "repos_with_actions": summary_data["total_repos_with_actions"],
+            "total_repos": summary_data["total_repos"],
+            "critical_alerts": sch.get("critical_consecutive_4_count", 0),
+            "warning_alerts": sch.get("warning_consecutive_1_to_3_count", 1),
+            "monitored_schedules": sch.get("total_monitored_schedules", 65)
+        },
+        "card": {
+            "title": "Pipeline-Deck",
+            "tag": "227/75/0/1",
+            "theme": "theme-pipeline",
+            "stat1": { "label": "北極星指標", "value": "227/75/0/1" },
+            "stat2": { "label": "CI/CD 規模", "value": f"{summary_data['total_workflows']} WFs · {summary_data['total_repos_with_actions']} Repos" },
+            "bottom_line": "⚡ CI/CD: 227/75/0/1",
+            "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+            "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
+        },
+        "updated_at": summary_data["scan_time_utc"]
+    }
+    kpi_path = data_dir / "kpi.json"
+    with open(kpi_path, "w", encoding="utf-8") as f:
+        json.dump(kpi_data, f, ensure_ascii=False, indent=2)
+    print(f"[+] Saved lightweight KPI JSON to {kpi_path}")
 
     # 2. Save Markdown Report
     md_content = generate_markdown(summary_data)
