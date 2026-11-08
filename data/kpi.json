@@ -12,14 +12,14 @@
   },
   "card": {
     "title": "Pipeline-Deck",
-    "tag": "227/75/0/1",
+    "tag": "CI/CD",
     "theme": "theme-pipeline",
     "stat1": {
-      "label": "全域規模",
-      "value": "227 WFs · 75 Repos"
+      "label": "工作流程",
+      "value": "227 WFs · 75 庫"
     },
     "stat2": {
-      "label": "健康警報",
+      "label": "異常警報",
       "value": "0 嚴重 · 1 警告"
     },
     "bottom_line": "⚡ CI/CD: 227/75/0/1",

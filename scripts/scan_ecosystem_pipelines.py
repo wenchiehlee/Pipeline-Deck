@@ -448,10 +448,10 @@ def main():
         },
         "card": {
             "title": "Pipeline-Deck",
-            "tag": "227/75/0/1",
+            "tag": "CI/CD",
             "theme": "theme-pipeline",
-            "stat1": { "label": "全域規模", "value": f"{summary_data['total_workflows']} WFs · {summary_data['total_repos_with_actions']} Repos" },
-            "stat2": { "label": "健康警報", "value": f"{sch.get('critical_consecutive_4_count', 0)} 嚴重 · {sch.get('warning_consecutive_1_to_3_count', 1)} 警告" },
+            "stat1": { "label": "工作流程", "value": f"{summary_data['total_workflows']} WFs · {summary_data['total_repos_with_actions']} 庫" },
+            "stat2": { "label": "異常警報", "value": f"{sch.get('critical_consecutive_4_count', 0)} 嚴重 · {sch.get('warning_consecutive_1_to_3_count', 1)} 警告" },
             "bottom_line": "⚡ CI/CD: 227/75/0/1",
             "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
             "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
