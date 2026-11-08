@@ -397,6 +397,24 @@ def update_github_step_summary(md_content: str):
         except Exception as e:
             print(f"Warning: Failed to write to GITHUB_STEP_SUMMARY: {e}", file=sys.stderr)
 
+def update_index_html(summary_data: dict, index_html_path: Path):
+    if not index_html_path.exists():
+        return
+    text = index_html_path.read_text(encoding="utf-8")
+    
+    # Update embedded window.PIPELINE_TELEMETRY JSON
+    json_start = "/* TELEMETRY_DATA_START */"
+    json_end = "/* TELEMETRY_DATA_END */"
+    if json_start in text and json_end in text:
+        parts = text.split(json_start)
+        before = parts[0]
+        after = parts[1].split(json_end)[1]
+        raw_json = json.dumps(summary_data, ensure_ascii=False)
+        text = f"{before}{json_start}\n    window.PIPELINE_TELEMETRY = {raw_json};\n    {json_end}{after}"
+    
+    index_html_path.write_text(text, encoding="utf-8")
+    print(f"[+] Updated {index_html_path}")
+
 def main():
     base_dir = Path(__file__).resolve().parent.parent
     data_dir = base_dir / "data"
@@ -425,6 +443,10 @@ def main():
 
     # 4. GitHub Actions Step Summary
     update_github_step_summary(md_content)
+
+    # 5. Update index.html
+    index_html_path = base_dir / "index.html"
+    update_index_html(summary_data, index_html_path)
 
     sch = summary_data["scheduled_telemetry"]
     print("\n[✓] Telemetry scan completed successfully:")
