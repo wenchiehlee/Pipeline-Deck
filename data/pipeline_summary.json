@@ -1,25 +1,14 @@
 {
-  "generated_at": "2026-11-08T09:15:44.263097+00:00",
-  "total_repos": 122,
-  "total_repos_with_actions": 74,
-  "total_workflows": 226,
+  "generated_at": "2026-11-08T09:33:27.128479+00:00",
+  "total_repos": 93,
+  "total_repos_with_actions": 58,
+  "total_workflows": 141,
   "scheduled_telemetry": {
-    "total_monitored_schedules": 66,
-    "critical_consecutive_4_count": 11,
-    "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 51,
+    "total_monitored_schedules": 48,
+    "critical_consecutive_4_count": 9,
+    "warning_consecutive_1_to_3_count": 3,
+    "healthy_count": 36,
     "critical_alerts": [
-      {
-        "repo": "ZhongZheng782/GoogleAnalytics",
-        "workflow_name": "Daily GA Monitor Report",
-        "file": "daily-ga-monitor.yml",
-        "path": ".github/workflows/daily-ga-monitor.yml",
-        "consecutive_failures": 30,
-        "recent_4_icons": "❌❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-07T14:07:31Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/42380107982"
-      },
       {
         "repo": "wenchiehlee/Python.TWSE-History",
         "workflow_name": "TWSE API On GitHub Actions",
@@ -52,17 +41,6 @@
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-07T13:42:22Z",
         "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/42378180085"
-      },
-      {
-        "repo": "ZhongZheng782/andy",
-        "workflow_name": "Runner Monitor",
-        "file": "runner-monitor.yml",
-        "path": ".github/workflows/runner-monitor.yml",
-        "consecutive_failures": 24,
-        "recent_4_icons": "❌❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-08T03:48:56Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/42444264309"
       },
       {
         "repo": "wenchiehlee/Python-Actions.OpenAI",
@@ -133,17 +111,6 @@
     ],
     "warning_alerts": [
       {
-        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-        "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
-        "file": "hybrid-fetch-and-analyze.yml",
-        "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-07T18:08:28Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42399767830"
-      },
-      {
         "repo": "ZhongZheng782/Win11",
         "workflow_name": "Powershell",
         "file": "powershell.yml",
@@ -178,94 +145,6 @@
       }
     ],
     "healthy_workflows": [
-      {
-        "repo": "ZhongZheng782/AI-Usage",
-        "workflow_name": "Update AI Usage Dashboard",
-        "file": "update-usage.yml",
-        "path": ".github/workflows/update-usage.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T02:53:52Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/42440432322"
-      },
-      {
-        "repo": "ZhongZheng782/FamilyHealthyCheck",
-        "workflow_name": "Daily Health Data Processing",
-        "file": "daily-health-check.yml",
-        "path": ".github/workflows/daily-health-check.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-07T15:14:27Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/42385406057"
-      },
-      {
-        "repo": "ZhongZheng782/HomeAssistant",
-        "workflow_name": "Update UptimeRobot Status in README",
-        "file": "update-uptimerobot-readme.yml",
-        "path": ".github/workflows/update-uptimerobot-readme.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T02:51:38Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42440285357"
-      },
-      {
-        "repo": "ZhongZheng782/HomeAssistant",
-        "workflow_name": "Update Washer History README",
-        "file": "update-washer-readme.yml",
-        "path": ".github/workflows/update-washer-readme.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T03:28:39Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42442878742"
-      },
-      {
-        "repo": "ZhongZheng782/HomeAssistant",
-        "workflow_name": "Update Xiaomi Miot Snapshot in README",
-        "file": "update-xiaomi-miot-readme.yml",
-        "path": ".github/workflows/update-xiaomi-miot-readme.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:28:55Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42446983581"
-      },
-      {
-        "repo": "ZhongZheng782/Llm-Cli-APIServer",
-        "workflow_name": "Update README Server Status",
-        "file": "update-stats.yml",
-        "path": ".github/workflows/update-stats.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T02:30:53Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/42438865103"
-      },
-      {
-        "repo": "ZhongZheng782/Mac-mini",
-        "workflow_name": "MLX API Server Health Check",
-        "file": "health-mlx-api.yml",
-        "path": ".github/workflows/health-mlx-api.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:42:07Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/42447864063"
-      },
-      {
-        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-        "workflow_name": "Sync Analyzer Data to Downstream Repositories",
-        "file": "sync.yaml",
-        "path": ".github/workflows/sync.yaml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-07T08:59:28Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42357774997"
-      },
       {
         "repo": "ZhongZheng782/Win11",
         "workflow_name": "Action Runner",
@@ -309,50 +188,6 @@
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-08T02:02:18Z",
         "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42436790396"
-      },
-      {
-        "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-        "workflow_name": "Action Runner",
-        "file": "action-runner.yml",
-        "path": ".github/workflows/action-runner.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T08:50:05Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42464593706"
-      },
-      {
-        "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-        "workflow_name": "Sync & Verify Master Table in README",
-        "file": "sync-ddns-table.yml",
-        "path": ".github/workflows/sync-ddns-table.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T08:28:33Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42463088239"
-      },
-      {
-        "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-        "workflow_name": "Update UptimeRobot Status in README",
-        "file": "update-uptimerobot-readme.yml",
-        "path": ".github/workflows/update-uptimerobot-readme.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:31:26Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42447156836"
-      },
-      {
-        "repo": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
-        "workflow_name": "Action on Sync Folder",
-        "file": "actions.yml",
-        "path": ".github/workflows/actions.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T07:05:06Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/42457320623"
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -608,39 +443,6 @@
         "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/42401177968"
       },
       {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-07T10:31:40Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42364324379"
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Monthly Cycle Mapping Refresh",
-        "file": "refresh-cycle-mapping-monthly.yml",
-        "path": ".github/workflows/refresh-cycle-mapping-monthly.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-01T09:38:43Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380"
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Update Cycle Indices",
-        "file": "update_indices.yml",
-        "path": ".github/workflows/update_indices.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅❌❌",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-02T08:52:02Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41416168635"
-      },
-      {
         "repo": "wenchiehlee/Analytics-Deck",
         "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
         "file": "renew-analytics.yml",
@@ -743,125 +545,10 @@
   },
   "orgs": {
     "ZhongZheng782": {
-      "total_repos": 27,
-      "repos_with_actions": 18,
-      "total_workflows": 88,
+      "total_repos": 5,
+      "repos_with_actions": 5,
+      "total_workflows": 14,
       "repos": [
-        {
-          "name": "NASearch",
-          "full_name": "ZhongZheng782/NASearch",
-          "html_url": "https://github.com/ZhongZheng782/NASearch",
-          "is_private": true,
-          "workflow_count": 16,
-          "workflows": [
-            "check-extracted.yml",
-            "check-index-paths.yml",
-            "check-pst-duplicates.yml",
-            "eml-to-md.yml",
-            "fast-diagnostic.yml",
-            "fast-find.yml",
-            "fetch-summary.yml",
-            "find-pst.yml",
-            "full-find.yml",
-            "list-paths.yml",
-            "move-pst.yml",
-            "pst-convert.yml",
-            "run-and-print-scan.yml",
-            "scan-backup.yml",
-            "sync-report.yml",
-            "verify-converted.yml"
-          ]
-        },
-        {
-          "name": "Mac-mini",
-          "full_name": "ZhongZheng782/Mac-mini",
-          "html_url": "https://github.com/ZhongZheng782/Mac-mini",
-          "is_private": true,
-          "workflow_count": 13,
-          "workflows": [
-            "bench-params.yml",
-            "check-log.yml",
-            "check-python-arch.yml",
-            "deploy-mlx-api.yml",
-            "diagnose-ocr-network.yml",
-            "download-mlx-model.yml",
-            "eval-sample.yml",
-            "health-mlx-api.yml",
-            "rebuild-global-leaderboard.yml",
-            "run-pipeline.yml",
-            "setup-tailscale.yml",
-            "sync-gt-srt.yml",
-            "test-qwen3-thinking.yml"
-          ]
-        },
-        {
-          "name": "andy",
-          "full_name": "ZhongZheng782/andy",
-          "html_url": "https://github.com/ZhongZheng782/andy",
-          "is_private": true,
-          "workflow_count": 10,
-          "workflows": [
-            "action-runner.yml",
-            "calibrate-esc.yml",
-            "car-test.yml",
-            "diagnose-reverse.yml",
-            "runner-monitor.yml",
-            "setup-donkeycar-env.yml",
-            "setup-nginx-proxy.yml",
-            "setup-tailscale-funnel.yml",
-            "shutdown.yml",
-            "start-driving.yml"
-          ]
-        },
-        {
-          "name": "HomeAssistant",
-          "full_name": "ZhongZheng782/HomeAssistant",
-          "html_url": "https://github.com/ZhongZheng782/HomeAssistant",
-          "is_private": true,
-          "workflow_count": 10,
-          "workflows": [
-            "check-ha-logs.yml",
-            "check-timetree.yml",
-            "configure-ha-hacs-xiaomi.yml",
-            "deploy-homeassistant-synology.yml",
-            "diagnose-lg-thinq.yml",
-            "diagnose-timetree-notify.yml",
-            "diagnose-washer-events.yml",
-            "update-uptimerobot-readme.yml",
-            "update-washer-readme.yml",
-            "update-xiaomi-miot-readme.yml"
-          ]
-        },
-        {
-          "name": "wenchiehlee.quickconnect.to",
-          "full_name": "ZhongZheng782/wenchiehlee.quickconnect.to",
-          "html_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to",
-          "is_private": true,
-          "workflow_count": 8,
-          "workflows": [
-            "action-runner.yml",
-            "mkdocs-deploy-synology.yml",
-            "reboot.yml",
-            "setup-nas-reverse-proxy.yml",
-            "setup-tailscale-funnel.yml",
-            "sync-ddns-table.yml",
-            "sync-nginx-conf.yml",
-            "update-uptimerobot-readme.yml"
-          ]
-        },
-        {
-          "name": "Llm-Cli-APIServer",
-          "full_name": "ZhongZheng782/Llm-Cli-APIServer",
-          "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer",
-          "is_private": true,
-          "workflow_count": 4,
-          "workflows": [
-            "deploy-synology-nas.yml",
-            "docker-publish.yml",
-            "stop-nas.yml",
-            "update-stats.yml"
-          ]
-        },
         {
           "name": "Synology-Photo-Tagger",
           "full_name": "ZhongZheng782/Synology-Photo-Tagger",
@@ -873,19 +560,6 @@
             "probe-tailnet-mlx.yml",
             "publish-image.yml",
             "scout-image.yml"
-          ]
-        },
-        {
-          "name": "wenchiehlee.quickconnect.to-Container.Manager",
-          "full_name": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
-          "html_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
-          "is_private": true,
-          "workflow_count": 4,
-          "workflows": [
-            "actions.yml",
-            "authorize-ssh-key.yml",
-            "deploy-on-change.yml",
-            "deploy.yml"
           ]
         },
         {
@@ -902,18 +576,6 @@
           ]
         },
         {
-          "name": "LineMonitoring",
-          "full_name": "ZhongZheng782/LineMonitoring",
-          "html_url": "https://github.com/ZhongZheng782/LineMonitoring",
-          "is_private": true,
-          "workflow_count": 3,
-          "workflows": [
-            "collect-line-bot-logs.yml",
-            "deploy-synology-nas.yml",
-            "mac-runner-smoke.yml"
-          ]
-        },
-        {
           "name": "YoutubeAudio.Fetch",
           "full_name": "ZhongZheng782/YoutubeAudio.Fetch",
           "html_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch",
@@ -923,17 +585,6 @@
             "daily-channel-fetch.yml",
             "sync-to-biztrends.yml",
             "update-readme-index.yml"
-          ]
-        },
-        {
-          "name": "Python-Actions.GoodInfo.Analyzer",
-          "full_name": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-          "html_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-          "is_private": true,
-          "workflow_count": 2,
-          "workflows": [
-            "hybrid-fetch-and-analyze.yml",
-            "sync.yaml"
           ]
         },
         {
@@ -948,36 +599,6 @@
           ]
         },
         {
-          "name": "AI-Usage",
-          "full_name": "ZhongZheng782/AI-Usage",
-          "html_url": "https://github.com/ZhongZheng782/AI-Usage",
-          "is_private": true,
-          "workflow_count": 1,
-          "workflows": [
-            "update-usage.yml"
-          ]
-        },
-        {
-          "name": "FamilyHealthyCheck",
-          "full_name": "ZhongZheng782/FamilyHealthyCheck",
-          "html_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck",
-          "is_private": true,
-          "workflow_count": 1,
-          "workflows": [
-            "daily-health-check.yml"
-          ]
-        },
-        {
-          "name": "GoogleAnalytics",
-          "full_name": "ZhongZheng782/GoogleAnalytics",
-          "html_url": "https://github.com/ZhongZheng782/GoogleAnalytics",
-          "is_private": true,
-          "workflow_count": 1,
-          "workflows": [
-            "daily-ga-monitor.yml"
-          ]
-        },
-        {
           "name": "GoPublic",
           "full_name": "ZhongZheng782/GoPublic",
           "html_url": "https://github.com/ZhongZheng782/GoPublic",
@@ -986,95 +607,13 @@
           "workflows": [
             "sync-up.yml"
           ]
-        },
-        {
-          "name": "TravelAPP",
-          "full_name": "ZhongZheng782/TravelAPP",
-          "html_url": "https://github.com/ZhongZheng782/TravelAPP",
-          "is_private": true,
-          "workflow_count": 1,
-          "workflows": [
-            "deploy-synology-nas.yml"
-          ]
-        },
-        {
-          "name": "GoogleSheet.ZhongZheng782",
-          "full_name": "ZhongZheng782/GoogleSheet.ZhongZheng782",
-          "html_url": "https://github.com/ZhongZheng782/GoogleSheet.ZhongZheng782",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "invoices",
-          "full_name": "ZhongZheng782/invoices",
-          "html_url": "https://github.com/ZhongZheng782/invoices",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "LinePriceBot",
-          "full_name": "ZhongZheng782/LinePriceBot",
-          "html_url": "https://github.com/ZhongZheng782/LinePriceBot",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "LineStockBot",
-          "full_name": "ZhongZheng782/LineStockBot",
-          "html_url": "https://github.com/ZhongZheng782/LineStockBot",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "Logo_Icon",
-          "full_name": "ZhongZheng782/Logo_Icon",
-          "html_url": "https://github.com/ZhongZheng782/Logo_Icon",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "PostgraduateEntrancePath",
-          "full_name": "ZhongZheng782/PostgraduateEntrancePath",
-          "html_url": "https://github.com/ZhongZheng782/PostgraduateEntrancePath",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "TW.LandWatcher",
-          "full_name": "ZhongZheng782/TW.LandWatcher",
-          "html_url": "https://github.com/ZhongZheng782/TW.LandWatcher",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "VirtualWriter",
-          "full_name": "ZhongZheng782/VirtualWriter",
-          "html_url": "https://github.com/ZhongZheng782/VirtualWriter",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "Workspace-Admin",
-          "full_name": "ZhongZheng782/Workspace-Admin",
-          "html_url": "https://github.com/ZhongZheng782/Workspace-Admin",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
         }
       ]
     },
     "wenchiehlee": {
-      "total_repos": 51,
-      "repos_with_actions": 31,
-      "total_workflows": 69,
+      "total_repos": 46,
+      "repos_with_actions": 30,
+      "total_workflows": 67,
       "repos": [
         {
           "name": "GoogleSearch.Factset",
@@ -1271,17 +810,6 @@
           ]
         },
         {
-          "name": "Python-Actions.ModelsPricePredict",
-          "full_name": "wenchiehlee/Python-Actions.ModelsPricePredict",
-          "html_url": "https://github.com/wenchiehlee/Python-Actions.ModelsPricePredict",
-          "is_private": true,
-          "workflow_count": 2,
-          "workflows": [
-            "Actions.yaml",
-            "sync-up.yml"
-          ]
-        },
-        {
           "name": "skills",
           "full_name": "wenchiehlee/skills",
           "html_url": "https://github.com/wenchiehlee/skills",
@@ -1375,6 +903,16 @@
           ]
         },
         {
+          "name": "Pipeline-Deck",
+          "full_name": "wenchiehlee/Pipeline-Deck",
+          "html_url": "https://github.com/wenchiehlee/Pipeline-Deck",
+          "is_private": false,
+          "workflow_count": 1,
+          "workflows": [
+            "renew-pipeline-telemetry.yml"
+          ]
+        },
+        {
           "name": "Python-Actions.ChatGPTAutomation",
           "full_name": "wenchiehlee/Python-Actions.ChatGPTAutomation",
           "html_url": "https://github.com/wenchiehlee/Python-Actions.ChatGPTAutomation",
@@ -1392,16 +930,6 @@
           "workflow_count": 1,
           "workflows": [
             "TWSE-API-Action.yaml"
-          ]
-        },
-        {
-          "name": "Selenium-Action.Goodinfo-Weekly",
-          "full_name": "wenchiehlee/Selenium-Action.Goodinfo-Weekly",
-          "html_url": "https://github.com/wenchiehlee/Selenium-Action.Goodinfo-Weekly",
-          "is_private": true,
-          "workflow_count": 1,
-          "workflows": [
-            "Selenium-Action_Template.yaml"
           ]
         },
         {
@@ -1489,14 +1017,6 @@
           "workflows": []
         },
         {
-          "name": "gmail",
-          "full_name": "wenchiehlee/gmail",
-          "html_url": "https://github.com/wenchiehlee/gmail",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
           "name": "gollum",
           "full_name": "wenchiehlee/gollum",
           "html_url": "https://github.com/wenchiehlee/gollum",
@@ -1521,14 +1041,6 @@
           "workflows": []
         },
         {
-          "name": "Pipeline-Deck",
-          "full_name": "wenchiehlee/Pipeline-Deck",
-          "html_url": "https://github.com/wenchiehlee/Pipeline-Deck",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
           "name": "pymdown-extensions",
           "full_name": "wenchiehlee/pymdown-extensions",
           "html_url": "https://github.com/wenchiehlee/pymdown-extensions",
@@ -1537,26 +1049,10 @@
           "workflows": []
         },
         {
-          "name": "Python-Actions.doc.twse.com.tw",
-          "full_name": "wenchiehlee/Python-Actions.doc.twse.com.tw",
-          "html_url": "https://github.com/wenchiehlee/Python-Actions.doc.twse.com.tw",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
           "name": "Python-Actions.PCA",
           "full_name": "wenchiehlee/Python-Actions.PCA",
           "html_url": "https://github.com/wenchiehlee/Python-Actions.PCA",
           "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "SecureRepoGuard",
-          "full_name": "wenchiehlee/SecureRepoGuard",
-          "html_url": "https://github.com/wenchiehlee/SecureRepoGuard",
-          "is_private": true,
           "workflow_count": 0,
           "workflows": []
         },
@@ -1587,26 +1083,10 @@
       ]
     },
     "wenchiehlee-money": {
-      "total_repos": 25,
-      "repos_with_actions": 11,
-      "total_workflows": 35,
+      "total_repos": 24,
+      "repos_with_actions": 10,
+      "total_workflows": 28,
       "repos": [
-        {
-          "name": "biztrends.TW",
-          "full_name": "wenchiehlee-money/biztrends.TW",
-          "html_url": "https://github.com/wenchiehlee-money/biztrends.TW",
-          "is_private": true,
-          "workflow_count": 7,
-          "workflows": [
-            "check-data-health.yml",
-            "refresh-cycle-mapping-monthly.yml",
-            "sync_to_GoogleSheet.Banks.yml",
-            "sync_to_TAIEX_centralized.yml",
-            "sync_to_gopublic.yml",
-            "update_combined_dividends.yml",
-            "update_indices.yml"
-          ]
-        },
         {
           "name": "InvestorConference",
           "full_name": "wenchiehlee-money/InvestorConference",
@@ -1840,9 +1320,9 @@
       ]
     },
     "wenchiehlee-investment": {
-      "total_repos": 19,
-      "repos_with_actions": 14,
-      "total_workflows": 34,
+      "total_repos": 18,
+      "repos_with_actions": 13,
+      "total_workflows": 32,
       "repos": [
         {
           "name": "InvestorEvents",
@@ -1940,17 +1420,6 @@
           "workflows": [
             "hybrid-cdp-pipeline.yml",
             "test-actions-cdp.yml"
-          ]
-        },
-        {
-          "name": "Python-Actions.ModelsPricePredict",
-          "full_name": "wenchiehlee-investment/Python-Actions.ModelsPricePredict",
-          "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.ModelsPricePredict",
-          "is_private": true,
-          "workflow_count": 2,
-          "workflows": [
-            "Actions.yaml",
-            "sync-up.yml"
           ]
         },
         {
