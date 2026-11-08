@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipeline-Deck · 全域自動化管道與 GitOps 工作流中樞</title>
+  <title>Pipeline-Deck · 全域自動化管道與 GitOps 工作流中樞 (227 / 75 / 0 / 1)</title>
   
   <!-- Pipeline-Deck ⚙️ Tone-Matched Favicon -->
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
@@ -180,9 +180,9 @@
     }
 
     .section-badge.badge-health {
-      background: #ecfdf5;
-      color: #047857;
-      border-color: #a7f3d0;
+      background: #eff6ff;
+      color: #2563eb;
+      border-color: #bfdbfe;
     }
 
     .section-heading {
@@ -211,35 +211,38 @@
       margin-bottom: 1.75rem;
     }
 
-    /* North Star Banner */
+    /* North Star Quartet Banner */
     .north-star-banner {
-      background: linear-gradient(135deg, #faf5ff 0%, #f0fdf4 100%);
-      border: 1px solid #ddd6fe;
+      background: linear-gradient(135deg, #f5f3ff 0%, #eff6ff 50%, #f0fdf4 100%);
+      border: 1px solid #c4b5fd;
       border-radius: 12px;
-      padding: 14px 20px;
+      padding: 16px 20px;
       margin-bottom: 1.75rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 16px;
       flex-wrap: wrap;
+      box-shadow: 0 4px 14px -3px rgba(124, 58, 237, 0.08);
     }
 
     .north-star-title {
-      font-weight: 750;
+      font-weight: 800;
       color: #4c1d95;
-      font-size: 0.95rem;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       gap: 8px;
+      font-family: "Plus Jakarta Sans", "Noto Sans TC", sans-serif;
     }
 
     .north-star-values {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 10px;
+      flex-wrap: wrap;
       font-family: "JetBrains Mono", monospace;
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       font-weight: 700;
       color: #0f172a;
     }
@@ -247,11 +250,12 @@
     .north-star-chip {
       background: #ffffff;
       border: 1px solid #cbd5e1;
-      padding: 3px 10px;
-      border-radius: 6px;
+      padding: 4px 12px;
+      border-radius: 8px;
       display: inline-flex;
       align-items: center;
       gap: 6px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04);
     }
 
     /* KPI Metrics Grid */
@@ -276,14 +280,14 @@
     }
 
     .kpi-card.kpi-featured {
-      border-color: #c4b5fd;
+      border-color: #ddd6fe;
       background: #ffffff;
       box-shadow: 0 4px 12px -2px rgba(124, 58, 237, 0.08);
     }
 
     .kpi-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 20px -3px rgba(124, 58, 237, 0.1);
+      box-shadow: 0 8px 20px -3px rgba(124, 58, 237, 0.12);
       border-color: var(--accent-violet-border);
     }
 
@@ -313,7 +317,7 @@
     }
 
     .kpi-value {
-      font-size: 1.85rem;
+      font-size: 1.95rem;
       font-weight: 800;
       color: #0f172a;
       line-height: 1.15;
@@ -350,6 +354,11 @@
       align-items: center;
       justify-content: space-between;
       gap: 12px;
+    }
+
+    .table-card-head.warning-head {
+      background: #fffbeb;
+      border-bottom-color: #fde68a;
     }
 
     .table-card-head.success-head {
@@ -489,6 +498,17 @@
     .pill-crit { background: #fef2f2; border: 1px solid #fecaca; color: #dc2626; }
     .pill-warn { background: #fffbeb; border: 1px solid #fde68a; color: #b45309; }
     .pill-ok { background: #ecfdf5; border: 1px solid #a7f3d0; color: #047857; }
+
+    .badge-status-warn {
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-size: 0.76rem;
+      font-weight: 700;
+      font-family: "JetBrains Mono", monospace;
+    }
 
     .badge-status-ok {
       background: #ecfdf5;
@@ -942,8 +962,8 @@
       </div>
 
       <div class="telemetry-nav-strip">
-        <span class="live-url-pill" style="border-color: #a7f3d0; background: #ecfdf5; color: #065f46;">
-          <span class="pill-pulse"></span> 北極星三位一體指標：227 工作流 · 75 活躍庫 · 0 警報 (100% 綠燈)
+        <span class="live-url-pill" style="border-color: #c4b5fd; background: #faf5ff; color: #5b21b6; font-weight: 700;">
+          <span class="pill-pulse"></span> 北極星核心指標 (North Star)：227 / 75 / 0 / 1
         </span>
         <a href="#ecosystem-telemetry" class="live-url-pill" title="查看全域遙測統計">
           📊 全域遙測統計 ⬇
@@ -978,19 +998,20 @@
         全域統計涵蓋 <strong>4 大核心組織</strong>，共有 <strong>122 個儲存庫</strong>，其中 <strong>75 個儲存庫</strong> 具備自動化工作流，累計運行 <strong>227 個工作流程 YAML 檔案</strong>。
       </p>
 
-      <!-- NORTH STAR TRIO HIGHLIGHT BANNER -->
+      <!-- NORTH STAR QUARTET HIGHLIGHT BANNER: 227 / 75 / 0 / 1 -->
       <div class="north-star-banner">
         <div class="north-star-title">
-          <span>🎯</span> <strong>Pipeline-Deck 北極星核心指標 (North Star Trio)</strong>
+          <span>🎯</span> <strong>Pipeline-Deck 核心維運指標 (North Star Quartet: 227 / 75 / 0 / 1)</strong>
         </div>
         <div class="north-star-values">
-          <div class="north-star-chip"><span style="color: #7c3aed;">⚡ 規模</span> <strong>227</strong> YAMLs</div>
-          <div class="north-star-chip"><span style="color: #2563eb;">📦 覆蓋</span> <strong>75</strong> Repos</div>
-          <div class="north-star-chip" style="border-color: #a7f3d0; background: #ecfdf5;"><span style="color: #059669;">🛡️ 穩定</span> <strong style="color: #059669;">0</strong> 警報 (100% 綠燈)</div>
+          <div class="north-star-chip"><span style="color: #7c3aed;">⚡ 工作流</span> <strong style="color: #7c3aed;">227</strong> YAMLs</div>
+          <div class="north-star-chip"><span style="color: #2563eb;">📦 活躍庫</span> <strong style="color: #2563eb;">75</strong> Repos</div>
+          <div class="north-star-chip" style="border-color: #a7f3d0; background: #ecfdf5;"><span style="color: #059669;">🚨 嚴重警報</span> <strong style="color: #059669;">0</strong> 次 (≥4)</div>
+          <div class="north-star-chip" style="border-color: #fde68a; background: #fffbeb;"><span style="color: #b45309;">⚠️ 異常警告</span> <strong style="color: #b45309;">1</strong> 次 (1~3)</div>
         </div>
       </div>
 
-      <!-- KPI METRICS GRID -->
+      <!-- KPI METRICS GRID: 227 / 75 / 0 / 1 -->
       <div class="kpi-grid">
         <!-- KPI 1: 227 -->
         <div class="kpi-card kpi-featured">
@@ -1017,23 +1038,23 @@
         <!-- KPI 3: 0 -->
         <div class="kpi-card kpi-featured" style="border-color: #a7f3d0;">
           <div class="kpi-icon-wrap" style="background: #ecfdf5; color: #059669;">
-            <span>🛡️</span>
+            <span>🚨</span>
           </div>
           <div class="kpi-body">
-            <div class="kpi-label">連續失敗警報 (可靠性)</div>
+            <div class="kpi-label">嚴重警報 (連續失敗 ≥4次)</div>
             <div class="kpi-value" id="kpi-critical-alerts" style="color: #10b981;">0 <span class="kpi-unit">個</span></div>
-            <div class="kpi-sub" id="kpi-warning-sub">北極星指標 ③ · 嚴重 0 · 警告 0 (100% 綠燈)</div>
+            <div class="kpi-sub">北極星指標 ③ · 嚴重連續中斷 0 個</div>
           </div>
         </div>
-        <!-- KPI 4: 65 / 65 -->
-        <div class="kpi-card">
-          <div class="kpi-icon-wrap" style="background: #ecfdf5; color: #059669;">
-            <span>⏱️</span>
+        <!-- KPI 4: 1 -->
+        <div class="kpi-card kpi-featured" style="border-color: #fde68a;">
+          <div class="kpi-icon-wrap" style="background: #fffbeb; color: #b45309;">
+            <span>⚠️</span>
           </div>
           <div class="kpi-body">
-            <div class="kpi-label">常態排程監測數</div>
-            <div class="kpi-value" id="kpi-monitored-schedules">65 <span class="kpi-unit">個排程</span></div>
-            <div class="kpi-sub">定時 Cron 自動化排程作業 (全部正常)</div>
+            <div class="kpi-label">異常警告 (連續失敗 1~3次)</div>
+            <div class="kpi-value" id="kpi-warning-alerts" style="color: #d97706;">1 <span class="kpi-unit">個</span></div>
+            <div class="kpi-sub" id="kpi-warning-sub">北極星指標 ④ · 常態排程 65 個監控中</div>
           </div>
         </div>
       </div>
@@ -1137,35 +1158,63 @@
     <section id="schedule-health" class="section-block">
       <div class="section-header">
         <div class="section-title-wrap">
-          <div class="section-badge badge-health">SCHEDULE HEALTH MONITOR · 100% HEALTHY</div>
+          <div class="section-badge badge-health">SCHEDULE HEALTH MONITOR · 227 / 75 / 0 / 1</div>
           <h2 class="section-heading">🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)</h2>
         </div>
         <div class="health-summary-pill-group">
           <span class="health-pill pill-total">常態排程：<strong>65</strong></span>
           <span class="health-pill pill-crit" style="color: #059669; background: #ecfdf5; border-color: #a7f3d0;">🚨 嚴重警報（≥4次）：<strong>0</strong></span>
-          <span class="health-pill pill-warn" style="color: #059669; background: #ecfdf5; border-color: #a7f3d0;">⚠️ 異常警告（1~3次）：<strong>0</strong></span>
-          <span class="health-pill pill-ok">🟢 正常運行：<strong>65 / 65 (100%)</strong></span>
+          <span class="health-pill pill-warn">⚠️ 異常警告（1~3次）：<strong>1</strong></span>
+          <span class="health-pill pill-ok">🟢 正常運行：<strong>64</strong></span>
         </div>
       </div>
       <p class="section-desc">
         針對生態系中配置有 <code>schedule: - cron:</code> 的常態工作流程，追蹤最新執行紀錄與連續失敗次數。連續失敗 ≥ 4 次標記為嚴重警報，連續失敗 1~3 次標記為異常警告。
       </p>
 
-      <!-- SUCCESS STATUS BANNER -->
-      <div class="table-card">
-        <div class="table-card-head success-head">
-          <div class="table-card-title" style="color: #065f46;">
-            <span>✅</span> 目前全域 65 個常態排程工作流程運作狀態優良，達成 100% 綠燈零連續失敗！
+      <!-- WARNING ALERTS TABLE -->
+      <div id="warning-alerts-container">
+        <div class="table-card">
+          <div class="table-card-head warning-head">
+            <div class="table-card-title">⚠️ 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）</div>
+            <span class="table-hint">可點擊右側 Run 連結查看詳細失敗日誌</span>
           </div>
-          <span class="table-hint" style="color: #047857; font-weight: 600;">Zero Failures · 100% Operational</span>
+          <div class="table-responsive">
+            <table class="telemetry-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>儲存庫</th>
+                  <th>工作流程名稱</th>
+                  <th>YAML 檔案</th>
+                  <th style="text-align: center;">連續失敗次數</th>
+                  <th style="text-align: center;">最近 4 次狀態</th>
+                  <th>最新失敗時間 (UTC)</th>
+                  <th style="text-align: center;">執行日誌</th>
+                </tr>
+              </thead>
+              <tbody id="warning-alerts-tbody">
+                <tr>
+                  <td>1</td>
+                  <td><a href="https://github.com/wenchiehlee-money/My-TW-Coverage" target="_blank" rel="noopener noreferrer" class="repo-inline-link">wenchiehlee-money/My-TW-Coverage</a></td>
+                  <td><strong>Daily Update Financials & Valuation</strong></td>
+                  <td><code>daily_update.yml</code></td>
+                  <td style="text-align: center;"><span class="badge-status-warn">1 次</span></td>
+                  <td style="text-align: center;"><span class="status-run-icons">❌✅✅✅</span></td>
+                  <td><code>2026-11-08T08:27:37</code></td>
+                  <td style="text-align: center;"><a href="https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112" target="_blank" rel="noopener noreferrer" class="btn-table-action">Run ↗</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
       <!-- HEALTHY WORKFLOWS ACCORDION -->
-      <details class="healthy-accordion" open>
+      <details class="healthy-accordion">
         <summary class="healthy-summary">
-          <span>🟢 全域 65 個正常運行排程工作流程清單 (點擊收合 / 展開)</span>
-          <span class="badge-health-ok">65 Healthy Schedules · 100%</span>
+          <span>🟢 檢視全域 64 個正常運行排程工作流程清單 (點擊展開 / 收合)</span>
+          <span class="badge-health-ok">64 Healthy Schedules</span>
         </summary>
         <div class="healthy-content">
           <div class="table-responsive">
@@ -1822,16 +1871,6 @@
                   <td style="text-align: center;"><span class="status-run-icons">✅✅✅✅</span></td>
                   <td><code>2026-11-08T11:41:00</code></td>
                   <td style="text-align: center;"><a href="https://github.com/wenchiehlee/wjlee-barco/actions/runs/42476815460" target="_blank" rel="noopener noreferrer" class="btn-table-action">Run ↗</a></td>
-                </tr>
-                <tr>
-                  <td>65</td>
-                  <td><a href="https://github.com/wenchiehlee/wjlee-barco" target="_blank" rel="noopener noreferrer" class="repo-inline-link">wenchiehlee/wjlee-barco</a></td>
-                  <td><strong>Latest blog post workflow</strong></td>
-                  <td><code>blog-post-workflow.yml</code></td>
-                  <td style="text-align: center;"><span class="badge-status-ok">🟢 正常</span></td>
-                  <td style="text-align: center;"><span class="status-run-icons">✅✅✅✅</span></td>
-                  <td><code>2026-11-08T07:06:39</code></td>
-                  <td style="text-align: center;"><a href="https://github.com/wenchiehlee/wjlee-barco/actions/runs/42457427557" target="_blank" rel="noopener noreferrer" class="btn-table-action">Run ↗</a></td>
                 </tr>
               </tbody>
             </table>
@@ -3138,7 +3177,7 @@
     <!-- STUDIO FOOTER -->
     <footer class="studio-footer">
       <div>Pipeline-Deck · 全域自動化管道與 GitOps 工作流中樞 · 品牌系統同源於 <a href="https://wenchiehlee-ux.github.io/UX-Deck/" target="_blank">UX-Deck</a></div>
-      <div style="font-size: 0.78rem;">管道調度：跨 4 大組織 75 Repos · 227 工作流程 YAML · GitHub Actions 定時掃描</div>
+      <div style="font-size: 0.78rem;">北極星維運指標：227 / 75 / 0 / 1 (227 工作流 · 75 活躍庫 · 0 嚴重 · 1 警告)</div>
     </footer>
 
   </div>
@@ -3203,23 +3242,6 @@
         if (freshData && freshData.generated_at !== window.PIPELINE_TELEMETRY?.generated_at) {
           console.log("[Pipeline-Deck] Refreshed telemetry from data/pipeline_summary.json:", freshData.generated_at);
           window.PIPELINE_TELEMETRY = freshData;
-          // Dynamically update KPIs
-          const sch = freshData.scheduled_telemetry;
-          const kpiWf = document.getElementById('kpi-total-workflows');
-          const kpiCov = document.getElementById('kpi-repo-coverage');
-          const kpiSch = document.getElementById('kpi-monitored-schedules');
-          const kpiCrit = document.getElementById('kpi-critical-alerts');
-          const kpiWarnSub = document.getElementById('kpi-warning-sub');
-          if (kpiWf) kpiWf.innerHTML = `${freshData.total_workflows} <span class="kpi-unit">個檔案</span>`;
-          if (kpiCov) kpiCov.innerHTML = `${freshData.total_repos_with_actions} <span class="kpi-unit">/ ${freshData.total_repos} 庫</span>`;
-          if (kpiSch) kpiSch.innerHTML = `${sch.total_monitored_schedules} <span class="kpi-unit">個排程</span>`;
-          if (kpiCrit) {
-            kpiCrit.innerHTML = `${sch.critical_consecutive_4_count} <span class="kpi-unit">個</span>`;
-            kpiCrit.style.color = sch.critical_consecutive_4_count === 0 ? '#10b981' : '#dc2626';
-          }
-          if (kpiWarnSub) {
-            kpiWarnSub.textContent = `北極星指標 ③ · 嚴重 ${sch.critical_consecutive_4_count} · 警告 ${sch.warning_consecutive_1_to_3_count} (100% 綠燈)`;
-          }
         }
       } catch (err) {
         // Fallback gracefully to embedded data

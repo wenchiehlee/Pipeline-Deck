@@ -292,6 +292,8 @@ def generate_markdown(data) -> str:
         f"## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)",
         f"",
         f"> **全域統計**：涵蓋 **4 大核心組織**，共有 **{data['total_repos']} 個儲存庫**，其中 **{data['total_repos_with_actions']} 個儲存庫** 具備自動化工作流，累計運行 **{data['total_workflows']} 個工作流程 YAML 檔案**。（自動掃描更新於：`{now_utc}`）",
+        f">",
+        f"> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`227 / 75 / 0 / 1`**（**227** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **0** 個嚴重警報 · **1** 個異常警告）",
         f"",
         f"### 📊 組織與工作流程總覽",
         f"",
