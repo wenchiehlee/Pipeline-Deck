@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)
 
-> **全域統計**：涵蓋 **4 大核心組織**，共有 **122 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **227 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-08 11:19:03 UTC`）
+> **全域統計**：涵蓋 **4 大核心組織**，共有 **122 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **227 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-08 11:40:18 UTC`）
 
 ### 📊 組織與工作流程總覽
 
@@ -38,22 +38,15 @@
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
 - **常態排程監測總數**：`65` 個工作流程
-- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`1` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
-- **🟢 正常運行（最新一次執行成功）**：`62` 個
-
-#### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
-
-| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
-|---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | Hybrid Scrape & Stage1 Extraction (main) | `hybrid-fetch-and-analyze.yml` | **5 次** | `❌❌❌❌` | `2026-11-08T11:15:46` | [Run ↗](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42474957069) |
+- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`1` 個
+- **🟢 正常運行（最新一次執行成功）**：`64` 個
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | Daily Yahoo Finance Wayback Fetch | `Actions-fetch-wayback.yaml` | **3 次** | `❌❌❌✅` | `2026-11-08T11:14:23` | [Run ↗](https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/42474855433) |
-| 2 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | Daily Update Financials & Valuation | `daily_update.yml` | **1 次** | `❌✅✅✅` | `2026-11-08T08:27:37` | [Run ↗](https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112) |
+| 1 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | Daily Update Financials & Valuation | `daily_update.yml` | **1 次** | `❌✅✅✅` | `2026-11-08T08:27:37` | [Run ↗](https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112) |
 
 ---
 
