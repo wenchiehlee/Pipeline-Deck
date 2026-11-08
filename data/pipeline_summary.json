@@ -1,27 +1,15 @@
 {
-  "generated_at": "2026-11-08T11:37:19.628932+00:00",
+  "generated_at": "2026-11-08T12:47:39.004087+00:00",
   "total_repos": 122,
   "total_repos_with_actions": 75,
   "total_workflows": 227,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 1,
-    "healthy_count": 64,
+    "warning_consecutive_1_to_3_count": 0,
+    "healthy_count": 65,
     "critical_alerts": [],
-    "warning_alerts": [
-      {
-        "repo": "wenchiehlee-money/My-TW-Coverage",
-        "workflow_name": "Daily Update Financials & Valuation",
-        "file": "daily_update.yml",
-        "path": ".github/workflows/daily_update.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-08T08:27:37Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42463027112"
-      }
-    ],
+    "warning_alerts": [],
     "healthy_workflows": [
       {
         "repo": "ZhongZheng782/AI-Usage",
@@ -64,8 +52,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T02:51:38Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42440285357"
+        "latest_run_at": "2026-11-08T12:16:46Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42479480824"
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -86,8 +74,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:28:55Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42446983581"
+        "latest_run_at": "2026-11-08T12:45:30Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42481730891"
       },
       {
         "repo": "ZhongZheng782/Llm-Cli-APIServer",
@@ -196,8 +184,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T02:02:18Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42436790396"
+        "latest_run_at": "2026-11-08T10:47:13Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42472888309"
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -240,8 +228,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:31:26Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42447156836"
+        "latest_run_at": "2026-11-08T12:46:47Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42481828380"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
@@ -251,8 +239,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T07:05:06Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/42457320623"
+        "latest_run_at": "2026-11-08T12:27:35Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/42480351808"
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -519,6 +507,17 @@
         "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/42426344717"
       },
       {
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "workflow_name": "Daily Update Financials & Valuation",
+        "file": "daily_update.yml",
+        "path": ".github/workflows/daily_update.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌✅✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-08T11:05:28Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/42474194762"
+      },
+      {
         "repo": "wenchiehlee-money/VIX",
         "workflow_name": "Update VIX Data Daily",
         "file": "update-vix-data.yml",
@@ -537,8 +536,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T11:37:05Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42476540620"
+        "latest_run_at": "2026-11-08T12:27:47Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42480368031"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -570,8 +569,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T03:53:07Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42444540770"
+        "latest_run_at": "2026-11-08T12:36:21Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42481045687"
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -713,8 +712,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-08T04:32:16Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/42447214003"
+        "latest_run_at": "2026-11-08T11:41:00Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/42476815460"
       },
       {
         "repo": "wenchiehlee/wjlee-barco",
