@@ -748,7 +748,7 @@
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 8px 10px;
+      padding: 10px 12px 8px;
       box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04);
       margin-top: 2rem;
       width: 100%;
@@ -762,6 +762,39 @@
       display: none;
       width: 0;
       height: 0;
+    }
+
+    .deck-family-header-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      padding: 0 2px;
+      flex-wrap: wrap;
+    }
+
+    .deck-family-title-wrap {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 750;
+      color: #0f172a;
+    }
+
+    .deck-family-header-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.74rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: #6d28d9;
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+      padding: 2px 8px;
+      border-radius: 9999px;
     }
 
     .deck-cards-row {
@@ -781,7 +814,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      gap: 5px;
+      gap: 4px;
       transition: all 0.16s ease;
       position: relative;
       min-width: 0;
@@ -915,6 +948,49 @@
       width: 9px;
       height: 9px;
       stroke-width: 2.2;
+    }
+
+    .deck-card-bottom-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      font-size: 7.6px;
+      font-family: 'JetBrains Mono', monospace;
+      color: #64748b;
+      padding-top: 3px;
+      border-top: 1px dashed #e2e8f0;
+      margin-top: 2px;
+      white-space: nowrap;
+    }
+
+    .deck-card-bottom-line strong {
+      color: var(--deck-accent, #7c3aed);
+      font-weight: 700;
+    }
+
+    .deck-family-bottom-bar {
+      margin-top: 8px;
+      padding-top: 6px;
+      border-top: 1px solid #f1f5f9;
+      font-size: 0.72rem;
+      color: #64748b;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .deck-family-bottom-bar code {
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 700;
+      color: #7c3aed;
+      background: #f5f3ff;
+      border: 1px solid #ddd6fe;
+      padding: 1px 5px;
+      border-radius: 4px;
     }
 
     /* THEME ACCENTS */
@@ -2966,6 +3042,17 @@
 
     <!-- DECK FAMILY FOOTER (Strict One-Row, Zero Scrollbar, Tone-Matched Favicons) -->
     <footer id="deck-family" class="deck-family-footer">
+      <div class="deck-family-header-strip">
+        <div class="deck-family-title-wrap">
+          <span>🦌🐇📊⚙️📈🧠🐳</span>
+          <span>7 大 Deck 家族導航門戶</span>
+        </div>
+        <div class="deck-family-header-pill">
+          <span>🌐</span>
+          <span>Pipeline-Deck 全域維運指標：227 / 75 / 0 / 1</span>
+        </div>
+      </div>
+
       <div class="deck-cards-row">
 
         <!-- 1. UX-Deck -->
@@ -2994,6 +3081,9 @@
               <span>Repo</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
+          </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
           </div>
         </article>
 
@@ -3024,6 +3114,9 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
           </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
+          </div>
         </article>
 
         <!-- 3. Analytics-Deck -->
@@ -3053,34 +3146,40 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
           </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
+          </div>
         </article>
 
         <!-- 4. Pipeline-Deck -->
-        <article class="deck-card theme-pipeline">
+        <article class="deck-card theme-pipeline" style="border-color: #c4b5fd; box-shadow: 0 0 0 1px #c4b5fd;">
           <div class="deck-card-head">
             <span class="deck-avatar">⚙️</span>
             <span class="deck-card-title">Pipeline-Deck</span>
-            <span class="deck-tag">Workflow</span>
+            <span class="deck-tag" style="background:#f5f3ff; color:#7c3aed; border-color:#ddd6fe;">227/75/0/1</span>
           </div>
           <div class="deck-numbers-compact">
             <div class="stat-line">
-              <span class="stat-lbl">CI/CD 引擎</span>
-              <span class="stat-val">227 Workflows</span>
+              <span class="stat-lbl">北極星指標</span>
+              <span class="stat-val" style="color:#7c3aed;">227/75/0/1</span>
             </div>
             <div class="stat-line">
-              <span class="stat-lbl">GitOps 維運</span>
-              <span class="stat-val">75 Repos · 4 Orgs</span>
+              <span class="stat-lbl">CI/CD 規模</span>
+              <span class="stat-val">227 WFs · 75 Repos</span>
             </div>
           </div>
           <div class="deck-actions-compact">
-            <a href="https://wenchiehlee.github.io/Pipeline-Deck/" target="_blank" rel="noopener noreferrer" class="deck-btn deck-btn-portal">
-              <span>Portal</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            <a href="https://wenchiehlee.github.io/Pipeline-Deck/" target="_blank" rel="noopener noreferrer" class="deck-btn deck-btn-portal" style="background:#7c3aed; border-color:#7c3aed;">
+              <span>Current</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="4"/></svg>
             </a>
             <a href="https://github.com/wenchiehlee/Pipeline-Deck" target="_blank" rel="noopener noreferrer" class="deck-btn deck-btn-repo">
               <span>Repo</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
+          </div>
+          <div class="deck-card-bottom-line" style="background:#f5f3ff; border-radius:3px; padding:2px 0;">
+            <span style="color:#7c3aed;">🎯 核心:</span> <strong style="color:#7c3aed;">227/75/0/1</strong>
           </div>
         </article>
 
@@ -3111,6 +3210,9 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
           </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
+          </div>
         </article>
 
         <!-- 6. Llm-Deck -->
@@ -3139,6 +3241,9 @@
               <span>Repo</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
+          </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
           </div>
         </article>
 
@@ -3169,8 +3274,17 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
           </div>
+          <div class="deck-card-bottom-line">
+            <span>⚡ CI/CD:</span> <strong>227/75/0/1</strong>
+          </div>
         </article>
 
+      </div>
+
+      <div class="deck-family-bottom-bar">
+        <span>🌐 全域自動化維運基準 (North Star Quartet)：</span>
+        <code>227 / 75 / 0 / 1</code>
+        <span>(227 工作流程 · 75 活躍儲存庫 · 0 嚴重警報 · 1 異常警告)</span>
       </div>
     </footer>
 
