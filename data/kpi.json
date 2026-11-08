@@ -15,12 +15,12 @@
     "tag": "227/75/0/1",
     "theme": "theme-pipeline",
     "stat1": {
-      "label": "北極星指標",
-      "value": "227/75/0/1"
+      "label": "全域規模",
+      "value": "227 WFs · 75 Repos"
     },
     "stat2": {
-      "label": "CI/CD 規模",
-      "value": "227 WFs · 75 Repos"
+      "label": "健康警報",
+      "value": "0 嚴重 · 1 警告"
     },
     "bottom_line": "⚡ CI/CD: 227/75/0/1",
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
