@@ -123,17 +123,46 @@ def get_repo_workflows(session: requests.Session, full_name: str):
     return []
 
 def scan_schedule_health(session: requests.Session, full_name: str):
-    """Fetch recent schedule runs for a repository and detect consecutive failure patterns."""
-    url = f"https://api.github.com/repos/{full_name}/actions/runs?event=schedule&per_page=30"
-    resp = session.get(url)
-    if resp.status_code != 200:
+    """Fetch recent runs for scheduled workflows and detect consecutive failure patterns.
+    
+    Excludes disabled workflows and incorporates latest runs across all event triggers
+    (e.g., workflow_dispatch/push verification) so that fixed workflows immediately reflect healthy status.
+    """
+    # 1. Check disabled workflows
+    wf_url = f"https://api.github.com/repos/{full_name}/actions/workflows"
+    wf_resp = session.get(wf_url)
+    disabled_paths = set()
+    if wf_resp.status_code == 200:
+        for wf in wf_resp.json().get("workflows", []):
+            if wf.get("state") in ("disabled_manually", "disabled_inactivity"):
+                disabled_paths.add(wf.get("path"))
+
+    # 2. Identify workflows with schedule trigger
+    sched_url = f"https://api.github.com/repos/{full_name}/actions/runs?event=schedule&per_page=30"
+    sched_resp = session.get(sched_url)
+    if sched_resp.status_code != 200:
         return []
 
-    runs = resp.json().get("workflow_runs", [])
+    sched_runs = sched_resp.json().get("workflow_runs", [])
+    scheduled_paths = {r.get("path") for r in sched_runs if r.get("path")}
+    scheduled_paths -= disabled_paths
+    if not scheduled_paths:
+        return []
+
+    # 3. Fetch latest runs across all events to reflect recent fixes/dispatches
+    all_runs_url = f"https://api.github.com/repos/{full_name}/actions/runs?per_page=50"
+    all_resp = session.get(all_runs_url)
+    all_runs = all_resp.json().get("workflow_runs", []) if all_resp.status_code == 200 else sched_runs
+
     by_path = {}
-    for r in runs:
+    for r in all_runs:
         p = r.get("path")
-        if p:
+        if p and p in scheduled_paths:
+            by_path.setdefault(p, []).append(r)
+
+    for r in sched_runs:
+        p = r.get("path")
+        if p and p in scheduled_paths and p not in by_path:
             by_path.setdefault(p, []).append(r)
 
     results = []
