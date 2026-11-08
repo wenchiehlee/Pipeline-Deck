@@ -1,0 +1,25 @@
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+env/
+venv/
+ENV/
+
+# Temporary / Scratch files
+scratch/
+scratch_*.csv
+scratch_*.json
+*.tmp
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
