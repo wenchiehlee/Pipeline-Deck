@@ -388,7 +388,7 @@
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 8px;
-      padding: 7px 7px 6px;
+      padding: 6px 6px 5px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -407,15 +407,15 @@
     .deck-card-head {
       display: flex;
       align-items: center;
-      gap: 4px;
+      gap: 3px;
       min-width: 0;
     }
 
     .deck-avatar {
-      font-size: 13px;
+      font-size: 11px;
       line-height: 1;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       border-radius: 4px;
       background: var(--deck-bg, #f1f5f9);
       border: 1px solid var(--deck-border, #e2e8f0);
@@ -426,10 +426,10 @@
     }
 
     .deck-card-title {
-      font-size: 11px;
+      font-size: 10px;
       font-weight: 700;
       color: #0f172a;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -437,16 +437,17 @@
     }
 
     .deck-tag {
-      font-size: 8.5px;
+      font-size: 7.5px;
       font-weight: 700;
       text-transform: uppercase;
-      padding: 1px 4px;
-      border-radius: 4px;
+      padding: 1px 3px;
+      border-radius: 3px;
       background: var(--deck-bg, #f1f5f9);
       color: var(--deck-accent, #475569);
       margin-left: auto;
       border: 1px solid var(--deck-border, #e2e8f0);
       flex-shrink: 0;
+      letter-spacing: 0;
     }
 
     .deck-numbers-compact {
@@ -575,6 +576,9 @@
         <span class="live-url-pill">
           <span class="pill-pulse"></span> 系統狀態：50+ 活躍工作流全域運行中
         </span>
+        <a href="#deck-family" class="live-url-pill" style="border-color: #c4b5fd; background: #faf5ff; color: #6d28d9;" title="直接前往底部 7 大 Deck 家族導航卡片 ⬇">
+          🦌🐇📊⚙️📈🧠🐳 7 大 Deck 家族 ⬇
+        </a>
         <a href="https://github.com/wenchiehlee/Pipeline-Deck" target="_blank" rel="noopener noreferrer" class="live-url-pill" title="前往 GitHub 原始庫 ↗">
           📦 GitHub 原始庫 ↗
         </a>
@@ -933,7 +937,7 @@
     </div>
 
     <!-- DECK FAMILY FOOTER (Strict One-Row, Zero Scrollbar, Tone-Matched Favicons) -->
-    <footer class="deck-family-footer">
+    <footer id="deck-family" class="deck-family-footer">
       <div class="deck-cards-row">
 
         <!-- 1. UX-Deck -->
