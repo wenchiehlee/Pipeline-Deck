@@ -35,6 +35,31 @@ TARGET_ORGS = [
     "wenchiehlee-life",
 ]
 
+# Consistent UX-Deck Design & Mascot Registry (aligned with UX-Deck 13 Mascots Matrix)
+UX_DECK_REGISTRY = {
+    "wenchiehlee-ux/UX-Deck": {"symbol": "🦌", "name": "幾何靈鹿", "role": "UX 設計系統中樞"},
+    "wenchiehlee/skills": {"symbol": "🐇", "name": "敏捷白兔", "role": "共享技能登錄庫"},
+    "wenchiehlee/Analytics-Deck": {"symbol": "📊", "name": "觀測航線", "role": "全端點流量遙測中樞"},
+    "wenchiehlee/Pipeline-Deck": {"symbol": "⚙️", "name": "齒輪引擎", "role": "CI/CD 與自動化管道中樞"},
+    "wenchiehlee-money/biztrends.TW": {"symbol": "📈", "name": "市場趨勢", "role": "產業週期與金融雷達"},
+    "wenchiehlee/llm": {"symbol": "🧠", "name": "智慧大腦", "role": "LLM 多模型智能路由庫"},
+    "wenchiehlee/dockers": {"symbol": "🐳", "name": "貨櫃藍鯨", "role": "Docker 映像目錄與部署"},
+    "wenchiehlee/mkdocs-life": {"symbol": "🦌", "name": "幾何林鹿", "role": "溫潤人文生活誌"},
+    "wenchiehlee-money/GoogleAlertManager": {"symbol": "🐦", "name": "破曉警報鳥", "role": "SaaS 情報過濾雷達"},
+    "ZhongZheng782/YoutubeAudio.Fetch": {"symbol": "🐋", "name": "聲波座頭鯨", "role": "影音 Podcast 萃取"},
+    "wenchiehlee/mkdocs-investment": {"symbol": "🐂🐻", "name": "幾何狂牛/守護熊", "role": "大盤資產配置與避險"},
+    "wenchiehlee-money/My-TW-Coverage": {"symbol": "🦉", "name": "拍拍翅萌萌鴞", "role": "台股個股深度調研"},
+    "wenchiehlee-money/InvestorConference": {"symbol": "🦅", "name": "領航雄鷹", "role": "法人說明會與 IR 庫"},
+    "wenchiehlee-money/VIX": {"symbol": "🦢", "name": "幾何黑天鵝", "role": "全球波動率黑天鵝雷達"},
+    "ZhongZheng782/Synology-Photo-Tagger": {"symbol": "🐿️", "name": "採集松鼠", "role": "AI 相片智慧標籤"},
+    "wenchiehlee/wenchiehlee.github.io": {"symbol": "👤", "name": "個人旗艦", "role": "個人官方主站門戶"},
+    "wenchiehlee-investment/wenchiehlee-investment.github.io": {"symbol": "💼", "name": "投資機構", "role": "投資組織官方入口"},
+    "wenchiehlee-life/wenchiehlee-life.github.io": {"symbol": "🌱", "name": "人文生活", "role": "生活組織官方門戶"},
+    "wenchiehlee/mkdocs": {"symbol": "📚", "name": "知識基底", "role": "工程技術文件中心"},
+    "wenchiehlee/mkdocs-demo": {"symbol": "🧪", "name": "介面範本", "role": "互動展示模版"},
+    "wenchiehlee/mkdocs-material": {"symbol": "📐", "name": "架構樣板", "role": "Material 主題範本"},
+}
+
 def load_env_file():
     """Load key-value pairs from .env if present."""
     base_dir = Path(__file__).resolve().parent.parent
@@ -605,8 +630,8 @@ def generate_markdown(data) -> str:
     lines.append(f"- **🔴 建置異常 (`errored`)**：`{pg.get('errored_sites', 0)}` 個")
     lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{pg.get('other_sites', 0)}` 個")
     lines.append("")
-    lines.append("| # | 組織 / 儲存庫 | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |")
-    lines.append("|---|---|---|:---:|:---:|:---:|")
+    lines.append("| # | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |")
+    lines.append("|---|---|---|---|:---:|:---:|:---:|")
 
     status_icon_map = {"built": "🟢 正常 (built)", "errored": "🔴 異常 (errored)"}
     for idx, s in enumerate(pg.get("sites", []), 1):
@@ -614,7 +639,9 @@ def generate_markdown(data) -> str:
         url_link = f"[{s['url']}]({s['url']})" if s.get("url") else "*(未生成網址)*"
         repo_link = f"[{s['repo']}](https://github.com/{s['repo']})"
         vis = "🔒 私有" if s.get("is_private") else "🌍 公開"
-        lines.append(f"| {idx} | {repo_link} | {url_link} | {st_icon} | `{s.get('build_type', 'legacy')}` | {vis} |")
+        ux_meta = UX_DECK_REGISTRY.get(s["repo"], {"symbol": "🌐", "name": "線上站點", "role": "GitHub Pages 門戶"})
+        ux_display = f"{ux_meta['symbol']} {ux_meta['name']} (`{ux_meta['role']}`)"
+        lines.append(f"| {idx} | {repo_link} | {ux_display} | {url_link} | {st_icon} | `{s.get('build_type', 'legacy')}` | {vis} |")
 
     lines.append("")
     lines.append("---")

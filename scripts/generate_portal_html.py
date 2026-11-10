@@ -12,6 +12,31 @@ ORG_AVATARS = {
     "wenchiehlee-life": "🌱",
 }
 
+# UX-Deck Mascots & Design Identity Registry (Aligned with UX-Deck 13 Mascots Matrix)
+UX_DECK_REGISTRY = {
+    "wenchiehlee-ux/UX-Deck": {"symbol": "🦌", "name": "幾何靈鹿", "role": "UX 設計系統中樞"},
+    "wenchiehlee/skills": {"symbol": "🐇", "name": "敏捷白兔", "role": "共享技能登錄庫"},
+    "wenchiehlee/Analytics-Deck": {"symbol": "📊", "name": "觀測航線", "role": "全端點流量遙測中樞"},
+    "wenchiehlee/Pipeline-Deck": {"symbol": "⚙️", "name": "齒輪引擎", "role": "CI/CD 與自動化管道中樞"},
+    "wenchiehlee-money/biztrends.TW": {"symbol": "📈", "name": "市場趨勢", "role": "產業週期與金融雷達"},
+    "wenchiehlee/llm": {"symbol": "🧠", "name": "智慧大腦", "role": "LLM 多模型智能路由庫"},
+    "wenchiehlee/dockers": {"symbol": "🐳", "name": "貨櫃藍鯨", "role": "Docker 映像目錄與部署"},
+    "wenchiehlee/mkdocs-life": {"symbol": "🦌", "name": "幾何林鹿", "role": "溫潤人文生活誌"},
+    "wenchiehlee-money/GoogleAlertManager": {"symbol": "🐦", "name": "破曉警報鳥", "role": "SaaS 情報過濾雷達"},
+    "ZhongZheng782/YoutubeAudio.Fetch": {"symbol": "🐋", "name": "聲波座頭鯨", "role": "影音 Podcast 萃取"},
+    "wenchiehlee/mkdocs-investment": {"symbol": "🐂🐻", "name": "幾何狂牛/守護熊", "role": "大盤資產配置與避險"},
+    "wenchiehlee-money/My-TW-Coverage": {"symbol": "🦉", "name": "拍拍翅萌萌鴞", "role": "台股個股深度調研"},
+    "wenchiehlee-money/InvestorConference": {"symbol": "🦅", "name": "領航雄鷹", "role": "法人說明會與 IR 庫"},
+    "wenchiehlee-money/VIX": {"symbol": "🦢", "name": "幾何黑天鵝", "role": "全球波動率黑天鵝雷達"},
+    "ZhongZheng782/Synology-Photo-Tagger": {"symbol": "🐿️", "name": "採集松鼠", "role": "AI 相片智慧標籤"},
+    "wenchiehlee/wenchiehlee.github.io": {"symbol": "👤", "name": "個人旗艦", "role": "個人官方主站門戶"},
+    "wenchiehlee-investment/wenchiehlee-investment.github.io": {"symbol": "💼", "name": "投資機構", "role": "投資組織官方入口"},
+    "wenchiehlee-life/wenchiehlee-life.github.io": {"symbol": "🌱", "name": "人文生活", "role": "生活組織官方門戶"},
+    "wenchiehlee/mkdocs": {"symbol": "📚", "name": "知識基底", "role": "工程技術文件中心"},
+    "wenchiehlee/mkdocs-demo": {"symbol": "🧪", "name": "介面範本", "role": "互動展示模版"},
+    "wenchiehlee/mkdocs-material": {"symbol": "📐", "name": "架構樣板", "role": "Material 主題範本"},
+}
+
 def generate_portal_html(data: dict, index_html_path: Path):
     gen_dt = datetime.fromisoformat(data["generated_at"])
     utc_str = gen_dt.strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -219,9 +244,13 @@ def generate_portal_html(data: dict, index_html_path: Path):
         vis_pill = '<span class="badge-vis private">🔒 私有</span>' if s.get("is_private") else '<span class="badge-vis public">🌍 公開</span>'
         build_type = s.get("build_type") or "legacy"
 
+        ux_meta = UX_DECK_REGISTRY.get(s["repo"], {"symbol": "🌐", "name": "線上站點", "role": "GitHub Pages 門戶"})
+        mascot_html = f"""<span class="mascot-tag"><span class="mascot-symbol">{ux_meta['symbol']}</span> <strong>{ux_meta['name']}</strong> <span class="mascot-role">· {ux_meta['role']}</span></span>"""
+
         pages_rows += f"""                <tr>
                   <td>{idx}</td>
                   <td><a href="https://github.com/{s['repo']}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{s['repo']}</strong></a></td>
+                  <td>{mascot_html}</td>
                   <td>{url_link}</td>
                   <td style="text-align: center;">{st_pill}</td>
                   <td style="text-align: center;"><code>{build_type}</code></td>
@@ -1032,6 +1061,27 @@ def generate_portal_html(data: dict, index_html_path: Path):
       transform: translateY(-1px);
     }}
 
+    .mascot-tag {{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fdf4ff;
+      border: 1px solid #f0abfc;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 0.8rem;
+      color: #86198f;
+      white-space: nowrap;
+    }}
+    .mascot-symbol {{
+      font-size: 1.05rem;
+    }}
+    .mascot-role {{
+      color: #a21caf;
+      font-weight: 500;
+      font-size: 0.74rem;
+    }}
+
     /* ACCORDION */
     details.healthy-accordion {{
       background: #ffffff;
@@ -1766,6 +1816,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
               <tr>
                 <th>#</th>
                 <th>組織 / 儲存庫</th>
+                <th>UX 意象與定位 (UX-Deck)</th>
                 <th>線上訪問題站</th>
                 <th style="text-align: center;">建置狀態</th>
                 <th style="text-align: center;">建置管道</th>

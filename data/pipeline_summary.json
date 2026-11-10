@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10T05:02:02.969277+00:00",
-  "total_repos": 105,
-  "total_repos_with_actions": 72,
-  "total_workflows": 221,
+  "generated_at": "2026-11-10T05:20:32.382759+00:00",
+  "total_repos": 104,
+  "total_repos_with_actions": 71,
+  "total_workflows": 219,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 60,
+    "warning_consecutive_1_to_3_count": 5,
+    "healthy_count": 59,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -33,15 +33,15 @@
         "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021"
       },
       {
-        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-        "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
-        "file": "hybrid-fetch-and-analyze.yml",
-        "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "path": ".github/workflows/check-data-health.yml",
         "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅❌",
+        "recent_4_icons": "❌✅✅✅",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-09T23:05:37Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42717556492"
+        "latest_run_at": "2026-11-10T05:14:06Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42760833112"
       },
       {
         "repo": "wenchiehlee/Pipeline-Deck",
@@ -53,6 +53,17 @@
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-09T04:58:56Z",
         "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017"
+      },
+      {
+        "repo": "wenchiehlee/Python-Actions.FinMind",
+        "workflow_name": "Daily FinMind status",
+        "file": "daily-finmind-status.yml",
+        "path": ".github/workflows/daily-finmind-status.yml",
+        "consecutive_failures": 1,
+        "recent_4_icons": "❌✅✅❌",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-10T04:40:59Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679"
       }
     ],
     "healthy_workflows": [
@@ -146,14 +157,25 @@
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+        "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
+        "file": "hybrid-fetch-and-analyze.yml",
+        "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌✅✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T03:26:03Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42749413754"
+      },
+      {
+        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
         "workflow_name": "Sync Analyzer Data to Downstream Repositories",
         "file": "sync.yaml",
         "path": ".github/workflows/sync.yaml",
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:18:40Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42755041723"
+        "latest_run_at": "2026-11-10T05:11:14Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42760519601"
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -471,8 +493,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-09T23:51:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42723825551"
+        "latest_run_at": "2026-11-10T05:03:29Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42759690256"
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -531,17 +553,6 @@
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:44:19Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42757742161"
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
         "workflow_name": "Monthly Cycle Mapping Refresh",
         "file": "refresh-cycle-mapping-monthly.yml",
         "path": ".github/workflows/refresh-cycle-mapping-monthly.yml",
@@ -594,17 +605,6 @@
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-10T04:18:39Z",
         "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/42755040127"
-      },
-      {
-        "repo": "wenchiehlee/Python-Actions.FinMind",
-        "workflow_name": "Daily FinMind status",
-        "file": "daily-finmind-status.yml",
-        "path": ".github/workflows/daily-finmind-status.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌❌",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T02:18:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42741868838"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -719,10 +719,10 @@
     ]
   },
   "pages_telemetry": {
-    "total_sites": 19,
+    "total_sites": 18,
     "built_sites": 15,
     "errored_sites": 1,
-    "other_sites": 3,
+    "other_sites": 2,
     "sites": [
       {
         "org": "wenchiehlee-money",
@@ -885,15 +885,6 @@
         "status": null,
         "build_type": "workflow",
         "is_private": false
-      },
-      {
-        "org": "wenchiehlee",
-        "name": "mkdocs-material",
-        "repo": "wenchiehlee/mkdocs-material",
-        "url": "https://wenchiehlee.github.io/mkdocs-material/",
-        "status": null,
-        "build_type": "workflow",
-        "is_private": false
       }
     ]
   },
@@ -908,10 +899,10 @@
       "medium": 3,
       "low": 4
     },
-    "total_open_codeql_alerts": 29,
+    "total_open_codeql_alerts": 34,
     "codeql_breakdown": {
       "critical": 4,
-      "high": 12,
+      "high": 17,
       "medium": 13,
       "low": 0
     },
@@ -1204,6 +1195,70 @@
           "low": 0
         },
         "codeql_items": [],
+        "malware_total": 0,
+        "malware_items": []
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "org": "wenchiehlee",
+        "is_private": false,
+        "dependabot_total": 0,
+        "dependabot_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "dependabot_items": [],
+        "codeql_total": 5,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 5,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [
+          {
+            "number": 5,
+            "rule_id": "py/clear-text-logging-sensitive-data",
+            "description": "Clear-text logging of sensitive information",
+            "severity": "high",
+            "tool": "CodeQL",
+            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/5"
+          },
+          {
+            "number": 4,
+            "rule_id": "py/clear-text-storage-sensitive-data",
+            "description": "Clear-text storage of sensitive information",
+            "severity": "high",
+            "tool": "CodeQL",
+            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/4"
+          },
+          {
+            "number": 3,
+            "rule_id": "py/clear-text-storage-sensitive-data",
+            "description": "Clear-text storage of sensitive information",
+            "severity": "high",
+            "tool": "CodeQL",
+            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/3"
+          },
+          {
+            "number": 2,
+            "rule_id": "py/clear-text-storage-sensitive-data",
+            "description": "Clear-text storage of sensitive information",
+            "severity": "high",
+            "tool": "CodeQL",
+            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/2"
+          },
+          {
+            "number": 1,
+            "rule_id": "py/clear-text-storage-sensitive-data",
+            "description": "Clear-text storage of sensitive information",
+            "severity": "high",
+            "tool": "CodeQL",
+            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/1"
+          }
+        ],
         "malware_total": 0,
         "malware_items": []
       },
@@ -2116,25 +2171,25 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
+              "file": "hybrid-fetch-and-analyze.yml",
+              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T03:26:03Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42749413754"
+            },
+            {
+              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
               "workflow_name": "Sync Analyzer Data to Downstream Repositories",
               "file": "sync.yaml",
               "path": ".github/workflows/sync.yaml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T04:18:40Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42755041723"
-            },
-            {
-              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
-              "file": "hybrid-fetch-and-analyze.yml",
-              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅✅❌",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-09T23:05:37Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42717556492"
+              "latest_run_at": "2026-11-10T05:11:14Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42760519601"
             }
           ],
           "pages": {
@@ -2891,9 +2946,9 @@
       ]
     },
     "wenchiehlee": {
-      "total_repos": 35,
-      "repos_with_actions": 31,
-      "total_workflows": 68,
+      "total_repos": 34,
+      "repos_with_actions": 30,
+      "total_workflows": 66,
       "repos": [
         {
           "org": "wenchiehlee",
@@ -3265,11 +3320,11 @@
               "workflow_name": "Daily FinMind status",
               "file": "daily-finmind-status.yml",
               "path": ".github/workflows/daily-finmind-status.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅❌❌",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T02:18:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42741868838"
+              "consecutive_failures": 1,
+              "recent_4_icons": "❌✅✅❌",
+              "latest_conclusion": "failure",
+              "latest_run_at": "2026-11-10T04:40:59Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679"
             },
             {
               "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -3740,52 +3795,6 @@
             "secret_scanning": "enabled",
             "push_protection": "enabled",
             "dependabot_updates": "enabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee",
-          "name": "mkdocs-material",
-          "full_name": "wenchiehlee/mkdocs-material",
-          "html_url": "https://github.com/wenchiehlee/mkdocs-material",
-          "is_private": false,
-          "workflow_count": 2,
-          "workflows": [
-            "build.yml",
-            "documentation.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee.github.io/mkdocs-material/",
-            "status": null,
-            "build_type": "workflow"
-          },
-          "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
           },
           "alerts": {
             "dependabot": {
@@ -4555,12 +4564,53 @@
               "items": []
             },
             "code_scanning": {
-              "total": 0,
+              "total": 5,
               "critical": 0,
-              "high": 0,
+              "high": 5,
               "medium": 0,
               "low": 0,
-              "items": []
+              "items": [
+                {
+                  "number": 5,
+                  "rule_id": "py/clear-text-logging-sensitive-data",
+                  "description": "Clear-text logging of sensitive information",
+                  "severity": "high",
+                  "tool": "CodeQL",
+                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/5"
+                },
+                {
+                  "number": 4,
+                  "rule_id": "py/clear-text-storage-sensitive-data",
+                  "description": "Clear-text storage of sensitive information",
+                  "severity": "high",
+                  "tool": "CodeQL",
+                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/4"
+                },
+                {
+                  "number": 3,
+                  "rule_id": "py/clear-text-storage-sensitive-data",
+                  "description": "Clear-text storage of sensitive information",
+                  "severity": "high",
+                  "tool": "CodeQL",
+                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/3"
+                },
+                {
+                  "number": 2,
+                  "rule_id": "py/clear-text-storage-sensitive-data",
+                  "description": "Clear-text storage of sensitive information",
+                  "severity": "high",
+                  "tool": "CodeQL",
+                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/2"
+                },
+                {
+                  "number": 1,
+                  "rule_id": "py/clear-text-storage-sensitive-data",
+                  "description": "Clear-text storage of sensitive information",
+                  "severity": "high",
+                  "tool": "CodeQL",
+                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/1"
+                }
+              ]
             },
             "malware": {
               "total": 0,
@@ -4994,11 +5044,11 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅❌✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T04:44:19Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42757742161"
+              "consecutive_failures": 1,
+              "recent_4_icons": "❌✅✅✅",
+              "latest_conclusion": "failure",
+              "latest_run_at": "2026-11-10T05:14:06Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42760833112"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -5183,8 +5233,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-09T23:51:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42723825551"
+              "latest_run_at": "2026-11-10T05:03:29Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42759690256"
             },
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
