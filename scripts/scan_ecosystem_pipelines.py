@@ -20,6 +20,9 @@ TARGET_ORGS = [
     "wenchiehlee",
     "wenchiehlee-money",
     "wenchiehlee-investment",
+    "wenchiehlee-ux",
+    "wenchiehlee-alert",
+    "wenchiehlee-life",
 ]
 
 def load_env_file():
@@ -286,14 +289,15 @@ def scan_ecosystem():
 def generate_markdown(data) -> str:
     now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     sch = data["scheduled_telemetry"]
+    ns_quartet = f"{data['total_workflows']} / {data['total_repos_with_actions']} / {sch['critical_consecutive_4_count']} / {sch['warning_consecutive_1_to_3_count']}"
     
     lines = [
         f"<!-- PIPELINE_SUMMARY_START -->",
         f"## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)",
         f"",
-        f"> **全域統計**：涵蓋 **4 大核心組織**，共有 **{data['total_repos']} 個儲存庫**，其中 **{data['total_repos_with_actions']} 個儲存庫** 具備自動化工作流，累計運行 **{data['total_workflows']} 個工作流程 YAML 檔案**。（自動掃描更新於：`{now_utc}`）",
+        f"> **全域統計**：涵蓋 **{len(TARGET_ORGS)} 大核心組織**，共有 **{data['total_repos']} 個儲存庫**，其中 **{data['total_repos_with_actions']} 個儲存庫** 具備自動化工作流，累計運行 **{data['total_workflows']} 個工作流程 YAML 檔案**。（自動掃描更新於：`{now_utc}`）",
         f">",
-        f"> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`227 / 75 / 0 / 1`**（**227** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **0** 個嚴重警報 · **1** 個異常警告）",
+        f"> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`{ns_quartet}`**（**{data['total_workflows']}** 個工作流程 YAML · **{data['total_repos_with_actions']}** 個活躍 Actions 庫 · **{sch['critical_consecutive_4_count']}** 個嚴重警報 · **{sch['warning_consecutive_1_to_3_count']}** 個異常警告）",
         f"",
         f"### 📊 組織與工作流程總覽",
         f"",
@@ -365,6 +369,8 @@ def generate_markdown(data) -> str:
         inactive_count = o["total_repos"] - len(active_repos)
         if inactive_count > 0:
             lines.append(f"| - | *其餘 {inactive_count} 個 Repo* | 0 | *(無 Actions)* |")
+        elif o["total_repos"] == 0:
+            lines.append(f"| - | *(目前尚無儲存庫)* | 0 | - |")
         lines.append("")
 
     lines.append("<!-- PIPELINE_SUMMARY_END -->")
@@ -400,6 +406,18 @@ def update_github_step_summary(md_content: str):
             print(f"Warning: Failed to write to GITHUB_STEP_SUMMARY: {e}", file=sys.stderr)
 
 def update_index_html(summary_data: dict, index_html_path: Path):
+    try:
+        from generate_portal_html import generate_portal_html
+    except ImportError:
+        try:
+            from scripts.generate_portal_html import generate_portal_html
+        except ImportError:
+            generate_portal_html = None
+
+    if generate_portal_html:
+        generate_portal_html(summary_data, index_html_path)
+        return
+
     if not index_html_path.exists():
         return
     text = index_html_path.read_text(encoding="utf-8")
@@ -434,29 +452,30 @@ def main():
 
     # 1.1 Save Lightweight Card KPI JSON (for Deck Family Sync)
     sch = summary_data["scheduled_telemetry"]
+    ns_val = f"{summary_data['total_workflows']} / {summary_data['total_repos_with_actions']} / {sch.get('critical_consecutive_4_count', 0)} / {sch.get('warning_consecutive_1_to_3_count', 0)}"
     kpi_data = {
         "deck": "Pipeline-Deck",
         "symbol": "⚙️",
-        "north_star": "227 / 75 / 0 / 1",
+        "north_star": ns_val,
         "metrics": {
             "workflows": summary_data["total_workflows"],
             "repos_with_actions": summary_data["total_repos_with_actions"],
             "total_repos": summary_data["total_repos"],
             "critical_alerts": sch.get("critical_consecutive_4_count", 0),
-            "warning_alerts": sch.get("warning_consecutive_1_to_3_count", 1),
-            "monitored_schedules": sch.get("total_monitored_schedules", 65)
+            "warning_alerts": sch.get("warning_consecutive_1_to_3_count", 0),
+            "monitored_schedules": sch.get("total_monitored_schedules", 0)
         },
         "card": {
             "title": "Pipeline-Deck",
             "tag": "CI/CD",
             "theme": "theme-pipeline",
             "stat1": { "label": "工作流程", "value": f"{summary_data['total_workflows']} WFs · {summary_data['total_repos_with_actions']} 庫" },
-            "stat2": { "label": "異常警報", "value": f"{sch.get('critical_consecutive_4_count', 0)} 嚴重 · {sch.get('warning_consecutive_1_to_3_count', 1)} 警告" },
-            "bottom_line": "⚡ CI/CD: 227/75/0/1",
+            "stat2": { "label": "異常警報", "value": f"{sch.get('critical_consecutive_4_count', 0)} 嚴重 · {sch.get('warning_consecutive_1_to_3_count', 0)} 警告" },
+            "bottom_line": f"⚡ CI/CD: {ns_val}",
             "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
             "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
         },
-        "updated_at": summary_data["scan_time_utc"]
+        "updated_at": summary_data.get("scan_time_utc", datetime.now(timezone.utc).isoformat())
     }
     kpi_path = data_dir / "kpi.json"
     with open(kpi_path, "w", encoding="utf-8") as f:

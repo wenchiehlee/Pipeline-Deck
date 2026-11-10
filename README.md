@@ -21,34 +21,44 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)
 
-> **全域統計**：涵蓋 **4 大核心組織**，共有 **122 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **227 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-08 12:50:32 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **124 個儲存庫**，其中 **75 個儲存庫** 具備自動化工作流，累計運行 **228 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-10 04:07:16 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`227 / 75 / 0 / 1`**（**227** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **0** 個嚴重警報 · **1** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`228 / 75 / 0 / 4`**（**228** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
 ### 📊 組織與工作流程總覽
 
 | 組織 / 帳號 (`Owner`) | 儲存庫總數 | 具備 Actions 的 Repo 數 | 工作流程 YAML 總數 |
 |---|:---:|:---:|:---:|
-| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **88** |
+| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **89** |
 | [`wenchiehlee`](https://github.com/wenchiehlee) | 51 | 32 | **70** |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 19 | 14 | **34** |
-| **全域總計** | **122** | **75** | **227 個 YAML** |
+| [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 0 | **0** |
+| [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** |
+| [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** |
+| **全域總計** | **124** | **75** | **228 個 YAML** |
 
 ---
 
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
-- **常態排程監測總數**：`65` 個工作流程
+- **常態排程監測總數**：`66` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`0` 個
-- **🟢 正常運行（最新一次執行成功）**：`65` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`4` 個
+- **🟢 正常運行（最新一次執行成功）**：`62` 個
 
-> ✅ **目前全域常態排程工作流程運作狀態良好，無任何連續失敗管道。**
+#### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
+
+| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
+|---|---|---|---|:---:|:---:|---|:---:|
+| 1 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Sync to Analyzer | `sync-to-Analyzer.yml` | **2 次** | `❌❌✅✅` | `2026-11-09T19:22:56` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42682790109) |
+| 2 | [wenchiehlee/Selenium-Actions.Auction](https://github.com/wenchiehlee/Selenium-Actions.Auction) | Run Selenium On GitHub Action | `Selenium-Action.yaml` | **2 次** | `❌❌✅✅` | `2026-11-09T23:23:56` | [Run ↗](https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021) |
+| 3 | [ZhongZheng782/Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | Hybrid Scrape & Stage1 Extraction (main) | `hybrid-fetch-and-analyze.yml` | **1 次** | `❌✅✅❌` | `2026-11-09T23:05:37` | [Run ↗](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42717556492) |
+| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅` | `2026-11-09T04:58:56` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017) |
 
 ---
 
-### 📁 `ZhongZheng782` (18 個 Repo · 共 88 個 YAML)
+### 📁 `ZhongZheng782` (18 個 Repo · 共 89 個 YAML)
 
 | # | 儲存庫名稱 | YAML 數 | 工作流程 YAML 清單 |
 |---|---|:---:|---|
@@ -57,9 +67,9 @@
 | 3 | [andy](https://github.com/ZhongZheng782/andy) | **10** | `action-runner.yml`, `calibrate-esc.yml`, `car-test.yml`, `diagnose-reverse.yml`, `runner-monitor.yml`, `setup-donkeycar-env.yml`, `setup-nginx-proxy.yml`, `setup-tailscale-funnel.yml`, `shutdown.yml`, `start-driving.yml` |
 | 4 | [HomeAssistant](https://github.com/ZhongZheng782/HomeAssistant) | **10** | `check-ha-logs.yml`, `check-timetree.yml`, `configure-ha-hacs-xiaomi.yml`, `deploy-homeassistant-synology.yml`, `diagnose-lg-thinq.yml`, `diagnose-timetree-notify.yml`, `diagnose-washer-events.yml`, `update-uptimerobot-readme.yml`, `update-washer-readme.yml`, `update-xiaomi-miot-readme.yml` |
 | 5 | [wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | **8** | `action-runner.yml`, `mkdocs-deploy-synology.yml`, `reboot.yml`, `setup-nas-reverse-proxy.yml`, `setup-tailscale-funnel.yml`, `sync-ddns-table.yml`, `sync-nginx-conf.yml`, `update-uptimerobot-readme.yml` |
-| 6 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
-| 7 | [Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | **4** | `probe-synology-photos-api.yml`, `probe-tailnet-mlx.yml`, `publish-image.yml`, `scout-image.yml` |
-| 8 | [wenchiehlee.quickconnect.to-Container.Manager](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager) | **4** | `actions.yml`, `authorize-ssh-key.yml`, `deploy-on-change.yml`, `deploy.yml` |
+| 6 | [wenchiehlee.quickconnect.to-Container.Manager](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager) | **5** | `actions.yml`, `authorize-ssh-key.yml`, `connect-cdp-net.yml`, `deploy-on-change.yml`, `deploy.yml` |
+| 7 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
+| 8 | [Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | **4** | `probe-synology-photos-api.yml`, `probe-tailnet-mlx.yml`, `publish-image.yml`, `scout-image.yml` |
 | 9 | [Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | **4** | `Actions-fetch-wayback.yaml`, `Actions-fetch.yaml`, `Actions-update-lists.yaml`, `sync-up-forecast.yml` |
 | 10 | [LineMonitoring](https://github.com/ZhongZheng782/LineMonitoring) | **3** | `collect-line-bot-logs.yml`, `deploy-synology-nas.yml`, `mac-runner-smoke.yml` |
 | 11 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **3** | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml` |
@@ -146,5 +156,23 @@
 | 13 | [TAIFEX](https://github.com/wenchiehlee-investment/TAIFEX) | **1** | `fetch-taifex.yml` |
 | 14 | [TaiwanLoanInterest](https://github.com/wenchiehlee-investment/TaiwanLoanInterest) | **1** | `monthly-cbc-update.yaml` |
 | - | *其餘 5 個 Repo* | 0 | *(無 Actions)* |
+
+### 📁 `wenchiehlee-ux` (0 個 Repo · 共 0 個 YAML)
+
+| # | 儲存庫名稱 | YAML 數 | 工作流程 YAML 清單 |
+|---|---|:---:|---|
+| - | *其餘 1 個 Repo* | 0 | *(無 Actions)* |
+
+### 📁 `wenchiehlee-alert` (0 個 Repo · 共 0 個 YAML)
+
+| # | 儲存庫名稱 | YAML 數 | 工作流程 YAML 清單 |
+|---|---|:---:|---|
+| - | *(目前尚無儲存庫)* | 0 | - |
+
+### 📁 `wenchiehlee-life` (0 個 Repo · 共 0 個 YAML)
+
+| # | 儲存庫名稱 | YAML 數 | 工作流程 YAML 清單 |
+|---|---|:---:|---|
+| - | *其餘 1 個 Repo* | 0 | *(無 Actions)* |
 
 <!-- PIPELINE_SUMMARY_END -->
