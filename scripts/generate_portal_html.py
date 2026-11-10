@@ -19,6 +19,8 @@ def generate_portal_html(data: dict, index_html_path: Path):
     taipei_str = f"台北時間 {gen_dt.strftime('%Y-%m-%d')} {taipei_hour:02d}:{gen_dt.strftime('%M:%S')}"
 
     sch = data["scheduled_telemetry"]
+    pg = data.get("pages_telemetry", {})
+    sec = data.get("security_telemetry", {})
     orgs = data["orgs"]
     total_orgs_count = len(orgs)
 
@@ -26,6 +28,21 @@ def generate_portal_html(data: dict, index_html_path: Path):
     warn_count = sch.get("warning_consecutive_1_to_3_count", 0)
     healthy_count = sch.get("healthy_count", 0)
     monitored_schedules = sch.get("total_monitored_schedules", 0)
+
+    total_sites = pg.get("total_sites", 0)
+    built_sites = pg.get("built_sites", 0)
+    errored_sites = pg.get("errored_sites", 0)
+    other_sites = pg.get("other_sites", 0)
+
+    sec_repos = sec.get("secret_scanning_enabled_count", 0)
+    push_repos = sec.get("push_protection_enabled_count", 0)
+    dep_alerts_total = sec.get("total_open_dependabot_alerts", 0)
+    codeql_alerts_total = sec.get("total_open_codeql_alerts", 0)
+    malware_alerts_total = sec.get("total_malware_alerts", 0)
+    total_alerts = dep_alerts_total + codeql_alerts_total + malware_alerts_total
+
+    dep_bd = sec.get("dependabot_breakdown", {})
+    code_bd = sec.get("codeql_breakdown", {})
 
     ns_quartet = f"{data['total_workflows']} / {data['total_repos_with_actions']} / {crit_count} / {warn_count}"
 
@@ -37,6 +54,15 @@ def generate_portal_html(data: dict, index_html_path: Path):
         w_repos = org_info["repos_with_actions"]
         t_wfs = org_info["total_workflows"]
         pct = round(w_repos / t_repos * 100, 1) if t_repos > 0 else 0.0
+
+        org_p = sum(1 for r in org_info["repos"] if r.get("pages", {}).get("enabled"))
+        org_s = sum(1 for r in org_info["repos"] if r.get("security", {}).get("secret_scanning") == "enabled")
+        org_a = sum(
+            r.get("alerts", {}).get("dependabot", {}).get("total", 0) +
+            r.get("alerts", {}).get("code_scanning", {}).get("total", 0)
+            for r in org_info["repos"]
+        )
+        alert_cell = f'<span class="badge-status-warn">{org_a}</span>' if org_a > 0 else '<span style="color:#94a3b8;">0</span>'
         
         org_rows_html += f"""              <tr>
                 <td>
@@ -47,6 +73,9 @@ def generate_portal_html(data: dict, index_html_path: Path):
                 <td style="text-align: center;">{t_repos}</td>
                 <td style="text-align: center;"><span class="badge-repo-count">{w_repos}</span></td>
                 <td style="text-align: center;"><strong class="text-accent">{t_wfs}</strong></td>
+                <td style="text-align: center;"><span class="badge-pages-count">{org_p}</span></td>
+                <td style="text-align: center;"><span class="badge-sec-count">{org_s}</span></td>
+                <td style="text-align: center;">{alert_cell}</td>
                 <td style="text-align: center;">
                   <div class="coverage-bar-wrap">
                     <div class="coverage-bar-track"><div class="coverage-bar-fill" style="width: {pct}%;"></div></div>
@@ -174,6 +203,69 @@ def generate_portal_html(data: dict, index_html_path: Path):
                 </tr>
 """
 
+    # Build Pages Sites Rows
+    pages_rows = ""
+    for idx, s in enumerate(pg.get("sites", []), 1):
+        st = s.get("status")
+        if st == "built":
+            st_pill = '<span class="badge-status-ok">🟢 正常發布 (built)</span>'
+        elif st == "errored":
+            st_pill = '<span class="badge-status-crit">🔴 建置異常 (errored)</span>'
+        else:
+            st_pill = f'<span class="badge-status-pending">⚪ {st or "待命"}</span>'
+
+        url = s.get("url")
+        url_link = f'<a href="{url}" target="_blank" rel="noopener noreferrer" class="live-url-pill-sm"><span>🌐 訪問題站 ↗</span></a>' if url else '<span style="color:#94a3b8;">未生成</span>'
+        vis_pill = '<span class="badge-vis private">🔒 私有</span>' if s.get("is_private") else '<span class="badge-vis public">🌍 公開</span>'
+        build_type = s.get("build_type") or "legacy"
+
+        pages_rows += f"""                <tr>
+                  <td>{idx}</td>
+                  <td><a href="https://github.com/{s['repo']}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{s['repo']}</strong></a></td>
+                  <td>{url_link}</td>
+                  <td style="text-align: center;">{st_pill}</td>
+                  <td style="text-align: center;"><code>{build_type}</code></td>
+                  <td style="text-align: center;">{vis_pill}</td>
+                </tr>
+"""
+
+    # Build Security Alerts Rows
+    sec_alert_rows = ""
+    for idx, ra in enumerate(sec.get("repos_with_alerts", []), 1):
+        dep_c = ra.get("dependabot_total", 0)
+        code_c = ra.get("codeql_total", 0)
+        mal_c = ra.get("malware_total", 0)
+        tot = dep_c + code_c + mal_c
+
+        crit_tot = ra["dependabot_breakdown"].get("critical", 0) + ra["codeql_breakdown"].get("critical", 0)
+        high_tot = ra["dependabot_breakdown"].get("high", 0) + ra["codeql_breakdown"].get("high", 0)
+        med_tot = ra["dependabot_breakdown"].get("medium", 0) + ra["codeql_breakdown"].get("medium", 0)
+        low_tot = ra["dependabot_breakdown"].get("low", 0) + ra["codeql_breakdown"].get("low", 0)
+
+        bd_badges = ""
+        if crit_tot > 0:
+            bd_badges += f'<span class="badge-sev crit">🔴 {crit_tot} Crit</span> '
+        if high_tot > 0:
+            bd_badges += f'<span class="badge-sev high">🟠 {high_tot} High</span> '
+        if med_tot > 0:
+            bd_badges += f'<span class="badge-sev med">🟡 {med_tot} Med</span> '
+        if low_tot > 0:
+            bd_badges += f'<span class="badge-sev low">🔵 {low_tot} Low</span> '
+
+        sec_link = f'<a href="https://github.com/{ra["repo"]}/security" target="_blank" rel="noopener noreferrer" class="btn-table-action">Security ↗</a>'
+
+        sec_alert_rows += f"""                <tr>
+                  <td>{idx}</td>
+                  <td><a href="https://github.com/{ra['repo']}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{ra['repo']}</strong></a></td>
+                  <td style="text-align: center;"><span class="badge-total-alert"><strong>{tot}</strong> 處</span></td>
+                  <td style="text-align: center;">{dep_c} 處</td>
+                  <td style="text-align: center;">{code_c} 處</td>
+                  <td style="text-align: center;">{mal_c} 處</td>
+                  <td>{bd_badges}</td>
+                  <td style="text-align: center;">{sec_link}</td>
+                </tr>
+"""
+
     # Build Org Nav Tabs
     org_nav_tabs_html = f'<button class="org-tab active" data-org="all">全部組織 ({data["total_repos_with_actions"]} Repos · {data["total_workflows"]} YAMLs)</button>\n'
     for org_name, org_info in orgs.items():
@@ -182,28 +274,61 @@ def generate_portal_html(data: dict, index_html_path: Path):
     # Build Org Repo Cards
     repo_cards_html = ""
     for org_name, org_info in orgs.items():
-        active_repos = [r for r in org_info["repos"] if r["workflow_count"] > 0]
-        for r in active_repos:
+        for r in org_info["repos"]:
             repo_name = r["name"]
             full_name = r["full_name"]
             html_url = r["html_url"]
             wf_count = r["workflow_count"]
             wfs = r["workflows"]
-            
+
+            # Badges
+            pg_badge = ""
+            if r.get("pages", {}).get("enabled"):
+                pst = r.get("pages", {}).get("status")
+                purl = r.get("pages", {}).get("url")
+                if pst == "built":
+                    pg_badge = f'<a href="{purl}" target="_blank" rel="noopener noreferrer" class="card-pill pages-built" title="點擊直接訪問 Pages 線上網站">🌐 Pages: Built ↗</a>'
+                elif pst == "errored":
+                    pg_badge = f'<a href="{purl}" target="_blank" rel="noopener noreferrer" class="card-pill pages-errored" title="Pages 建置異常">🔴 Pages: Errored ↗</a>'
+                else:
+                    pg_badge = f'<span class="card-pill pages-other" title="Pages 待命中">⚪ Pages: {pst or "On"}</span>'
+
+            sec_badge = ""
+            if r.get("security", {}).get("secret_scanning") == "enabled":
+                sec_badge = '<span class="card-pill sec-active" title="Secret Scanning & Push Protection 啟用">🛡️ Sec: Active</span>'
+
+            alert_badge = ""
+            dep_c = r.get("alerts", {}).get("dependabot", {}).get("total", 0)
+            code_c = r.get("alerts", {}).get("code_scanning", {}).get("total", 0)
+            tot_a = dep_c + code_c
+            if tot_a > 0:
+                alert_badge = f'<a href="{html_url}/security" target="_blank" rel="noopener noreferrer" class="card-pill alert-active" title="點擊查看待修復安全警報">⚠️ {tot_a} Alerts</a>'
+
             tags_html = ""
             for wf in wfs:
                 wf_url = f"{html_url}/blob/main/.github/workflows/{wf}"
                 tags_html += f'<a href="{wf_url}" target="_blank" rel="noopener noreferrer" class="workflow-tag"><span>📄</span> {wf}</a>\n'
-            
-            repo_cards_html += f"""        <div class="org-repo-card" data-org="{org_name}" data-repo="{repo_name.lower()}" data-workflows="{','.join(wfs).lower()}">
+
+            has_pages_attr = "true" if r.get("pages", {}).get("enabled") else "false"
+            has_alerts_attr = "true" if tot_a > 0 else "false"
+            has_actions_attr = "true" if wf_count > 0 else "false"
+
+            wf_count_badge = f'<span class="org-repo-badge">{wf_count} YAML</span>' if wf_count > 0 else '<span class="org-repo-badge no-wf">0 YAML</span>'
+
+            repo_cards_html += f"""        <div class="org-repo-card" data-org="{org_name}" data-repo="{repo_name.lower()}" data-workflows="{','.join(wfs).lower()}" data-has-pages="{has_pages_attr}" data-has-alerts="{has_alerts_attr}" data-has-actions="{has_actions_attr}">
           <div class="org-repo-header">
             <a href="{html_url}" target="_blank" rel="noopener noreferrer" class="org-repo-title">
               <span>📦</span> {full_name}
             </a>
-            <span class="org-repo-badge">{wf_count} YAML</span>
+            {wf_count_badge}
+          </div>
+          <div class="repo-meta-badges">
+            {pg_badge}
+            {sec_badge}
+            {alert_badge}
           </div>
           <div class="org-workflow-tags">
-            {tags_html}
+            {tags_html if tags_html else '<span class="no-workflows-hint">無工作流程 YAML 檔案</span>'}
           </div>
         </div>
 """
@@ -213,7 +338,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pipeline-Deck · 全域自動化管道與 GitOps 工作流中樞 ({ns_quartet})</title>
+  <title>Pipeline-Deck · 全域自動化管道、發布門戶與資安遙測中樞 ({ns_quartet})</title>
   
   <!-- Pipeline-Deck ⚙️ Tone-Matched Favicon -->
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
@@ -314,14 +439,14 @@ def generate_portal_html(data: dict, index_html_path: Path):
     .subtitle {{
       color: var(--text-muted);
       font-size: 1.05rem;
-      max-width: 900px;
+      max-width: 950px;
       line-height: 1.6;
       margin-bottom: 1.25rem;
     }}
 
     .telemetry-nav-strip {{
       display: flex;
-      gap: 12px;
+      gap: 10px;
       flex-wrap: wrap;
       align-items: center;
       margin-top: 1rem;
@@ -394,6 +519,12 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     .section-badge.badge-health {{
       color: var(--accent-red);
+    }}
+    .section-badge.badge-pages {{
+      color: var(--accent-blue);
+    }}
+    .section-badge.badge-sec {{
+      color: #059669;
     }}
 
     .section-heading {{
@@ -468,7 +599,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
     /* KPI CARDS GRID */
     .kpi-grid {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 1.25rem;
       margin-bottom: 2rem;
     }}
@@ -522,7 +653,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     .kpi-value {{
       font-family: var(--font-display);
-      font-size: 1.85rem;
+      font-size: 1.75rem;
       font-weight: 800;
       line-height: 1.1;
       margin-top: 4px;
@@ -656,6 +787,30 @@ def generate_portal_html(data: dict, index_html_path: Path):
       border: 1px solid #dbeafe;
     }}
 
+    .badge-pages-count {{
+      display: inline-block;
+      background: #eff6ff;
+      color: #2563eb;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #bfdbfe;
+    }}
+
+    .badge-sec-count {{
+      display: inline-block;
+      background: #ecfdf5;
+      color: #059669;
+      font-weight: 700;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid #a7f3d0;
+    }}
+
     .text-accent {{
       color: var(--accent-violet);
       font-family: var(--font-mono);
@@ -758,6 +913,71 @@ def generate_portal_html(data: dict, index_html_path: Path):
       font-size: 0.75rem;
     }}
 
+    .badge-status-pending {{
+      background: #f8fafc;
+      color: #64748b;
+      border: 1px solid #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.75rem;
+    }}
+
+    .badge-vis {{
+      font-size: 0.72rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+    }}
+    .badge-vis.public {{
+      background: #f0fdf4;
+      color: #166534;
+      border: 1px solid #bbf7d0;
+    }}
+    .badge-vis.private {{
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }}
+
+    .badge-total-alert {{
+      background: #fef2f2;
+      color: #dc2626;
+      border: 1px solid #fecaca;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+    }}
+
+    .badge-sev {{
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 4px;
+      margin-right: 4px;
+      display: inline-block;
+    }}
+    .badge-sev.crit {{
+      background: #fef2f2;
+      color: #b91c1c;
+      border: 1px solid #fecaca;
+    }}
+    .badge-sev.high {{
+      background: #fff7ed;
+      color: #c2410c;
+      border: 1px solid #ffedd5;
+    }}
+    .badge-sev.med {{
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fef3c7;
+    }}
+    .badge-sev.low {{
+      background: #eff6ff;
+      color: #1d4ed8;
+      border: 1px solid #dbeafe;
+    }}
+
     .status-run-icons {{
       font-size: 0.95rem;
       letter-spacing: 2px;
@@ -791,6 +1011,25 @@ def generate_portal_html(data: dict, index_html_path: Path):
     .btn-table-action:hover {{
       background: #e2e8f0;
       color: #0f172a;
+    }}
+
+    .live-url-pill-sm {{
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 999px;
+      color: #1d4ed8;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.15s ease;
+    }}
+    .live-url-pill-sm:hover {{
+      background: #dbeafe;
+      transform: translateY(-1px);
     }}
 
     /* ACCORDION */
@@ -850,7 +1089,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
       font-size: 0.85rem;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.15s ease;
+      transition: all 0.2s ease;
     }}
 
     .org-tab:hover {{
@@ -859,48 +1098,79 @@ def generate_portal_html(data: dict, index_html_path: Path):
     }}
 
     .org-tab.active {{
-      background: #7c3aed;
-      border-color: #7c3aed;
+      background: var(--accent-violet);
       color: #ffffff;
+      border-color: var(--accent-violet);
+      box-shadow: 0 2px 8px rgba(124, 58, 237, 0.25);
+    }}
+
+    .org-filter-pills {{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      align-items: center;
+    }}
+
+    .filter-pill {{
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #e2e8f0;
+      background: #f8fafc;
+      color: #64748b;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }}
+
+    .filter-pill:hover {{
+      background: #e2e8f0;
+      color: #1e293b;
+    }}
+
+    .filter-pill.active {{
+      background: #334155;
+      color: #ffffff;
+      border-color: #334155;
     }}
 
     .org-search-wrap {{
       display: flex;
       gap: 12px;
-      margin-bottom: 1.5rem;
       align-items: center;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
     }}
 
     .search-box {{
-      position: relative;
       display: flex;
       align-items: center;
+      gap: 8px;
+      background: #ffffff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 8px 12px;
+      flex: 1;
+      max-width: 480px;
+      transition: border-color 0.2s ease;
     }}
 
-    .search-box span {{
-      position: absolute;
-      left: 12px;
-      color: #94a3b8;
-      font-size: 0.9rem;
+    .search-box:focus-within {{
+      border-color: var(--accent-violet);
+      box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.15);
     }}
 
     .search-box input {{
-      width: 100%;
-      padding: 8px 12px 8px 36px;
-      border-radius: 8px;
-      border: 1px solid #cbd5e1;
-      font-size: 0.88rem;
+      border: none;
       outline: none;
-      transition: all 0.15s ease;
-    }}
-
-    .search-box input:focus {{
-      border-color: #7c3aed;
-      box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+      font-size: 0.88rem;
+      width: 100%;
+      color: #0f172a;
     }}
 
     .org-search-stats {{
-      font-size: 0.82rem;
+      font-size: 0.85rem;
       color: var(--text-dim);
       font-family: var(--font-mono);
     }}
@@ -915,17 +1185,17 @@ def generate_portal_html(data: dict, index_html_path: Path):
       background: #ffffff;
       border: 1px solid var(--border-mid);
       border-radius: 12px;
-      padding: 1.25rem;
+      padding: 1.15rem;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 10px;
       transition: all 0.2s ease;
     }}
 
     .org-repo-card:hover {{
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
       border-color: #cbd5e1;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+      transform: translateY(-2px);
     }}
 
     .org-repo-header {{
@@ -936,67 +1206,133 @@ def generate_portal_html(data: dict, index_html_path: Path):
     }}
 
     .org-repo-title {{
-      font-family: var(--font-display);
       font-size: 0.95rem;
       font-weight: 700;
       color: #0f172a;
       text-decoration: none;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 6px;
-      line-height: 1.3;
+      word-break: break-all;
     }}
 
     .org-repo-title:hover {{
-      color: #7c3aed;
-      text-decoration: underline;
+      color: var(--accent-violet);
     }}
 
     .org-repo-badge {{
-      background: #f5f3ff;
-      border: 1px solid #ddd6fe;
-      color: #6d28d9;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
+      font-family: var(--font-mono);
       padding: 2px 8px;
       border-radius: 999px;
-      flex-shrink: 0;
+      background: var(--accent-violet-light);
+      color: var(--accent-violet);
+      border: 1px solid #ddd6fe;
+      white-space: nowrap;
+    }}
+
+    .org-repo-badge.no-wf {{
+      background: #f8fafc;
+      color: #94a3b8;
+      border-color: #e2e8f0;
+    }}
+
+    .repo-meta-badges {{
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }}
+
+    .card-pill {{
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+    }}
+
+    .card-pill.pages-built {{
+      background: #ecfdf5;
+      color: #065f46;
+      border: 1px solid #a7f3d0;
+    }}
+    .card-pill.pages-built:hover {{
+      background: #d1fae5;
+    }}
+
+    .card-pill.pages-errored {{
+      background: #fef2f2;
+      color: #991b1b;
+      border: 1px solid #fecaca;
+    }}
+    .card-pill.pages-errored:hover {{
+      background: #fee2e2;
+    }}
+
+    .card-pill.pages-other {{
+      background: #f8fafc;
+      color: #64748b;
+      border: 1px solid #e2e8f0;
+    }}
+
+    .card-pill.sec-active {{
+      background: #ecfdf5;
+      color: #047857;
+      border: 1px solid #a7f3d0;
+    }}
+
+    .card-pill.alert-active {{
+      background: #fffbeb;
+      color: #b45309;
+      border: 1px solid #fde68a;
+    }}
+    .card-pill.alert-active:hover {{
+      background: #fef3c7;
     }}
 
     .org-workflow-tags {{
       display: flex;
-      flex-wrap: wrap;
       gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 4px;
     }}
 
     .workflow-tag {{
       display: inline-flex;
       align-items: center;
       gap: 4px;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      padding: 3px 8px;
-      border-radius: 6px;
       background: #f8fafc;
       border: 1px solid #e2e8f0;
-      color: #475569;
+      color: #334155;
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 6px;
       text-decoration: none;
+      font-family: var(--font-mono);
       transition: all 0.15s ease;
     }}
 
     .workflow-tag:hover {{
-      background: #ede9fe;
-      border-color: #c4b5fd;
-      color: #6d28d9;
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: #1d4ed8;
+    }}
+
+    .no-workflows-hint {{
+      font-size: 0.78rem;
+      color: #94a3b8;
+      font-style: italic;
     }}
 
     /* DECK FAMILY FOOTER */
     .deck-family-footer {{
       margin-top: 4rem;
-      padding-top: 2.5rem;
-      border-top: 1px solid #e2e8f0;
-      background: #ffffff;
+      border-top: 2px solid #e2e8f0;
+      padding-top: 2rem;
     }}
 
     .deck-family-header-strip {{
@@ -1005,44 +1341,37 @@ def generate_portal_html(data: dict, index_html_path: Path):
       align-items: center;
       margin-bottom: 1.25rem;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
     }}
 
     .deck-family-title-wrap {{
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-family: var(--font-display);
-      font-weight: 800;
+      gap: 8px;
       font-size: 1.15rem;
+      font-weight: 800;
       color: #0f172a;
+      letter-spacing: -0.01em;
     }}
 
     .deck-family-header-pill {{
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      color: #6d28d9;
-      background: #f5f3ff;
-      border: 1px solid #ddd6fe;
-      padding: 4px 12px;
+      font-size: 0.8rem;
+      color: #475569;
+      background: #f8fafc;
+      padding: 4px 10px;
       border-radius: 999px;
+      border: 1px solid #e2e8f0;
       font-family: var(--font-mono);
     }}
 
     .deck-cards-row {{
       display: grid;
-      grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-      margin-bottom: 2rem;
-    }}
-
-    @media (max-width: 1200px) {{
-      .deck-cards-row {{
-        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      }}
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 12px;
+      margin-bottom: 1.5rem;
     }}
 
     .deck-card {{
@@ -1222,7 +1551,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
       <div class="header-badge">⚙️ PIPELINE-DECK UNIFIED AUTOMATION ENGINE · GITOPS & CI/CD</div>
       <h1>Pipeline-Deck</h1>
       <div class="subtitle">
-        跨生態系 {total_orgs_count} 大核心組織、{data['total_repos_with_actions']} 個活躍儲存庫、{data['total_workflows']} 個工作流程 YAML 與 {monitored_schedules} 個常態排程之全域觀測中樞。落實全域自動化排程定時快照、連續失敗警示與零延遲靜態門戶部署。
+        跨生態系 {total_orgs_count} 大核心組織、{data['total_repos_with_actions']} 個活躍儲存庫、{data['total_workflows']} 個工作流程 YAML、{total_sites} 個 GitHub Pages 發布門戶，以及 {sec_repos} 庫全方位資安防護之全域觀測中樞。
       </div>
 
       <div class="telemetry-nav-strip">
@@ -1230,19 +1559,22 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <span class="pill-pulse"></span> 北極星核心指標 (North Star)：{ns_quartet}
         </span>
         <a href="#ecosystem-telemetry" class="live-url-pill" title="查看全域遙測統計">
-          📊 全域遙測統計 ⬇
+          📊 全域統計 ⬇
         </a>
         <a href="#schedule-health" class="live-url-pill" title="查看常態排程健康度監控">
-          🚨 排程健康監控 ⬇
+          🚨 排程健康 ⬇
+        </a>
+        <a href="#pages-deployments" class="live-url-pill" title="查看 GitHub Pages 發布門戶">
+          🌐 Pages 門戶 ({total_sites}) ⬇
+        </a>
+        <a href="#security-posture" class="live-url-pill" title="查看資安防護與代碼品質">
+          🛡️ 資安與品質 ({total_alerts} 警報) ⬇
         </a>
         <a href="#org-explorer" class="live-url-pill" title="查看 {total_orgs_count} 大組織工作流探索">
-          📁 {total_orgs_count} 大組織工作流 ⬇
+          📁 組織探索 ⬇
         </a>
-        <a href="#deck-family" class="live-url-pill" style="border-color: #c4b5fd; background: #faf5ff; color: #6d28d9;" title="直接前往底部 7 大 Deck 家族導航卡片 ⬇">
-          🦌🐇📊⚙️📈🧠🐳 7 大 Deck 家族 ⬇
-        </a>
-        <a href="https://github.com/wenchiehlee/Pipeline-Deck" target="_blank" rel="noopener noreferrer" class="live-url-pill" title="前往 GitHub 原始庫 ↗">
-          📦 GitHub 原始庫 ↗
+        <a href="#deck-family" class="live-url-pill" style="border-color: #c4b5fd; background: #faf5ff; color: #6d28d9;" title="前往底部 7 大 Deck 家族導航卡片 ⬇">
+          🦌🐇📊⚙️📈🧠🐳 7 大 Deck ⬇
         </a>
       </div>
     </header>
@@ -1259,7 +1591,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
         </div>
       </div>
       <p class="section-desc">
-        全域統計涵蓋 <strong>{total_orgs_count} 大核心組織</strong>，共有 <strong>{data['total_repos']} 個儲存庫</strong>，其中 <strong>{data['total_repos_with_actions']} 個儲存庫</strong> 具備自動化工作流，累計運行 <strong>{data['total_workflows']} 個工作流程 YAML 檔案</strong>。
+        全域統計涵蓋 <strong>{total_orgs_count} 大核心組織</strong>，共有 <strong>{data['total_repos']} 個活躍儲存庫</strong>，其中 <strong>{data['total_repos_with_actions']} 個儲存庫</strong> 具備自動化工作流，累計運行 <strong>{data['total_workflows']} 個工作流程 YAML 檔案</strong>、<strong>{total_sites} 個 GitHub Pages 發布門戶</strong> 與 <strong>{sec_repos} 個資安防護啟用庫</strong>。
       </p>
 
       <!-- NORTH STAR QUARTET HIGHLIGHT BANNER -->
@@ -1284,7 +1616,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <div class="kpi-body">
             <div class="kpi-label">全域工作流程 YAML (規模)</div>
             <div class="kpi-value" id="kpi-total-workflows" style="color: #7c3aed;">{data['total_workflows']} <span class="kpi-unit">個檔案</span></div>
-            <div class="kpi-sub">北極星指標 ① · 跨 {total_orgs_count} 大組織 {data['total_repos_with_actions']} 個庫</div>
+            <div class="kpi-sub">北極星指標 ① · 跨 {total_orgs_count} 組織 {data['total_repos_with_actions']} 庫</div>
           </div>
         </div>
         <div class="kpi-card kpi-featured">
@@ -1297,24 +1629,24 @@ def generate_portal_html(data: dict, index_html_path: Path):
             <div class="kpi-sub">全域自動化比例：<strong>{total_pct}%</strong></div>
           </div>
         </div>
-        <div class="kpi-card" style="border-color: {'#a7f3d0' if crit_count == 0 else '#fecaca'};">
-          <div class="kpi-icon-wrap" style="background: {'#ecfdf5' if crit_count == 0 else '#fef2f2'}; color: {'#059669' if crit_count == 0 else '#dc2626'};">
-            <span>🚨</span>
+        <div class="kpi-card">
+          <div class="kpi-icon-wrap" style="background: #eff6ff; color: #2563eb;">
+            <span>🌐</span>
           </div>
           <div class="kpi-body">
-            <div class="kpi-label">排程嚴重警報 (連續失敗≥4)</div>
-            <div class="kpi-value" id="kpi-critical-failures" style="color: {'#059669' if crit_count == 0 else '#dc2626'};">{crit_count} <span class="kpi-unit">條管道</span></div>
-            <div class="kpi-sub">{'常態健康無嚴重中斷' if crit_count == 0 else '需立即介入排查'}</div>
+            <div class="kpi-label">GitHub Pages 線上發布門戶</div>
+            <div class="kpi-value" style="color: #2563eb;">{total_sites} <span class="kpi-unit">個站點</span></div>
+            <div class="kpi-sub">🟢 <strong>{built_sites}</strong> 正常 · 🔴 <strong>{errored_sites}</strong> 異常</div>
           </div>
         </div>
-        <div class="kpi-card" style="border-color: {'#e2e8f0' if warn_count == 0 else '#fde68a'};">
-          <div class="kpi-icon-wrap" style="background: {'#f8fafc' if warn_count == 0 else '#fffbeb'}; color: {'#64748b' if warn_count == 0 else '#d97706'};">
-            <span>⚠️</span>
+        <div class="kpi-card" style="border-color: {'#a7f3d0' if total_alerts == 0 else '#fde68a'};">
+          <div class="kpi-icon-wrap" style="background: {'#ecfdf5' if total_alerts == 0 else '#fffbeb'}; color: {'#059669' if total_alerts == 0 else '#d97706'};">
+            <span>🛡️</span>
           </div>
           <div class="kpi-body">
-            <div class="kpi-label">排程異常警告 (連續失敗1~3)</div>
-            <div class="kpi-value" id="kpi-warning-failures" style="color: {'#64748b' if warn_count == 0 else '#d97706'};">{warn_count} <span class="kpi-unit">條管道</span></div>
-            <div class="kpi-sub">{'暫無早期失敗警示' if warn_count == 0 else '列入觀測持續追蹤'}</div>
+            <div class="kpi-label">資安防護與待處置警報</div>
+            <div class="kpi-value" style="color: {'#059669' if total_alerts == 0 else '#d97706'};">{sec_repos} <span class="kpi-unit">庫啟用</span></div>
+            <div class="kpi-sub">⚠️ <strong>{total_alerts}</strong> 處待修復 (0 惡意代碼)</div>
           </div>
         </div>
       </div>
@@ -1322,7 +1654,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
       <!-- ORGANIZATIONS BREAKDOWN TABLE -->
       <div class="table-card">
         <div class="table-card-head">
-          <div class="table-card-title">📊 組織與工作流程總覽</div>
+          <div class="table-card-title">📊 組織工作流程、Pages 與資安分佈總覽</div>
           <span class="table-hint">同源於 README.md 全域遙測統計表</span>
         </div>
         <div class="table-responsive">
@@ -1331,8 +1663,11 @@ def generate_portal_html(data: dict, index_html_path: Path):
               <tr>
                 <th>組織 / 帳號 (<code>Owner</code>)</th>
                 <th style="text-align: center;">儲存庫總數</th>
-                <th style="text-align: center;">具備 Actions 庫數</th>
-                <th style="text-align: center;">工作流程 YAML 總數</th>
+                <th style="text-align: center;">具備 Actions 庫</th>
+                <th style="text-align: center;">工作流程 YAML</th>
+                <th style="text-align: center;">Pages 站點</th>
+                <th style="text-align: center;">資安防護庫</th>
+                <th style="text-align: center;">待處置警報</th>
                 <th style="text-align: center;">Actions 覆蓋率</th>
               </tr>
             </thead>
@@ -1342,6 +1677,9 @@ def generate_portal_html(data: dict, index_html_path: Path):
                 <td style="text-align: center;"><strong>{data['total_repos']}</strong></td>
                 <td style="text-align: center;"><strong>{data['total_repos_with_actions']}</strong></td>
                 <td style="text-align: center;"><strong>{data['total_workflows']} 個 YAML</strong></td>
+                <td style="text-align: center;"><strong>{total_sites} 個</strong></td>
+                <td style="text-align: center;"><strong>{sec_repos} 庫</strong></td>
+                <td style="text-align: center;"><strong>{total_alerts} 處</strong></td>
                 <td style="text-align: center;"><strong>{total_pct}%</strong></td>
               </tr>
             </tbody>
@@ -1399,27 +1737,121 @@ def generate_portal_html(data: dict, index_html_path: Path):
       </details>
     </section>
 
-    <!-- SECTION 3: 📁 組織工作流清單探索 (Organization Workflows Explorer) -->
-    <section id="org-explorer" class="section-block">
+    <!-- SECTION 3: 🌐 GitHub Pages 線上發布門戶觀測 -->
+    <section id="pages-deployments" class="section-block">
       <div class="section-header">
         <div class="section-title-wrap">
-          <div class="section-badge">WORKFLOWS EXPLORER</div>
-          <h2 class="section-heading">📁 {total_orgs_count} 大組織儲存庫與工作流程探索 (Organization Explorer)</h2>
+          <div class="section-badge badge-pages">PAGES OBSERVABILITY · {total_sites} SITES</div>
+          <h2 class="section-heading">🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)</h2>
+        </div>
+        <div class="health-summary-pill-group">
+          <span class="health-pill pill-total">Pages 站點總數：<strong>{total_sites}</strong></span>
+          <span class="health-pill pill-ok">🟢 正常發布：<strong>{built_sites}</strong></span>
+          <span class="health-pill pill-crit" style="color: {'#059669' if errored_sites == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_sites == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_sites}</strong></span>
+          <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_sites}</strong></span>
         </div>
       </div>
       <p class="section-desc">
-        依組織切換檢視個別儲存庫的所有 GitHub Actions 工作流程。點擊工作流程標籤可直接連往 GitHub 原始 YAML 代碼。
+        全域跨組織即時監控 GitHub Pages 站點之部署健康狀態、線上公開網址以及建置引擎類型。
+      </p>
+
+      <div class="table-card">
+        <div class="table-card-head">
+          <div class="table-card-title">🌐 GitHub Pages 線上發布站點清單</div>
+          <span class="table-hint">包含 Deck Family 與各專案即時門戶</span>
+        </div>
+        <div class="table-responsive">
+          <table class="telemetry-table" id="pages-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>組織 / 儲存庫</th>
+                <th>線上訪問題站</th>
+                <th style="text-align: center;">建置狀態</th>
+                <th style="text-align: center;">建置管道</th>
+                <th style="text-align: center;">可見性</th>
+              </tr>
+            </thead>
+            <tbody>
+{pages_rows}            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 🛡️ 全域資安防護、Dependabot 與代碼品質觀測 -->
+    <section id="security-posture" class="section-block">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <div class="section-badge badge-sec">SECURITY & CODE QUALITY · {total_alerts} ALERTS</div>
+          <h2 class="section-heading">🛡️ 全域資安防護、Dependabot 與代碼品質觀測 (Security & Quality Posture)</h2>
+        </div>
+        <div class="health-summary-pill-group">
+          <span class="health-pill pill-ok">🛡️ 防護啟用：<strong>{sec_repos}</strong> 庫</span>
+          <span class="health-pill pill-warn">📦 Dependabot 警報：<strong>{dep_alerts_total}</strong> 處</span>
+          <span class="health-pill pill-crit">🔍 CodeQL 漏洞：<strong>{codeql_alerts_total}</strong> 處</span>
+          <span class="health-pill pill-ok">☣️ 惡意代碼：<strong>{malware_alerts_total}</strong> 處</span>
+        </div>
+      </div>
+      <p class="section-desc">
+        全面觀測 GitHub 秘密掃描 (Secret Scanning)、阻擋推送保護 (Push Protection)、Dependabot 自動安全更新與 CodeQL 靜態代碼分析 (SAST) 之落實情況。
+      </p>
+
+      <div class="table-card">
+        <div class="table-card-head">
+          <div class="table-card-title">⚠️ 待處置資安警報與代碼品質儲存庫清單 ({len(sec.get("repos_with_alerts", []))} 庫)</div>
+          <span class="table-hint">點擊右側 Security ↗ 可直達 GitHub 官方安全面板</span>
+        </div>
+        <div class="table-responsive">
+          <table class="telemetry-table" id="security-alerts-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>組織 / 儲存庫</th>
+                <th style="text-align: center;">待處置總數</th>
+                <th style="text-align: center;">Dependabot</th>
+                <th style="text-align: center;">CodeQL</th>
+                <th style="text-align: center;">惡意代碼</th>
+                <th>嚴重等級分佈</th>
+                <th style="text-align: center;">安全儀表板</th>
+              </tr>
+            </thead>
+            <tbody>
+{sec_alert_rows if sec_alert_rows else '<tr><td colspan="8" style="text-align:center; padding: 20px; color:#059669;">✅ 目前全域所有儲存庫無任何待處置安全漏洞！</td></tr>'}            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 📁 組織工作流清單探索 (Organization Workflows Explorer) -->
+    <section id="org-explorer" class="section-block">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <div class="section-badge">WORKFLOWS & REPO EXPLORER</div>
+          <h2 class="section-heading">📁 {total_orgs_count} 大組織儲存庫、Pages 與工作流程探索 (Organization Explorer)</h2>
+        </div>
+      </div>
+      <p class="section-desc">
+        依組織或自訂條件切換檢視個別儲存庫的所有 GitHub Actions 工作流程、Pages 站點與資安防護標記。
       </p>
 
       <div class="org-nav-tabs">
         {org_nav_tabs_html}      </div>
 
+      <div class="org-filter-pills">
+        <span style="font-size: 0.78rem; font-weight: 700; color: #475569; margin-right: 4px;">快篩模式：</span>
+        <button class="filter-pill active" data-filter="all">全部 ({data['total_repos']})</button>
+        <button class="filter-pill" data-filter="has-actions">具備 Actions ({data['total_repos_with_actions']})</button>
+        <button class="filter-pill" data-filter="has-pages">具備 Pages ({total_sites})</button>
+        <button class="filter-pill" data-filter="has-alerts">具備資安警報 ({len(sec.get("repos_with_alerts", []))})</button>
+      </div>
+
       <div class="org-search-wrap">
-        <div class="search-box" style="flex: 1; max-width: 480px;">
+        <div class="search-box">
           <span>🔍</span>
-          <input type="text" id="org-workflow-search" placeholder="在 {data['total_repos_with_actions']} 個儲存庫與 {data['total_workflows']} 個工作流中搜尋 (例如：GoodInfo, docker, sync)...">
+          <input type="text" id="org-workflow-search" placeholder="在 {data['total_repos']} 個儲存庫與 {data['total_workflows']} 個工作流中搜尋 (例如：GoodInfo, docker, sync)...">
         </div>
-        <div class="org-search-stats" id="org-filter-stats">顯示 {data['total_repos_with_actions']} 個儲存庫</div>
+        <div class="org-search-stats" id="org-filter-stats">顯示 {data['total_repos']} 個儲存庫</div>
       </div>
 
       <!-- REPO CATALOG CARDS -->
@@ -1542,16 +1974,16 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <div class="deck-card-head">
             <span class="deck-avatar">⚙️</span>
             <span class="deck-card-title">Pipeline-Deck</span>
-            <span class="deck-tag">CI/CD</span>
+            <span class="deck-tag">CI/CD & Sec</span>
           </div>
           <div class="deck-numbers-compact">
             <div class="stat-line">
               <span class="stat-lbl">工作流程</span>
-              <span class="stat-val">{data['total_workflows']} WFs · {data['total_repos_with_actions']} 庫</span>
+              <span class="stat-val">{data['total_workflows']} WFs · {total_sites} Pages</span>
             </div>
             <div class="stat-line">
-              <span class="stat-lbl">異常警報</span>
-              <span class="stat-val">{crit_count} 嚴重 · {warn_count} 警告</span>
+              <span class="stat-lbl">資安防護</span>
+              <span class="stat-val">{sec_repos} 庫 · {total_alerts} 警報</span>
             </div>
           </div>
           <div class="deck-actions-compact">
@@ -1673,7 +2105,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     <!-- STUDIO FOOTER -->
     <footer class="studio-footer">
-      <div>Pipeline-Deck · 跨生態系 GitHub Actions 排程與自動化觀測中樞</div>
+      <div>Pipeline-Deck · 跨生態系 GitHub Actions 排程、發布門戶與資安遙測中樞</div>
       <div>Designed with 💜 for Deck Family Observability · Powered by GitHub Pages</div>
     </footer>
 
@@ -1687,11 +2119,13 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     // Org Explorer Filter & Search
     const orgTabs = document.querySelectorAll('.org-tab');
+    const filterPills = document.querySelectorAll('.filter-pill');
     const orgRepoCards = document.querySelectorAll('.org-repo-card');
     const orgSearchInput = document.getElementById('org-workflow-search');
     const orgFilterStats = document.getElementById('org-filter-stats');
 
     let currentOrg = 'all';
+    let currentQuickFilter = 'all';
     let currentOrgSearch = '';
 
     function applyOrgFilterAndSearch() {
@@ -1700,10 +2134,19 @@ def generate_portal_html(data: dict, index_html_path: Path):
         const org = card.dataset.org;
         const repoName = card.dataset.repo || '';
         const workflows = card.dataset.workflows || '';
+        const hasPages = card.dataset.hasPages === 'true';
+        const hasAlerts = card.dataset.hasAlerts === 'true';
+        const hasActions = card.dataset.hasActions === 'true';
+
         const matchesOrg = (currentOrg === 'all' || org === currentOrg);
         const matchesSearch = (!currentOrgSearch || repoName.includes(currentOrgSearch) || workflows.includes(currentOrgSearch));
-        
-        if (matchesOrg && matchesSearch) {
+
+        let matchesFilter = true;
+        if (currentQuickFilter === 'has-actions') matchesFilter = hasActions;
+        else if (currentQuickFilter === 'has-pages') matchesFilter = hasPages;
+        else if (currentQuickFilter === 'has-alerts') matchesFilter = hasAlerts;
+
+        if (matchesOrg && matchesSearch && matchesFilter) {
           card.style.display = 'flex';
           visibleCount++;
         } else {
@@ -1720,6 +2163,15 @@ def generate_portal_html(data: dict, index_html_path: Path):
         orgTabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         currentOrg = tab.dataset.org;
+        applyOrgFilterAndSearch();
+      });
+    });
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        currentQuickFilter = pill.dataset.filter;
         applyOrgFilterAndSearch();
       });
     });
