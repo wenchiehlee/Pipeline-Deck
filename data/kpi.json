@@ -1,16 +1,16 @@
 {
   "deck": "Pipeline-Deck",
   "symbol": "⚙️",
-  "north_star": "221 / 72 / 0 / 1",
+  "north_star": "221 / 72 / 0 / 0",
   "metrics": {
     "workflows": 221,
     "repos_with_actions": 72,
     "total_repos": 103,
     "critical_alerts": 0,
-    "warning_alerts": 1,
+    "warning_alerts": 0,
     "monitored_schedules": 64,
     "pages_sites": 17,
-    "pages_built": 15,
+    "pages_built": 16,
     "pages_errored": 1,
     "secret_scanning_repos": 28,
     "push_protection_repos": 28,
@@ -30,9 +30,9 @@
       "label": "資安防護 & 警報",
       "value": "28 庫防護 · 0 處待處置"
     },
-    "bottom_line": "⚡ CI/CD: 221 / 72 / 0 / 1",
+    "bottom_line": "⚡ CI/CD: 221 / 72 / 0 / 0",
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-10T07:10:56.406811+00:00"
+  "updated_at": "2026-11-10T07:28:29.714719+00:00"
 }

@@ -1,27 +1,15 @@
 {
-  "generated_at": "2026-11-10T07:10:56.406811+00:00",
+  "generated_at": "2026-11-10T07:28:29.714719+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 1,
-    "healthy_count": 63,
+    "warning_consecutive_1_to_3_count": 0,
+    "healthy_count": 64,
     "critical_alerts": [],
-    "warning_alerts": [
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-10T07:08:05Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42773165969"
-      }
-    ],
+    "warning_alerts": [],
     "healthy_workflows": [
       {
         "repo": "ZhongZheng782/AI-Usage",
@@ -520,6 +508,17 @@
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "path": ".github/workflows/check-data-health.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅✅❌✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T07:24:28Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42775072509"
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
         "workflow_name": "Monthly Cycle Mapping Refresh",
         "file": "refresh-cycle-mapping-monthly.yml",
         "path": ".github/workflows/refresh-cycle-mapping-monthly.yml",
@@ -720,9 +719,9 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 15,
+    "built_sites": 16,
     "errored_sites": 1,
-    "other_sites": 1,
+    "other_sites": 0,
     "sites": [
       {
         "org": "wenchiehlee-money",
@@ -758,6 +757,15 @@
         "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
         "status": "built",
         "build_type": "legacy",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "InvestorConference",
+        "repo": "wenchiehlee-money/InvestorConference",
+        "url": "https://wenchiehlee-money.github.io/InvestorConference/",
+        "status": "built",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -866,15 +874,6 @@
         "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
         "status": "built",
         "build_type": "legacy",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "InvestorConference",
-        "repo": "wenchiehlee-money/InvestorConference",
-        "url": "https://wenchiehlee-money.github.io/InvestorConference/",
-        "status": null,
-        "build_type": "workflow",
         "is_private": false
       }
     ]
@@ -4159,11 +4158,11 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-10T07:08:05Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42773165969"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅❌✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T07:24:28Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42775072509"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -4265,7 +4264,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/InvestorConference/",
-            "status": null,
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {

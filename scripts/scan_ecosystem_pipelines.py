@@ -204,11 +204,29 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
         p_resp = session.get(f"{repo_url}/pages")
         if p_resp.status_code == 200:
             p_data = p_resp.json()
+            pg_status = p_data.get("status")
+            pg_btype = p_data.get("build_type")
+            # For workflow-based Pages, /pages status is null; query official github-pages deployments state
+            if not pg_status and pg_btype == "workflow":
+                try:
+                    d_resp = session.get(f"{repo_url}/deployments?environment=github-pages&per_page=1", timeout=8)
+                    if d_resp.status_code == 200 and d_resp.json():
+                        st_url = d_resp.json()[0].get("statuses_url")
+                        if st_url:
+                            st_resp = session.get(st_url, timeout=8)
+                            if st_resp.status_code == 200 and st_resp.json():
+                                d_state = st_resp.json()[0].get("state")
+                                if d_state == "success":
+                                    pg_status = "built"
+                                elif d_state in ("failure", "error"):
+                                    pg_status = "errored"
+                except Exception:
+                    pass
             pages_info = {
                 "enabled": True,
                 "url": p_data.get("html_url"),
-                "status": p_data.get("status"),
-                "build_type": p_data.get("build_type")
+                "status": pg_status,
+                "build_type": pg_btype
             }
         else:
             pages_info["enabled"] = True
