@@ -5,7 +5,7 @@
   "metrics": {
     "workflows": 221,
     "repos_with_actions": 72,
-    "total_repos": 108,
+    "total_repos": 105,
     "critical_alerts": 0,
     "warning_alerts": 4,
     "monitored_schedules": 64
@@ -26,5 +26,5 @@
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-10T04:33:30.944799+00:00"
+  "updated_at": "2026-11-10T04:43:24.888150+00:00"
 }

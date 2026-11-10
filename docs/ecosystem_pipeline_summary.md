@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程遙測統計 (Ecosystem Actions Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **108 個儲存庫**，其中 **72 個儲存庫** 具備自動化工作流，累計運行 **221 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-10 04:33:30 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **105 個儲存庫**，其中 **72 個儲存庫** 具備自動化工作流，累計運行 **221 個工作流程 YAML 檔案**。（自動掃描更新於：`2026-11-10 04:43:24 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`221 / 72 / 0 / 4`**（**221** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
@@ -10,13 +10,13 @@
 | 組織 / 帳號 (`Owner`) | 儲存庫總數 | 具備 Actions 的 Repo 數 | 工作流程 YAML 總數 |
 |---|:---:|:---:|:---:|
 | [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **89** |
-| [`wenchiehlee`](https://github.com/wenchiehlee) | 37 | 31 | **68** |
+| [`wenchiehlee`](https://github.com/wenchiehlee) | 35 | 31 | **68** |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** |
-| [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 17 | 12 | **29** |
+| [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 0 | **0** |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** |
-| **全域總計** | **108** | **72** | **221 個 YAML** |
+| **全域總計** | **105** | **72** | **221 個 YAML** |
 
 ---
 
@@ -97,7 +97,7 @@
 | 29 | [Selenium-Action.Goodinfo-Weekly](https://github.com/wenchiehlee/Selenium-Action.Goodinfo-Weekly) | **1** | `Selenium-Action_Template.yaml` |
 | 30 | [shell_gpt](https://github.com/wenchiehlee/shell_gpt) | **1** | `lint_test.yml` |
 | 31 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **1** | `jekyll.yml` |
-| - | *其餘 6 個 Repo* | 0 | *(無 Actions)* |
+| - | *其餘 4 個 Repo* | 0 | *(無 Actions)* |
 
 ### 📁 `wenchiehlee-money` (11 個 Repo · 共 35 個 YAML)
 
@@ -132,7 +132,7 @@
 | 10 | [poorstock](https://github.com/wenchiehlee-investment/poorstock) | **1** | `Actions.yaml` |
 | 11 | [TAIFEX](https://github.com/wenchiehlee-investment/TAIFEX) | **1** | `fetch-taifex.yml` |
 | 12 | [TaiwanLoanInterest](https://github.com/wenchiehlee-investment/TaiwanLoanInterest) | **1** | `monthly-cbc-update.yaml` |
-| - | *其餘 5 個 Repo* | 0 | *(無 Actions)* |
+| - | *其餘 4 個 Repo* | 0 | *(無 Actions)* |
 
 ### 📁 `wenchiehlee-ux` (0 個 Repo · 共 0 個 YAML)
 

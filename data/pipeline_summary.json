@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T04:30:52.943509+00:00",
-  "total_repos": 108,
+  "generated_at": "2026-11-10T04:40:46.026796+00:00",
+  "total_repos": 105,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
   "scheduled_telemetry": {
@@ -194,10 +194,10 @@
         "file": "Actions-fetch.yaml",
         "path": ".github/workflows/Actions-fetch.yaml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅❌✅✅",
+        "recent_4_icons": "✅✅❌✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T02:20:43Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/42742103347"
+        "latest_run_at": "2026-11-10T04:18:47Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/42755052502"
       },
       {
         "repo": "ZhongZheng782/Yahoo.Finance",
@@ -535,10 +535,10 @@
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌❌",
+        "recent_4_icons": "✅❌✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:22:53Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42755497087"
+        "latest_run_at": "2026-11-10T04:36:35Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42756946771"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -1050,7 +1050,7 @@
       ]
     },
     "wenchiehlee": {
-      "total_repos": 37,
+      "total_repos": 35,
       "repos_with_actions": 31,
       "total_workflows": 68,
       "repos": [
@@ -1426,22 +1426,6 @@
           "workflows": []
         },
         {
-          "name": "Python-Actions.doc.twse.com.tw",
-          "full_name": "wenchiehlee/Python-Actions.doc.twse.com.tw",
-          "html_url": "https://github.com/wenchiehlee/Python-Actions.doc.twse.com.tw",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "Python-Actions.PCA",
-          "full_name": "wenchiehlee/Python-Actions.PCA",
-          "html_url": "https://github.com/wenchiehlee/Python-Actions.PCA",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
           "name": "SecureRepoGuard",
           "full_name": "wenchiehlee/SecureRepoGuard",
           "html_url": "https://github.com/wenchiehlee/SecureRepoGuard",
@@ -1705,7 +1689,7 @@
       ]
     },
     "wenchiehlee-investment": {
-      "total_repos": 17,
+      "total_repos": 16,
       "repos_with_actions": 12,
       "total_workflows": 29,
       "repos": [
@@ -1850,14 +1834,6 @@
           "name": "3034.TW",
           "full_name": "wenchiehlee-investment/3034.TW",
           "html_url": "https://github.com/wenchiehlee-investment/3034.TW",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "ForceCancelGithubActions",
-          "full_name": "wenchiehlee-investment/ForceCancelGithubActions",
-          "html_url": "https://github.com/wenchiehlee-investment/ForceCancelGithubActions",
           "is_private": false,
           "workflow_count": 0,
           "workflows": []
