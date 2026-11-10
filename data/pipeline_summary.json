@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10T05:20:32.382759+00:00",
+  "generated_at": "2026-11-10T05:32:31.206525+00:00",
   "total_repos": 104,
   "total_repos_with_actions": 71,
   "total_workflows": 219,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 5,
-    "healthy_count": 59,
+    "warning_consecutive_1_to_3_count": 4,
+    "healthy_count": 60,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -31,17 +31,6 @@
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-09T23:23:56Z",
         "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021"
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-10T05:14:06Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42760833112"
       },
       {
         "repo": "wenchiehlee/Pipeline-Deck",
@@ -553,6 +542,17 @@
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "path": ".github/workflows/check-data-health.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌✅✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T05:20:46Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42761550635"
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
         "workflow_name": "Monthly Cycle Mapping Refresh",
         "file": "refresh-cycle-mapping-monthly.yml",
         "path": ".github/workflows/refresh-cycle-mapping-monthly.yml",
@@ -892,523 +892,22 @@
     "secret_scanning_enabled_count": 29,
     "push_protection_enabled_count": 29,
     "dependabot_updates_enabled_count": 26,
-    "total_open_dependabot_alerts": 12,
+    "total_open_dependabot_alerts": 0,
     "dependabot_breakdown": {
       "critical": 0,
-      "high": 5,
-      "medium": 3,
-      "low": 4
+      "high": 0,
+      "medium": 0,
+      "low": 0
     },
-    "total_open_codeql_alerts": 34,
+    "total_open_codeql_alerts": 0,
     "codeql_breakdown": {
-      "critical": 4,
-      "high": 17,
-      "medium": 13,
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
       "low": 0
     },
     "total_malware_alerts": 0,
-    "repos_with_alerts": [
-      {
-        "repo": "wenchiehlee/skills",
-        "org": "wenchiehlee",
-        "is_private": false,
-        "dependabot_total": 0,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "dependabot_items": [],
-        "codeql_total": 25,
-        "codeql_breakdown": {
-          "critical": 4,
-          "high": 8,
-          "medium": 13,
-          "low": 0
-        },
-        "codeql_items": [
-          {
-            "number": 25,
-            "rule_id": "py/command-line-injection",
-            "description": "Uncontrolled command line",
-            "severity": "critical",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/25"
-          },
-          {
-            "number": 24,
-            "rule_id": "py/command-line-injection",
-            "description": "Uncontrolled command line",
-            "severity": "critical",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/24"
-          },
-          {
-            "number": 23,
-            "rule_id": "py/command-line-injection",
-            "description": "Uncontrolled command line",
-            "severity": "critical",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/23"
-          },
-          {
-            "number": 22,
-            "rule_id": "py/command-line-injection",
-            "description": "Uncontrolled command line",
-            "severity": "critical",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/22"
-          },
-          {
-            "number": 21,
-            "rule_id": "py/path-injection",
-            "description": "Uncontrolled data used in path expression",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/21"
-          },
-          {
-            "number": 20,
-            "rule_id": "py/incomplete-url-substring-sanitization",
-            "description": "Incomplete URL substring sanitization",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/20"
-          },
-          {
-            "number": 19,
-            "rule_id": "py/incomplete-url-substring-sanitization",
-            "description": "Incomplete URL substring sanitization",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/19"
-          },
-          {
-            "number": 18,
-            "rule_id": "py/incomplete-url-substring-sanitization",
-            "description": "Incomplete URL substring sanitization",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/18"
-          },
-          {
-            "number": 17,
-            "rule_id": "py/incomplete-url-substring-sanitization",
-            "description": "Incomplete URL substring sanitization",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/17"
-          },
-          {
-            "number": 16,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/16"
-          },
-          {
-            "number": 15,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/15"
-          },
-          {
-            "number": 14,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/14"
-          },
-          {
-            "number": 13,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/13"
-          },
-          {
-            "number": 12,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/12"
-          },
-          {
-            "number": 11,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/11"
-          },
-          {
-            "number": 10,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/10"
-          },
-          {
-            "number": 9,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/9"
-          },
-          {
-            "number": 8,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/8"
-          },
-          {
-            "number": 7,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/7"
-          },
-          {
-            "number": 6,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/6"
-          },
-          {
-            "number": 5,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/5"
-          },
-          {
-            "number": 4,
-            "rule_id": "py/stack-trace-exposure",
-            "description": "Information exposure through an exception",
-            "severity": "medium",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/4"
-          },
-          {
-            "number": 3,
-            "rule_id": "py/clear-text-logging-sensitive-data",
-            "description": "Clear-text logging of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/3"
-          },
-          {
-            "number": 2,
-            "rule_id": "py/clear-text-logging-sensitive-data",
-            "description": "Clear-text logging of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/2"
-          },
-          {
-            "number": 1,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/1"
-          }
-        ],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "wenchiehlee/mcp-cli",
-        "org": "wenchiehlee",
-        "is_private": false,
-        "dependabot_total": 6,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 1,
-          "medium": 1,
-          "low": 4
-        },
-        "dependabot_items": [
-          {
-            "number": 6,
-            "package": "rustls",
-            "severity": "low",
-            "summary": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/6"
-          },
-          {
-            "number": 5,
-            "package": "rustls",
-            "severity": "medium",
-            "summary": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/5"
-          },
-          {
-            "number": 4,
-            "package": "rustls",
-            "severity": "low",
-            "summary": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/4"
-          },
-          {
-            "number": 3,
-            "package": "rustls-webpki",
-            "severity": "high",
-            "summary": "rustls-webpki: Denial of service via panic on malformed CRL BIT STRING",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/3"
-          },
-          {
-            "number": 2,
-            "package": "rustls-webpki",
-            "severity": "low",
-            "summary": "webpki: Name constraints were accepted for certificates asserting a wildcard name",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/2"
-          },
-          {
-            "number": 1,
-            "package": "rustls-webpki",
-            "severity": "low",
-            "summary": "webpki: Name constraints for URI names were incorrectly accepted",
-            "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/1"
-          }
-        ],
-        "codeql_total": 0,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "org": "wenchiehlee",
-        "is_private": false,
-        "dependabot_total": 0,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "dependabot_items": [],
-        "codeql_total": 5,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 5,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [
-          {
-            "number": 5,
-            "rule_id": "py/clear-text-logging-sensitive-data",
-            "description": "Clear-text logging of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/5"
-          },
-          {
-            "number": 4,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/4"
-          },
-          {
-            "number": 3,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/3"
-          },
-          {
-            "number": 2,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/2"
-          },
-          {
-            "number": 1,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/1"
-          }
-        ],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "org": "wenchiehlee-money",
-        "is_private": true,
-        "dependabot_total": 4,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 4,
-          "medium": 0,
-          "low": 0
-        },
-        "dependabot_items": [
-          {
-            "number": 48,
-            "package": "pyasn1",
-            "severity": "high",
-            "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/48"
-          },
-          {
-            "number": 47,
-            "package": "pyasn1",
-            "severity": "high",
-            "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/47"
-          },
-          {
-            "number": 46,
-            "package": "pyasn1",
-            "severity": "high",
-            "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/46"
-          },
-          {
-            "number": 45,
-            "package": "pyasn1",
-            "severity": "high",
-            "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/45"
-          }
-        ],
-        "codeql_total": 0,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "wenchiehlee/Analytics-Deck",
-        "org": "wenchiehlee",
-        "is_private": false,
-        "dependabot_total": 0,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "dependabot_items": [],
-        "codeql_total": 4,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 4,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [
-          {
-            "number": 4,
-            "rule_id": "py/incomplete-url-substring-sanitization",
-            "description": "Incomplete URL substring sanitization",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/4"
-          },
-          {
-            "number": 3,
-            "rule_id": "py/clear-text-logging-sensitive-data",
-            "description": "Clear-text logging of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/3"
-          },
-          {
-            "number": 2,
-            "rule_id": "py/clear-text-logging-sensitive-data",
-            "description": "Clear-text logging of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/2"
-          },
-          {
-            "number": 1,
-            "rule_id": "py/clear-text-storage-sensitive-data",
-            "description": "Clear-text storage of sensitive information",
-            "severity": "high",
-            "tool": "CodeQL",
-            "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/1"
-          }
-        ],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "ZhongZheng782/Llm-Cli-APIServer",
-        "org": "ZhongZheng782",
-        "is_private": true,
-        "dependabot_total": 2,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 2,
-          "low": 0
-        },
-        "dependabot_items": [
-          {
-            "number": 27,
-            "package": "minimatch",
-            "severity": "medium",
-            "summary": "minimatch has potential denial of service via globparts amplification",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/27"
-          },
-          {
-            "number": 26,
-            "package": "glob",
-            "severity": "medium",
-            "summary": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/26"
-          }
-        ],
-        "codeql_total": 0,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [],
-        "malware_total": 0,
-        "malware_items": []
-      }
-    ]
+    "repos_with_alerts": []
   },
   "orgs": {
     "ZhongZheng782": {
@@ -1885,27 +1384,12 @@
           },
           "alerts": {
             "dependabot": {
-              "total": 2,
+              "total": 0,
               "critical": 0,
               "high": 0,
-              "medium": 2,
+              "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 27,
-                  "package": "minimatch",
-                  "severity": "medium",
-                  "summary": "minimatch has potential denial of service via globparts amplification",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/27"
-                },
-                {
-                  "number": 26,
-                  "package": "glob",
-                  "severity": "medium",
-                  "summary": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/26"
-                }
-              ]
+              "items": []
             },
             "code_scanning": {
               "total": 0,
@@ -3097,55 +2581,12 @@
           },
           "alerts": {
             "dependabot": {
-              "total": 6,
+              "total": 0,
               "critical": 0,
-              "high": 1,
-              "medium": 1,
-              "low": 4,
-              "items": [
-                {
-                  "number": 6,
-                  "package": "rustls",
-                  "severity": "low",
-                  "summary": "rustls: An unauthenticated ServerHello poisons the per-name key-exchange record, so later ClientHellos carry only a classical X25519 share",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/6"
-                },
-                {
-                  "number": 5,
-                  "package": "rustls",
-                  "severity": "medium",
-                  "summary": "Rustls: Session Debug formatting exposes TLS master secrets and resumption PSKs",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/5"
-                },
-                {
-                  "number": 4,
-                  "package": "rustls",
-                  "severity": "low",
-                  "summary": "Rustls: Brotli certificate decompression can allocate an attacker-controlled amount of memory up to 1 GiB before authentication.",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/4"
-                },
-                {
-                  "number": 3,
-                  "package": "rustls-webpki",
-                  "severity": "high",
-                  "summary": "rustls-webpki: Denial of service via panic on malformed CRL BIT STRING",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/3"
-                },
-                {
-                  "number": 2,
-                  "package": "rustls-webpki",
-                  "severity": "low",
-                  "summary": "webpki: Name constraints were accepted for certificates asserting a wildcard name",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/2"
-                },
-                {
-                  "number": 1,
-                  "package": "rustls-webpki",
-                  "severity": "low",
-                  "summary": "webpki: Name constraints for URI names were incorrectly accepted",
-                  "html_url": "https://github.com/wenchiehlee/mcp-cli/security/dependabot/1"
-                }
-              ]
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
             },
             "code_scanning": {
               "total": 0,
@@ -3864,213 +3305,12 @@
               "items": []
             },
             "code_scanning": {
-              "total": 25,
-              "critical": 4,
-              "high": 8,
-              "medium": 13,
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 25,
-                  "rule_id": "py/command-line-injection",
-                  "description": "Uncontrolled command line",
-                  "severity": "critical",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/25"
-                },
-                {
-                  "number": 24,
-                  "rule_id": "py/command-line-injection",
-                  "description": "Uncontrolled command line",
-                  "severity": "critical",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/24"
-                },
-                {
-                  "number": 23,
-                  "rule_id": "py/command-line-injection",
-                  "description": "Uncontrolled command line",
-                  "severity": "critical",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/23"
-                },
-                {
-                  "number": 22,
-                  "rule_id": "py/command-line-injection",
-                  "description": "Uncontrolled command line",
-                  "severity": "critical",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/22"
-                },
-                {
-                  "number": 21,
-                  "rule_id": "py/path-injection",
-                  "description": "Uncontrolled data used in path expression",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/21"
-                },
-                {
-                  "number": 20,
-                  "rule_id": "py/incomplete-url-substring-sanitization",
-                  "description": "Incomplete URL substring sanitization",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/20"
-                },
-                {
-                  "number": 19,
-                  "rule_id": "py/incomplete-url-substring-sanitization",
-                  "description": "Incomplete URL substring sanitization",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/19"
-                },
-                {
-                  "number": 18,
-                  "rule_id": "py/incomplete-url-substring-sanitization",
-                  "description": "Incomplete URL substring sanitization",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/18"
-                },
-                {
-                  "number": 17,
-                  "rule_id": "py/incomplete-url-substring-sanitization",
-                  "description": "Incomplete URL substring sanitization",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/17"
-                },
-                {
-                  "number": 16,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/16"
-                },
-                {
-                  "number": 15,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/15"
-                },
-                {
-                  "number": 14,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/14"
-                },
-                {
-                  "number": 13,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/13"
-                },
-                {
-                  "number": 12,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/12"
-                },
-                {
-                  "number": 11,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/11"
-                },
-                {
-                  "number": 10,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/10"
-                },
-                {
-                  "number": 9,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/9"
-                },
-                {
-                  "number": 8,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/8"
-                },
-                {
-                  "number": 7,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/7"
-                },
-                {
-                  "number": 6,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/6"
-                },
-                {
-                  "number": 5,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/5"
-                },
-                {
-                  "number": 4,
-                  "rule_id": "py/stack-trace-exposure",
-                  "description": "Information exposure through an exception",
-                  "severity": "medium",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/4"
-                },
-                {
-                  "number": 3,
-                  "rule_id": "py/clear-text-logging-sensitive-data",
-                  "description": "Clear-text logging of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/3"
-                },
-                {
-                  "number": 2,
-                  "rule_id": "py/clear-text-logging-sensitive-data",
-                  "description": "Clear-text logging of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/2"
-                },
-                {
-                  "number": 1,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/skills/security/code-scanning/1"
-                }
-              ]
+              "items": []
             },
             "malware": {
               "total": 0,
@@ -4282,45 +3522,12 @@
               "items": []
             },
             "code_scanning": {
-              "total": 4,
+              "total": 0,
               "critical": 0,
-              "high": 4,
+              "high": 0,
               "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 4,
-                  "rule_id": "py/incomplete-url-substring-sanitization",
-                  "description": "Incomplete URL substring sanitization",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/4"
-                },
-                {
-                  "number": 3,
-                  "rule_id": "py/clear-text-logging-sensitive-data",
-                  "description": "Clear-text logging of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/3"
-                },
-                {
-                  "number": 2,
-                  "rule_id": "py/clear-text-logging-sensitive-data",
-                  "description": "Clear-text logging of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/2"
-                },
-                {
-                  "number": 1,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Analytics-Deck/security/code-scanning/1"
-                }
-              ]
+              "items": []
             },
             "malware": {
               "total": 0,
@@ -4564,53 +3771,12 @@
               "items": []
             },
             "code_scanning": {
-              "total": 5,
+              "total": 0,
               "critical": 0,
-              "high": 5,
+              "high": 0,
               "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 5,
-                  "rule_id": "py/clear-text-logging-sensitive-data",
-                  "description": "Clear-text logging of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/5"
-                },
-                {
-                  "number": 4,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/4"
-                },
-                {
-                  "number": 3,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/3"
-                },
-                {
-                  "number": 2,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/2"
-                },
-                {
-                  "number": 1,
-                  "rule_id": "py/clear-text-storage-sensitive-data",
-                  "description": "Clear-text storage of sensitive information",
-                  "severity": "high",
-                  "tool": "CodeQL",
-                  "html_url": "https://github.com/wenchiehlee/Pipeline-Deck/security/code-scanning/1"
-                }
-              ]
+              "items": []
             },
             "malware": {
               "total": 0,
@@ -5044,11 +4210,11 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-10T05:14:06Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42760833112"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T05:20:46Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42761550635"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -5086,41 +4252,12 @@
           },
           "alerts": {
             "dependabot": {
-              "total": 4,
+              "total": 0,
               "critical": 0,
-              "high": 4,
+              "high": 0,
               "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 48,
-                  "package": "pyasn1",
-                  "severity": "high",
-                  "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/48"
-                },
-                {
-                  "number": 47,
-                  "package": "pyasn1",
-                  "severity": "high",
-                  "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/47"
-                },
-                {
-                  "number": 46,
-                  "package": "pyasn1",
-                  "severity": "high",
-                  "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/46"
-                },
-                {
-                  "number": 45,
-                  "package": "pyasn1",
-                  "severity": "high",
-                  "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/45"
-                }
-              ]
+              "items": []
             },
             "code_scanning": {
               "total": 0,
