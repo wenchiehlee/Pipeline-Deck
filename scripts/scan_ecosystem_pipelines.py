@@ -92,6 +92,9 @@ def get_github_token() -> str:
         return ""
 
 def create_session(token: str) -> requests.Session:
+    from urllib3.util import Retry
+    from requests.adapters import HTTPAdapter
+
     session = requests.Session()
     session.headers.update({
         "Accept": "application/vnd.github.v3+json",
@@ -99,6 +102,16 @@ def create_session(token: str) -> requests.Session:
     })
     if token:
         session.headers["Authorization"] = f"Bearer {token}"
+    
+    retry_strategy = Retry(
+        total=5,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+        raise_on_status=False
+    )
+    adapter = HTTPAdapter(max_retries=retry_strategy, pool_connections=25, pool_maxsize=25)
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
     return session
 
 def fetch_org_repos(session: requests.Session, org: str):
@@ -420,7 +433,7 @@ def scan_ecosystem():
     all_repo_results = []
     all_schedules = []
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         future_map = {
             executor.submit(scan_single_repo, session, org, repo): (org, repo["full_name"])
             for org, repo in all_repo_targets

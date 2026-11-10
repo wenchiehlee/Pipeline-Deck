@@ -21,22 +21,22 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **104 個活躍儲存庫**（排除已封存庫），其中 **71 個儲存庫** 具備自動化工作流，累計運行 **219 個工作流程 YAML 檔案**、**18 個 GitHub Pages 線上門戶**，以及 **29 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-10 05:33:12 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **70 個儲存庫** 具備自動化工作流，累計運行 **218 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-10 06:04:26 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`219 / 71 / 0 / 4`**（**219** 個工作流程 YAML · **71** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`218 / 70 / 0 / 2`**（**218** 個工作流程 YAML · **70** 個活躍 Actions 庫 · **0** 個嚴重警報 · **2** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
 | 組織 / 帳號 (`Owner`) | 活躍儲存庫數 | 具備 Actions 的 Repo | 工作流程 YAML 數 | Pages 發布站點 | 資安防護啟用庫 | 待處置警報總數 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **89** | 2 | 2 | 0 |
-| [`wenchiehlee`](https://github.com/wenchiehlee) | 34 | 30 | **66** | 9 | 27 | 0 |
+| [`wenchiehlee`](https://github.com/wenchiehlee) | 33 | 29 | **65** | 8 | 26 | 0 |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 0 | 0 |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** | 1 | 0 | 0 |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 0 | **0** | 1 | 0 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 0 | 0 |
-| **全域總計** | **104** | **71** | **219 個 YAML** | **18 站點** | **29 庫** | **0 處** |
+| **全域總計** | **103** | **70** | **218 個 YAML** | **17 站點** | **28 庫** | **0 處** |
 
 ---
 
@@ -44,26 +44,24 @@
 
 - **常態排程監測總數**：`64` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`4` 個
-- **🟢 正常運行（最新一次執行成功）**：`60` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
+- **🟢 正常運行（最新一次執行成功）**：`62` 個
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Sync to Analyzer | `sync-to-Analyzer.yml` | **2 次** | `❌❌✅✅` | `2026-11-09T19:22:56` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42682790109) |
-| 2 | [wenchiehlee/Selenium-Actions.Auction](https://github.com/wenchiehlee/Selenium-Actions.Auction) | Run Selenium On GitHub Action | `Selenium-Action.yaml` | **2 次** | `❌❌✅✅` | `2026-11-09T23:23:56` | [Run ↗](https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021) |
-| 3 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅` | `2026-11-09T04:58:56` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017) |
-| 4 | [wenchiehlee/Python-Actions.FinMind](https://github.com/wenchiehlee/Python-Actions.FinMind) | Daily FinMind status | `daily-finmind-status.yml` | **1 次** | `❌✅✅❌` | `2026-11-10T04:40:59` | [Run ↗](https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679) |
+| 1 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅` | `2026-11-09T04:58:56` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017) |
+| 2 | [wenchiehlee/Python-Actions.FinMind](https://github.com/wenchiehlee/Python-Actions.FinMind) | Daily FinMind status | `daily-finmind-status.yml` | **1 次** | `❌✅✅❌` | `2026-11-10T04:40:59` | [Run ↗](https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679) |
 
 ---
 
 ### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)
 
-- **Pages 發布站點總數**：`18` 個站點
+- **Pages 發布站點總數**：`17` 個站點
 - **🟢 正常發布 (`built`)**：`15` 個
 - **🔴 建置異常 (`errored`)**：`1` 個
-- **⚪ 其他/初始待命中 (`other`)**：`2` 個
+- **⚪ 其他/初始待命中 (`other`)**：`1` 個
 
 | # | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |
 |---|---|---|---|:---:|:---:|:---:|
@@ -78,21 +76,20 @@
 | 9 | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 10 | [wenchiehlee/mkdocs-investment](https://github.com/wenchiehlee/mkdocs-investment) | 🐂🐻 幾何狂牛/守護熊 (`大盤資產配置與避險`) | [https://wenchiehlee.github.io/mkdocs-investment/](https://wenchiehlee.github.io/mkdocs-investment/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 11 | [wenchiehlee/mkdocs-life](https://github.com/wenchiehlee/mkdocs-life) | 🦌 幾何林鹿 (`溫潤人文生活誌`) | [https://wenchiehlee.github.io/mkdocs-life/](https://wenchiehlee.github.io/mkdocs-life/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 12 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | ⚙️ 齒輪引擎 (`CI/CD 與自動化管道中樞`) | [https://wenchiehlee.github.io/Pipeline-Deck/](https://wenchiehlee.github.io/Pipeline-Deck/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 12 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | ⚙️ 齒輪引擎 (`CI/CD 與自動化管道中樞`) | [https://wenchiehlee.github.io/Pipeline-Deck/](https://wenchiehlee.github.io/Pipeline-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 13 | [wenchiehlee/skills](https://github.com/wenchiehlee/skills) | 🐇 敏捷白兔 (`共享技能登錄庫`) | [https://wenchiehlee.github.io/skills/](https://wenchiehlee.github.io/skills/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 14 | [wenchiehlee/wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | 👤 個人旗艦 (`個人官方主站門戶`) | [https://wenchiehlee.github.io/](https://wenchiehlee.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 15 | [ZhongZheng782/Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | 🐿️ 採集松鼠 (`AI 相片智慧標籤`) | [https://zhongzheng782.github.io/Synology-Photo-Tagger/](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 16 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 17 | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | ⚪ None | `workflow` | 🌍 公開 |
-| 18 | [wenchiehlee/mkdocs-demo](https://github.com/wenchiehlee/mkdocs-demo) | 🧪 介面範本 (`互動展示模版`) | [https://wenchiehlee.github.io/mkdocs-demo/](https://wenchiehlee.github.io/mkdocs-demo/) | ⚪ None | `workflow` | 🌍 公開 |
 
 ---
 
 ### 🛡️ 全域資安防護、Dependabot 與代碼品質觀測 (Security Posture & Code Quality)
 
-- **秘密掃描防護 (Secret Scanning)**：`29` 個儲存庫啟用
-- **阻擋推送防護 (Push Protection)**：`29` 個儲存庫啟用
-- **Dependabot 自動安全修正**：`26` 個儲存庫啟用
+- **秘密掃描防護 (Secret Scanning)**：`28` 個儲存庫啟用
+- **阻擋推送防護 (Push Protection)**：`28` 個儲存庫啟用
+- **Dependabot 自動安全修正**：`25` 個儲存庫啟用
 - **Dependabot 待修復警報**：`0` 處（🔴 0 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
 - **CodeQL 代碼品質與安全漏洞**：`0` 處（🔴 0 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
 - **惡意代碼與外洩警報 (Malware / Leaks)**：`0` 處
@@ -125,7 +122,7 @@
 | 18 | [TravelAPP](https://github.com/ZhongZheng782/TravelAPP) | **1** | - | ⚪ 預設 | 0 | `deploy-synology-nas.yml` |
 | - | *其餘 9 個 Repo* | 0 | - | - | - | *(無 Actions)* |
 
-### 📁 `wenchiehlee` (30 個 Repo · 共 66 個 YAML)
+### 📁 `wenchiehlee` (29 個 Repo · 共 65 個 YAML)
 
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
@@ -152,13 +149,12 @@
 | 21 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
 | 22 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | ⚪ 預設 | 0 | `action.yml` |
 | 23 | [llm](https://github.com/wenchiehlee/llm) | **1** | - | 🛡️ 啟用 | 0 | `update-stats.yml` |
-| 24 | [mkdocs-demo](https://github.com/wenchiehlee/mkdocs-demo) | **1** | [🔴 None](https://wenchiehlee.github.io/mkdocs-demo/) | 🛡️ 啟用 | 0 | `deploy.yml` |
-| 25 | [Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Pipeline-Deck/) | 🛡️ 啟用 | 0 | `renew-pipeline-telemetry.yml` |
-| 26 | [Python-Actions.ChatGPTAutomation](https://github.com/wenchiehlee/Python-Actions.ChatGPTAutomation) | **1** | - | 🛡️ 啟用 | 0 | `Actions.yaml` |
-| 27 | [Python.TWSE-History](https://github.com/wenchiehlee/Python.TWSE-History) | **1** | - | 🛡️ 啟用 | 0 | `TWSE-API-Action.yaml` |
-| 28 | [Selenium-Action.Goodinfo-Weekly](https://github.com/wenchiehlee/Selenium-Action.Goodinfo-Weekly) | **1** | - | ⚪ 預設 | 0 | `Selenium-Action_Template.yaml` |
-| 29 | [shell_gpt](https://github.com/wenchiehlee/shell_gpt) | **1** | - | ⚪ 預設 | 0 | `lint_test.yml` |
-| 30 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **1** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `jekyll.yml` |
+| 24 | [Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Pipeline-Deck/) | 🛡️ 啟用 | 0 | `renew-pipeline-telemetry.yml` |
+| 25 | [Python-Actions.ChatGPTAutomation](https://github.com/wenchiehlee/Python-Actions.ChatGPTAutomation) | **1** | - | 🛡️ 啟用 | 0 | `Actions.yaml` |
+| 26 | [Python.TWSE-History](https://github.com/wenchiehlee/Python.TWSE-History) | **1** | - | 🛡️ 啟用 | 0 | `TWSE-API-Action.yaml` |
+| 27 | [Selenium-Action.Goodinfo-Weekly](https://github.com/wenchiehlee/Selenium-Action.Goodinfo-Weekly) | **1** | - | ⚪ 預設 | 0 | `Selenium-Action_Template.yaml` |
+| 28 | [shell_gpt](https://github.com/wenchiehlee/shell_gpt) | **1** | - | ⚪ 預設 | 0 | `lint_test.yml` |
+| 29 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **1** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `jekyll.yml` |
 | - | *其餘 4 個 Repo* | 0 | - | - | - | *(無 Actions)* |
 
 ### 📁 `wenchiehlee-money` (11 個 Repo · 共 35 個 YAML)

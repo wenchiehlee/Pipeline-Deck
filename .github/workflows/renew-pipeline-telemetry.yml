@@ -4,11 +4,26 @@ on:
   schedule:
     # 每日台北時間 08:00 (UTC 00:00) 自動掃描、分析連續失敗並更新
     - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "index.html"
+      - "data/**"
+      - "docs/**"
+      - "scripts/**"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
   contents: write
   actions: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-and-telemetry
+  cancel-in-progress: false
 
 jobs:
   telemetry-renew:
@@ -45,3 +60,26 @@ jobs:
             git commit -m "chore(telemetry): update ecosystem actions & schedule failure telemetry [skip ci]"
             git push
           fi
+
+  deploy-pages:
+    needs: telemetry-renew
+    if: always() && (needs.telemetry-renew.result == 'success' || needs.telemetry-renew.result == 'skipped')
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

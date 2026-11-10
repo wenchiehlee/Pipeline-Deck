@@ -1,37 +1,15 @@
 {
-  "generated_at": "2026-11-10T05:32:31.206525+00:00",
-  "total_repos": 104,
-  "total_repos_with_actions": 71,
-  "total_workflows": 219,
+  "generated_at": "2026-11-10T06:01:37.145519+00:00",
+  "total_repos": 103,
+  "total_repos_with_actions": 70,
+  "total_workflows": 218,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 60,
+    "warning_consecutive_1_to_3_count": 2,
+    "healthy_count": 62,
     "critical_alerts": [],
     "warning_alerts": [
-      {
-        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
-        "workflow_name": "Sync to Analyzer",
-        "file": "sync-to-Analyzer.yml",
-        "path": ".github/workflows/sync-to-Analyzer.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-09T19:22:56Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42682790109"
-      },
-      {
-        "repo": "wenchiehlee/Selenium-Actions.Auction",
-        "workflow_name": "Run Selenium On GitHub Action",
-        "file": "Selenium-Action.yaml",
-        "path": ".github/workflows/Selenium-Action.yaml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-09T23:23:56Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021"
-      },
       {
         "repo": "wenchiehlee/Pipeline-Deck",
         "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
@@ -163,8 +141,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T05:11:14Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42760519601"
+        "latest_run_at": "2026-11-10T05:54:15Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42765006819"
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -295,8 +273,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-09T04:12:12Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42560483628"
+        "latest_run_at": "2026-11-10T05:40:15Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42763572769"
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -407,6 +385,17 @@
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-09T18:31:16Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42674733330"
+      },
+      {
+        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+        "workflow_name": "Sync to Analyzer",
+        "file": "sync-to-Analyzer.yml",
+        "path": ".github/workflows/sync-to-Analyzer.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T05:53:58Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42764977756"
       },
       {
         "repo": "wenchiehlee-investment/TAIFEX",
@@ -546,10 +535,10 @@
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅❌✅✅",
+        "recent_4_icons": "✅✅✅❌",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T05:20:46Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42761550635"
+        "latest_run_at": "2026-11-10T05:56:57Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42765278539"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -651,6 +640,17 @@
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/42663361407"
       },
       {
+        "repo": "wenchiehlee/Selenium-Actions.Auction",
+        "workflow_name": "Run Selenium On GitHub Action",
+        "file": "Selenium-Action.yaml",
+        "path": ".github/workflows/Selenium-Action.yaml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T05:54:57Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42765077005"
+      },
+      {
         "repo": "wenchiehlee/Selenium-Actions.IPO",
         "workflow_name": "Run Selenium On GitHub Action",
         "file": "Selenium-Action.yaml",
@@ -719,10 +719,10 @@
     ]
   },
   "pages_telemetry": {
-    "total_sites": 18,
+    "total_sites": 17,
     "built_sites": 15,
     "errored_sites": 1,
-    "other_sites": 2,
+    "other_sites": 1,
     "sites": [
       {
         "org": "wenchiehlee-money",
@@ -829,7 +829,7 @@
         "repo": "wenchiehlee/Pipeline-Deck",
         "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -876,22 +876,13 @@
         "status": null,
         "build_type": "workflow",
         "is_private": false
-      },
-      {
-        "org": "wenchiehlee",
-        "name": "mkdocs-demo",
-        "repo": "wenchiehlee/mkdocs-demo",
-        "url": "https://wenchiehlee.github.io/mkdocs-demo/",
-        "status": null,
-        "build_type": "workflow",
-        "is_private": false
       }
     ]
   },
   "security_telemetry": {
-    "secret_scanning_enabled_count": 29,
-    "push_protection_enabled_count": 29,
-    "dependabot_updates_enabled_count": 26,
+    "secret_scanning_enabled_count": 28,
+    "push_protection_enabled_count": 28,
+    "dependabot_updates_enabled_count": 25,
     "total_open_dependabot_alerts": 0,
     "dependabot_breakdown": {
       "critical": 0,
@@ -1655,6 +1646,17 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+              "workflow_name": "Sync Analyzer Data to Downstream Repositories",
+              "file": "sync.yaml",
+              "path": ".github/workflows/sync.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T05:54:15Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42765006819"
+            },
+            {
+              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
               "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
               "file": "hybrid-fetch-and-analyze.yml",
               "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
@@ -1663,17 +1665,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-10T03:26:03Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42749413754"
-            },
-            {
-              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-              "workflow_name": "Sync Analyzer Data to Downstream Repositories",
-              "file": "sync.yaml",
-              "path": ".github/workflows/sync.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T05:11:14Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42760519601"
             }
           ],
           "pages": {
@@ -2430,9 +2421,9 @@
       ]
     },
     "wenchiehlee": {
-      "total_repos": 34,
-      "repos_with_actions": 30,
-      "total_workflows": 66,
+      "total_repos": 33,
+      "repos_with_actions": 29,
+      "total_workflows": 65,
       "repos": [
         {
           "org": "wenchiehlee",
@@ -3067,11 +3058,11 @@
               "workflow_name": "Run Selenium On GitHub Action",
               "file": "Selenium-Action.yaml",
               "path": ".github/workflows/Selenium-Action.yaml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-09T23:23:56Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42720121021"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T05:54:57Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/42765077005"
             }
           ],
           "pages": {
@@ -3684,51 +3675,6 @@
         },
         {
           "org": "wenchiehlee",
-          "name": "mkdocs-demo",
-          "full_name": "wenchiehlee/mkdocs-demo",
-          "html_url": "https://github.com/wenchiehlee/mkdocs-demo",
-          "is_private": false,
-          "workflow_count": 1,
-          "workflows": [
-            "deploy.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee.github.io/mkdocs-demo/",
-            "status": null,
-            "build_type": "workflow"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "enabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee",
           "name": "Pipeline-Deck",
           "full_name": "wenchiehlee/Pipeline-Deck",
           "html_url": "https://github.com/wenchiehlee/Pipeline-Deck",
@@ -3754,7 +3700,7 @@
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
             "status": "built",
-            "build_type": "legacy"
+            "build_type": "workflow"
           },
           "security": {
             "secret_scanning": "enabled",
@@ -4211,10 +4157,10 @@
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅❌✅✅",
+              "recent_4_icons": "✅✅✅❌",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T05:20:46Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42761550635"
+              "latest_run_at": "2026-11-10T05:56:57Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42765278539"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -5531,6 +5477,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
+              "workflow_name": "Update Company Financials",
+              "file": "update_company_financials.yml",
+              "path": ".github/workflows/update_company_financials.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T05:40:15Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42763572769"
+            },
+            {
+              "repo": "wenchiehlee-investment/ConceptStocks",
               "workflow_name": "Update Concept Stocks",
               "file": "update_conceptstocks.yml",
               "path": ".github/workflows/update_conceptstocks.yml",
@@ -5539,17 +5496,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-10T04:04:39Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42753497626"
-            },
-            {
-              "repo": "wenchiehlee-investment/ConceptStocks",
-              "workflow_name": "Update Company Financials",
-              "file": "update_company_financials.yml",
-              "path": ".github/workflows/update_company_financials.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-09T04:12:12Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42560483628"
             }
           ],
           "pages": {
@@ -5814,11 +5760,11 @@
               "workflow_name": "Sync to Analyzer",
               "file": "sync-to-Analyzer.yml",
               "path": ".github/workflows/sync-to-Analyzer.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-09T19:22:56Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42682790109"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T05:53:58Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/42764977756"
             },
             {
               "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
