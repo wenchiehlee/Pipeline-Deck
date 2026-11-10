@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-10T04:12:03.777895+00:00",
-  "total_repos": 121,
+  "generated_at": "2026-11-10T04:30:52.943509+00:00",
+  "total_repos": 108,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
   "scheduled_telemetry": {
@@ -151,9 +151,9 @@
         "path": ".github/workflows/sync.yaml",
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "skipped",
-        "latest_run_at": "2026-11-10T01:23:25Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42735442199"
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T04:18:40Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/42755041723"
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -535,10 +535,10 @@
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅❌✅✅",
+        "recent_4_icons": "✅✅❌❌",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:05:55Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42753642176"
+        "latest_run_at": "2026-11-10T04:22:53Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42755497087"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -590,10 +590,10 @@
         "file": "sync-to-Analyzer.yml",
         "path": ".github/workflows/sync-to-Analyzer.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌✅",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T01:51:05Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/42738669627"
+        "latest_run_at": "2026-11-10T04:18:39Z",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/42755040127"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -669,8 +669,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-09T22:41:52Z",
-        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/42714171306"
+        "latest_run_at": "2026-11-10T04:20:17Z",
+        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/42755213547"
       },
       {
         "repo": "wenchiehlee/rss2md",
@@ -1050,7 +1050,7 @@
       ]
     },
     "wenchiehlee": {
-      "total_repos": 50,
+      "total_repos": 37,
       "repos_with_actions": 31,
       "total_workflows": 68,
       "repos": [
@@ -1410,57 +1410,9 @@
           "workflows": []
         },
         {
-          "name": "cinder",
-          "full_name": "wenchiehlee/cinder",
-          "html_url": "https://github.com/wenchiehlee/cinder",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "course-activity-planner",
-          "full_name": "wenchiehlee/course-activity-planner",
-          "html_url": "https://github.com/wenchiehlee/course-activity-planner",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "csv-to-google-spreadsheet",
-          "full_name": "wenchiehlee/csv-to-google-spreadsheet",
-          "html_url": "https://github.com/wenchiehlee/csv-to-google-spreadsheet",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "demo-site",
-          "full_name": "wenchiehlee/demo-site",
-          "html_url": "https://github.com/wenchiehlee/demo-site",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
           "name": "dockers",
           "full_name": "wenchiehlee/dockers",
           "html_url": "https://github.com/wenchiehlee/dockers",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "feeling-responsive",
-          "full_name": "wenchiehlee/feeling-responsive",
-          "html_url": "https://github.com/wenchiehlee/feeling-responsive",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "gitlab",
-          "full_name": "wenchiehlee/gitlab",
-          "html_url": "https://github.com/wenchiehlee/gitlab",
           "is_private": false,
           "workflow_count": 0,
           "workflows": []
@@ -1470,38 +1422,6 @@
           "full_name": "wenchiehlee/gmail",
           "html_url": "https://github.com/wenchiehlee/gmail",
           "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "gollum",
-          "full_name": "wenchiehlee/gollum",
-          "html_url": "https://github.com/wenchiehlee/gollum",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "markdown-to-pdf",
-          "full_name": "wenchiehlee/markdown-to-pdf",
-          "html_url": "https://github.com/wenchiehlee/markdown-to-pdf",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "optee_os",
-          "full_name": "wenchiehlee/optee_os",
-          "html_url": "https://github.com/wenchiehlee/optee_os",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "pymdown-extensions",
-          "full_name": "wenchiehlee/pymdown-extensions",
-          "html_url": "https://github.com/wenchiehlee/pymdown-extensions",
-          "is_private": false,
           "workflow_count": 0,
           "workflows": []
         },
@@ -1526,30 +1446,6 @@
           "full_name": "wenchiehlee/SecureRepoGuard",
           "html_url": "https://github.com/wenchiehlee/SecureRepoGuard",
           "is_private": true,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "slate",
-          "full_name": "wenchiehlee/slate",
-          "html_url": "https://github.com/wenchiehlee/slate",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "Slave-in-the-Magic-Mirror",
-          "full_name": "wenchiehlee/Slave-in-the-Magic-Mirror",
-          "html_url": "https://github.com/wenchiehlee/Slave-in-the-Magic-Mirror",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": []
-        },
-        {
-          "name": "test",
-          "full_name": "wenchiehlee/test",
-          "html_url": "https://github.com/wenchiehlee/test",
-          "is_private": false,
           "workflow_count": 0,
           "workflows": []
         }
