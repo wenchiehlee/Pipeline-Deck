@@ -21,9 +21,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **77 個活躍儲存庫**（排除已封存庫），其中 **55 個儲存庫** 具備自動化工作流，累計運行 **135 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **0 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-10 06:06:39 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **77 個活躍儲存庫**（排除已封存庫），其中 **55 個儲存庫** 具備自動化工作流，累計運行 **135 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **0 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-10 06:17:12 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`135 / 55 / 0 / 2`**（**135** 個工作流程 YAML · **55** 個活躍 Actions 庫 · **0** 個嚴重警報 · **2** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`135 / 55 / 0 / 1`**（**135** 個工作流程 YAML · **55** 個活躍 Actions 庫 · **0** 個嚴重警報 · **1** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -44,15 +44,14 @@
 
 - **常態排程監測總數**：`46` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
-- **🟢 正常運行（最新一次執行成功）**：`44` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`1` 個
+- **🟢 正常運行（最新一次執行成功）**：`45` 個
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅` | `2026-11-09T04:58:56` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017) |
-| 2 | [wenchiehlee/Python-Actions.FinMind](https://github.com/wenchiehlee/Python-Actions.FinMind) | Daily FinMind status | `daily-finmind-status.yml` | **1 次** | `❌✅✅❌` | `2026-11-10T04:40:59` | [Run ↗](https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679) |
+| 1 | [wenchiehlee/Python-Actions.FinMind](https://github.com/wenchiehlee/Python-Actions.FinMind) | Daily FinMind status | `daily-finmind-status.yml` | **1 次** | `❌✅✅❌` | `2026-11-10T04:40:59` | [Run ↗](https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/42757398679) |
 
 ---
 

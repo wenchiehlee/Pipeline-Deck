@@ -1,26 +1,15 @@
 {
-  "generated_at": "2026-11-10T06:06:05.227662+00:00",
+  "generated_at": "2026-11-10T06:16:40.914560+00:00",
   "total_repos": 77,
   "total_repos_with_actions": 55,
   "total_workflows": 135,
   "scheduled_telemetry": {
     "total_monitored_schedules": 46,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 2,
-    "healthy_count": 44,
+    "warning_consecutive_1_to_3_count": 1,
+    "healthy_count": 45,
     "critical_alerts": [],
     "warning_alerts": [
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-09T04:58:56Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017"
-      },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
@@ -396,6 +385,17 @@
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-10T04:18:39Z",
         "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/42755040127"
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-10T06:05:55Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42766225478"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -2282,11 +2282,11 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-09T04:58:56Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42564688017"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-10T06:05:55Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42766225478"
             }
           ],
           "pages": {
