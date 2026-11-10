@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-10T04:04:01.264487+00:00",
-  "total_repos": 124,
-  "total_repos_with_actions": 75,
-  "total_workflows": 228,
+  "generated_at": "2026-11-10T04:12:03.777895+00:00",
+  "total_repos": 121,
+  "total_repos_with_actions": 72,
+  "total_workflows": 221,
   "scheduled_telemetry": {
-    "total_monitored_schedules": 66,
+    "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
     "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 62,
+    "healthy_count": 60,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -387,28 +387,6 @@
         "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/42725003758"
       },
       {
-        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo",
-        "workflow_name": "Data Freshness Dispatcher",
-        "file": "Dispatcher.yaml",
-        "path": ".github/workflows/Dispatcher.yaml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-10-12T05:48:33Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo/actions/runs/38209568049"
-      },
-      {
-        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo",
-        "workflow_name": "Sync",
-        "file": "sync-to-Analyzer.yml",
-        "path": ".github/workflows/sync-to-Analyzer.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-10-12T03:49:02Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo/actions/runs/38201248702"
-      },
-      {
         "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
         "workflow_name": "Update Company Info",
         "file": "Actions.yaml",
@@ -557,10 +535,10 @@
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
+        "recent_4_icons": "✅❌✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:02:14Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42753241777"
+        "latest_run_at": "2026-11-10T04:05:55Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42753642176"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -1072,9 +1050,9 @@
       ]
     },
     "wenchiehlee": {
-      "total_repos": 51,
-      "repos_with_actions": 32,
-      "total_workflows": 70,
+      "total_repos": 50,
+      "repos_with_actions": 31,
+      "total_workflows": 68,
       "repos": [
         {
           "name": "GoogleSearch.Factset",
@@ -1268,17 +1246,6 @@
           "workflows": [
             "build.yml",
             "documentation.yml"
-          ]
-        },
-        {
-          "name": "Python-Actions.ModelsPricePredict",
-          "full_name": "wenchiehlee/Python-Actions.ModelsPricePredict",
-          "html_url": "https://github.com/wenchiehlee/Python-Actions.ModelsPricePredict",
-          "is_private": true,
-          "workflow_count": 2,
-          "workflows": [
-            "Actions.yaml",
-            "sync-up.yml"
           ]
         },
         {
@@ -1842,9 +1809,9 @@
       ]
     },
     "wenchiehlee-investment": {
-      "total_repos": 19,
-      "repos_with_actions": 14,
-      "total_workflows": 34,
+      "total_repos": 17,
+      "repos_with_actions": 12,
+      "total_workflows": 29,
       "repos": [
         {
           "name": "InvestorEvents",
@@ -1910,18 +1877,6 @@
           ]
         },
         {
-          "name": "Python-Actions.GoodInfo",
-          "full_name": "wenchiehlee-investment/Python-Actions.GoodInfo",
-          "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo",
-          "is_private": false,
-          "workflow_count": 3,
-          "workflows": [
-            "Actions.yaml",
-            "Dispatcher.yaml",
-            "sync-to-Analyzer.yml"
-          ]
-        },
-        {
           "name": "Python-Actions.GoodInfo.CompanyInfo",
           "full_name": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
           "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -1942,17 +1897,6 @@
           "workflows": [
             "hybrid-cdp-pipeline.yml",
             "test-actions-cdp.yml"
-          ]
-        },
-        {
-          "name": "Python-Actions.ModelsPricePredict",
-          "full_name": "wenchiehlee-investment/Python-Actions.ModelsPricePredict",
-          "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.ModelsPricePredict",
-          "is_private": true,
-          "workflow_count": 2,
-          "workflows": [
-            "Actions.yaml",
-            "sync-up.yml"
           ]
         },
         {

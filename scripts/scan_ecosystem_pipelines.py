@@ -67,14 +67,16 @@ def create_session(token: str) -> requests.Session:
     return session
 
 def fetch_org_repos(session: requests.Session, org: str):
-    """Fetch all repositories under an organization or user using gh CLI or REST API."""
+    """Fetch all active (non-archived) repositories under an organization or user using gh CLI or REST API."""
     if shutil.which("gh"):
         try:
-            cmd = ["gh", "repo", "list", org, "--limit", "200", "--json", "name,isPrivate,url"]
+            cmd = ["gh", "repo", "list", org, "--no-archived", "--limit", "200", "--json", "name,isPrivate,url,isArchived"]
             proc = subprocess.run(cmd, capture_output=True, text=True, check=True)
             data = json.loads(proc.stdout)
             repos = []
             for item in data:
+                if item.get("isArchived", False):
+                    continue
                 repos.append({
                     "name": item["name"],
                     "full_name": f"{org}/{item['name']}",
@@ -105,7 +107,15 @@ def fetch_org_repos(session: requests.Session, org: str):
         data = resp.json()
         if not data:
             break
-        repos.extend(data)
+        for r in data:
+            if r.get("archived", False):
+                continue
+            repos.append({
+                "name": r["name"],
+                "full_name": r.get("full_name", f"{org}/{r['name']}"),
+                "html_url": r.get("html_url", f"https://github.com/{org}/{r['name']}"),
+                "private": r.get("private", False)
+            })
         if len(data) < 100:
             break
         page += 1
