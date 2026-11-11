@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T03:11:55.226521+00:00",
+  "generated_at": "2026-11-11T05:00:18.559607+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
@@ -19,8 +19,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T04:54:19Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/42758755361"
+        "latest_run_at": "2026-11-11T03:22:00Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/42952271691"
       },
       {
         "repo": "ZhongZheng782/FamilyHealthyCheck",
@@ -52,8 +52,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:35:14Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42915931766"
+        "latest_run_at": "2026-11-11T03:18:59Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42951928562"
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -74,8 +74,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:50:16Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42918174268"
+        "latest_run_at": "2026-11-11T04:44:16Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42961160842"
       },
       {
         "repo": "ZhongZheng782/Llm-Cli-APIServer",
@@ -96,8 +96,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:52:55Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/42918556521"
+        "latest_run_at": "2026-11-11T04:54:11Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/42962215573"
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -184,8 +184,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T23:12:50Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42921458495"
+        "latest_run_at": "2026-11-11T02:32:02Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42946663726"
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -228,8 +228,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:51:19Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42918329514"
+        "latest_run_at": "2026-11-11T04:46:50Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42961441566"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
@@ -250,8 +250,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T05:40:15Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42763572769"
+        "latest_run_at": "2026-11-11T04:15:38Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42958054148"
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -448,8 +448,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T21:27:32Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42905234137"
+        "latest_run_at": "2026-11-11T03:37:41Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42954005522"
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -514,8 +514,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-11T02:45:40Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42948197996"
+        "latest_run_at": "2026-11-11T04:00:50Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42956427270"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -547,8 +547,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:44:06Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42917251951"
+        "latest_run_at": "2026-11-11T04:10:40Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42957512760"
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -578,10 +578,10 @@
         "file": "renew-pipeline-telemetry.yml",
         "path": ".github/workflows/renew-pipeline-telemetry.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅❌",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T10:31:10Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42799821461"
+        "latest_run_at": "2026-11-11T03:11:45Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42951108148"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -996,8 +996,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:52:55Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/42918556521"
+              "latest_run_at": "2026-11-11T04:54:11Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/42962215573"
             }
           ],
           "pages": {
@@ -1122,25 +1122,14 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/HomeAssistant",
-              "workflow_name": "Update Washer History README",
-              "file": "update-washer-readme.yml",
-              "path": ".github/workflows/update-washer-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-11T02:23:48Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42945736054"
-            },
-            {
-              "repo": "ZhongZheng782/HomeAssistant",
               "workflow_name": "Update Xiaomi Miot Snapshot in README",
               "file": "update-xiaomi-miot-readme.yml",
               "path": ".github/workflows/update-xiaomi-miot-readme.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:50:16Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42918174268"
+              "latest_run_at": "2026-11-11T04:44:16Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42961160842"
             },
             {
               "repo": "ZhongZheng782/HomeAssistant",
@@ -1150,8 +1139,19 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:35:14Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42915931766"
+              "latest_run_at": "2026-11-11T03:18:59Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42951928562"
+            },
+            {
+              "repo": "ZhongZheng782/HomeAssistant",
+              "workflow_name": "Update Washer History README",
+              "file": "update-washer-readme.yml",
+              "path": ".github/workflows/update-washer-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-11T02:23:48Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/42945736054"
             }
           ],
           "pages": {
@@ -1208,6 +1208,17 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+              "workflow_name": "Update UptimeRobot Status in README",
+              "file": "update-uptimerobot-readme.yml",
+              "path": ".github/workflows/update-uptimerobot-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-11T04:46:50Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42961441566"
+            },
+            {
+              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
               "workflow_name": "Action Runner",
               "file": "action-runner.yml",
               "path": ".github/workflows/action-runner.yml",
@@ -1216,17 +1227,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-11T01:47:57Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42941527154"
-            },
-            {
-              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-              "workflow_name": "Update UptimeRobot Status in README",
-              "file": "update-uptimerobot-readme.yml",
-              "path": ".github/workflows/update-uptimerobot-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:51:19Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/42918329514"
             },
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -1593,8 +1593,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T23:12:50Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42921458495"
+              "latest_run_at": "2026-11-11T02:32:02Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/42946663726"
             }
           ],
           "pages": {
@@ -1788,8 +1788,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T04:54:19Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/42758755361"
+              "latest_run_at": "2026-11-11T03:22:00Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/42952271691"
             }
           ],
           "pages": {
@@ -3488,8 +3488,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:44:06Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42917251951"
+              "latest_run_at": "2026-11-11T04:10:40Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/42957512760"
             }
           ],
           "pages": {
@@ -3735,10 +3735,10 @@
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅❌",
+              "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T10:31:10Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42799821461"
+              "latest_run_at": "2026-11-11T03:11:45Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42951108148"
             }
           ],
           "pages": {
@@ -4161,8 +4161,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-11T02:45:40Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42948197996"
+              "latest_run_at": "2026-11-11T04:00:50Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42956427270"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -4312,6 +4312,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
+              "workflow_name": "Analyze Alerts",
+              "file": "analyze.yml",
+              "path": ".github/workflows/analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-11T03:37:41Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42954005522"
+            },
+            {
+              "repo": "wenchiehlee-money/GoogleAlertManager",
               "workflow_name": "Fetch Alerts",
               "file": "fetch.yml",
               "path": ".github/workflows/fetch.yml",
@@ -4320,17 +4331,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-10T23:56:58Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42927466277"
-            },
-            {
-              "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Analyze Alerts",
-              "file": "analyze.yml",
-              "path": ".github/workflows/analyze.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T21:27:32Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/42905234137"
             }
           ],
           "pages": {
@@ -5479,6 +5479,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
+              "workflow_name": "Update Company Financials",
+              "file": "update_company_financials.yml",
+              "path": ".github/workflows/update_company_financials.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-11T04:15:38Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42958054148"
+            },
+            {
+              "repo": "wenchiehlee-investment/ConceptStocks",
               "workflow_name": "Update Concept Stocks",
               "file": "update_conceptstocks.yml",
               "path": ".github/workflows/update_conceptstocks.yml",
@@ -5487,17 +5498,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-11T01:54:08Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42942238522"
-            },
-            {
-              "repo": "wenchiehlee-investment/ConceptStocks",
-              "workflow_name": "Update Company Financials",
-              "file": "update_company_financials.yml",
-              "path": ".github/workflows/update_company_financials.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T05:40:15Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/42763572769"
             }
           ],
           "pages": {
