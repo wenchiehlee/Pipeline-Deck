@@ -206,8 +206,9 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
             p_data = p_resp.json()
             pg_status = p_data.get("status")
             pg_btype = p_data.get("build_type")
-            # For workflow-based Pages, /pages status is null; query official github-pages deployments state
-            if not pg_status and pg_btype == "workflow":
+            # Workflow-based Pages deployments are authoritative. The /pages status
+            # can retain a stale legacy build error after a successful Actions deploy.
+            if pg_btype == "workflow":
                 try:
                     d_resp = session.get(f"{repo_url}/deployments?environment=github-pages&per_page=1", timeout=8)
                     if d_resp.status_code == 200 and d_resp.json():
