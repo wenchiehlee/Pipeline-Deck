@@ -10,8 +10,8 @@
     "warning_alerts": 0,
     "monitored_schedules": 64,
     "pages_sites": 17,
-    "pages_built": 16,
-    "pages_errored": 1,
+    "pages_built": 17,
+    "pages_errored": 0,
     "secret_scanning_repos": 28,
     "push_protection_repos": 28,
     "dependabot_alerts_total": 0,
@@ -34,5 +34,5 @@
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-11T05:24:27.067817+00:00"
+  "updated_at": "2026-11-11T05:32:57.856011+00:00"
 }

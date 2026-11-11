@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T05:24:27.067817+00:00",
+  "generated_at": "2026-11-11T05:32:57.856011+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
@@ -349,8 +349,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-10T22:59:20Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/42919454476"
+        "latest_run_at": "2026-11-11T05:27:02Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/42965832681"
       },
       {
         "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -514,8 +514,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-11T04:00:50Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42956427270"
+        "latest_run_at": "2026-11-11T05:29:04Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42966045106"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -580,8 +580,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-11T05:00:10Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42962826900"
+        "latest_run_at": "2026-11-11T05:24:11Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42965529038"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -719,19 +719,10 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 16,
-    "errored_sites": 1,
+    "built_sites": 17,
+    "errored_sites": 0,
     "other_sites": 0,
     "sites": [
-      {
-        "org": "wenchiehlee",
-        "name": "mkdocs",
-        "repo": "wenchiehlee/mkdocs",
-        "url": "https://wenchiehlee.github.io/mkdocs/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -809,6 +800,15 @@
         "name": "dockers",
         "repo": "wenchiehlee/dockers",
         "url": "https://wenchiehlee.github.io/dockers/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
+        "name": "mkdocs",
+        "repo": "wenchiehlee/mkdocs",
+        "url": "https://wenchiehlee.github.io/mkdocs/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -2608,7 +2608,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/mkdocs/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
@@ -3737,8 +3737,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-11T05:00:10Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42962826900"
+              "latest_run_at": "2026-11-11T05:24:11Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42965529038"
             }
           ],
           "pages": {
@@ -4161,8 +4161,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-11T04:00:50Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42956427270"
+              "latest_run_at": "2026-11-11T05:29:04Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/42966045106"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -5684,8 +5684,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-10T22:59:20Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/42919454476"
+              "latest_run_at": "2026-11-11T05:27:02Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/42965832681"
             },
             {
               "repo": "wenchiehlee-investment/MOPS",
