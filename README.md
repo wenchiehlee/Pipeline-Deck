@@ -21,22 +21,22 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **221 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-11 05:46:09 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-11 10:57:03 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`221 / 72 / 0 / 0`**（**221** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **0** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 0 / 0`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **0** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
 | 組織 / 帳號 (`Owner`) | 活躍儲存庫數 | 具備 Actions 的 Repo | 工作流程 YAML 數 | Pages 發布站點 | 資安防護啟用庫 | 待處置警報總數 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **89** | 2 | 2 | 0 |
+| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **90** | 2 | 2 | 0 |
 | [`wenchiehlee`](https://github.com/wenchiehlee) | 33 | 30 | **67** | 8 | 26 | 0 |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 0 | 0 |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** | 1 | 0 | 0 |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 0 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 0 | 0 |
-| **全域總計** | **103** | **72** | **221 個 YAML** | **17 站點** | **28 庫** | **0 處** |
+| **全域總計** | **103** | **72** | **222 個 YAML** | **17 站點** | **28 庫** | **0 處** |
 
 ---
 
@@ -66,7 +66,7 @@
 | 4 | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 5 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | 🦉 拍拍翅萌萌鴞 (`台股個股深度調研`) | [https://wenchiehlee-money.github.io/My-TW-Coverage/](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 6 | [wenchiehlee-money/VIX](https://github.com/wenchiehlee-money/VIX) | 🦢 幾何黑天鵝 (`全球波動率黑天鵝雷達`) | [https://wenchiehlee-money.github.io/VIX/](https://wenchiehlee-money.github.io/VIX/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 7 | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 7 | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 8 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 9 | [wenchiehlee/dockers](https://github.com/wenchiehlee/dockers) | 🐳 貨櫃藍鯨 (`Docker 映像目錄與部署`) | [https://wenchiehlee.github.io/dockers/](https://wenchiehlee.github.io/dockers/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 10 | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
@@ -93,7 +93,7 @@
 
 ---
 
-### 📁 `ZhongZheng782` (18 個 Repo · 共 89 個 YAML)
+### 📁 `ZhongZheng782` (18 個 Repo · 共 90 個 YAML)
 
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
@@ -106,8 +106,8 @@
 | 7 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | - | ⚪ 預設 | 0 | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
 | 8 | [Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | **4** | [🟢 built](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🛡️ 啟用 | 0 | `probe-synology-photos-api.yml`, `probe-tailnet-mlx.yml`, `publish-image.yml`, `scout-image.yml` |
 | 9 | [Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | **4** | - | ⚪ 預設 | 0 | `Actions-fetch-wayback.yaml`, `Actions-fetch.yaml`, `Actions-update-lists.yaml`, `sync-up-forecast.yml` |
-| 10 | [LineMonitoring](https://github.com/ZhongZheng782/LineMonitoring) | **3** | - | ⚪ 預設 | 0 | `collect-line-bot-logs.yml`, `deploy-synology-nas.yml`, `mac-runner-smoke.yml` |
-| 11 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **3** | [🟢 built](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | ⚪ 預設 | 0 | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml` |
+| 10 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **4** | [🟢 built](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | ⚪ 預設 | 0 | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml`, `update-source-settings.yml` |
+| 11 | [LineMonitoring](https://github.com/ZhongZheng782/LineMonitoring) | **3** | - | ⚪ 預設 | 0 | `collect-line-bot-logs.yml`, `deploy-synology-nas.yml`, `mac-runner-smoke.yml` |
 | 12 | [Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | **2** | - | ⚪ 預設 | 0 | `hybrid-fetch-and-analyze.yml`, `sync.yaml` |
 | 13 | [Win11](https://github.com/ZhongZheng782/Win11) | **2** | - | 🛡️ 啟用 | 0 | `action-runner.yml`, `powershell.yml` |
 | 14 | [AI-Usage](https://github.com/ZhongZheng782/AI-Usage) | **1** | - | ⚪ 預設 | 0 | `update-usage.yml` |
