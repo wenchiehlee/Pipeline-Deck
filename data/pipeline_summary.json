@@ -1,15 +1,27 @@
 {
-  "generated_at": "2026-11-11T05:32:57.856011+00:00",
+  "generated_at": "2026-11-11T05:35:10.256951+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 221,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 0,
-    "healthy_count": 64,
+    "warning_consecutive_1_to_3_count": 1,
+    "healthy_count": 63,
     "critical_alerts": [],
-    "warning_alerts": [],
+    "warning_alerts": [
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 1,
+        "recent_4_icons": "❌✅✅✅",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-11T05:32:48Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42966460503"
+      }
+    ],
     "healthy_workflows": [
       {
         "repo": "ZhongZheng782/AI-Usage",
@@ -573,17 +585,6 @@
         "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/42926958561"
       },
       {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-11T05:24:11Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42965529038"
-      },
-      {
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
         "file": "daily-finmind-status.yml",
@@ -719,10 +720,19 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 17,
-    "errored_sites": 0,
+    "built_sites": 16,
+    "errored_sites": 1,
     "other_sites": 0,
     "sites": [
+      {
+        "org": "wenchiehlee",
+        "name": "Pipeline-Deck",
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+        "status": "errored",
+        "build_type": "workflow",
+        "is_private": false
+      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -829,15 +839,6 @@
         "url": "https://wenchiehlee.github.io/mkdocs-life/",
         "status": "built",
         "build_type": "legacy",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee",
-        "name": "Pipeline-Deck",
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-        "status": "built",
-        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -3734,17 +3735,17 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-11T05:24:11Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42965529038"
+              "consecutive_failures": 1,
+              "recent_4_icons": "❌✅✅✅",
+              "latest_conclusion": "failure",
+              "latest_run_at": "2026-11-11T05:32:48Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/42966460503"
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-            "status": "built",
+            "status": "errored",
             "build_type": "workflow"
           },
           "security": {
