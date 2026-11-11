@@ -45,7 +45,7 @@ jobs:
 
       - name: Scan Ecosystem Actions & Track Consecutive Schedule Failures
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ECOSYSTEM_PAT || secrets.GITHUB_TOKEN }}
         run: |
           python scripts/scan_ecosystem_pipelines.py
 
