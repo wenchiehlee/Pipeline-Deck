@@ -1,9 +1,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-11 10:58:25 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-12 06:05:38 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 0 / 0`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **0** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 0 / 2`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **2** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -22,12 +22,17 @@
 
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
-- **常態排程監測總數**：`64` 個工作流程
+- **常態排程監測總數**：`63` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`0` 個
-- **🟢 正常運行（最新一次執行成功）**：`64` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
+- **🟢 正常運行（最新一次執行成功）**：`61` 個
 
-> ✅ **目前全域常態排程工作流程運作狀態良好，無任何連續失敗管道。**
+#### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
+
+| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
+|---|---|---|---|:---:|:---:|---|:---:|
+| 1 | [ZhongZheng782/FamilyHealthyCheck](https://github.com/ZhongZheng782/FamilyHealthyCheck) | Daily Health Data Processing | `daily-health-check.yml` | **1 次** | `❌✅✅✅` | `2026-11-11T16:42:30` | [Run ↗](https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/43060968421) |
+| 2 | [wenchiehlee/Selenium-Actions.IPO](https://github.com/wenchiehlee/Selenium-Actions.IPO) | Run Selenium On GitHub Action | `Selenium-Action.yaml` | **1 次** | `❌✅✅✅` | `2026-11-11T14:52:53` | [Run ↗](https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/43042762745) |
 
 ---
 
