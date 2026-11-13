@@ -1,38 +1,37 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-12 06:05:38 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-13 05:29:17 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 0 / 2`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **0** 個嚴重警報 · **2** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 1 / 0`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **1** 個嚴重警報 · **0** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
 | 組織 / 帳號 (`Owner`) | 活躍儲存庫數 | 具備 Actions 的 Repo | 工作流程 YAML 數 | Pages 發布站點 | 資安防護啟用庫 | 待處置警報總數 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **90** | 2 | 2 | 0 |
+| [`ZhongZheng782`](https://github.com/ZhongZheng782) | 27 | 18 | **90** | 2 | 2 | **2** |
 | [`wenchiehlee`](https://github.com/wenchiehlee) | 33 | 30 | **67** | 8 | 26 | 0 |
-| [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 0 | 0 |
+| [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 0 | **1** |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** | 1 | 0 | 0 |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 0 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 0 | 0 |
-| **全域總計** | **103** | **72** | **222 個 YAML** | **17 站點** | **28 庫** | **0 處** |
+| **全域總計** | **103** | **72** | **222 個 YAML** | **17 站點** | **28 庫** | **3 處** |
 
 ---
 
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
-- **常態排程監測總數**：`63` 個工作流程
-- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
-- **🟢 正常運行（最新一次執行成功）**：`61` 個
+- **常態排程監測總數**：`64` 個工作流程
+- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`1` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`0` 個
+- **🟢 正常運行（最新一次執行成功）**：`63` 個
 
-#### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
+#### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/FamilyHealthyCheck](https://github.com/ZhongZheng782/FamilyHealthyCheck) | Daily Health Data Processing | `daily-health-check.yml` | **1 次** | `❌✅✅✅` | `2026-11-11T16:42:30` | [Run ↗](https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/43060968421) |
-| 2 | [wenchiehlee/Selenium-Actions.IPO](https://github.com/wenchiehlee/Selenium-Actions.IPO) | Run Selenium On GitHub Action | `Selenium-Action.yaml` | **1 次** | `❌✅✅✅` | `2026-11-11T14:52:53` | [Run ↗](https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/43042762745) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **16 次** | `❌❌❌❌` | `2026-11-13T04:07:57` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/43363481952) |
 
 ---
 
@@ -70,11 +69,16 @@
 - **秘密掃描防護 (Secret Scanning)**：`28` 個儲存庫啟用
 - **阻擋推送防護 (Push Protection)**：`28` 個儲存庫啟用
 - **Dependabot 自動安全修正**：`25` 個儲存庫啟用
-- **Dependabot 待修復警報**：`0` 處（🔴 0 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
+- **Dependabot 待修復警報**：`3` 處（🔴 0 嚴重 · 🟠 1 高度 · 🟡 2 中度 · 🔵 0 低度）
 - **CodeQL 代碼品質與安全漏洞**：`0` 處（🔴 0 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
 - **惡意代碼與外洩警報 (Malware / Leaks)**：`0` 處
 
-> ✅ **目前全域所有活躍儲存庫無任何待處置安全漏洞或品質警報。**
+#### ⚠️ 待處置資安警報與代碼品質儲存庫清單
+
+| # | 組織 / 儲存庫 | Dependabot 警報 | CodeQL 漏洞 | 惡意代碼 | 嚴重等級分佈 (Crit/High/Med/Low) | 安全儀表板直達 |
+|---|---|:---:|:---:|:---:|---|:---:|
+| 1 | [ZhongZheng782/Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **2** | 0 | 0 | `🔴 0 · 🟠 0 · 🟡 2 · 🔵 0` | [Security ↗](https://github.com/ZhongZheng782/Llm-Cli-APIServer/security) |
+| 2 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | **1** | 0 | 0 | `🔴 0 · 🟠 1 · 🟡 0 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-money/biztrends.TW/security) |
 
 ---
 
@@ -88,7 +92,7 @@
 | 4 | [HomeAssistant](https://github.com/ZhongZheng782/HomeAssistant) | **10** | - | ⚪ 預設 | 0 | `check-ha-logs.yml`, `check-timetree.yml`, `configure-ha-hacs-xiaomi.yml`, `deploy-homeassistant-synology.yml`, `diagnose-lg-thinq.yml`, `diagnose-timetree-notify.yml`, `diagnose-washer-events.yml`, `update-uptimerobot-readme.yml`, `update-washer-readme.yml`, `update-xiaomi-miot-readme.yml` |
 | 5 | [wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | **8** | - | ⚪ 預設 | 0 | `action-runner.yml`, `mkdocs-deploy-synology.yml`, `reboot.yml`, `setup-nas-reverse-proxy.yml`, `setup-tailscale-funnel.yml`, `sync-ddns-table.yml`, `sync-nginx-conf.yml`, `update-uptimerobot-readme.yml` |
 | 6 | [wenchiehlee.quickconnect.to-Container.Manager](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager) | **5** | - | ⚪ 預設 | 0 | `actions.yml`, `authorize-ssh-key.yml`, `connect-cdp-net.yml`, `deploy-on-change.yml`, `deploy.yml` |
-| 7 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | - | ⚪ 預設 | 0 | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
+| 7 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | - | ⚪ 預設 | ⚠️ **2** | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
 | 8 | [Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | **4** | [🟢 built](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🛡️ 啟用 | 0 | `probe-synology-photos-api.yml`, `probe-tailnet-mlx.yml`, `publish-image.yml`, `scout-image.yml` |
 | 9 | [Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | **4** | - | ⚪ 預設 | 0 | `Actions-fetch-wayback.yaml`, `Actions-fetch.yaml`, `Actions-update-lists.yaml`, `sync-up-forecast.yml` |
 | 10 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **4** | [🟢 built](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | ⚪ 預設 | 0 | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml`, `update-source-settings.yml` |
@@ -142,7 +146,7 @@
 
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
-| 1 | [biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | **7** | - | ⚪ 預設 | 0 | `check-data-health.yml`, `refresh-cycle-mapping-monthly.yml`, `sync_to_GoogleSheet.Banks.yml`, `sync_to_TAIEX_centralized.yml`, `sync_to_gopublic.yml`, `update_combined_dividends.yml`, `update_indices.yml` |
+| 1 | [biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | **7** | - | ⚪ 預設 | ⚠️ **1** | `check-data-health.yml`, `refresh-cycle-mapping-monthly.yml`, `sync_to_GoogleSheet.Banks.yml`, `sync_to_TAIEX_centralized.yml`, `sync_to_gopublic.yml`, `update_combined_dividends.yml`, `update_indices.yml` |
 | 2 | [InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | **7** | [🟢 built](https://wenchiehlee-money.github.io/InvestorConference/) | ⚪ 預設 | 0 | `daily-ingest.yml`, `deploy-web.yml`, `ingest.yml`, `sync-gt-to-mac-mini.yml`, `sync-to-downstream.yml`, `sync-yahoo-finance-consensus.yml`, `test-fin-issues.yml` |
 | 3 | [GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | **5** | [🟢 built](https://wenchiehlee-money.github.io/GoogleAlertManager/) | ⚪ 預設 | 0 | `analyze.yml`, `fetch.yml`, `issue-feedback.yml`, `sync-to-downstream.yml`, `test.yml` |
 | 4 | [Facebook.Fetch](https://github.com/wenchiehlee-money/Facebook.Fetch) | **4** | - | ⚪ 預設 | 0 | `add-group-handler.yml`, `daily_fetch.yml`, `sync-to-biztrends.yml`, `tag-link-injector.yml` |
