@@ -21,9 +21,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-17 06:56:31 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-18 06:17:51 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 1 / 2`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **1** 個嚴重警報 · **2** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 2 / 1`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -43,22 +43,22 @@
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
 - **常態排程監測總數**：`64` 個工作流程
-- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`1` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
+- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`2` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`1` 個
 - **🟢 正常運行（最新一次執行成功）**：`61` 個
 
 #### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **30 次** | `❌❌❌❌` | `2026-11-17T05:40:33` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44025752749) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **29 次** | `❌❌❌❌` | `2026-11-18T05:17:36` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44243231125) |
+| 2 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **4 次** | `❌❌❌❌` | `2026-11-17T17:28:31` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44137377396) |
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **3 次** | `❌❌❌✅` | `2026-11-16T18:08:34` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/43925705808) |
-| 2 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-16T08:59:02` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/43835707029) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-16T08:59:02` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/43835707029) |
 
 ---
 
