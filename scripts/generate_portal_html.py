@@ -1419,9 +1419,21 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     .deck-cards-row {{
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-      gap: 12px;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 6px;
       margin-bottom: 1.5rem;
+    }}
+
+    @media (max-width: 1100px) {{
+      .deck-cards-row {{ grid-template-columns: repeat(4, minmax(0, 1fr)); }}
+    }}
+
+    @media (max-width: 640px) {{
+      .deck-cards-row {{ grid-template-columns: repeat(2, minmax(0, 1fr)); }}
+    }}
+
+    @media (max-width: 380px) {{
+      .deck-cards-row {{ grid-template-columns: 1fr; }}
     }}
 
     .deck-card {{
@@ -1432,6 +1444,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
       display: flex;
       flex-direction: column;
       gap: 8px;
+      min-width: 0;
       transition: all 0.2s ease;
     }}
 
