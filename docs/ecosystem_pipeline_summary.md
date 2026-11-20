@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-19 06:18:56 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **103 個活躍儲存庫**（排除已封存庫），其中 **72 個儲存庫** 具備自動化工作流，累計運行 **222 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **28 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-20 06:02:53 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`222 / 72 / 2 / 1`**（**222** 個工作流程 YAML · **72** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
@@ -31,8 +31,8 @@
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **30 次** | `❌❌❌❌` | `2026-11-19T04:58:05` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44461883601) |
-| 2 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **5 次** | `❌❌❌❌` | `2026-11-18T17:02:45` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44354178279) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **30 次** | `❌❌❌❌` | `2026-11-20T04:58:09` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44677874687) |
+| 2 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **6 次** | `❌❌❌❌` | `2026-11-19T17:10:57` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44574367470) |
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
