@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T04:41:32.614974+00:00",
+  "generated_at": "2026-11-21T05:09:24.794963+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 222,
@@ -14,7 +14,7 @@
         "workflow_name": "Check Data Health",
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 19,
+        "consecutive_failures": 17,
         "recent_4_icons": "❌❌❌❌",
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-20T14:56:44Z",
@@ -472,8 +472,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T22:22:55Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44828477868"
+        "latest_run_at": "2026-11-21T04:39:56Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44867206707"
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -582,8 +582,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T13:44:00Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44746892783"
+        "latest_run_at": "2026-11-21T04:41:24Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44867327739"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -721,9 +721,9 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 16,
+    "built_sites": 17,
     "errored_sites": 0,
-    "other_sites": 1,
+    "other_sites": 0,
     "sites": [
       {
         "org": "wenchiehlee-investment",
@@ -739,6 +739,15 @@
         "name": "wenchiehlee-life.github.io",
         "repo": "wenchiehlee-life/wenchiehlee-life.github.io",
         "url": "https://wenchiehlee-life.github.io/",
+        "status": "built",
+        "build_type": "legacy",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "GoogleAlertManager",
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
         "status": "built",
         "build_type": "legacy",
         "is_private": false
@@ -868,15 +877,6 @@
         "status": "built",
         "build_type": "legacy",
         "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "GoogleAlertManager",
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
-        "status": "building",
-        "build_type": "legacy",
-        "is_private": false
       }
     ]
   },
@@ -884,12 +884,12 @@
     "secret_scanning_enabled_count": 28,
     "push_protection_enabled_count": 28,
     "dependabot_updates_enabled_count": 25,
-    "total_open_dependabot_alerts": 10,
+    "total_open_dependabot_alerts": 0,
     "dependabot_breakdown": {
       "critical": 0,
-      "high": 2,
-      "medium": 7,
-      "low": 1
+      "high": 0,
+      "medium": 0,
+      "low": 0
     },
     "total_open_codeql_alerts": 0,
     "codeql_breakdown": {
@@ -899,126 +899,7 @@
       "low": 0
     },
     "total_malware_alerts": 0,
-    "repos_with_alerts": [
-      {
-        "repo": "ZhongZheng782/Llm-Cli-APIServer",
-        "org": "ZhongZheng782",
-        "is_private": true,
-        "dependabot_total": 7,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 6,
-          "low": 1
-        },
-        "dependabot_items": [
-          {
-            "number": 34,
-            "package": "hono",
-            "severity": "medium",
-            "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/34"
-          },
-          {
-            "number": 33,
-            "package": "hono",
-            "severity": "medium",
-            "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/33"
-          },
-          {
-            "number": 32,
-            "package": "hono",
-            "severity": "low",
-            "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/32"
-          },
-          {
-            "number": 31,
-            "package": "hono",
-            "severity": "medium",
-            "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/31"
-          },
-          {
-            "number": 30,
-            "package": "hono",
-            "severity": "medium",
-            "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/30"
-          },
-          {
-            "number": 29,
-            "package": "@hono/node-server",
-            "severity": "medium",
-            "summary": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/29"
-          },
-          {
-            "number": 28,
-            "package": "@hono/node-server",
-            "severity": "medium",
-            "summary": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
-            "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/28"
-          }
-        ],
-        "codeql_total": 0,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [],
-        "malware_total": 0,
-        "malware_items": []
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "org": "wenchiehlee-money",
-        "is_private": true,
-        "dependabot_total": 3,
-        "dependabot_breakdown": {
-          "critical": 0,
-          "high": 2,
-          "medium": 1,
-          "low": 0
-        },
-        "dependabot_items": [
-          {
-            "number": 51,
-            "package": "soupsieve",
-            "severity": "high",
-            "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/51"
-          },
-          {
-            "number": 50,
-            "package": "soupsieve",
-            "severity": "medium",
-            "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/50"
-          },
-          {
-            "number": 49,
-            "package": "soupsieve",
-            "severity": "high",
-            "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
-            "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/49"
-          }
-        ],
-        "codeql_total": 0,
-        "codeql_breakdown": {
-          "critical": 0,
-          "high": 0,
-          "medium": 0,
-          "low": 0
-        },
-        "codeql_items": [],
-        "malware_total": 0,
-        "malware_items": []
-      }
-    ]
+    "repos_with_alerts": []
   },
   "orgs": {
     "ZhongZheng782": {
@@ -1495,62 +1376,12 @@
           },
           "alerts": {
             "dependabot": {
-              "total": 7,
+              "total": 0,
               "critical": 0,
               "high": 0,
-              "medium": 6,
-              "low": 1,
-              "items": [
-                {
-                  "number": 34,
-                  "package": "hono",
-                  "severity": "medium",
-                  "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/34"
-                },
-                {
-                  "number": 33,
-                  "package": "hono",
-                  "severity": "medium",
-                  "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/33"
-                },
-                {
-                  "number": 32,
-                  "package": "hono",
-                  "severity": "low",
-                  "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/32"
-                },
-                {
-                  "number": 31,
-                  "package": "hono",
-                  "severity": "medium",
-                  "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/31"
-                },
-                {
-                  "number": 30,
-                  "package": "hono",
-                  "severity": "medium",
-                  "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/30"
-                },
-                {
-                  "number": 29,
-                  "package": "@hono/node-server",
-                  "severity": "medium",
-                  "summary": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/29"
-                },
-                {
-                  "number": 28,
-                  "package": "@hono/node-server",
-                  "severity": "medium",
-                  "summary": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
-                  "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/security/dependabot/28"
-                }
-              ]
+              "medium": 0,
+              "low": 0,
+              "items": []
             },
             "code_scanning": {
               "total": 0,
@@ -3909,8 +3740,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T13:44:00Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44746892783"
+              "latest_run_at": "2026-11-21T04:41:24Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44867327739"
             }
           ],
           "pages": {
@@ -4330,7 +4161,7 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 19,
+              "consecutive_failures": 17,
               "recent_4_icons": "❌❌❌❌",
               "latest_conclusion": "failure",
               "latest_run_at": "2026-11-20T14:56:44Z",
@@ -4372,34 +4203,12 @@
           },
           "alerts": {
             "dependabot": {
-              "total": 3,
+              "total": 0,
               "critical": 0,
-              "high": 2,
-              "medium": 1,
+              "high": 0,
+              "medium": 0,
               "low": 0,
-              "items": [
-                {
-                  "number": 51,
-                  "package": "soupsieve",
-                  "severity": "high",
-                  "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/51"
-                },
-                {
-                  "number": 50,
-                  "package": "soupsieve",
-                  "severity": "medium",
-                  "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/50"
-                },
-                {
-                  "number": 49,
-                  "package": "soupsieve",
-                  "severity": "high",
-                  "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
-                  "html_url": "https://github.com/wenchiehlee-money/biztrends.TW/security/dependabot/49"
-                }
-              ]
+              "items": []
             },
             "code_scanning": {
               "total": 0,
@@ -4512,8 +4321,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T22:22:55Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44828477868"
+              "latest_run_at": "2026-11-21T04:39:56Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44867206707"
             },
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -4530,7 +4339,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
-            "status": "building",
+            "status": "built",
             "build_type": "legacy"
           },
           "security": {

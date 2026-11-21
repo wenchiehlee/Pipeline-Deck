@@ -10,11 +10,11 @@
     "warning_alerts": 1,
     "monitored_schedules": 64,
     "pages_sites": 17,
-    "pages_built": 16,
+    "pages_built": 17,
     "pages_errored": 0,
     "secret_scanning_repos": 28,
     "push_protection_repos": 28,
-    "dependabot_alerts_total": 10,
+    "dependabot_alerts_total": 0,
     "codeql_alerts_total": 0,
     "malware_alerts_total": 0
   },
@@ -28,11 +28,11 @@
     },
     "stat2": {
       "label": "資安防護 & 警報",
-      "value": "28 庫防護 · 10 處待處置"
+      "value": "28 庫防護 · 0 處待處置"
     },
     "bottom_line": "⚡ CI/CD: 222 / 72 / 1 / 1",
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-21T04:41:32.614974+00:00"
+  "updated_at": "2026-11-21T05:09:24.794963+00:00"
 }
