@@ -1,35 +1,24 @@
 {
-  "generated_at": "2026-11-20T13:44:11.227619+00:00",
+  "generated_at": "2026-11-21T04:41:32.614974+00:00",
   "total_repos": 103,
   "total_repos_with_actions": 72,
   "total_workflows": 222,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
-    "critical_consecutive_4_count": 2,
+    "critical_consecutive_4_count": 1,
     "warning_consecutive_1_to_3_count": 1,
-    "healthy_count": 61,
+    "healthy_count": 62,
     "critical_alerts": [
       {
         "repo": "wenchiehlee-money/biztrends.TW",
         "workflow_name": "Check Data Health",
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 31,
+        "consecutive_failures": 19,
         "recent_4_icons": "❌❌❌❌",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-20T12:02:48Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44732508023"
-      },
-      {
-        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
-        "workflow_name": "Update Company Info",
-        "file": "Actions.yaml",
-        "path": ".github/workflows/Actions.yaml",
-        "consecutive_failures": 6,
-        "recent_4_icons": "❌❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-19T17:10:57Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44574367470"
+        "latest_run_at": "2026-11-20T14:56:44Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44758329628"
       }
     ],
     "warning_alerts": [
@@ -54,8 +43,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T04:33:27Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/44675201217"
+        "latest_run_at": "2026-11-21T04:28:09Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/44866254743"
       },
       {
         "repo": "ZhongZheng782/FamilyHealthyCheck",
@@ -65,8 +54,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T17:47:20Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/44580911288"
+        "latest_run_at": "2026-11-20T17:22:54Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/44782744114"
       },
       {
         "repo": "ZhongZheng782/GoogleAnalytics",
@@ -76,8 +65,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T16:37:23Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/44568171061"
+        "latest_run_at": "2026-11-20T16:13:10Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/44771126856"
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -87,8 +76,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T04:52:39Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44677292920"
+        "latest_run_at": "2026-11-21T04:24:58Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44865994403"
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -98,8 +87,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T09:26:35Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44710752727"
+        "latest_run_at": "2026-11-21T00:29:59Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44844214821"
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -109,8 +98,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:17:47Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44644704783"
+        "latest_run_at": "2026-11-20T23:40:12Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44838477900"
       },
       {
         "repo": "ZhongZheng782/Llm-Cli-APIServer",
@@ -120,8 +109,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T12:59:22Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/44740361845"
+        "latest_run_at": "2026-11-21T02:22:16Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/44855516578"
       },
       {
         "repo": "ZhongZheng782/Mac-mini",
@@ -131,8 +120,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T05:54:05Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/44684080725"
+        "latest_run_at": "2026-11-20T23:42:33Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/44838758901"
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -141,9 +130,9 @@
         "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T21:42:38Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44621487969"
+        "latest_conclusion": "cancelled",
+        "latest_run_at": "2026-11-20T21:25:09Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44820138117"
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -153,8 +142,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T10:14:53Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44717584652"
+        "latest_run_at": "2026-11-21T00:33:42Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44844638364"
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -164,8 +153,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T09:09:22Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/44708301645"
+        "latest_run_at": "2026-11-20T23:45:06Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/44839054271"
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -197,8 +186,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T01:24:13Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44653357039"
+        "latest_run_at": "2026-11-21T00:54:24Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44846870185"
       },
       {
         "repo": "ZhongZheng782/Yahoo.Finance",
@@ -208,8 +197,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:19:28Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44644935474"
+        "latest_run_at": "2026-11-20T23:41:34Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44838640669"
       },
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
@@ -219,8 +208,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "cancelled",
-        "latest_run_at": "2026-11-20T12:14:02Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/44734062174"
+        "latest_run_at": "2026-11-20T21:19:05Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/44819236311"
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -230,8 +219,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T05:06:54Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/44678839110"
+        "latest_run_at": "2026-11-21T02:55:54Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/44858494974"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -241,8 +230,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T06:52:47Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44690912225"
+        "latest_run_at": "2026-11-20T23:54:05Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44840114671"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -263,8 +252,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:18:31Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44644807633"
+        "latest_run_at": "2026-11-20T23:41:05Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44838584123"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
@@ -274,8 +263,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T13:09:12Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/44741795944"
+        "latest_run_at": "2026-11-20T15:59:11Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/44768734356"
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -296,8 +285,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T03:06:39Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/44665450654"
+        "latest_run_at": "2026-11-21T03:26:29Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/44861134445"
       },
       {
         "repo": "wenchiehlee-investment/Gemini-CLI",
@@ -384,8 +373,19 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T12:01:25Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/44732321493"
+        "latest_run_at": "2026-11-20T23:48:30Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/44839461773"
+      },
+      {
+        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+        "workflow_name": "Update Company Info",
+        "file": "Actions.yaml",
+        "path": ".github/workflows/Actions.yaml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅✅❌❌",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-20T16:49:25Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44777197852"
       },
       {
         "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -395,8 +395,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T17:51:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44581657071"
+        "latest_run_at": "2026-11-20T17:26:25Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44783307891"
       },
       {
         "repo": "wenchiehlee-investment/TAIFEX",
@@ -406,8 +406,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T02:26:34Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/44660822229"
+        "latest_run_at": "2026-11-21T02:35:50Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/44856763608"
       },
       {
         "repo": "wenchiehlee-investment/TaiwanHouse",
@@ -450,8 +450,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T17:07:04Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/44573645254"
+        "latest_run_at": "2026-11-20T16:45:19Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/44776521320"
       },
       {
         "repo": "wenchiehlee-money/Facebook.Fetch",
@@ -472,8 +472,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T04:44:46Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44676439549"
+        "latest_run_at": "2026-11-20T22:22:55Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44828477868"
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -483,8 +483,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T11:08:57Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44725181852"
+        "latest_run_at": "2026-11-21T03:50:56Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44863178656"
       },
       {
         "repo": "wenchiehlee-money/InvestorConference",
@@ -505,8 +505,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T01:47:33Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/44656170621"
+        "latest_run_at": "2026-11-21T01:35:39Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/44851085893"
       },
       {
         "repo": "wenchiehlee-money/My-TW-Coverage",
@@ -516,8 +516,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T09:32:15Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/44711556853"
+        "latest_run_at": "2026-11-21T03:41:05Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/44862380243"
       },
       {
         "repo": "wenchiehlee-money/VIX",
@@ -527,8 +527,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T21:55:39Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/44623615825"
+        "latest_run_at": "2026-11-20T21:38:13Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/44822075627"
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -549,8 +549,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:09:25Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/44643537349"
+        "latest_run_at": "2026-11-20T23:34:23Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/44837777266"
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -560,8 +560,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:19:18Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44644912910"
+        "latest_run_at": "2026-11-20T23:41:45Z",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44838662700"
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -571,8 +571,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T00:59:39Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44650206933"
+        "latest_run_at": "2026-11-21T00:33:06Z",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44844569721"
       },
       {
         "repo": "wenchiehlee/Pipeline-Deck",
@@ -582,8 +582,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T06:01:53Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44684930625"
+        "latest_run_at": "2026-11-20T13:44:00Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44746892783"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -593,8 +593,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T01:21:46Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/44653052808"
+        "latest_run_at": "2026-11-21T00:52:57Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/44846720793"
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -626,8 +626,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T16:06:02Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/44562241076"
+        "latest_run_at": "2026-11-20T15:47:17Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/44766769050"
       },
       {
         "repo": "wenchiehlee/Python-Actions.PER",
@@ -637,8 +637,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T16:27:06Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/44566239157"
+        "latest_run_at": "2026-11-20T15:58:36Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/44768640668"
       },
       {
         "repo": "wenchiehlee/Selenium-Actions.Auction",
@@ -648,8 +648,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T09:55:37Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/44714822059"
+        "latest_run_at": "2026-11-20T21:45:39Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/44823152562"
       },
       {
         "repo": "wenchiehlee/Selenium-Actions.IPO",
@@ -659,8 +659,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-19T16:14:33Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/44563845404"
+        "latest_run_at": "2026-11-20T15:52:45Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/44767679272"
       },
       {
         "repo": "wenchiehlee/llm",
@@ -670,8 +670,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T10:29:18Z",
-        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/44719640468"
+        "latest_run_at": "2026-11-21T00:56:37Z",
+        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/44847099915"
       },
       {
         "repo": "wenchiehlee/rss2md",
@@ -681,8 +681,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T11:16:27Z",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/44726241760"
+        "latest_run_at": "2026-11-21T01:17:53Z",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/44849326342"
       },
       {
         "repo": "wenchiehlee/skills",
@@ -692,8 +692,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T02:09:51Z",
-        "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/44658810271"
+        "latest_run_at": "2026-11-21T02:02:54Z",
+        "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/44853667126"
       },
       {
         "repo": "wenchiehlee/wjlee-barco",
@@ -703,8 +703,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T09:40:55Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44712774953"
+        "latest_run_at": "2026-11-21T00:36:46Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44844975629"
       },
       {
         "repo": "wenchiehlee/wjlee-barco",
@@ -714,16 +714,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-20T11:17:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44726407006"
+        "latest_run_at": "2026-11-21T01:18:13Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44849359204"
       }
     ]
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 17,
+    "built_sites": 16,
     "errored_sites": 0,
-    "other_sites": 0,
+    "other_sites": 1,
     "sites": [
       {
         "org": "wenchiehlee-investment",
@@ -739,15 +739,6 @@
         "name": "wenchiehlee-life.github.io",
         "repo": "wenchiehlee-life/wenchiehlee-life.github.io",
         "url": "https://wenchiehlee-life.github.io/",
-        "status": "built",
-        "build_type": "legacy",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "GoogleAlertManager",
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
         "status": "built",
         "build_type": "legacy",
         "is_private": false
@@ -875,6 +866,15 @@
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
         "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
         "status": "built",
+        "build_type": "legacy",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "GoogleAlertManager",
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
+        "status": "building",
         "build_type": "legacy",
         "is_private": false
       }
@@ -1117,8 +1117,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T05:54:05Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/44684080725"
+              "latest_run_at": "2026-11-20T23:42:33Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/44838758901"
             }
           ],
           "pages": {
@@ -1183,8 +1183,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T05:06:54Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/44678839110"
+              "latest_run_at": "2026-11-21T02:55:54Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/44858494974"
             }
           ],
           "pages": {
@@ -1243,25 +1243,25 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/HomeAssistant",
-              "workflow_name": "Update Washer History README",
-              "file": "update-washer-readme.yml",
-              "path": ".github/workflows/update-washer-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:26:35Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44710752727"
-            },
-            {
-              "repo": "ZhongZheng782/HomeAssistant",
               "workflow_name": "Update UptimeRobot Status in README",
               "file": "update-uptimerobot-readme.yml",
               "path": ".github/workflows/update-uptimerobot-readme.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T04:52:39Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44677292920"
+              "latest_run_at": "2026-11-21T04:24:58Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44865994403"
+            },
+            {
+              "repo": "ZhongZheng782/HomeAssistant",
+              "workflow_name": "Update Washer History README",
+              "file": "update-washer-readme.yml",
+              "path": ".github/workflows/update-washer-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-21T00:29:59Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44844214821"
             },
             {
               "repo": "ZhongZheng782/HomeAssistant",
@@ -1271,8 +1271,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:17:47Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44644704783"
+              "latest_run_at": "2026-11-20T23:40:12Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/44838477900"
             }
           ],
           "pages": {
@@ -1329,25 +1329,14 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-              "workflow_name": "Sync & Verify Master Table in README",
-              "file": "sync-ddns-table.yml",
-              "path": ".github/workflows/sync-ddns-table.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:33:38Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44711752506"
-            },
-            {
-              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
               "workflow_name": "Action Runner",
               "file": "action-runner.yml",
               "path": ".github/workflows/action-runner.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T06:52:47Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44690912225"
+              "latest_run_at": "2026-11-20T23:54:05Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44840114671"
             },
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -1357,8 +1346,19 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:18:31Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44644807633"
+              "latest_run_at": "2026-11-20T23:41:05Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44838584123"
+            },
+            {
+              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+              "workflow_name": "Sync & Verify Master Table in README",
+              "file": "sync-ddns-table.yml",
+              "path": ".github/workflows/sync-ddns-table.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-20T09:33:38Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/44711752506"
             }
           ],
           "pages": {
@@ -1418,8 +1418,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T13:09:12Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/44741795944"
+              "latest_run_at": "2026-11-20T15:59:11Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/44768734356"
             }
           ],
           "pages": {
@@ -1478,8 +1478,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T12:59:22Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/44740361845"
+              "latest_run_at": "2026-11-21T02:22:16Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/44855516578"
             }
           ],
           "pages": {
@@ -1630,25 +1630,14 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Yahoo.Finance",
-              "workflow_name": "Daily Yahoo Finance Wayback Fetch",
-              "file": "Actions-fetch-wayback.yaml",
-              "path": ".github/workflows/Actions-fetch-wayback.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T07:36:54Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44696265169"
-            },
-            {
-              "repo": "ZhongZheng782/Yahoo.Finance",
               "workflow_name": "Daily Yahoo Finance Fetch",
               "file": "Actions-fetch.yaml",
               "path": ".github/workflows/Actions-fetch.yaml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T01:24:13Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44653357039"
+              "latest_run_at": "2026-11-21T00:54:24Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44846870185"
             },
             {
               "repo": "ZhongZheng782/Yahoo.Finance",
@@ -1658,8 +1647,19 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:19:28Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44644935474"
+              "latest_run_at": "2026-11-20T23:41:34Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44838640669"
+            },
+            {
+              "repo": "ZhongZheng782/Yahoo.Finance",
+              "workflow_name": "Daily Yahoo Finance Wayback Fetch",
+              "file": "Actions-fetch-wayback.yaml",
+              "path": ".github/workflows/Actions-fetch-wayback.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-20T07:36:54Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/44696265169"
             }
           ],
           "pages": {
@@ -1718,8 +1718,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "cancelled",
-              "latest_run_at": "2026-11-20T12:14:02Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/44734062174"
+              "latest_run_at": "2026-11-20T21:19:05Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/44819236311"
             }
           ],
           "pages": {
@@ -1823,8 +1823,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T10:14:53Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44717584652"
+              "latest_run_at": "2026-11-21T00:33:42Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44844638364"
             },
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -1833,9 +1833,9 @@
               "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T21:42:38Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44621487969"
+              "latest_conclusion": "cancelled",
+              "latest_run_at": "2026-11-20T21:25:09Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/44820138117"
             }
           ],
           "pages": {
@@ -1892,8 +1892,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:09:22Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/44708301645"
+              "latest_run_at": "2026-11-20T23:45:06Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/44839054271"
             },
             {
               "repo": "ZhongZheng782/Win11",
@@ -1960,8 +1960,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T04:33:27Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/44675201217"
+              "latest_run_at": "2026-11-21T04:28:09Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/44866254743"
             }
           ],
           "pages": {
@@ -2017,8 +2017,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T17:47:20Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/44580911288"
+              "latest_run_at": "2026-11-20T17:22:54Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/44782744114"
             }
           ],
           "pages": {
@@ -2074,8 +2074,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T16:37:23Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/44568171061"
+              "latest_run_at": "2026-11-20T16:13:10Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/44771126856"
             }
           ],
           "pages": {
@@ -2621,8 +2621,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:59:39Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44650206933"
+              "latest_run_at": "2026-11-21T00:33:06Z",
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44844569721"
             },
             {
               "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -2632,8 +2632,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:19:18Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44644912910"
+              "latest_run_at": "2026-11-20T23:41:45Z",
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/44838662700"
             }
           ],
           "pages": {
@@ -2920,6 +2920,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee/Python-Actions.FinMind",
+              "workflow_name": "Daily FinMind status",
+              "file": "daily-finmind-status.yml",
+              "path": ".github/workflows/daily-finmind-status.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-21T00:52:57Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/44846720793"
+            },
+            {
+              "repo": "wenchiehlee/Python-Actions.FinMind",
               "workflow_name": "Sync to biztrends.TW",
               "file": "sync-to-biztrends.yml",
               "path": ".github/workflows/sync-to-biztrends.yml",
@@ -2928,17 +2939,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-20T13:18:54Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/44743221174"
-            },
-            {
-              "repo": "wenchiehlee/Python-Actions.FinMind",
-              "workflow_name": "Daily FinMind status",
-              "file": "daily-finmind-status.yml",
-              "path": ".github/workflows/daily-finmind-status.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T01:21:46Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/44653052808"
             }
           ],
           "pages": {
@@ -3055,8 +3055,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T16:06:02Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/44562241076"
+              "latest_run_at": "2026-11-20T15:47:17Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/44766769050"
             }
           ],
           "pages": {
@@ -3114,8 +3114,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T16:27:06Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/44566239157"
+              "latest_run_at": "2026-11-20T15:58:36Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/44768640668"
             }
           ],
           "pages": {
@@ -3173,8 +3173,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T11:16:27Z",
-              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/44726241760"
+              "latest_run_at": "2026-11-21T01:17:53Z",
+              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/44849326342"
             }
           ],
           "pages": {
@@ -3232,8 +3232,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:55:37Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/44714822059"
+              "latest_run_at": "2026-11-20T21:45:39Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/44823152562"
             }
           ],
           "pages": {
@@ -3291,8 +3291,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T16:14:33Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/44563845404"
+              "latest_run_at": "2026-11-20T15:52:45Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/44767679272"
             }
           ],
           "pages": {
@@ -3350,8 +3350,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T02:09:51Z",
-              "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/44658810271"
+              "latest_run_at": "2026-11-21T02:02:54Z",
+              "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/44853667126"
             }
           ],
           "pages": {
@@ -3547,8 +3547,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T11:17:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44726407006"
+              "latest_run_at": "2026-11-21T01:18:13Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44849359204"
             },
             {
               "repo": "wenchiehlee/wjlee-barco",
@@ -3558,8 +3558,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:40:55Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44712774953"
+              "latest_run_at": "2026-11-21T00:36:46Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/44844975629"
             }
           ],
           "pages": {
@@ -3660,8 +3660,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T00:09:25Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/44643537349"
+              "latest_run_at": "2026-11-20T23:34:23Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/44837777266"
             }
           ],
           "pages": {
@@ -3852,8 +3852,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T10:29:18Z",
-              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/44719640468"
+              "latest_run_at": "2026-11-21T00:56:37Z",
+              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/44847099915"
             }
           ],
           "pages": {
@@ -3909,8 +3909,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T06:01:53Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44684930625"
+              "latest_run_at": "2026-11-20T13:44:00Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/44746892783"
             }
           ],
           "pages": {
@@ -4330,11 +4330,11 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 31,
+              "consecutive_failures": 19,
               "recent_4_icons": "❌❌❌❌",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-20T12:02:48Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44732508023"
+              "latest_run_at": "2026-11-20T14:56:44Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/44758329628"
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -4434,6 +4434,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/InvestorConference",
+              "workflow_name": "Sync Yahoo Finance Consensus",
+              "file": "sync-yahoo-finance-consensus.yml",
+              "path": ".github/workflows/sync-yahoo-finance-consensus.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-21T01:35:39Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/44851085893"
+            },
+            {
+              "repo": "wenchiehlee-money/InvestorConference",
               "workflow_name": "Daily Auto-Ingest from TODO",
               "file": "daily-ingest.yml",
               "path": ".github/workflows/daily-ingest.yml",
@@ -4442,17 +4453,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-20T09:34:56Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/44711937074"
-            },
-            {
-              "repo": "wenchiehlee-money/InvestorConference",
-              "workflow_name": "Sync Yahoo Finance Consensus",
-              "file": "sync-yahoo-finance-consensus.yml",
-              "path": ".github/workflows/sync-yahoo-finance-consensus.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T01:47:33Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/44656170621"
             }
           ],
           "pages": {
@@ -4506,31 +4506,31 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Fetch Alerts",
-              "file": "fetch.yml",
-              "path": ".github/workflows/fetch.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T11:08:57Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44725181852"
-            },
-            {
-              "repo": "wenchiehlee-money/GoogleAlertManager",
               "workflow_name": "Analyze Alerts",
               "file": "analyze.yml",
               "path": ".github/workflows/analyze.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T04:44:46Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44676439549"
+              "latest_run_at": "2026-11-20T22:22:55Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44828477868"
+            },
+            {
+              "repo": "wenchiehlee-money/GoogleAlertManager",
+              "workflow_name": "Fetch Alerts",
+              "file": "fetch.yml",
+              "path": ".github/workflows/fetch.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-21T03:50:56Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/44863178656"
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/GoogleAlertManager/",
-            "status": "built",
+            "status": "building",
             "build_type": "legacy"
           },
           "security": {
@@ -4689,8 +4689,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T09:32:15Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/44711556853"
+              "latest_run_at": "2026-11-21T03:41:05Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/44862380243"
             }
           ],
           "pages": {
@@ -4747,8 +4747,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T21:55:39Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/44623615825"
+              "latest_run_at": "2026-11-20T21:38:13Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/44822075627"
             }
           ],
           "pages": {
@@ -5673,6 +5673,17 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
+              "workflow_name": "Update Concept Stocks",
+              "file": "update_conceptstocks.yml",
+              "path": ".github/workflows/update_conceptstocks.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-21T03:26:29Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/44861134445"
+            },
+            {
+              "repo": "wenchiehlee-investment/ConceptStocks",
               "workflow_name": "Update Company Financials",
               "file": "update_company_financials.yml",
               "path": ".github/workflows/update_company_financials.yml",
@@ -5681,17 +5692,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-20T05:22:51Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/44680639956"
-            },
-            {
-              "repo": "wenchiehlee-investment/ConceptStocks",
-              "workflow_name": "Update Concept Stocks",
-              "file": "update_conceptstocks.yml",
-              "path": ".github/workflows/update_conceptstocks.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T03:06:39Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/44665450654"
             }
           ],
           "pages": {
@@ -5878,8 +5878,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T12:01:25Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/44732321493"
+              "latest_run_at": "2026-11-20T23:48:30Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/44839461773"
             },
             {
               "repo": "wenchiehlee-investment/MOPS",
@@ -5959,19 +5959,19 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T17:51:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44581657071"
+              "latest_run_at": "2026-11-20T17:26:25Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44783307891"
             },
             {
               "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
               "workflow_name": "Update Company Info",
               "file": "Actions.yaml",
               "path": ".github/workflows/Actions.yaml",
-              "consecutive_failures": 6,
-              "recent_4_icons": "❌❌❌❌",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-19T17:10:57Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44574367470"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅❌❌",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-20T16:49:25Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/44777197852"
             }
           ],
           "pages": {
@@ -6176,8 +6176,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-19T17:07:04Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/44573645254"
+              "latest_run_at": "2026-11-20T16:45:19Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/44776521320"
             }
           ],
           "pages": {
@@ -6233,8 +6233,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-20T02:26:34Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/44660822229"
+              "latest_run_at": "2026-11-21T02:35:50Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/44856763608"
             }
           ],
           "pages": {
