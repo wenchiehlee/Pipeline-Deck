@@ -35,6 +35,21 @@ TARGET_ORGS = [
     "wenchiehlee-life",
 ]
 
+# wenchiehlee-money/-investment/-ux/-alert/-life are separate personal GitHub accounts
+# (not org members of wenchiehlee), so the default token has no admin access to their
+# repos and GitHub silently omits `security_and_analysis` for non-admin callers. Each
+# account needs its own PAT, supplied via these env vars, to report accurate security
+# posture. Falls back to the default GITHUB_TOKEN/GH_TOKEN when unset.
+ORG_TOKEN_ENV_MAP = {
+    "ZhongZheng782": "PAT_ZHONGZHENG782",
+    "wenchiehlee": "PAT_WENCHIEHLEE",
+    "wenchiehlee-money": "PAT_WENCHIEHLEE_MONEY",
+    "wenchiehlee-investment": "PAT_WENCHIEHLEE_INVESTMENT",
+    "wenchiehlee-ux": "PAT_WENCHIEHLEE_UX",
+    "wenchiehlee-alert": "PAT_WENCHIEHLEE_ALERT",
+    "wenchiehlee-life": "PAT_WENCHIEHLEE_LIFE",
+}
+
 # Consistent UX-Deck Design & Mascot Registry (aligned with UX-Deck 13 Mascots Matrix)
 UX_DECK_REGISTRY = {
     "wenchiehlee-ux/UX-Deck": {"symbol": "🦌", "name": "幾何靈鹿", "role": "UX 設計系統中樞"},
@@ -90,6 +105,16 @@ def get_github_token() -> str:
         return proc.stdout.strip()
     except Exception:
         return ""
+
+def get_org_token(org: str, default_token: str) -> str:
+    """Return the per-account PAT for `org` when its env var is set, else the default token."""
+    load_env_file()
+    env_name = ORG_TOKEN_ENV_MAP.get(org)
+    if env_name:
+        org_token = os.environ.get(env_name)
+        if org_token:
+            return org_token
+    return default_token
 
 def create_session(token: str) -> requests.Session:
     from urllib3.util import Retry
@@ -396,6 +421,12 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
 def scan_ecosystem():
     token = get_github_token()
     session = create_session(token)
+    # Per-account sessions so admin-only fields (security_and_analysis) are visible
+    # when a repo's owner account differs from the default token's identity.
+    org_sessions = {
+        org: create_session(get_org_token(org, token))
+        for org in TARGET_ORGS
+    }
 
     summary_data = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -455,7 +486,7 @@ def scan_ecosystem():
 
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_map = {
-            executor.submit(scan_single_repo, session, org, repo): (org, repo["full_name"])
+            executor.submit(scan_single_repo, org_sessions.get(org, session), org, repo): (org, repo["full_name"])
             for org, repo in all_repo_targets
         }
         for future in as_completed(future_map):
