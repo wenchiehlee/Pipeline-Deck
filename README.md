@@ -21,9 +21,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-23 12:55:44 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-23 14:15:53 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`223 / 73 / 0 / 3`**（**223** 個工作流程 YAML · **73** 個活躍 Actions 庫 · **0** 個嚴重警報 · **3** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`223 / 73 / 0 / 4`**（**223** 個工作流程 YAML · **73** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -31,12 +31,12 @@
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | [`ZhongZheng782`](https://github.com/ZhongZheng782) | 31 | 19 | **91** | 2 | 5 | 0 |
 | [`wenchiehlee`](https://github.com/wenchiehlee) | 32 | 30 | **67** | 8 | 30 | 0 |
-| [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 24 | **51** |
-| [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** | 1 | 16 | **15** |
+| [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 24 | 0 |
+| [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 12 | **29** | 1 | 16 | **2** |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 1 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 1 | 0 |
-| **全域總計** | **106** | **73** | **223 個 YAML** | **17 站點** | **77 庫** | **66 處** |
+| **全域總計** | **106** | **73** | **223 個 YAML** | **17 站點** | **77 庫** | **2 處** |
 
 ---
 
@@ -44,16 +44,17 @@
 
 - **常態排程監測總數**：`65` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`3` 個
-- **🟢 正常運行（最新一次執行成功）**：`62` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`4` 個
+- **🟢 正常運行（最新一次執行成功）**：`61` 個
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **2 次** | `❌❌` | `2026-11-22T11:46:50` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45018981932) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-23T13:26:12` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45183893937) |
 | 2 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **1 次** | `❌✅✅✅` | `2026-11-23T08:54:06` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45142349250) |
 | 3 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
+| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅✅❌` | `2026-11-23T12:54:51` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45178779719) |
 
 ---
 
@@ -91,19 +92,16 @@
 - **秘密掃描防護 (Secret Scanning)**：`77` 個儲存庫啟用
 - **阻擋推送防護 (Push Protection)**：`77` 個儲存庫啟用
 - **Dependabot 自動安全修正**：`49` 個儲存庫啟用
-- **Dependabot 待修復警報**：`66` 處（🔴 6 嚴重 · 🟠 34 高度 · 🟡 25 中度 · 🔵 1 低度）
+- **Dependabot 待修復警報**：`2` 處（🔴 2 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
 - **CodeQL 代碼品質與安全漏洞**：`0` 處（🔴 0 嚴重 · 🟠 0 高度 · 🟡 0 中度 · 🔵 0 低度）
-- **惡意代碼與外洩警報 (Malware / Leaks)**：`1` 處
+- **惡意代碼與外洩警報 (Malware / Leaks)**：`0` 處
 
 #### ⚠️ 待處置資安警報與代碼品質儲存庫清單
 
 | # | 組織 / 儲存庫 | Dependabot 警報 | CodeQL 漏洞 | 惡意代碼 | 嚴重等級分佈 (Crit/High/Med/Low) | 安全儀表板直達 |
 |---|---|:---:|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | **45** | 0 | 0 | `🔴 2 · 🟠 22 · 🟡 21 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-money/GoogleAlertManager/security) |
-| 2 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | **9** | 0 | 0 | `🔴 2 · 🟠 6 · 🟡 1 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-investment/ConceptStocks/security) |
-| 3 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | **6** | 0 | 0 | `🔴 2 · 🟠 4 · 🟡 0 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security) |
-| 4 | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | **6** | 0 | 0 | `🔴 0 · 🟠 2 · 🟡 3 · 🔵 1` | [Security ↗](https://github.com/wenchiehlee-money/InvestorConference/security) |
-| 5 | [wenchiehlee-investment/Stock](https://github.com/wenchiehlee-investment/Stock) | 0 | 0 | **1** | `🔴 0 · 🟠 0 · 🟡 0 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-investment/Stock/security) |
+| 1 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | **1** | 0 | 0 | `🔴 1 · 🟠 0 · 🟡 0 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-investment/ConceptStocks/security) |
+| 2 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | **1** | 0 | 0 | `🔴 1 · 🟠 0 · 🟡 0 · 🔵 0` | [Security ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security) |
 
 ---
 
@@ -173,8 +171,8 @@
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
 | 1 | [biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | **7** | - | ⚪ 預設 | 0 | `check-data-health.yml`, `refresh-cycle-mapping-monthly.yml`, `sync_to_GoogleSheet.Banks.yml`, `sync_to_TAIEX_centralized.yml`, `sync_to_gopublic.yml`, `update_combined_dividends.yml`, `update_indices.yml` |
-| 2 | [InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | **7** | [🟢 built](https://wenchiehlee-money.github.io/InvestorConference/) | 🛡️ 啟用 | ⚠️ **6** | `daily-ingest.yml`, `deploy-web.yml`, `ingest.yml`, `sync-gt-to-mac-mini.yml`, `sync-to-downstream.yml`, `sync-yahoo-finance-consensus.yml`, `test-fin-issues.yml` |
-| 3 | [GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | **5** | [🟢 built](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🛡️ 啟用 | ⚠️ **45** | `analyze.yml`, `fetch.yml`, `issue-feedback.yml`, `sync-to-downstream.yml`, `test.yml` |
+| 2 | [InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | **7** | [🟢 built](https://wenchiehlee-money.github.io/InvestorConference/) | 🛡️ 啟用 | 0 | `daily-ingest.yml`, `deploy-web.yml`, `ingest.yml`, `sync-gt-to-mac-mini.yml`, `sync-to-downstream.yml`, `sync-yahoo-finance-consensus.yml`, `test-fin-issues.yml` |
+| 3 | [GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | **5** | [🟢 built](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🛡️ 啟用 | 0 | `analyze.yml`, `fetch.yml`, `issue-feedback.yml`, `sync-to-downstream.yml`, `test.yml` |
 | 4 | [Facebook.Fetch](https://github.com/wenchiehlee-money/Facebook.Fetch) | **4** | - | 🛡️ 啟用 | 0 | `add-group-handler.yml`, `daily_fetch.yml`, `sync-to-biztrends.yml`, `tag-link-injector.yml` |
 | 5 | [diagram-design](https://github.com/wenchiehlee-money/diagram-design) | **3** | - | 🛡️ 啟用 | 0 | `auto-bump.yml`, `ci.yml`, `pages.yml` |
 | 6 | [My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | **3** | [🟢 built](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🛡️ 啟用 | 0 | `daily_update.yml`, `pages.yml`, `sync_to_googlealertmanager.yml` |
@@ -190,11 +188,11 @@
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
 | 1 | [InvestorEvents](https://github.com/wenchiehlee-investment/InvestorEvents) | **5** | - | 🛡️ 啟用 | 0 | `monthly-event-catalogs.yml`, `sync-to-Downstream.yml`, `sync-to-biztrends.yml`, `weekly-dividends.yml`, `weekly-earnings.yml` |
-| 2 | [ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | **4** | - | 🛡️ 啟用 | ⚠️ **9** | `sync-to-Analyzer.yml`, `sync-to-biztrends.yml`, `update_company_financials.yml`, `update_conceptstocks.yml` |
+| 2 | [ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | **4** | - | 🛡️ 啟用 | ⚠️ **1** | `sync-to-Analyzer.yml`, `sync-to-biztrends.yml`, `update_company_financials.yml`, `update_conceptstocks.yml` |
 | 3 | [Gemini-CLI](https://github.com/wenchiehlee-investment/Gemini-CLI) | **3** | - | 🛡️ 啟用 | 0 | `check_quota.yml`, `manual_scripts.yml`, `stock_events.yml` |
 | 4 | [ic.tpex.org.tw](https://github.com/wenchiehlee-investment/ic.tpex.org.tw) | **3** | - | 🛡️ 啟用 | 0 | `sync-to-Analyzer.yml`, `sync-to-biztrends.yml`, `update-supply-chain.yml` |
 | 5 | [MOPS](https://github.com/wenchiehlee-investment/MOPS) | **3** | - | 🛡️ 啟用 | 0 | `Download.yaml`, `EarlyFilerDownload.yaml`, `sync-to-Downstream.yml` |
-| 6 | [Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | **3** | - | 🛡️ 啟用 | ⚠️ **6** | `Actions.yaml`, `sync-to-Analyzer.yml`, `sync-to-biztrends.yml` |
+| 6 | [Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | **3** | - | 🛡️ 啟用 | ⚠️ **1** | `Actions.yaml`, `sync-to-Analyzer.yml`, `sync-to-biztrends.yml` |
 | 7 | [GoodInfo.Test](https://github.com/wenchiehlee-investment/GoodInfo.Test) | **2** | - | 🛡️ 啟用 | 0 | `hybrid-cdp-pipeline.yml`, `test-actions-cdp.yml` |
 | 8 | [TaiwanHouse](https://github.com/wenchiehlee-investment/TaiwanHouse) | **2** | - | 🛡️ 啟用 | 0 | `monthly_update.yml`, `sync-to-biztrends.yml` |
 | 9 | [MarketCostDistribution](https://github.com/wenchiehlee-investment/MarketCostDistribution) | **1** | - | 🛡️ 啟用 | 0 | `sync-outputs.yml` |
