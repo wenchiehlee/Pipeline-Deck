@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-23T12:52:34.762666+00:00",
+  "generated_at": "2026-11-23T12:54:55.619681+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 73,
   "total_workflows": 223,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 61,
+    "warning_consecutive_1_to_3_count": 3,
+    "healthy_count": 62,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -20,17 +20,6 @@
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-22T11:46:50Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45018981932"
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-23T10:39:19Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45158074772"
       },
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
@@ -585,6 +574,17 @@
         "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45086019033"
       },
       {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌✅",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-23T12:52:13Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45178369258"
+      },
+      {
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
         "file": "daily-finmind-status.yml",
@@ -731,19 +731,10 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 16,
-    "errored_sites": 1,
+    "built_sites": 17,
+    "errored_sites": 0,
     "other_sites": 0,
     "sites": [
-      {
-        "org": "wenchiehlee",
-        "name": "Pipeline-Deck",
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -854,6 +845,15 @@
       },
       {
         "org": "wenchiehlee",
+        "name": "Pipeline-Deck",
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
         "name": "skills",
         "repo": "wenchiehlee/skills",
         "url": "https://wenchiehlee.github.io/skills/",
@@ -891,15 +891,15 @@
     ]
   },
   "security_telemetry": {
-    "secret_scanning_enabled_count": 35,
-    "push_protection_enabled_count": 35,
-    "dependabot_updates_enabled_count": 25,
-    "total_open_dependabot_alerts": 0,
+    "secret_scanning_enabled_count": 77,
+    "push_protection_enabled_count": 77,
+    "dependabot_updates_enabled_count": 49,
+    "total_open_dependabot_alerts": 66,
     "dependabot_breakdown": {
-      "critical": 0,
-      "high": 0,
-      "medium": 0,
-      "low": 0
+      "critical": 6,
+      "high": 34,
+      "medium": 25,
+      "low": 1
     },
     "total_open_codeql_alerts": 0,
     "codeql_breakdown": {
@@ -908,8 +908,596 @@
       "medium": 0,
       "low": 0
     },
-    "total_malware_alerts": 0,
-    "repos_with_alerts": []
+    "total_malware_alerts": 1,
+    "repos_with_alerts": [
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "org": "wenchiehlee-money",
+        "is_private": false,
+        "dependabot_total": 45,
+        "dependabot_breakdown": {
+          "critical": 2,
+          "high": 22,
+          "medium": 21,
+          "low": 0
+        },
+        "dependabot_items": [
+          {
+            "number": 64,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/64"
+          },
+          {
+            "number": 63,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: AllowlistUnpickler does not deny numpy submodule-local file-I/O sinks",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/63"
+          },
+          {
+            "number": 62,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK corpus-reader view methods bypass the scoped root sandbox via intermediate-directory symlinks",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/62"
+          },
+          {
+            "number": 61,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: ARFF_Formatter Injects Weka ARFF Schema Directives via Attacker-Controlled Class Labels",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/61"
+          },
+          {
+            "number": 60,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in Synset.tree()/acyclic_tree() via WordNet relation traversal",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/60"
+          },
+          {
+            "number": 59,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: XMLCorpusView comment and CDATA parsing permits quadratic CPU denial of service",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/59"
+          },
+          {
+            "number": 58,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in DependencyGraph.tree()/triples()",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/58"
+          },
+          {
+            "number": 57,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Downloader cyclic collection indices cause an infinite closure walk",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/57"
+          },
+          {
+            "number": 56,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in CCG lexicon parser causes denial of service via deeply nested category input",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/56"
+          },
+          {
+            "number": 55,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/55"
+          },
+          {
+            "number": 54,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in semantic-logic type parser causes denial of service via nested type strings",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/54"
+          },
+          {
+            "number": 53,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/53"
+          },
+          {
+            "number": 52,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in Toolbox settings helpers causes denial of service via deeply nested input",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/52"
+          },
+          {
+            "number": 51,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Compile-time regex DoS in NLTK search/tokenizer sinks: quadratic regex-engine compile bypasses the match-only timeout",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/51"
+          },
+          {
+            "number": 50,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Uncontrolled recursion in WordNet Synset hypernym walkers (max_depth/min_depth/hypernym_paths/hypernym_distances) causes DoS",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/50"
+          },
+          {
+            "number": 49,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Quadratic-time DoS in SeekableUnicodeStreamReader.readline on an unterminated corpus line via per-iteration full-buffer rescan",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/49"
+          },
+          {
+            "number": 48,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Quadratic CPU exhaustion in NLTK XMLCorpusView.read_block via deeply nested XML corpus tags",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/48"
+          },
+          {
+            "number": 47,
+            "package": "nltk",
+            "severity": "critical",
+            "summary": "NLTK incomplete fix: additional JVM/JAR sandbox bypass through unvalidated launcher tokens in java() command arguments",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/47"
+          },
+          {
+            "number": 46,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/46"
+          },
+          {
+            "number": 45,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: StreamBackedCorpusView constructor os.stat leaks out-of-root file existence, size, and mtime bypassing pathsec ENFORCE",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/45"
+          },
+          {
+            "number": 44,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/44"
+          },
+          {
+            "number": 43,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/43"
+          },
+          {
+            "number": 42,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/42"
+          },
+          {
+            "number": 41,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/41"
+          },
+          {
+            "number": 40,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/40"
+          },
+          {
+            "number": 39,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/39"
+          },
+          {
+            "number": 38,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/38"
+          },
+          {
+            "number": 37,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/37"
+          },
+          {
+            "number": 36,
+            "package": "nltk",
+            "severity": "medium",
+            "summary": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/36"
+          },
+          {
+            "number": 35,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/35"
+          },
+          {
+            "number": 34,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/34"
+          },
+          {
+            "number": 33,
+            "package": "soupsieve",
+            "severity": "high",
+            "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/33"
+          },
+          {
+            "number": 32,
+            "package": "soupsieve",
+            "severity": "medium",
+            "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/32"
+          },
+          {
+            "number": 31,
+            "package": "soupsieve",
+            "severity": "high",
+            "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/31"
+          },
+          {
+            "number": 30,
+            "package": "soupsieve",
+            "severity": "medium",
+            "summary": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/30"
+          },
+          {
+            "number": 29,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/29"
+          },
+          {
+            "number": 28,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/28"
+          },
+          {
+            "number": 27,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/27"
+          },
+          {
+            "number": 26,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/26"
+          },
+          {
+            "number": 25,
+            "package": "certifi",
+            "severity": "critical",
+            "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/25"
+          },
+          {
+            "number": 24,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/24"
+          },
+          {
+            "number": 22,
+            "package": "urllib3",
+            "severity": "medium",
+            "summary": "urllib3: Chunked Deflate streaming can enter an infinite loop",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/22"
+          },
+          {
+            "number": 21,
+            "package": "urllib3",
+            "severity": "high",
+            "summary": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/21"
+          },
+          {
+            "number": 20,
+            "package": "urllib3",
+            "severity": "high",
+            "summary": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/20"
+          },
+          {
+            "number": 19,
+            "package": "nltk",
+            "severity": "high",
+            "summary": "NLTK: Model-artifact APIs bypass pathsec and touch files outside allowed roots",
+            "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/19"
+          }
+        ],
+        "codeql_total": 0,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [],
+        "malware_total": 0,
+        "malware_items": []
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "org": "wenchiehlee-investment",
+        "is_private": false,
+        "dependabot_total": 9,
+        "dependabot_breakdown": {
+          "critical": 2,
+          "high": 6,
+          "medium": 1,
+          "low": 0
+        },
+        "dependabot_items": [
+          {
+            "number": 9,
+            "package": "soupsieve",
+            "severity": "high",
+            "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/9"
+          },
+          {
+            "number": 8,
+            "package": "soupsieve",
+            "severity": "medium",
+            "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/8"
+          },
+          {
+            "number": 7,
+            "package": "soupsieve",
+            "severity": "high",
+            "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/7"
+          },
+          {
+            "number": 6,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/6"
+          },
+          {
+            "number": 5,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/5"
+          },
+          {
+            "number": 4,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/4"
+          },
+          {
+            "number": 3,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/3"
+          },
+          {
+            "number": 2,
+            "package": "certifi",
+            "severity": "critical",
+            "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/2"
+          },
+          {
+            "number": 1,
+            "package": "llm",
+            "severity": "critical",
+            "summary": "llm CLI tool contains a code injection vulnerability via `--functions` command-line argument",
+            "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/1"
+          }
+        ],
+        "codeql_total": 0,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [],
+        "malware_total": 0,
+        "malware_items": []
+      },
+      {
+        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+        "org": "wenchiehlee-investment",
+        "is_private": false,
+        "dependabot_total": 6,
+        "dependabot_breakdown": {
+          "critical": 2,
+          "high": 4,
+          "medium": 0,
+          "low": 0
+        },
+        "dependabot_items": [
+          {
+            "number": 6,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/6"
+          },
+          {
+            "number": 5,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/5"
+          },
+          {
+            "number": 4,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/4"
+          },
+          {
+            "number": 3,
+            "package": "pyasn1",
+            "severity": "high",
+            "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/3"
+          },
+          {
+            "number": 2,
+            "package": "certifi",
+            "severity": "critical",
+            "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/2"
+          },
+          {
+            "number": 1,
+            "package": "llm",
+            "severity": "critical",
+            "summary": "llm CLI tool contains a code injection vulnerability via `--functions` command-line argument",
+            "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/1"
+          }
+        ],
+        "codeql_total": 0,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [],
+        "malware_total": 0,
+        "malware_items": []
+      },
+      {
+        "repo": "wenchiehlee-money/InvestorConference",
+        "org": "wenchiehlee-money",
+        "is_private": false,
+        "dependabot_total": 6,
+        "dependabot_breakdown": {
+          "critical": 0,
+          "high": 2,
+          "medium": 3,
+          "low": 1
+        },
+        "dependabot_items": [
+          {
+            "number": 18,
+            "package": "vite",
+            "severity": "medium",
+            "summary": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/18"
+          },
+          {
+            "number": 17,
+            "package": "vite",
+            "severity": "low",
+            "summary": "Vite: Cross origin script execution through Vite custom middleware",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/17"
+          },
+          {
+            "number": 16,
+            "package": "vite",
+            "severity": "medium",
+            "summary": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/16"
+          },
+          {
+            "number": 15,
+            "package": "vite",
+            "severity": "high",
+            "summary": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/15"
+          },
+          {
+            "number": 14,
+            "package": "vite",
+            "severity": "medium",
+            "summary": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/14"
+          },
+          {
+            "number": 13,
+            "package": "source-map-js",
+            "severity": "high",
+            "summary": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+            "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/13"
+          }
+        ],
+        "codeql_total": 0,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [],
+        "malware_total": 0,
+        "malware_items": []
+      },
+      {
+        "repo": "wenchiehlee-investment/Stock",
+        "org": "wenchiehlee-investment",
+        "is_private": false,
+        "dependabot_total": 0,
+        "dependabot_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "dependabot_items": [],
+        "codeql_total": 0,
+        "codeql_breakdown": {
+          "critical": 0,
+          "high": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "codeql_items": [],
+        "malware_total": 1,
+        "malware_items": [
+          {
+            "number": 1,
+            "secret_type": "Google API Key",
+            "html_url": "https://github.com/wenchiehlee-investment/Stock/security/secret-scanning/1"
+          }
+        ]
+      }
+    ]
   },
   "orgs": {
     "ZhongZheng782": {
@@ -3933,17 +4521,17 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅❌",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-23T10:39:19Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45158074772"
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-23T12:52:13Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45178369258"
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
@@ -4424,18 +5012,61 @@
             "build_type": "workflow"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
-              "total": 0,
+              "total": 6,
               "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
+              "high": 2,
+              "medium": 3,
+              "low": 1,
+              "items": [
+                {
+                  "number": 18,
+                  "package": "vite",
+                  "severity": "medium",
+                  "summary": "Vite: Files outside `server.fs.allow` could be served when project paths match system paths on non-Windows machine",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/18"
+                },
+                {
+                  "number": 17,
+                  "package": "vite",
+                  "severity": "low",
+                  "summary": "Vite: Cross origin script execution through Vite custom middleware",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/17"
+                },
+                {
+                  "number": 16,
+                  "package": "vite",
+                  "severity": "medium",
+                  "summary": "launch-editor: Editor CLI flag misinterpretation causing arbitrary command execution for some editors",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/16"
+                },
+                {
+                  "number": 15,
+                  "package": "vite",
+                  "severity": "high",
+                  "summary": "launch-editor: `fs.existsSync()` existence check can be bypassed on Windows",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/15"
+                },
+                {
+                  "number": 14,
+                  "package": "vite",
+                  "severity": "medium",
+                  "summary": "launch-editor: escapeCmdArgs() omits % escaping on Windows",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/14"
+                },
+                {
+                  "number": 13,
+                  "package": "source-map-js",
+                  "severity": "high",
+                  "summary": "source-map-js allows event-loop denial of service through indexed source-map section offsets",
+                  "html_url": "https://github.com/wenchiehlee-money/InvestorConference/security/dependabot/13"
+                }
+              ]
             },
             "code_scanning": {
               "total": 0,
@@ -4496,18 +5127,334 @@
             "build_type": "legacy"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
+              "total": 45,
+              "critical": 2,
+              "high": 22,
+              "medium": 21,
               "low": 0,
-              "items": []
+              "items": [
+                {
+                  "number": 64,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/64"
+                },
+                {
+                  "number": 63,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: AllowlistUnpickler does not deny numpy submodule-local file-I/O sinks",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/63"
+                },
+                {
+                  "number": 62,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK corpus-reader view methods bypass the scoped root sandbox via intermediate-directory symlinks",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/62"
+                },
+                {
+                  "number": 61,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: ARFF_Formatter Injects Weka ARFF Schema Directives via Attacker-Controlled Class Labels",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/61"
+                },
+                {
+                  "number": 60,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in Synset.tree()/acyclic_tree() via WordNet relation traversal",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/60"
+                },
+                {
+                  "number": 59,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: XMLCorpusView comment and CDATA parsing permits quadratic CPU denial of service",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/59"
+                },
+                {
+                  "number": 58,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in DependencyGraph.tree()/triples()",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/58"
+                },
+                {
+                  "number": 57,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Downloader cyclic collection indices cause an infinite closure walk",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/57"
+                },
+                {
+                  "number": 56,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in CCG lexicon parser causes denial of service via deeply nested category input",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/56"
+                },
+                {
+                  "number": 55,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/55"
+                },
+                {
+                  "number": 54,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in semantic-logic type parser causes denial of service via nested type strings",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/54"
+                },
+                {
+                  "number": 53,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/53"
+                },
+                {
+                  "number": 52,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in Toolbox settings helpers causes denial of service via deeply nested input",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/52"
+                },
+                {
+                  "number": 51,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Compile-time regex DoS in NLTK search/tokenizer sinks: quadratic regex-engine compile bypasses the match-only timeout",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/51"
+                },
+                {
+                  "number": 50,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Uncontrolled recursion in WordNet Synset hypernym walkers (max_depth/min_depth/hypernym_paths/hypernym_distances) causes DoS",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/50"
+                },
+                {
+                  "number": 49,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Quadratic-time DoS in SeekableUnicodeStreamReader.readline on an unterminated corpus line via per-iteration full-buffer rescan",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/49"
+                },
+                {
+                  "number": 48,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Quadratic CPU exhaustion in NLTK XMLCorpusView.read_block via deeply nested XML corpus tags",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/48"
+                },
+                {
+                  "number": 47,
+                  "package": "nltk",
+                  "severity": "critical",
+                  "summary": "NLTK incomplete fix: additional JVM/JAR sandbox bypass through unvalidated launcher tokens in java() command arguments",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/47"
+                },
+                {
+                  "number": 46,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/46"
+                },
+                {
+                  "number": 45,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: StreamBackedCorpusView constructor os.stat leaks out-of-root file existence, size, and mtime bypassing pathsec ENFORCE",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/45"
+                },
+                {
+                  "number": 44,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/44"
+                },
+                {
+                  "number": 43,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/43"
+                },
+                {
+                  "number": 42,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/42"
+                },
+                {
+                  "number": 41,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/41"
+                },
+                {
+                  "number": 40,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/40"
+                },
+                {
+                  "number": 39,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/39"
+                },
+                {
+                  "number": 38,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/38"
+                },
+                {
+                  "number": 37,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/37"
+                },
+                {
+                  "number": 36,
+                  "package": "nltk",
+                  "severity": "medium",
+                  "summary": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/36"
+                },
+                {
+                  "number": 35,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/35"
+                },
+                {
+                  "number": 34,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/34"
+                },
+                {
+                  "number": 33,
+                  "package": "soupsieve",
+                  "severity": "high",
+                  "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/33"
+                },
+                {
+                  "number": 32,
+                  "package": "soupsieve",
+                  "severity": "medium",
+                  "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/32"
+                },
+                {
+                  "number": 31,
+                  "package": "soupsieve",
+                  "severity": "high",
+                  "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/31"
+                },
+                {
+                  "number": 30,
+                  "package": "soupsieve",
+                  "severity": "medium",
+                  "summary": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/30"
+                },
+                {
+                  "number": 29,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/29"
+                },
+                {
+                  "number": 28,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/28"
+                },
+                {
+                  "number": 27,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/27"
+                },
+                {
+                  "number": 26,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/26"
+                },
+                {
+                  "number": 25,
+                  "package": "certifi",
+                  "severity": "critical",
+                  "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/25"
+                },
+                {
+                  "number": 24,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/24"
+                },
+                {
+                  "number": 22,
+                  "package": "urllib3",
+                  "severity": "medium",
+                  "summary": "urllib3: Chunked Deflate streaming can enter an infinite loop",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/22"
+                },
+                {
+                  "number": 21,
+                  "package": "urllib3",
+                  "severity": "high",
+                  "summary": "urllib3: HTTPResponse.stream()/read_chunked() buffers an unbounded chunk-size line into memory",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/21"
+                },
+                {
+                  "number": 20,
+                  "package": "urllib3",
+                  "severity": "high",
+                  "summary": "urllib3: HTTPS proxy TLS configuration may be ignored or overridden",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/20"
+                },
+                {
+                  "number": 19,
+                  "package": "nltk",
+                  "severity": "high",
+                  "summary": "NLTK: Model-artifact APIs bypass pathsec and touch files outside allowed roots",
+                  "html_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/security/dependabot/19"
+                }
+              ]
             },
             "code_scanning": {
               "total": 0,
@@ -4556,9 +5503,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -4603,8 +5550,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -4662,8 +5609,8 @@
             "build_type": "workflow"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -4720,9 +5667,9 @@
             "build_type": "legacy"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -4765,9 +5712,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -4810,8 +5757,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -4855,8 +5802,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -4900,9 +5847,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -4943,9 +5890,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -4986,9 +5933,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5029,9 +5976,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5072,8 +6019,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5115,9 +6062,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5158,8 +6105,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5201,9 +6148,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5244,9 +6191,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5287,8 +6234,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5330,8 +6277,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5373,9 +6320,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5416,8 +6363,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5459,8 +6406,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5502,8 +6449,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -5592,9 +6539,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5663,18 +6610,82 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
+              "total": 9,
+              "critical": 2,
+              "high": 6,
+              "medium": 1,
               "low": 0,
-              "items": []
+              "items": [
+                {
+                  "number": 9,
+                  "package": "soupsieve",
+                  "severity": "high",
+                  "summary": "Soup Sieve: Exponential ReDoS in selector compilation via \\9-run in CSS_ESCAPES/IDENTIFIER",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/9"
+                },
+                {
+                  "number": 8,
+                  "package": "soupsieve",
+                  "severity": "medium",
+                  "summary": "Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/8"
+                },
+                {
+                  "number": 7,
+                  "package": "soupsieve",
+                  "severity": "high",
+                  "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/7"
+                },
+                {
+                  "number": 6,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/6"
+                },
+                {
+                  "number": 5,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/5"
+                },
+                {
+                  "number": 4,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/4"
+                },
+                {
+                  "number": 3,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/3"
+                },
+                {
+                  "number": 2,
+                  "package": "certifi",
+                  "severity": "critical",
+                  "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/2"
+                },
+                {
+                  "number": 1,
+                  "package": "llm",
+                  "severity": "critical",
+                  "summary": "llm CLI tool contains a code injection vulnerability via `--functions` command-line argument",
+                  "html_url": "https://github.com/wenchiehlee-investment/ConceptStocks/security/dependabot/1"
+                }
+              ]
             },
             "code_scanning": {
               "total": 0,
@@ -5733,9 +6744,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5792,9 +6803,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5873,9 +6884,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -5943,18 +6954,61 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
+              "total": 6,
+              "critical": 2,
+              "high": 4,
               "medium": 0,
               "low": 0,
-              "items": []
+              "items": [
+                {
+                  "number": 6,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/6"
+                },
+                {
+                  "number": 5,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/5"
+                },
+                {
+                  "number": 4,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/4"
+                },
+                {
+                  "number": 3,
+                  "package": "pyasn1",
+                  "severity": "high",
+                  "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/3"
+                },
+                {
+                  "number": 2,
+                  "package": "certifi",
+                  "severity": "critical",
+                  "summary": "certifi bundles emSign root CAs with compromised intermediate CA keys",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/2"
+                },
+                {
+                  "number": 1,
+                  "package": "llm",
+                  "severity": "critical",
+                  "summary": "llm CLI tool contains a code injection vulnerability via `--functions` command-line argument",
+                  "html_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/security/dependabot/1"
+                }
+              ]
             },
             "code_scanning": {
               "total": 0,
@@ -5989,8 +7043,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6047,9 +7101,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -6092,8 +7146,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6149,9 +7203,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -6206,8 +7260,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6263,9 +7317,9 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -6306,8 +7360,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6349,8 +7403,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6392,8 +7446,8 @@
             "build_type": null
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -6414,8 +7468,14 @@
               "items": []
             },
             "malware": {
-              "total": 0,
-              "items": []
+              "total": 1,
+              "items": [
+                {
+                  "number": 1,
+                  "secret_type": "Google API Key",
+                  "html_url": "https://github.com/wenchiehlee-investment/Stock/security/secret-scanning/1"
+                }
+              ]
             }
           }
         },
@@ -6435,9 +7495,9 @@
             "build_type": "legacy"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -6487,9 +7547,9 @@
             "build_type": "workflow"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -6543,8 +7603,8 @@
             "build_type": "legacy"
           },
           "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
