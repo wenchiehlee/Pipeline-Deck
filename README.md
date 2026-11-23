@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **35 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-23 10:40:16 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **35 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-23 12:53:27 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`223 / 73 / 0 / 4`**（**223** 個工作流程 YAML · **73** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
@@ -52,9 +52,9 @@
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **2 次** | `❌❌` | `2026-11-22T11:46:50` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45018981932) |
-| 2 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **1 次** | `❌✅✅✅` | `2026-11-23T08:54:06` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45142349250) |
-| 3 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅❌✅` | `2026-11-23T06:08:53` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45122185560) |
+| 2 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **2 次** | `❌❌✅❌` | `2026-11-23T10:39:19` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45158074772) |
+| 3 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **1 次** | `❌✅✅✅` | `2026-11-23T08:54:06` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45142349250) |
+| 4 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
 
 ---
 
