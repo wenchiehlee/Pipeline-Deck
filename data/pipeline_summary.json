@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:51:54.336190+00:00",
+  "generated_at": "2026-11-24T15:54:02.785978+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
@@ -67,34 +67,15 @@
         ]
       },
       {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Update Cycle Indices",
-        "file": "update_indices.yml",
-        "path": ".github/workflows/update_indices.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-23T10:16:53Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
-            "job_name": "update"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/Pipeline-Deck",
         "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
         "file": "renew-pipeline-telemetry.yml",
         "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅❌❌",
+        "consecutive_failures": 2,
+        "recent_4_icons": "❌❌✅❌",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-24T15:45:11Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45429132021",
+        "latest_run_at": "2026-11-24T15:51:38Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45430373339",
         "annotations": [
           {
             "level": "warning",
@@ -119,6 +100,25 @@
             "title": "",
             "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
             "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Update Cycle Indices",
+        "file": "update_indices.yml",
+        "path": ".github/workflows/update_indices.yml",
+        "consecutive_failures": 1,
+        "recent_4_icons": "❌",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-23T10:16:53Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "update"
           }
         ]
       }
@@ -1901,24 +1901,10 @@
         ]
       },
       {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Update Cycle Indices",
-        "file": "update_indices.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
-            "job_name": "update"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/Pipeline-Deck",
         "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
         "file": "renew-pipeline-telemetry.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45429132021",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45430373339",
         "annotations": [
           {
             "level": "warning",
@@ -1943,6 +1929,20 @@
             "title": "",
             "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
             "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Update Cycle Indices",
+        "file": "update_indices.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "update"
           }
         ]
       },
@@ -5889,11 +5889,11 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅❌❌",
+              "consecutive_failures": 2,
+              "recent_4_icons": "❌❌✅❌",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-24T15:45:11Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45429132021",
+              "latest_run_at": "2026-11-24T15:51:38Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45430373339",
               "annotations": [
                 {
                   "level": "warning",

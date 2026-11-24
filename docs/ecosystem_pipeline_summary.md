@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-24 15:53:03 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-24 15:55:04 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`224 / 74 / 0 / 4`**（**224** 個工作流程 YAML · **74** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
@@ -33,8 +33,8 @@
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-24T14:04:56` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45410132361) |
 | 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `renew-analytics.yml` | **3 次** | `❌❌❌✅` | `2026-11-24T15:45:14` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45429143574) |
-| 3 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅❌❌` | `2026-11-24T15:45:11` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45429132021) |
+| 3 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **2 次** | `❌❌✅❌` | `2026-11-24T15:51:38` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45430373339) |
+| 4 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
