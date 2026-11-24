@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24T15:35:26.811224+00:00",
+  "generated_at": "2026-11-24T15:45:20.548971+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 4,
-    "healthy_count": 61,
+    "warning_consecutive_1_to_3_count": 3,
+    "healthy_count": 62,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -30,51 +30,20 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 3,
-        "recent_4_icons": "❌❌❌✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-24T15:31:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45426521473",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "telemetry-renew"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Process completed with exit code 1.",
-            "job_name": "telemetry-renew"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/Analytics-Deck",
         "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
         "file": "renew-analytics.yml",
         "path": ".github/workflows/renew-analytics.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
+        "consecutive_failures": 3,
+        "recent_4_icons": "❌❌❌✅",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-24T03:42:45Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+        "latest_run_at": "2026-11-24T15:45:14Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45429143574",
         "annotations": [
           {
             "level": "warning",
             "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "renew-and-deploy"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
             "job_name": "deploy-pages"
           },
           {
@@ -86,7 +55,7 @@
           {
             "level": "failure",
             "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
             "job_name": "deploy-pages"
           },
           {
@@ -459,11 +428,18 @@
         "file": "daily-channel-fetch.yml",
         "path": ".github/workflows/daily-channel-fetch.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌✅",
+        "recent_4_icons": "✅✅✅❌",
         "latest_conclusion": "cancelled",
-        "latest_run_at": "2026-11-24T03:56:09Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082",
-        "annotations": []
+        "latest_run_at": "2026-11-24T06:44:35Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45342708875",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job has exceeded the maximum execution time of 6h0m0s",
+            "job_name": "fetch"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -1013,6 +989,31 @@
         ]
       },
       {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌❌",
+        "latest_conclusion": "success",
+        "latest_run_at": "2026-11-24T15:35:14Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45427234354",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "telemetry-renew"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
         "file": "daily-finmind-status.yml",
@@ -1261,43 +1262,18 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T05:51:07Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "Update this repo's README with latest blog posts"
-          }
-        ]
+        "latest_run_at": "2026-11-24T15:45:56Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45429280695",
+        "annotations": []
       }
     ]
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 15,
-    "errored_sites": 2,
-    "other_sites": 0,
+    "built_sites": 16,
+    "errored_sites": 0,
+    "other_sites": 1,
     "sites": [
-      {
-        "org": "wenchiehlee",
-        "name": "Analytics-Deck",
-        "repo": "wenchiehlee/Analytics-Deck",
-        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee",
-        "name": "Pipeline-Deck",
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -1399,6 +1375,15 @@
       },
       {
         "org": "wenchiehlee",
+        "name": "Pipeline-Deck",
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
         "name": "skills",
         "repo": "wenchiehlee/skills",
         "url": "https://wenchiehlee.github.io/skills/",
@@ -1431,6 +1416,15 @@
         "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
         "status": "built",
         "build_type": "legacy",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
+        "name": "Analytics-Deck",
+        "repo": "wenchiehlee/Analytics-Deck",
+        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
+        "status": "building",
+        "build_type": "workflow",
         "is_private": false
       }
     ]
@@ -1520,7 +1514,7 @@
     ]
   },
   "runner_telemetry": {
-    "total_annotation_count": 74,
+    "total_annotation_count": 73,
     "affected_schedule_count": 36,
     "message_groups": [
       {
@@ -1539,17 +1533,6 @@
         ]
       },
       {
-        "level": "failure",
-        "message": "Process completed with exit code 1.",
-        "count": 5,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-          "wenchiehlee-money/GoogleAlertManager",
-          "wenchiehlee-money/My-TW-Coverage",
-          "wenchiehlee/Pipeline-Deck"
-        ]
-      },
-      {
         "level": "notice",
         "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
         "count": 5,
@@ -1561,13 +1544,13 @@
         ]
       },
       {
-        "level": "warning",
-        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-        "count": 3,
+        "level": "failure",
+        "message": "Process completed with exit code 1.",
+        "count": 4,
         "repos": [
-          "wenchiehlee-money/biztrends.TW",
-          "wenchiehlee/Analytics-Deck",
-          "wenchiehlee/Pipeline-Deck"
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+          "wenchiehlee-money/GoogleAlertManager",
+          "wenchiehlee-money/My-TW-Coverage"
         ]
       },
       {
@@ -1624,6 +1607,15 @@
       },
       {
         "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee-money/biztrends.TW",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "warning",
         "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
         "count": 2,
         "repos": [
@@ -1633,15 +1625,7 @@
       },
       {
         "level": "warning",
-        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-        "count": 2,
-        "repos": [
-          "wenchiehlee/wjlee-barco"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
         "count": 1,
         "repos": [
           "wenchiehlee/Analytics-Deck"
@@ -1657,7 +1641,7 @@
       },
       {
         "level": "failure",
-        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
         "count": 1,
         "repos": [
           "wenchiehlee/Analytics-Deck"
@@ -1808,6 +1792,14 @@
         ]
       },
       {
+        "level": "failure",
+        "message": "The job has exceeded the maximum execution time of 6h0m0s",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/YoutubeAudio.Fetch"
+        ]
+      },
+      {
         "level": "warning",
         "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
         "count": 1,
@@ -1829,6 +1821,14 @@
         "count": 1,
         "repos": [
           "wenchiehlee-money/GoogleAlertManager"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/Pipeline-Deck"
         ]
       },
       {
@@ -1886,6 +1886,14 @@
         "repos": [
           "wenchiehlee/rss2md"
         ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/wjlee-barco"
+        ]
       }
     ],
     "affected_schedules": [
@@ -1904,41 +1912,15 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45426521473",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "telemetry-renew"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Process completed with exit code 1.",
-            "job_name": "telemetry-renew"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/Analytics-Deck",
         "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
         "file": "renew-analytics.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45429143574",
         "annotations": [
           {
             "level": "warning",
             "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "renew-and-deploy"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
             "job_name": "deploy-pages"
           },
           {
@@ -1950,7 +1932,7 @@
           {
             "level": "failure",
             "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
             "job_name": "deploy-pages"
           },
           {
@@ -2161,6 +2143,20 @@
             "level": "warning",
             "title": "",
             "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+            "job_name": "fetch"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/YoutubeAudio.Fetch",
+        "workflow_name": "Daily channel fetch",
+        "file": "daily-channel-fetch.yml",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45342708875",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job has exceeded the maximum execution time of 6h0m0s",
             "job_name": "fetch"
           }
         ]
@@ -2462,6 +2458,26 @@
         ]
       },
       {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45427234354",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "telemetry-renew"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
         "file": "daily-finmind-status.yml",
@@ -2604,20 +2620,6 @@
             "title": "",
             "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
             "job_name": "Update this repo's README with latest activity from WP"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee/wjlee-barco",
-        "workflow_name": "Latest blog post workflow",
-        "file": "blog-post-workflow.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "Update this repo's README with latest blog posts"
           }
         ]
       }
@@ -3308,11 +3310,18 @@
               "file": "daily-channel-fetch.yml",
               "path": ".github/workflows/daily-channel-fetch.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅❌✅",
+              "recent_4_icons": "✅✅✅❌",
               "latest_conclusion": "cancelled",
-              "latest_run_at": "2026-11-24T03:56:09Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082",
-              "annotations": []
+              "latest_run_at": "2026-11-24T06:44:35Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45342708875",
+              "annotations": [
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "The job has exceeded the maximum execution time of 6h0m0s",
+                  "job_name": "fetch"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3408,6 +3417,37 @@
             "sync.yaml"
           ],
           "schedules": [
+            {
+              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
+              "file": "hybrid-fetch-and-analyze.yml",
+              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T01:07:29Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Scrape via NAS Residential CDP (In-Memory)"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+                }
+              ]
+            },
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
               "workflow_name": "Sync Analyzer Data to Downstream Repositories",
@@ -3520,37 +3560,6 @@
                   "title": "",
                   "message": "Source reports/dividends-report not found",
                   "job_name": "sync-to-investment"
-                }
-              ]
-            },
-            {
-              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
-              "file": "hybrid-fetch-and-analyze.yml",
-              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T01:07:29Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "Scrape via NAS Residential CDP (In-Memory)"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
-                },
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "Process completed with exit code 1.",
-                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
                 }
               ]
             }
@@ -5541,6 +5550,18 @@
           "schedules": [
             {
               "repo": "wenchiehlee/wjlee-barco",
+              "workflow_name": "Latest blog post workflow",
+              "file": "blog-post-workflow.yml",
+              "path": ".github/workflows/blog-post-workflow.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T15:45:56Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45429280695",
+              "annotations": []
+            },
+            {
+              "repo": "wenchiehlee/wjlee-barco",
               "workflow_name": "Latest WP activity",
               "file": "WP-post-workflow.yml",
               "path": ".github/workflows/WP-post-workflow.yml",
@@ -5555,25 +5576,6 @@
                   "title": "",
                   "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
                   "job_name": "Update this repo's README with latest activity from WP"
-                }
-              ]
-            },
-            {
-              "repo": "wenchiehlee/wjlee-barco",
-              "workflow_name": "Latest blog post workflow",
-              "file": "blog-post-workflow.yml",
-              "path": ".github/workflows/blog-post-workflow.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T05:51:07Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "Update this repo's README with latest blog posts"
                 }
               ]
             }
@@ -5673,22 +5675,16 @@
               "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
               "file": "renew-analytics.yml",
               "path": ".github/workflows/renew-analytics.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
+              "consecutive_failures": 3,
+              "recent_4_icons": "❌❌❌✅",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-24T03:42:45Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+              "latest_run_at": "2026-11-24T15:45:14Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45429143574",
               "annotations": [
                 {
                   "level": "warning",
                   "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "renew-and-deploy"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
                   "job_name": "deploy-pages"
                 },
                 {
@@ -5700,7 +5696,7 @@
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
                   "job_name": "deploy-pages"
                 },
                 {
@@ -5715,7 +5711,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Analytics-Deck/",
-            "status": "errored",
+            "status": "building",
             "build_type": "workflow"
           },
           "security": {
@@ -5981,11 +5977,11 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 3,
-              "recent_4_icons": "❌❌❌✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-24T15:31:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45426521473",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌❌",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T15:35:14Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45427234354",
               "annotations": [
                 {
                   "level": "warning",
@@ -5994,10 +5990,10 @@
                   "job_name": "telemetry-renew"
                 },
                 {
-                  "level": "failure",
+                  "level": "warning",
                   "title": "",
-                  "message": "Process completed with exit code 1.",
-                  "job_name": "telemetry-renew"
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "deploy-pages"
                 }
               ]
             }
@@ -6005,7 +6001,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
