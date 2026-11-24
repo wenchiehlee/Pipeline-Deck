@@ -194,6 +194,31 @@ def fetch_org_repos(session: requests.Session, org: str):
         page += 1
     return repos
 
+def get_run_annotations(session: requests.Session, full_name: str, run_id) -> list:
+    """Fetch job-level check-run annotations (e.g. Node.js 20 deprecation warnings)
+    for a single workflow run, by walking its jobs' check_run_url."""
+    if not run_id:
+        return []
+    annotations = []
+    jobs_resp = session.get(f"https://api.github.com/repos/{full_name}/actions/runs/{run_id}/jobs")
+    if jobs_resp.status_code != 200:
+        return annotations
+    for job in jobs_resp.json().get("jobs", []):
+        check_run_url = job.get("check_run_url")
+        if not check_run_url:
+            continue
+        ann_resp = session.get(f"{check_run_url}/annotations")
+        if ann_resp.status_code != 200:
+            continue
+        for ann in ann_resp.json():
+            annotations.append({
+                "level": ann.get("annotation_level"),
+                "title": ann.get("title") or "",
+                "message": ann.get("message", ""),
+                "job_name": job.get("name")
+            })
+    return annotations
+
 def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> dict:
     """Perform comprehensive inspection of a single repository:
     1. Base metadata (has_pages, security_and_analysis)
@@ -388,6 +413,7 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
                             break
                     run_icons = ["❌" if x.get("conclusion") == "failure" else "✅" for x in recent_4]
                     file_name = p.split("/")[-1] if "/" in p else p
+                    annotations = get_run_annotations(session, full_name, completed[0].get("id"))
                     schedules.append({
                         "repo": full_name,
                         "workflow_name": completed[0].get("name", file_name),
@@ -397,7 +423,8 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
                         "recent_4_icons": "".join(run_icons),
                         "latest_conclusion": completed[0].get("conclusion"),
                         "latest_run_at": completed[0].get("created_at"),
-                        "latest_run_url": completed[0].get("html_url")
+                        "latest_run_url": completed[0].get("html_url"),
+                        "annotations": annotations
                     })
 
     return {
@@ -459,6 +486,12 @@ def scan_ecosystem():
             "codeql_breakdown": {"critical": 0, "high": 0, "medium": 0, "low": 0},
             "total_malware_alerts": 0,
             "repos_with_alerts": []
+        },
+        "runner_telemetry": {
+            "total_annotation_count": 0,
+            "affected_schedule_count": 0,
+            "message_groups": [],
+            "affected_schedules": []
         },
         "orgs": {}
     }
@@ -610,6 +643,36 @@ def scan_ecosystem():
     summary_data["scheduled_telemetry"]["warning_consecutive_1_to_3_count"] = len(summary_data["scheduled_telemetry"]["warning_alerts"])
     summary_data["scheduled_telemetry"]["healthy_count"] = len(summary_data["scheduled_telemetry"]["healthy_workflows"])
 
+    # Runner annotations telemetry (e.g. Node.js 20 deprecation warnings) collected
+    # from the latest run of each monitored scheduled workflow.
+    message_groups = {}
+    for item in all_schedules:
+        anns = item.get("annotations") or []
+        if not anns:
+            continue
+        summary_data["runner_telemetry"]["affected_schedules"].append({
+            "repo": item["repo"],
+            "workflow_name": item["workflow_name"],
+            "file": item["file"],
+            "latest_run_url": item.get("latest_run_url"),
+            "annotations": anns
+        })
+        for ann in anns:
+            summary_data["runner_telemetry"]["total_annotation_count"] += 1
+            msg = ann.get("message", "")
+            group = message_groups.setdefault(msg, {"level": ann.get("level"), "message": msg, "count": 0, "repos": set()})
+            group["count"] += 1
+            group["repos"].add(item["repo"])
+
+    summary_data["runner_telemetry"]["affected_schedule_count"] = len(summary_data["runner_telemetry"]["affected_schedules"])
+    summary_data["runner_telemetry"]["message_groups"] = sorted(
+        [
+            {"level": g["level"], "message": g["message"], "count": g["count"], "repos": sorted(g["repos"])}
+            for g in message_groups.values()
+        ],
+        key=lambda g: -g["count"]
+    )
+
     return summary_data
 
 def generate_markdown(data) -> str:
@@ -681,6 +744,23 @@ def generate_markdown(data) -> str:
 
     if sch["critical_consecutive_4_count"] == 0 and sch["warning_consecutive_1_to_3_count"] == 0:
         lines.append("> ✅ **目前全域常態排程工作流程運作狀態良好，無任何連續失敗管道。**")
+        lines.append("")
+
+    # --- SECTION: RUNNER / ACTIONS ANNOTATIONS (e.g. Node.js 20 deprecation) ---
+    rt = data.get("runner_telemetry", {})
+    lines.append(f"#### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）")
+    lines.append("")
+    lines.append(f"- **常態排程最新一次執行中偵測到的 Runner 告警**：`{rt.get('total_annotation_count', 0)}` 筆，影響 `{rt.get('affected_schedule_count', 0)}` 個排程工作流程")
+    lines.append("")
+    if rt.get("message_groups"):
+        lines.append("| # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |")
+        lines.append("|---|:---:|---|:---:|:---:|")
+        for idx, g in enumerate(rt["message_groups"], 1):
+            level_icon = {"warning": "⚠️", "failure": "🔴", "notice": "ℹ️"}.get(g.get("level"), "ℹ️")
+            lines.append(f"| {idx} | {level_icon} {g.get('level')} | {g.get('message')} | {g.get('count')} | {len(g.get('repos', []))} |")
+        lines.append("")
+    else:
+        lines.append("> ✅ **常態排程最新一次執行中未偵測到任何 Runner 環境告警。**")
         lines.append("")
 
     lines.append("---")

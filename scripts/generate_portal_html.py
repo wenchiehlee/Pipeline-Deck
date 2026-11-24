@@ -46,6 +46,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
     sch = data["scheduled_telemetry"]
     pg = data.get("pages_telemetry", {})
     sec = data.get("security_telemetry", {})
+    rt = data.get("runner_telemetry", {})
     orgs = data["orgs"]
     total_orgs_count = len(orgs)
 
@@ -68,6 +69,9 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
     dep_bd = sec.get("dependabot_breakdown", {})
     code_bd = sec.get("codeql_breakdown", {})
+
+    runner_annotation_count = rt.get("total_annotation_count", 0)
+    runner_affected_count = rt.get("affected_schedule_count", 0)
 
     ns_quartet = f"{data['total_workflows']} / {data['total_repos_with_actions']} / {crit_count} / {warn_count}"
 
@@ -209,6 +213,59 @@ def generate_portal_html(data: dict, index_html_path: Path):
         warn_section_html = """      <!-- NO WARNING ALERTS BANNER -->
       <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 12px 18px; margin-bottom: 1.5rem; color: #065f46; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 8px;">
         <span>✅</span> <strong>目前全域常態排程運作狀態良好，無任何連續失敗管道。</strong>
+      </div>
+"""
+
+    # Build Runner Annotation Rows (e.g. Node.js 20 deprecation warnings)
+    runner_section_html = ""
+    runner_groups = rt.get("message_groups", [])
+    if runner_groups:
+        runner_rows = ""
+        level_icon_map = {"warning": "⚠️", "failure": "🔴", "notice": "ℹ️"}
+        for idx, g in enumerate(runner_groups, 1):
+            level = g.get("level") or "notice"
+            icon = level_icon_map.get(level, "ℹ️")
+            repos_list = g.get("repos", [])
+            repos_html = ", ".join(
+                f'<a href="https://github.com/{r}" target="_blank" rel="noopener noreferrer" class="repo-inline-link">{r}</a>' for r in repos_list
+            )
+            runner_rows += f"""                <tr>
+                  <td>{idx}</td>
+                  <td style="text-align: center;">{icon} {level}</td>
+                  <td>{g.get('message', '')}</td>
+                  <td style="text-align: center;">{g.get('count', 0)}</td>
+                  <td>{repos_html}</td>
+                </tr>
+"""
+        runner_section_html = f"""      <!-- RUNNER ANNOTATIONS TABLE -->
+      <div id="runner-annotations-container">
+        <div class="table-card">
+          <div class="table-card-head warning-head">
+            <div class="table-card-title">⚙️ Runner 環境告警（如 Node.js 版本棄用通知）</div>
+            <span class="table-hint">擷取自常態排程最新一次執行的 Job Annotations</span>
+          </div>
+          <div class="table-responsive">
+            <table class="telemetry-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th style="text-align: center;">等級</th>
+                  <th>訊息內容</th>
+                  <th style="text-align: center;">出現次數</th>
+                  <th>受影響儲存庫</th>
+                </tr>
+              </thead>
+              <tbody>
+{runner_rows}              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+"""
+    else:
+        runner_section_html = """      <!-- NO RUNNER ANNOTATIONS BANNER -->
+      <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 8px; padding: 12px 18px; margin-bottom: 1.5rem; color: #065f46; font-size: 0.95rem; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+        <span>✅</span> <strong>常態排程最新一次執行未偵測到任何 Runner 環境告警（如 Node.js 版本棄用）。</strong>
       </div>
 """
 
@@ -1763,14 +1820,16 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <span class="health-pill pill-crit" style="color: {'#059669' if crit_count == 0 else '#dc2626'}; background: {'#ecfdf5' if crit_count == 0 else '#fef2f2'}; border-color: {'#a7f3d0' if crit_count == 0 else '#fecaca'};">🚨 嚴重警報（≥4次）：<strong>{crit_count}</strong></span>
           <span class="health-pill pill-warn">⚠️ 異常警告（1~3次）：<strong>{warn_count}</strong></span>
           <span class="health-pill pill-ok">🟢 正常運行：<strong>{healthy_count}</strong></span>
+          <span class="health-pill pill-warn">⚙️ Runner 環境告警：<strong>{runner_annotation_count}</strong>（{runner_affected_count} 庫）</span>
         </div>
       </div>
       <p class="section-desc">
-        針對生態系中配置有 <code>schedule: - cron:</code> 的常態工作流程，追蹤最新執行紀錄與連續失敗次數。連續失敗 ≥ 4 次標記為嚴重警報，連續失敗 1~3 次標記為異常警告。
+        針對生態系中配置有 <code>schedule: - cron:</code> 的常態工作流程，追蹤最新執行紀錄與連續失敗次數。連續失敗 ≥ 4 次標記為嚴重警報，連續失敗 1~3 次標記為異常警告；同時擷取最新一次執行的 Job Annotations（如 Node.js 版本棄用通知）。
       </p>
 
 {crit_section_html}
 {warn_section_html}
+{runner_section_html}
       <!-- HEALTHY WORKFLOWS ACCORDION -->
       <details class="healthy-accordion">
         <summary class="healthy-summary">
