@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-24 15:32:51 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-24 15:36:35 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`224 / 74 / 0 / 4`**（**224** 個工作流程 YAML · **74** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
 
@@ -52,36 +52,36 @@
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-24T14:04:56` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45410132361) |
-| 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `renew-analytics.yml` | **2 次** | `❌❌✅✅` | `2026-11-24T03:42:45` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130) |
-| 3 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅❌✅` | `2026-11-24T08:46:11` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45359015460) |
+| 2 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **3 次** | `❌❌❌✅` | `2026-11-24T15:31:36` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45426521473) |
+| 3 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `renew-analytics.yml` | **2 次** | `❌❌✅✅` | `2026-11-24T03:42:45` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130) |
+| 4 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
-- **常態排程最新一次執行中偵測到的 Runner 告警**：`77` 筆，影響 `36` 個排程工作流程
+- **常態排程最新一次執行中偵測到的 Runner 告警**：`74` 筆，影響 `36` 個排程工作流程
 
 | # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |
 |---|:---:|---|:---:|:---:|
 | 1 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 11 | 8 |
-| 2 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 5 | 4 |
-| 3 | 🔴 failure | Process completed with exit code 1. | 4 | 3 |
+| 2 | 🔴 failure | Process completed with exit code 1. | 5 | 4 |
+| 3 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 5 | 4 |
 | 4 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 3 | 3 |
 | 5 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 3 | 2 |
 | 6 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 3 | 3 |
 | 7 | 🔴 failure | Nothing was fetched | 3 | 1 |
 | 8 | 🔴 failure | The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings | 2 | 1 |
-| 9 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 2 |
-| 10 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later. | 2 | 2 |
-| 11 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.
+| 9 | ⚠️ warning | Source data/reports/wayback_yahoo_finance_consensus.csv not found | 2 | 1 |
+| 10 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 2 |
+| 11 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 2 |
+| 12 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 1 |
+| 13 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 14 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later. | 1 | 1 |
+| 15 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.
     at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)
     at processTicksAndRejections (node:internal/process/task_queues:104:5)
     at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)
-    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1) | 2 | 2 |
-| 12 | 🔴 failure | Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time. | 2 | 2 |
-| 13 | ⚠️ warning | Source data/reports/wayback_yahoo_finance_consensus.csv not found | 2 | 1 |
-| 14 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 2 |
-| 15 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 2 |
-| 16 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 2 | 1 |
+    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1) | 1 | 1 |
+| 16 | 🔴 failure | Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time. | 1 | 1 |
 | 17 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
 | 18 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
 | 19 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
