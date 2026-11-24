@@ -1,9 +1,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-23 14:15:53 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **73 個儲存庫** 具備自動化工作流，累計運行 **223 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-24 08:47:18 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`223 / 73 / 0 / 4`**（**223** 個工作流程 YAML · **73** 個活躍 Actions 庫 · **0** 個嚴重警報 · **4** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`223 / 73 / 0 / 3`**（**223** 個工作流程 YAML · **73** 個活躍 Actions 庫 · **0** 個嚴重警報 · **3** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -24,37 +24,36 @@
 
 - **常態排程監測總數**：`65` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`0` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`4` 個
-- **🟢 正常運行（最新一次執行成功）**：`61` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`3` 個
+- **🟢 正常運行（最新一次執行成功）**：`62` 個
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-23T13:26:12` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45183893937) |
-| 2 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **1 次** | `❌✅✅✅` | `2026-11-23T08:54:06` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45142349250) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **2 次** | `❌❌` | `2026-11-23T13:26:12` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45183893937) |
+| 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `renew-analytics.yml` | **2 次** | `❌❌✅✅` | `2026-11-24T03:42:45` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130) |
 | 3 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 4 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅✅❌` | `2026-11-23T12:54:51` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45178779719) |
 
 ---
 
 ### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)
 
 - **Pages 發布站點總數**：`17` 個站點
-- **🟢 正常發布 (`built`)**：`17` 個
-- **🔴 建置異常 (`errored`)**：`0` 個
+- **🟢 正常發布 (`built`)**：`15` 個
+- **🔴 建置異常 (`errored`)**：`2` 個
 - **⚪ 其他/初始待命中 (`other`)**：`0` 個
 
 | # | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |
 |---|---|---|---|:---:|:---:|:---:|
-| 1 | [wenchiehlee-investment/wenchiehlee-investment.github.io](https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io) | 💼 投資機構 (`投資組織官方入口`) | [https://wenchiehlee-investment.github.io/](https://wenchiehlee-investment.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 2 | [wenchiehlee-life/wenchiehlee-life.github.io](https://github.com/wenchiehlee-life/wenchiehlee-life.github.io) | 🌱 人文生活 (`生活組織官方門戶`) | [https://wenchiehlee-life.github.io/](https://wenchiehlee-life.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 3 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | 🐦 破曉警報鳥 (`SaaS 情報過濾雷達`) | [https://wenchiehlee-money.github.io/GoogleAlertManager/](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 4 | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 5 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | 🦉 拍拍翅萌萌鴞 (`台股個股深度調研`) | [https://wenchiehlee-money.github.io/My-TW-Coverage/](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 6 | [wenchiehlee-money/VIX](https://github.com/wenchiehlee-money/VIX) | 🦢 幾何黑天鵝 (`全球波動率黑天鵝雷達`) | [https://wenchiehlee-money.github.io/VIX/](https://wenchiehlee-money.github.io/VIX/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 7 | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 8 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 1 | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | 🦉 拍拍翅萌萌鴞 (`台股個股深度調研`) | [https://wenchiehlee-money.github.io/My-TW-Coverage/](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🔴 異常 (errored) | `workflow` | 🌍 公開 |
+| 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🔴 異常 (errored) | `workflow` | 🌍 公開 |
+| 3 | [wenchiehlee-investment/wenchiehlee-investment.github.io](https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io) | 💼 投資機構 (`投資組織官方入口`) | [https://wenchiehlee-investment.github.io/](https://wenchiehlee-investment.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 4 | [wenchiehlee-life/wenchiehlee-life.github.io](https://github.com/wenchiehlee-life/wenchiehlee-life.github.io) | 🌱 人文生活 (`生活組織官方門戶`) | [https://wenchiehlee-life.github.io/](https://wenchiehlee-life.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 5 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | 🐦 破曉警報鳥 (`SaaS 情報過濾雷達`) | [https://wenchiehlee-money.github.io/GoogleAlertManager/](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 6 | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 7 | [wenchiehlee-money/VIX](https://github.com/wenchiehlee-money/VIX) | 🦢 幾何黑天鵝 (`全球波動率黑天鵝雷達`) | [https://wenchiehlee-money.github.io/VIX/](https://wenchiehlee-money.github.io/VIX/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 8 | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 9 | [wenchiehlee/dockers](https://github.com/wenchiehlee/dockers) | 🐳 貨櫃藍鯨 (`Docker 映像目錄與部署`) | [https://wenchiehlee.github.io/dockers/](https://wenchiehlee.github.io/dockers/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 10 | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 11 | [wenchiehlee/mkdocs-investment](https://github.com/wenchiehlee/mkdocs-investment) | 🐂🐻 幾何狂牛/守護熊 (`大盤資產配置與避險`) | [https://wenchiehlee.github.io/mkdocs-investment/](https://wenchiehlee.github.io/mkdocs-investment/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
@@ -133,7 +132,7 @@
 | 17 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
 | 18 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |
 | 19 | [AI-Benchmark](https://github.com/wenchiehlee/AI-Benchmark) | **1** | - | 🛡️ 啟用 | 0 | `benchmark.yml` |
-| 20 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `renew-analytics.yml` |
+| 20 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🔴 errored](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `renew-analytics.yml` |
 | 21 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
 | 22 | [dockers](https://github.com/wenchiehlee/dockers) | **1** | [🟢 built](https://wenchiehlee.github.io/dockers/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 23 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | 🛡️ 啟用 | 0 | `action.yml` |
@@ -155,7 +154,7 @@
 | 3 | [GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | **5** | [🟢 built](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🛡️ 啟用 | 0 | `analyze.yml`, `fetch.yml`, `issue-feedback.yml`, `sync-to-downstream.yml`, `test.yml` |
 | 4 | [Facebook.Fetch](https://github.com/wenchiehlee-money/Facebook.Fetch) | **4** | - | 🛡️ 啟用 | 0 | `add-group-handler.yml`, `daily_fetch.yml`, `sync-to-biztrends.yml`, `tag-link-injector.yml` |
 | 5 | [diagram-design](https://github.com/wenchiehlee-money/diagram-design) | **3** | - | 🛡️ 啟用 | 0 | `auto-bump.yml`, `ci.yml`, `pages.yml` |
-| 6 | [My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | **3** | [🟢 built](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🛡️ 啟用 | 0 | `daily_update.yml`, `pages.yml`, `sync_to_googlealertmanager.yml` |
+| 6 | [My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | **3** | [🔴 errored](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🛡️ 啟用 | 0 | `daily_update.yml`, `pages.yml`, `sync_to_googlealertmanager.yml` |
 | 7 | [VIX](https://github.com/wenchiehlee-money/VIX) | **2** | [🟢 built](https://wenchiehlee-money.github.io/VIX/) | 🛡️ 啟用 | 0 | `sync.yml`, `update-vix-data.yml` |
 | 8 | [AI-Benchmark](https://github.com/wenchiehlee-money/AI-Benchmark) | **1** | - | 🛡️ 啟用 | 0 | `benchmark.yml` |
 | 9 | [local-workspace-mcp](https://github.com/wenchiehlee-money/local-workspace-mcp) | **1** | - | 🛡️ 啟用 | 0 | `test.yml` |
