@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-24T08:46:18.892736+00:00",
+  "generated_at": "2026-11-24T15:31:36.719663+00:00",
   "total_repos": 106,
-  "total_repos_with_actions": 73,
-  "total_workflows": 223,
+  "total_repos_with_actions": 74,
+  "total_workflows": 224,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 0,
-    "warning_consecutive_1_to_3_count": 3,
-    "healthy_count": 62,
+    "warning_consecutive_1_to_3_count": 4,
+    "healthy_count": 61,
     "critical_alerts": [],
     "warning_alerts": [
       {
@@ -15,11 +15,19 @@
         "workflow_name": "Check Data Health",
         "file": "check-data-health.yml",
         "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌",
+        "consecutive_failures": 3,
+        "recent_4_icons": "❌❌❌",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-23T13:26:12Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45183893937"
+        "latest_run_at": "2026-11-24T14:04:56Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45410132361",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "check"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/Analytics-Deck",
@@ -30,7 +38,39 @@
         "recent_4_icons": "❌❌✅✅",
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-24T03:42:45Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130"
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "renew-and-deploy"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -41,7 +81,58 @@
         "recent_4_icons": "❌",
         "latest_conclusion": "failure",
         "latest_run_at": "2026-11-23T10:16:53Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866"
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 1,
+        "recent_4_icons": "❌✅❌✅",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-24T08:46:11Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45359015460",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "telemetry-renew"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
       }
     ],
     "healthy_workflows": [
@@ -54,7 +145,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T07:15:00Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45346522599"
+        "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45346522599",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/FamilyHealthyCheck",
@@ -65,7 +157,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T20:39:17Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45261601622"
+        "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45261601622",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/GoogleAnalytics",
@@ -76,7 +169,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T19:17:48Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45247434567"
+        "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45247434567",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -87,7 +181,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:30:19Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45319967574"
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45319967574",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -97,8 +192,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T01:23:16Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45304658084"
+        "latest_run_at": "2026-11-24T11:49:38Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45387730538",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/HomeAssistant",
@@ -109,7 +205,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:48:33Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45322037146"
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45322037146",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/Llm-Cli-APIServer",
@@ -119,8 +216,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T00:57:09Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45301272134"
+        "latest_run_at": "2026-11-24T11:00:01Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45380037545",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/Mac-mini",
@@ -131,7 +229,8 @@
         "recent_4_icons": "✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:50:36Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45322268660"
+        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45322268660",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -142,7 +241,27 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T01:07:29Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701"
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Scrape via NAS Residential CDP (In-Memory)"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -152,8 +271,112 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T04:09:59Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45324469184"
+        "latest_run_at": "2026-11-24T12:44:29Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45396439951",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-market-cost-distribution"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-pe-forward-return-report-tr-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-pe-forward-return-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-drawdown-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-drawdown-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/roa-roe-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/roa-roe-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report not found",
+            "job_name": "sync-to-investment"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -164,7 +387,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T06:48:10Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45343158065"
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45343158065",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "The `python-version` input is not set.  The version of Python currently in `PATH` will be used.",
+            "job_name": "Update Action Runner Status"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/Win11",
@@ -175,7 +406,8 @@
         "recent_4_icons": "✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T23:38:28Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295"
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/Yahoo.Finance",
@@ -185,8 +417,22 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T07:58:36Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45134989456"
+        "latest_run_at": "2026-11-24T10:13:38Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45372730590",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "wayback"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+            "job_name": "wayback"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/Yahoo.Finance",
@@ -197,7 +443,21 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T04:22:28Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45325936813"
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45325936813",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+            "job_name": "fetch"
+          }
+        ]
       },
       {
         "repo": "ZhongZheng782/Yahoo.Finance",
@@ -208,7 +468,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:49:43Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45322168950"
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45322168950",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
@@ -216,10 +477,11 @@
         "file": "daily-channel-fetch.yml",
         "path": ".github/workflows/daily-channel-fetch.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅❌✅✅",
+        "recent_4_icons": "✅✅❌✅",
         "latest_conclusion": "cancelled",
         "latest_run_at": "2026-11-24T03:56:09Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082"
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -229,8 +491,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T01:24:53Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45304857428"
+        "latest_run_at": "2026-11-24T11:33:39Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45385291003",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -241,7 +504,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:50:55Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45336165169"
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45336165169",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -251,8 +515,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T10:11:07Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45153744947"
+        "latest_run_at": "2026-11-24T11:55:31Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45388636243",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -263,7 +528,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:48:59Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45322085125"
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45322085125",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager",
@@ -273,8 +539,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T08:48:33Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45141610582"
+        "latest_run_at": "2026-11-24T10:46:28Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45377945512",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -285,7 +552,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T07:59:04Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45352213338"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45352213338",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/ConceptStocks",
@@ -296,7 +571,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:57:51Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45336951495"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45336951495",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/Gemini-CLI",
@@ -307,7 +590,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T04:13:22Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "check-quota"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/Gemini-CLI",
@@ -318,7 +609,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T08:23:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "extract-events"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/InvestorEvents",
@@ -329,7 +628,15 @@
         "recent_4_icons": "✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-01T09:36:55Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "refresh"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/InvestorEvents",
@@ -340,7 +647,8 @@
         "recent_4_icons": "✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T09:29:34Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-investment/InvestorEvents",
@@ -350,8 +658,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T08:34:45Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45139744547"
+        "latest_run_at": "2026-11-24T10:40:19Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45376985752",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-investment/MOPS",
@@ -361,8 +670,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T10:33:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45157202433"
+        "latest_run_at": "2026-11-24T11:52:08Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45388115512",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "download-pdfs"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/MOPS",
@@ -372,8 +689,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T13:29:19Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45184405839"
+        "latest_run_at": "2026-11-24T14:07:27Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45410597867",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-investment/MOPS",
@@ -383,8 +701,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T04:41:12Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45328091427"
+        "latest_run_at": "2026-11-24T14:08:52Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45410853556",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-downstream"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -395,7 +721,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T19:57:58Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45254380517"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45254380517",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch-and-update"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -406,7 +740,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T20:44:52Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45262543854"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45262543854",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-file"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/TAIFEX",
@@ -417,7 +759,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:22:39Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45332881902"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45332881902",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/TaiwanHouse",
@@ -428,7 +778,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-01T05:30:35Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "update-data"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/TaiwanLoanInterest",
@@ -439,7 +797,27 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-09T05:27:03Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "update"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-biztrends"
+          },
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "sync-to-biztrends"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/ic.tpex.org.tw",
@@ -450,7 +828,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-22T05:34:22Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-investment/poorstock",
@@ -461,7 +840,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T19:54:37Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45253798136"
+        "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45253798136",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-money/Facebook.Fetch",
@@ -471,8 +851,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T08:53:35Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45142277821"
+        "latest_run_at": "2026-11-24T10:49:17Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45378385926",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -483,7 +864,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T07:28:11Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45348227204"
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45348227204",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "analyze"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/GoogleAlertManager",
@@ -493,8 +882,28 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T02:03:12Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45309519177"
+        "latest_run_at": "2026-11-24T13:26:52Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45403523511",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/InvestorConference",
@@ -504,8 +913,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T10:12:39Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45153980819"
+        "latest_run_at": "2026-11-24T11:56:29Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45388780460",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "auto-ingest"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/InvestorConference",
@@ -516,7 +933,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T04:50:44Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45329183395"
+        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45329183395",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee-money/My-TW-Coverage",
@@ -526,8 +944,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T06:39:22Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45342067903"
+        "latest_run_at": "2026-11-24T11:54:36Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45388490985",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "update"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/VIX",
@@ -538,7 +964,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T01:24:45Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45304839843"
+        "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45304839843",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update-data"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/biztrends.TW",
@@ -549,7 +983,21 @@
         "recent_4_icons": "✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-01T09:38:43Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380"
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "refresh"
+          },
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "refresh"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -560,7 +1008,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T03:50:09Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45322215741"
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45322215741",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -571,18 +1020,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T04:09:19Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45324391445"
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 0,
-        "recent_4_icons": "✅❌✅✅",
-        "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T14:14:47Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45192114385"
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45324391445",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-analyzer-workflow"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -593,7 +1039,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T04:20:58Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45325760552"
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45325760552",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "status"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -603,8 +1057,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T15:03:40Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45200942240"
+        "latest_run_at": "2026-11-24T15:01:54Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45420742935",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-biztrends"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/Python-Actions.OpenAI",
@@ -614,8 +1076,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-23T10:40:08Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45158195413"
+        "latest_run_at": "2026-11-24T12:22:53Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45392945415",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/Python-Actions.OpenAPI",
@@ -626,7 +1089,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T18:47:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45242126049"
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45242126049",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/Python-Actions.PER",
@@ -637,7 +1101,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T19:06:17Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45245381363"
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45245381363",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/Selenium-Actions.Auction",
@@ -647,8 +1112,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T01:36:38Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45306305638"
+        "latest_run_at": "2026-11-24T12:20:22Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45392538637",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "scrape"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/Selenium-Actions.IPO",
@@ -659,7 +1132,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-23T18:55:27Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45243474013"
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45243474013",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "scrape"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/dockers",
@@ -669,8 +1150,22 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T02:18:57Z",
-        "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45311458880"
+        "latest_run_at": "2026-11-24T13:55:45Z",
+        "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45408508749",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "build"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/llm",
@@ -681,7 +1176,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T04:58:30Z",
-        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45330039307"
+        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45330039307",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/rss2md",
@@ -692,7 +1188,57 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:50:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45336138582"
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45336138582",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1] max retry count exceeded. Abort.",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/skills",
@@ -703,7 +1249,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:11:44Z",
-        "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45331565724"
+        "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45331565724",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/wjlee-barco",
@@ -713,8 +1260,16 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-24T04:35:56Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45327500422"
+        "latest_run_at": "2026-11-24T15:30:39Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45426337150",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Update this repo's README with latest activity from WP"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee/wjlee-barco",
@@ -725,7 +1280,15 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_run_at": "2026-11-24T05:51:07Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208"
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Update this repo's README with latest blog posts"
+          }
+        ]
       }
     ]
   },
@@ -736,19 +1299,19 @@
     "other_sites": 0,
     "sites": [
       {
-        "org": "wenchiehlee-money",
-        "name": "My-TW-Coverage",
-        "repo": "wenchiehlee-money/My-TW-Coverage",
-        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
+        "org": "wenchiehlee",
+        "name": "Analytics-Deck",
+        "repo": "wenchiehlee/Analytics-Deck",
+        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
         "status": "errored",
         "build_type": "workflow",
         "is_private": false
       },
       {
         "org": "wenchiehlee",
-        "name": "Analytics-Deck",
-        "repo": "wenchiehlee/Analytics-Deck",
-        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
+        "name": "Pipeline-Deck",
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
         "status": "errored",
         "build_type": "workflow",
         "is_private": false
@@ -785,6 +1348,15 @@
         "name": "InvestorConference",
         "repo": "wenchiehlee-money/InvestorConference",
         "url": "https://wenchiehlee-money.github.io/InvestorConference/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "My-TW-Coverage",
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -841,15 +1413,6 @@
         "url": "https://wenchiehlee.github.io/mkdocs-life/",
         "status": "built",
         "build_type": "legacy",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee",
-        "name": "Pipeline-Deck",
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-        "status": "built",
-        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -974,11 +1537,1136 @@
       }
     ]
   },
+  "runner_telemetry": {
+    "total_annotation_count": 77,
+    "affected_schedule_count": 36,
+    "message_groups": [
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 11,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+          "wenchiehlee-investment/MOPS",
+          "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+          "wenchiehlee-investment/TaiwanLoanInterest",
+          "wenchiehlee-money/InvestorConference",
+          "wenchiehlee-money/VIX",
+          "wenchiehlee/GoogleSearch.Factset",
+          "wenchiehlee/Python-Actions.FinMind"
+        ]
+      },
+      {
+        "level": "notice",
+        "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+        "count": 5,
+        "repos": [
+          "wenchiehlee-investment/InvestorEvents",
+          "wenchiehlee-investment/TaiwanHouse",
+          "wenchiehlee-investment/TaiwanLoanInterest",
+          "wenchiehlee-money/biztrends.TW"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "Process completed with exit code 1.",
+        "count": 4,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+          "wenchiehlee-money/GoogleAlertManager",
+          "wenchiehlee-money/My-TW-Coverage"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 3,
+        "repos": [
+          "wenchiehlee-money/biztrends.TW",
+          "wenchiehlee/Analytics-Deck",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 3,
+        "repos": [
+          "ZhongZheng782/Yahoo.Finance",
+          "wenchiehlee-investment/TAIFEX"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 3,
+        "repos": [
+          "wenchiehlee-investment/ConceptStocks",
+          "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+          "wenchiehlee-money/GoogleAlertManager"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "Nothing was fetched",
+        "count": 3,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+        "count": 2,
+        "repos": [
+          "wenchiehlee-money/biztrends.TW"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Analytics-Deck",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Analytics-Deck",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Analytics-Deck",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Analytics-Deck",
+          "wenchiehlee/Pipeline-Deck"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+        "count": 2,
+        "repos": [
+          "ZhongZheng782/Yahoo.Finance"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee-investment/Gemini-CLI",
+          "wenchiehlee-investment/MOPS"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Selenium-Actions.Auction",
+          "wenchiehlee/Selenium-Actions.IPO"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/wjlee-barco"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/market-analysis-pe-forward-return-report-tr-all.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/market-analysis-pe-forward-return-report not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/market-analysis-drawdown-report-all.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/market-analysis-drawdown-report not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/roa-roe-report-all.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/roa-roe-report not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report-all.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "The `python-version` input is not set.  The version of Python currently in `PATH` will be used.",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Win11"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee-investment/ConceptStocks"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee-investment/Gemini-CLI"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee-money/GoogleAlertManager"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/dockers"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/dockers"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "[feed 1/1] max retry count exceeded. Abort.",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "[feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "[feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "failure",
+        "message": "[feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms",
+        "count": 1,
+        "repos": [
+          "wenchiehlee/rss2md"
+        ]
+      }
+    ],
+    "affected_schedules": [
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45410132361",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "check"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Analytics-Deck",
+        "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
+        "file": "renew-analytics.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "renew-and-deploy"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Update Cycle Indices",
+        "file": "update_indices.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45359015460",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "telemetry-renew"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+        "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
+        "file": "hybrid-fetch-and-analyze.yml",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Scrape via NAS Residential CDP (In-Memory)"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+        "workflow_name": "Sync Analyzer Data to Downstream Repositories",
+        "file": "sync.yaml",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45396439951",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-market-cost-distribution"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-pe-forward-return-report-tr-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-pe-forward-return-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-drawdown-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/market-analysis-drawdown-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/roa-roe-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/roa-roe-report not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report-all.md not found",
+            "job_name": "sync-to-investment"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report not found",
+            "job_name": "sync-to-investment"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/Win11",
+        "workflow_name": "Action Runner",
+        "file": "action-runner.yml",
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45343158065",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "The `python-version` input is not set.  The version of Python currently in `PATH` will be used.",
+            "job_name": "Update Action Runner Status"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/Yahoo.Finance",
+        "workflow_name": "Daily Yahoo Finance Wayback Fetch",
+        "file": "Actions-fetch-wayback.yaml",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45372730590",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "wayback"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+            "job_name": "wayback"
+          }
+        ]
+      },
+      {
+        "repo": "ZhongZheng782/Yahoo.Finance",
+        "workflow_name": "Daily Yahoo Finance Fetch",
+        "file": "Actions-fetch.yaml",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45325936813",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+            "job_name": "fetch"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "workflow_name": "Update Company Financials",
+        "file": "update_company_financials.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45352213338",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "workflow_name": "Update Concept Stocks",
+        "file": "update_conceptstocks.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45336951495",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/Gemini-CLI",
+        "workflow_name": "Weekly Quota Check",
+        "file": "check_quota.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "check-quota"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/Gemini-CLI",
+        "workflow_name": "Weekly Stock Events Extraction",
+        "file": "stock_events.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "extract-events"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/InvestorEvents",
+        "workflow_name": "Monthly Investor Event Catalog Refresh",
+        "file": "monthly-event-catalogs.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "refresh"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/MOPS",
+        "workflow_name": "Download MOPS PDFs",
+        "file": "Download.yaml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45388115512",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "download-pdfs"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/MOPS",
+        "workflow_name": "Sync to Downstream",
+        "file": "sync-to-Downstream.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45410853556",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-downstream"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+        "workflow_name": "Update Company Info",
+        "file": "Actions.yaml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45254380517",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch-and-update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+        "workflow_name": "Sync to Analyzer",
+        "file": "sync-to-Analyzer.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45262543854",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-file"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/TAIFEX",
+        "workflow_name": "Fetch TAIFEX Data",
+        "file": "fetch-taifex.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45332881902",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/TaiwanHouse",
+        "workflow_name": "Monthly Data Update",
+        "file": "monthly_update.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "update-data"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/TaiwanLoanInterest",
+        "workflow_name": "Monthly CBC Data Update",
+        "file": "monthly-cbc-update.yaml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+        "annotations": [
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "update"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-biztrends"
+          },
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "sync-to-biztrends"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Analyze Alerts",
+        "file": "analyze.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45348227204",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "analyze"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Fetch Alerts",
+        "file": "fetch.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45403523511",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/InvestorConference",
+        "workflow_name": "Daily Auto-Ingest from TODO",
+        "file": "daily-ingest.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45388780460",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "auto-ingest"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "workflow_name": "Daily Update Financials & Valuation",
+        "file": "daily_update.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45388490985",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "update"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/VIX",
+        "workflow_name": "Update VIX Data Daily",
+        "file": "update-vix-data.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45304839843",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update-data"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Monthly Cycle Mapping Refresh",
+        "file": "refresh-cycle-mapping-monthly.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "refresh"
+          },
+          {
+            "level": "notice",
+            "title": "",
+            "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+            "job_name": "refresh"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/GoogleSearch.Factset",
+        "workflow_name": "Sync to Analyzer",
+        "file": "sync-to-Analyzer.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45324391445",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-analyzer-workflow"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Python-Actions.FinMind",
+        "workflow_name": "Daily FinMind status",
+        "file": "daily-finmind-status.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45325760552",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "status"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Python-Actions.FinMind",
+        "workflow_name": "Sync to biztrends.TW",
+        "file": "sync-to-biztrends.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45420742935",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "sync-to-biztrends"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Selenium-Actions.Auction",
+        "workflow_name": "Run Selenium On GitHub Action",
+        "file": "Selenium-Action.yaml",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45392538637",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "scrape"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/Selenium-Actions.IPO",
+        "workflow_name": "Run Selenium On GitHub Action",
+        "file": "Selenium-Action.yaml",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45243474013",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "scrape"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/dockers",
+        "workflow_name": "Deploy Jekyll site to Pages",
+        "file": "deploy-pages.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45408508749",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "build"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/rss2md",
+        "workflow_name": "RSS to MD",
+        "file": "rss2md.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45336138582",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1] max retry count exceeded. Abort.",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "[feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Nothing was fetched",
+            "job_name": "RSS to MD"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/wjlee-barco",
+        "workflow_name": "Latest WP activity",
+        "file": "WP-post-workflow.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45426337150",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Update this repo's README with latest activity from WP"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee/wjlee-barco",
+        "workflow_name": "Latest blog post workflow",
+        "file": "blog-post-workflow.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "Update this repo's README with latest blog posts"
+          }
+        ]
+      }
+    ]
+  },
   "orgs": {
     "ZhongZheng782": {
       "total_repos": 31,
-      "repos_with_actions": 19,
-      "total_workflows": 91,
+      "repos_with_actions": 20,
+      "total_workflows": 92,
       "repos": [
         {
           "org": "ZhongZheng782",
@@ -1072,7 +2760,8 @@
               "recent_4_icons": "✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:50:36Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45322268660"
+              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45322268660",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1137,8 +2826,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T01:24:53Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45304857428"
+              "latest_run_at": "2026-11-24T11:33:39Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45385291003",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1197,6 +2887,18 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/HomeAssistant",
+              "workflow_name": "Update Washer History README",
+              "file": "update-washer-readme.yml",
+              "path": ".github/workflows/update-washer-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T11:49:38Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45387730538",
+              "annotations": []
+            },
+            {
+              "repo": "ZhongZheng782/HomeAssistant",
               "workflow_name": "Update Xiaomi Miot Snapshot in README",
               "file": "update-xiaomi-miot-readme.yml",
               "path": ".github/workflows/update-xiaomi-miot-readme.yml",
@@ -1204,7 +2906,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:48:33Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45322037146"
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45322037146",
+              "annotations": []
             },
             {
               "repo": "ZhongZheng782/HomeAssistant",
@@ -1215,18 +2918,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:30:19Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45319967574"
-            },
-            {
-              "repo": "ZhongZheng782/HomeAssistant",
-              "workflow_name": "Update Washer History README",
-              "file": "update-washer-readme.yml",
-              "path": ".github/workflows/update-washer-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T01:23:16Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45304658084"
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45319967574",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1283,6 +2976,18 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+              "workflow_name": "Sync & Verify Master Table in README",
+              "file": "sync-ddns-table.yml",
+              "path": ".github/workflows/sync-ddns-table.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T11:55:31Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45388636243",
+              "annotations": []
+            },
+            {
+              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
               "workflow_name": "Action Runner",
               "file": "action-runner.yml",
               "path": ".github/workflows/action-runner.yml",
@@ -1290,7 +2995,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:50:55Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45336165169"
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45336165169",
+              "annotations": []
             },
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
@@ -1301,18 +3007,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:48:59Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45322085125"
-            },
-            {
-              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-              "workflow_name": "Sync & Verify Master Table in README",
-              "file": "sync-ddns-table.yml",
-              "path": ".github/workflows/sync-ddns-table.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T10:11:07Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45153744947"
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45322085125",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1372,8 +3068,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T08:48:33Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45141610582"
+              "latest_run_at": "2026-11-24T10:46:28Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45377945512",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1432,8 +3129,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T00:57:09Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45301272134"
+              "latest_run_at": "2026-11-24T11:00:01Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45380037545",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1534,6 +3232,31 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Yahoo.Finance",
+              "workflow_name": "Daily Yahoo Finance Wayback Fetch",
+              "file": "Actions-fetch-wayback.yaml",
+              "path": ".github/workflows/Actions-fetch-wayback.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T10:13:38Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45372730590",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "wayback"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+                  "job_name": "wayback"
+                }
+              ]
+            },
+            {
+              "repo": "ZhongZheng782/Yahoo.Finance",
               "workflow_name": "Daily Yahoo Finance Fetch",
               "file": "Actions-fetch.yaml",
               "path": ".github/workflows/Actions-fetch.yaml",
@@ -1541,7 +3264,21 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T04:22:28Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45325936813"
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45325936813",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "fetch"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+                  "job_name": "fetch"
+                }
+              ]
             },
             {
               "repo": "ZhongZheng782/Yahoo.Finance",
@@ -1552,18 +3289,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:49:43Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45322168950"
-            },
-            {
-              "repo": "ZhongZheng782/Yahoo.Finance",
-              "workflow_name": "Daily Yahoo Finance Wayback Fetch",
-              "file": "Actions-fetch-wayback.yaml",
-              "path": ".github/workflows/Actions-fetch-wayback.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T07:58:36Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45134989456"
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45322168950",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1620,10 +3347,11 @@
               "file": "daily-channel-fetch.yml",
               "path": ".github/workflows/daily-channel-fetch.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅❌✅✅",
+              "recent_4_icons": "✅✅❌✅",
               "latest_conclusion": "cancelled",
               "latest_run_at": "2026-11-24T03:56:09Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082"
+              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45322882082",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1727,8 +3455,112 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T04:09:59Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45324469184"
+              "latest_run_at": "2026-11-24T12:44:29Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45396439951",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-market-cost-distribution"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/market-analysis-pe-forward-return-report-tr-all.md not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/market-analysis-pe-forward-return-report not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/market-analysis-drawdown-report-all.md not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/market-analysis-drawdown-report not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/roa-roe-report-all.md not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/roa-roe-report not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report-all.md not found",
+                  "job_name": "sync-to-investment"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report not found",
+                  "job_name": "sync-to-investment"
+                }
+              ]
             },
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
@@ -1739,7 +3571,27 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T01:07:29Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701"
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45302619701",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Scrape via NAS Residential CDP (In-Memory)"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/download-artifact@v4, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
+                }
+              ]
             }
           ],
           "pages": {
@@ -1797,7 +3649,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T06:48:10Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45343158065"
+              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45343158065",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "The `python-version` input is not set.  The version of Python currently in `PATH` will be used.",
+                  "job_name": "Update Action Runner Status"
+                }
+              ]
             },
             {
               "repo": "ZhongZheng782/Win11",
@@ -1808,7 +3668,8 @@
               "recent_4_icons": "✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T23:38:28Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295"
+              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1865,7 +3726,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T07:15:00Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45346522599"
+              "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45346522599",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1922,7 +3784,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T20:39:17Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45261601622"
+              "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45261601622",
+              "annotations": []
             }
           ],
           "pages": {
@@ -1979,7 +3842,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T19:17:48Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45247434567"
+              "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45247434567",
+              "annotations": []
             }
           ],
           "pages": {
@@ -2036,6 +3900,51 @@
           "security": {
             "secret_scanning": "enabled",
             "push_protection": "enabled",
+            "dependabot_updates": "disabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "ZhongZheng782",
+          "name": "Mail-Deck",
+          "full_name": "ZhongZheng782/Mail-Deck",
+          "html_url": "https://github.com/ZhongZheng782/Mail-Deck",
+          "is_private": true,
+          "workflow_count": 1,
+          "workflows": [
+            "mail-portal-deploy-synology.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": false,
+            "url": null,
+            "status": null,
+            "build_type": null
+          },
+          "security": {
+            "secret_scanning": "disabled",
+            "push_protection": "disabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -2411,49 +4320,6 @@
         },
         {
           "org": "ZhongZheng782",
-          "name": "Mail-Deck",
-          "full_name": "ZhongZheng782/Mail-Deck",
-          "html_url": "https://github.com/ZhongZheng782/Mail-Deck",
-          "is_private": true,
-          "workflow_count": 0,
-          "workflows": [],
-          "schedules": [],
-          "pages": {
-            "enabled": false,
-            "url": null,
-            "status": null,
-            "build_type": null
-          },
-          "security": {
-            "secret_scanning": "disabled",
-            "push_protection": "disabled",
-            "dependabot_updates": "disabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "ZhongZheng782",
           "name": "Music-Deck",
           "full_name": "ZhongZheng782/Music-Deck",
           "html_url": "https://github.com/ZhongZheng782/Music-Deck",
@@ -2700,7 +4566,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T04:09:19Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45324391445"
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45324391445",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-analyzer-workflow"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -2711,7 +4585,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T03:50:09Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45322215741"
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45322215741",
+              "annotations": []
             }
           ],
           "pages": {
@@ -2998,6 +4873,25 @@
           "schedules": [
             {
               "repo": "wenchiehlee/Python-Actions.FinMind",
+              "workflow_name": "Sync to biztrends.TW",
+              "file": "sync-to-biztrends.yml",
+              "path": ".github/workflows/sync-to-biztrends.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T15:01:54Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45420742935",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-biztrends"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee/Python-Actions.FinMind",
               "workflow_name": "Daily FinMind status",
               "file": "daily-finmind-status.yml",
               "path": ".github/workflows/daily-finmind-status.yml",
@@ -3005,18 +4899,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T04:20:58Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45325760552"
-            },
-            {
-              "repo": "wenchiehlee/Python-Actions.FinMind",
-              "workflow_name": "Sync to biztrends.TW",
-              "file": "sync-to-biztrends.yml",
-              "path": ".github/workflows/sync-to-biztrends.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T15:03:40Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45200942240"
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45325760552",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "status"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3074,8 +4965,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T10:40:08Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45158195413"
+              "latest_run_at": "2026-11-24T12:22:53Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45392945415",
+              "annotations": []
             }
           ],
           "pages": {
@@ -3134,7 +5026,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T18:47:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45242126049"
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45242126049",
+              "annotations": []
             }
           ],
           "pages": {
@@ -3193,7 +5086,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T19:06:17Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45245381363"
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45245381363",
+              "annotations": []
             }
           ],
           "pages": {
@@ -3252,7 +5146,57 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:50:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45336138582"
+              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45336138582",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Nothing was fetched",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "[feed 1/1] max retry count exceeded. Abort.",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "[feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "[feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "[feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Nothing was fetched",
+                  "job_name": "RSS to MD"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Nothing was fetched",
+                  "job_name": "RSS to MD"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3310,8 +5254,16 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T01:36:38Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45306305638"
+              "latest_run_at": "2026-11-24T12:20:22Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45392538637",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "scrape"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3370,7 +5322,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T18:55:27Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45243474013"
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45243474013",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: tj-actions/changed-files@v45. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "scrape"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3429,7 +5389,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:11:44Z",
-              "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45331565724"
+              "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45331565724",
+              "annotations": []
             }
           ],
           "pages": {
@@ -3619,6 +5580,25 @@
           "schedules": [
             {
               "repo": "wenchiehlee/wjlee-barco",
+              "workflow_name": "Latest WP activity",
+              "file": "WP-post-workflow.yml",
+              "path": ".github/workflows/WP-post-workflow.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T15:30:39Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45426337150",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Update this repo's README with latest activity from WP"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee/wjlee-barco",
               "workflow_name": "Latest blog post workflow",
               "file": "blog-post-workflow.yml",
               "path": ".github/workflows/blog-post-workflow.yml",
@@ -3626,18 +5606,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:51:07Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208"
-            },
-            {
-              "repo": "wenchiehlee/wjlee-barco",
-              "workflow_name": "Latest WP activity",
-              "file": "WP-post-workflow.yml",
-              "path": ".github/workflows/WP-post-workflow.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T04:35:56Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45327500422"
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45336187208",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "Update this repo's README with latest blog posts"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3739,7 +5716,39 @@
               "recent_4_icons": "❌❌✅✅",
               "latest_conclusion": "failure",
               "latest_run_at": "2026-11-24T03:42:45Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130"
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45321389130",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "renew-and-deploy"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+                  "job_name": "deploy-pages"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3840,8 +5849,22 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T02:18:57Z",
-              "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45311458880"
+              "latest_run_at": "2026-11-24T13:55:45Z",
+              "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45408508749",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/setup-python@v5, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "build"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/deploy-pages@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "deploy"
+                }
+              ]
             }
           ],
           "pages": {
@@ -3943,7 +5966,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T04:58:30Z",
-              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45330039307"
+              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45330039307",
+              "annotations": []
             }
           ],
           "pages": {
@@ -3996,17 +6020,49 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅❌✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T14:14:47Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45192114385"
+              "consecutive_failures": 1,
+              "recent_4_icons": "❌✅❌✅",
+              "latest_conclusion": "failure",
+              "latest_run_at": "2026-11-24T08:46:11Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45359015460",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "telemetry-renew"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)",
+                  "job_name": "deploy-pages"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+                  "job_name": "deploy-pages"
+                }
+              ]
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-            "status": "built",
+            "status": "errored",
             "build_type": "workflow"
           },
           "security": {
@@ -4377,11 +6433,19 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌",
+              "consecutive_failures": 3,
+              "recent_4_icons": "❌❌❌",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-23T13:26:12Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45183893937"
+              "latest_run_at": "2026-11-24T14:04:56Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45410132361",
+              "annotations": [
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+                  "job_name": "check"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -4392,7 +6456,15 @@
               "recent_4_icons": "❌",
               "latest_conclusion": "failure",
               "latest_run_at": "2026-11-23T10:16:53Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866"
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
+              "annotations": [
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+                  "job_name": "update"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-money/biztrends.TW",
@@ -4403,7 +6475,21 @@
               "recent_4_icons": "✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-01T09:38:43Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380"
+              "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/41289730380",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "refresh"
+                },
+                {
+                  "level": "notice",
+                  "title": "",
+                  "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+                  "job_name": "refresh"
+                }
+              ]
             }
           ],
           "pages": {
@@ -4459,6 +6545,25 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/InvestorConference",
+              "workflow_name": "Daily Auto-Ingest from TODO",
+              "file": "daily-ingest.yml",
+              "path": ".github/workflows/daily-ingest.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T11:56:29Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45388780460",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "auto-ingest"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee-money/InvestorConference",
               "workflow_name": "Sync Yahoo Finance Consensus",
               "file": "sync-yahoo-finance-consensus.yml",
               "path": ".github/workflows/sync-yahoo-finance-consensus.yml",
@@ -4466,18 +6571,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T04:50:44Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45329183395"
-            },
-            {
-              "repo": "wenchiehlee-money/InvestorConference",
-              "workflow_name": "Daily Auto-Ingest from TODO",
-              "file": "daily-ingest.yml",
-              "path": ".github/workflows/daily-ingest.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T10:12:39Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45153980819"
+              "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45329183395",
+              "annotations": []
             }
           ],
           "pages": {
@@ -4531,6 +6626,37 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
+              "workflow_name": "Fetch Alerts",
+              "file": "fetch.yml",
+              "path": ".github/workflows/fetch.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T13:26:52Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45403523511",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "fetch"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "fetch"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "fetch"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee-money/GoogleAlertManager",
               "workflow_name": "Analyze Alerts",
               "file": "analyze.yml",
               "path": ".github/workflows/analyze.yml",
@@ -4538,18 +6664,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T07:28:11Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45348227204"
-            },
-            {
-              "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Fetch Alerts",
-              "file": "fetch.yml",
-              "path": ".github/workflows/fetch.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T02:03:12Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45309519177"
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45348227204",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "analyze"
+                }
+              ]
             }
           ],
           "pages": {
@@ -4608,8 +6731,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T08:53:35Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45142277821"
+              "latest_run_at": "2026-11-24T10:49:17Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45378385926",
+              "annotations": []
             }
           ],
           "pages": {
@@ -4714,14 +6838,22 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T06:39:22Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45342067903"
+              "latest_run_at": "2026-11-24T11:54:36Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45388490985",
+              "annotations": [
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "update"
+                }
+              ]
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
@@ -4773,7 +6905,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T01:24:45Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45304839843"
+              "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45304839843",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "update-data"
+                }
+              ]
             }
           ],
           "pages": {
@@ -5616,6 +7756,18 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/InvestorEvents",
+              "workflow_name": "Daily Earnings & 法說會 Fetch",
+              "file": "weekly-earnings.yml",
+              "path": ".github/workflows/weekly-earnings.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-24T10:40:19Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45376985752",
+              "annotations": []
+            },
+            {
+              "repo": "wenchiehlee-investment/InvestorEvents",
               "workflow_name": "Weekly Dividend Announcement Fetch",
               "file": "weekly-dividends.yml",
               "path": ".github/workflows/weekly-dividends.yml",
@@ -5623,18 +7775,8 @@
               "recent_4_icons": "✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T09:29:34Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096"
-            },
-            {
-              "repo": "wenchiehlee-investment/InvestorEvents",
-              "workflow_name": "Daily Earnings & 法說會 Fetch",
-              "file": "weekly-earnings.yml",
-              "path": ".github/workflows/weekly-earnings.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T08:34:45Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45139744547"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096",
+              "annotations": []
             },
             {
               "repo": "wenchiehlee-investment/InvestorEvents",
@@ -5645,7 +7787,15 @@
               "recent_4_icons": "✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-01T09:36:55Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527",
+              "annotations": [
+                {
+                  "level": "notice",
+                  "title": "",
+                  "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+                  "job_name": "refresh"
+                }
+              ]
             }
           ],
           "pages": {
@@ -5705,7 +7855,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T07:59:04Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45352213338"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45352213338",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "update"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
@@ -5716,7 +7874,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:57:51Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45336951495"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45336951495",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5, BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "update"
+                }
+              ]
             }
           ],
           "pages": {
@@ -5783,7 +7949,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T08:23:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "extract-events"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-investment/Gemini-CLI",
@@ -5794,7 +7968,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T04:13:22Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "check-quota"
+                }
+              ]
             }
           ],
           "pages": {
@@ -5853,7 +8035,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-22T05:34:22Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056",
+              "annotations": []
             }
           ],
           "pages": {
@@ -5911,8 +8094,16 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-24T04:41:12Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45328091427"
+              "latest_run_at": "2026-11-24T14:08:52Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45410853556",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-downstream"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-investment/MOPS",
@@ -5922,8 +8113,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T13:29:19Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45184405839"
+              "latest_run_at": "2026-11-24T14:07:27Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45410597867",
+              "annotations": []
             },
             {
               "repo": "wenchiehlee-investment/MOPS",
@@ -5933,8 +8125,16 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-23T10:33:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45157202433"
+              "latest_run_at": "2026-11-24T11:52:08Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45388115512",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "download-pdfs"
+                }
+              ]
             }
           ],
           "pages": {
@@ -5993,7 +8193,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T20:44:52Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45262543854"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45262543854",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-file"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
@@ -6004,7 +8212,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T19:57:58Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45254380517"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45254380517",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: astral-sh/setup-uv@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "fetch-and-update"
+                }
+              ]
             }
           ],
           "pages": {
@@ -6116,7 +8332,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-01T05:30:35Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846",
+              "annotations": [
+                {
+                  "level": "notice",
+                  "title": "",
+                  "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+                  "job_name": "update-data"
+                }
+              ]
             }
           ],
           "pages": {
@@ -6218,7 +8442,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-23T19:54:37Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45253798136"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45253798136",
+              "annotations": []
             }
           ],
           "pages": {
@@ -6275,7 +8500,15 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-24T05:22:39Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45332881902"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45332881902",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "fetch"
+                }
+              ]
             }
           ],
           "pages": {
@@ -6332,7 +8565,27 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-09T05:27:03Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664"
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+              "annotations": [
+                {
+                  "level": "notice",
+                  "title": "",
+                  "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+                  "job_name": "update"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-biztrends"
+                },
+                {
+                  "level": "notice",
+                  "title": "",
+                  "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+                  "job_name": "sync-to-biztrends"
+                }
+              ]
             }
           ],
           "pages": {
