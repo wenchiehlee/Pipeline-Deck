@@ -392,7 +392,7 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
                 by_path = {}
                 for r in all_runs:
                     p = r.get("path")
-                    if p and p in scheduled_paths:
+                    if p and p in scheduled_paths and r.get("event") == "schedule":
                         by_path.setdefault(p, []).append(r)
                 for r in sched_runs:
                     p = r.get("path")
