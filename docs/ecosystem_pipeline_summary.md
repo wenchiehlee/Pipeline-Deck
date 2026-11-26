@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-26 13:16:00 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-26 13:29:31 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`224 / 74 / 2 / 6`**（**224** 個工作流程 YAML · **74** 個活躍 Actions 庫 · **2** 個嚴重警報 · **6** 個異常警告）
 
@@ -39,10 +39,10 @@
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-26T12:58:21` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019) |
-| 2 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Company Financials | `update_company_financials.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T06:28:06` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916) |
-| 3 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Concept Stocks | `update_conceptstocks.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T04:07:09` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502) |
-| 4 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **2 次** | `❌❌✅✅` | `2026-11-25T18:31:09` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45675971453) |
-| 5 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **2 次** | `❌❌✅❌` | `2026-11-26T07:10:32` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470) |
+| 2 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **3 次** | `❌❌❌✅` | `2026-11-26T13:14:21` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664) |
+| 3 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Company Financials | `update_company_financials.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T06:28:06` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916) |
+| 4 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Concept Stocks | `update_conceptstocks.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T04:07:09` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502) |
+| 5 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **2 次** | `❌❌✅✅` | `2026-11-25T18:31:09` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45675971453) |
 | 6 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
@@ -59,9 +59,9 @@
 | 6 | 🔴 failure | Nothing was fetched | 3 | 1 |
 | 7 | 🔴 failure | The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings | 2 | 1 |
 | 8 | ⚠️ warning | Source data/reports/wayback_yahoo_finance_consensus.csv not found | 2 | 1 |
-| 9 | 🔴 failure | Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2. | 1 | 1 |
-| 10 | 🔴 failure | Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2.
-    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)
+| 9 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later. | 1 | 1 |
+| 10 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.
+    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)
     at processTicksAndRejections (node:internal/process/task_queues:104:5)
     at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)
     at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1) | 1 | 1 |

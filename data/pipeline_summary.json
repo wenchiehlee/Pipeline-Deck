@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:14:32.128625+00:00",
+  "generated_at": "2026-11-26T13:28:28.480893+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
@@ -69,6 +69,43 @@
         ]
       },
       {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 3,
+        "recent_4_icons": "❌❌❌✅",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-26T13:14:21Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
         "repo": "wenchiehlee-investment/ConceptStocks",
         "workflow_name": "Update Company Financials",
         "file": "update_company_financials.yml",
@@ -122,43 +159,6 @@
             "title": "",
             "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
             "job_name": "fetch-and-update"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T07:10:32Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
-            "job_name": "deploy-pages"
           }
         ]
       },
@@ -1541,7 +1541,7 @@
       },
       {
         "level": "failure",
-        "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
+        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
         "count": 1,
         "repos": [
           "wenchiehlee/Pipeline-Deck"
@@ -1549,7 +1549,7 @@
       },
       {
         "level": "failure",
-        "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
         "count": 1,
         "repos": [
           "wenchiehlee/Pipeline-Deck"
@@ -1832,6 +1832,38 @@
         ]
       },
       {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
         "repo": "wenchiehlee-investment/ConceptStocks",
         "workflow_name": "Update Company Financials",
         "file": "update_company_financials.yml",
@@ -1870,38 +1902,6 @@
             "title": "",
             "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
             "job_name": "fetch-and-update"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
-            "job_name": "deploy-pages"
           }
         ]
       },
@@ -5767,11 +5767,11 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅❌",
+              "consecutive_failures": 3,
+              "recent_4_icons": "❌❌❌✅",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T07:10:32Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
+              "latest_run_at": "2026-11-26T13:14:21Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
               "annotations": [
                 {
                   "level": "warning",
@@ -5782,13 +5782,13 @@
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
                   "job_name": "deploy-pages"
                 },
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
                   "job_name": "deploy-pages"
                 },
                 {
