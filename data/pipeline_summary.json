@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-26T14:55:41.844348+00:00",
+  "generated_at": "2026-11-26T16:30:02.845779+00:00",
   "total_repos": 106,
-  "total_repos_with_actions": 74,
-  "total_workflows": 224,
+  "total_repos_with_actions": 75,
+  "total_workflows": 230,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 3,
@@ -227,8 +227,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T01:12:39Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45734172786",
+        "latest_run_at": "2026-11-26T15:52:20Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45853341196",
         "annotations": []
       },
       {
@@ -249,10 +249,10 @@
         "file": "update-xiaomi-miot-readme.yml",
         "path": ".github/workflows/update-xiaomi-miot-readme.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅❌",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T01:33:21Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45736545885",
+        "latest_run_at": "2026-11-26T16:23:28Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45858311140",
         "annotations": []
       },
       {
@@ -275,8 +275,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T01:36:56Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45736943767",
+        "latest_run_at": "2026-11-26T16:28:34Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45859110161",
         "annotations": []
       },
       {
@@ -533,16 +533,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "cancelled",
-        "latest_run_at": "2026-11-26T01:44:37Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45737796075",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job has exceeded the maximum execution time of 6h0m0s",
-            "job_name": "fetch"
-          }
-        ]
+        "latest_run_at": "2026-11-26T13:13:58Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45827133792",
+        "annotations": []
       },
       {
         "repo": "ZhongZheng782/andy",
@@ -552,8 +545,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T05:23:57Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45761329075",
+        "latest_run_at": "2026-11-26T15:42:00Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45851679039",
         "annotations": []
       },
       {
@@ -588,8 +581,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T01:34:38Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45736686429",
+        "latest_run_at": "2026-11-26T16:25:02Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45858558763",
         "annotations": []
       },
       {
@@ -927,18 +920,11 @@
         "file": "renew-analytics.yml",
         "path": ".github/workflows/renew-analytics.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌❌",
+        "recent_4_icons": "✅✅✅❌",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T01:26:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45735805122",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "deploy-pages"
-          }
-        ]
+        "latest_run_at": "2026-11-26T16:12:18Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45856538696",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/GoogleSearch.Factset",
@@ -1121,8 +1107,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T04:51:02Z",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45757793530",
+        "latest_run_at": "2026-11-26T14:54:35Z",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45843718855",
         "annotations": [
           {
             "level": "warning",
@@ -1214,6 +1200,24 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
+    "synology_portals": [
+      {
+        "repo": "ZhongZheng782/Mail-Deck",
+        "target": "/web/mail-deck/",
+        "workflow": "portal-pages-deploy.yml"
+      },
+      {
+        "repo": "ZhongZheng782/Photo-Deck",
+        "target": "/web/photo-deck/",
+        "workflow": "portal-pages-deploy.yml"
+      },
+      {
+        "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+        "target": "/web/",
+        "workflow": "portal-pages-deploy.yml"
+      }
+    ],
+    "total_portals": 20,
     "built_sites": 17,
     "errored_sites": 0,
     "other_sites": 0,
@@ -1224,7 +1228,7 @@
         "repo": "wenchiehlee-investment/wenchiehlee-investment.github.io",
         "url": "https://wenchiehlee-investment.github.io/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1314,7 +1318,7 @@
         "repo": "wenchiehlee/mkdocs-investment",
         "url": "https://wenchiehlee.github.io/mkdocs-investment/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1323,7 +1327,7 @@
         "repo": "wenchiehlee/mkdocs-life",
         "url": "https://wenchiehlee.github.io/mkdocs-life/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1350,7 +1354,7 @@
         "repo": "wenchiehlee/wenchiehlee.github.io",
         "url": "https://wenchiehlee.github.io/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1359,7 +1363,7 @@
         "repo": "ZhongZheng782/Synology-Photo-Tagger",
         "url": "https://zhongzheng782.github.io/Synology-Photo-Tagger/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1368,7 +1372,7 @@
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
         "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
         "status": "built",
-        "build_type": "legacy",
+        "build_type": "workflow",
         "is_private": false
       }
     ]
@@ -1458,8 +1462,8 @@
     ]
   },
   "runner_telemetry": {
-    "total_annotation_count": 64,
-    "affected_schedule_count": 33,
+    "total_annotation_count": 62,
+    "affected_schedule_count": 31,
     "message_groups": [
       {
         "level": "warning",
@@ -1498,16 +1502,6 @@
       },
       {
         "level": "warning",
-        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-        "count": 3,
-        "repos": [
-          "wenchiehlee/Analytics-Deck",
-          "wenchiehlee/Pipeline-Deck",
-          "wenchiehlee/dockers"
-        ]
-      },
-      {
-        "level": "warning",
         "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
         "count": 3,
         "repos": [
@@ -1521,6 +1515,15 @@
         "count": 3,
         "repos": [
           "wenchiehlee/rss2md"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 2,
+        "repos": [
+          "wenchiehlee/Pipeline-Deck",
+          "wenchiehlee/dockers"
         ]
       },
       {
@@ -1697,14 +1700,6 @@
         "count": 1,
         "repos": [
           "ZhongZheng782/Win11"
-        ]
-      },
-      {
-        "level": "failure",
-        "message": "The job has exceeded the maximum execution time of 6h0m0s",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/YoutubeAudio.Fetch"
         ]
       },
       {
@@ -2112,20 +2107,6 @@
         ]
       },
       {
-        "repo": "ZhongZheng782/YoutubeAudio.Fetch",
-        "workflow_name": "Daily channel fetch",
-        "file": "daily-channel-fetch.yml",
-        "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45737796075",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job has exceeded the maximum execution time of 6h0m0s",
-            "job_name": "fetch"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee-investment/Gemini-CLI",
         "workflow_name": "Weekly Quota Check",
         "file": "check_quota.yml",
@@ -2292,20 +2273,6 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Analytics-Deck",
-        "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
-        "file": "renew-analytics.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45735805122",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "deploy-pages"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/GoogleSearch.Factset",
         "workflow_name": "Sync to Analyzer",
         "file": "sync-to-Analyzer.yml",
@@ -2385,7 +2352,7 @@
         "repo": "wenchiehlee/rss2md",
         "workflow_name": "RSS to MD",
         "file": "rss2md.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45757793530",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45843718855",
         "annotations": [
           {
             "level": "warning",
@@ -2443,7 +2410,7 @@
     "ZhongZheng782": {
       "total_repos": 31,
       "repos_with_actions": 20,
-      "total_workflows": 92,
+      "total_workflows": 94,
       "repos": [
         {
           "org": "ZhongZheng782",
@@ -2536,8 +2503,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T01:36:56Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45736943767",
+              "latest_run_at": "2026-11-26T16:28:34Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45859110161",
               "annotations": []
             }
           ],
@@ -2603,8 +2570,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T05:23:57Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45761329075",
+              "latest_run_at": "2026-11-26T15:42:00Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45851679039",
               "annotations": []
             }
           ],
@@ -2664,26 +2631,14 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/HomeAssistant",
-              "workflow_name": "Update Washer History README",
-              "file": "update-washer-readme.yml",
-              "path": ".github/workflows/update-washer-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T06:00:10Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45765203839",
-              "annotations": []
-            },
-            {
-              "repo": "ZhongZheng782/HomeAssistant",
               "workflow_name": "Update Xiaomi Miot Snapshot in README",
               "file": "update-xiaomi-miot-readme.yml",
               "path": ".github/workflows/update-xiaomi-miot-readme.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅❌",
+              "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T01:33:21Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45736545885",
+              "latest_run_at": "2026-11-26T16:23:28Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45858311140",
               "annotations": []
             },
             {
@@ -2694,8 +2649,20 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T01:12:39Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45734172786",
+              "latest_run_at": "2026-11-26T15:52:20Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45853341196",
+              "annotations": []
+            },
+            {
+              "repo": "ZhongZheng782/HomeAssistant",
+              "workflow_name": "Update Washer History README",
+              "file": "update-washer-readme.yml",
+              "path": ".github/workflows/update-washer-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-26T06:00:10Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45765203839",
               "annotations": []
             }
           ],
@@ -2742,7 +2709,7 @@
           "workflow_count": 8,
           "workflows": [
             "action-runner.yml",
-            "mkdocs-deploy-synology.yml",
+            "portal-pages-deploy.yml",
             "reboot.yml",
             "setup-nas-reverse-proxy.yml",
             "setup-tailscale-funnel.yml",
@@ -2751,6 +2718,18 @@
             "update-uptimerobot-readme.yml"
           ],
           "schedules": [
+            {
+              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+              "workflow_name": "Update UptimeRobot Status in README",
+              "file": "update-uptimerobot-readme.yml",
+              "path": ".github/workflows/update-uptimerobot-readme.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-26T16:25:02Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45858558763",
+              "annotations": []
+            },
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
               "workflow_name": "Action Runner",
@@ -2774,18 +2753,6 @@
               "latest_run_at": "2026-11-26T10:20:59Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45800486690",
               "annotations": []
-            },
-            {
-              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-              "workflow_name": "Update UptimeRobot Status in README",
-              "file": "update-uptimerobot-readme.yml",
-              "path": ".github/workflows/update-uptimerobot-readme.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T01:34:38Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45736686429",
-              "annotations": []
             }
           ],
           "pages": {
@@ -2797,6 +2764,55 @@
           "security": {
             "secret_scanning": "disabled",
             "push_protection": "disabled",
+            "dependabot_updates": "disabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "ZhongZheng782",
+          "name": "Synology-Photo-Tagger",
+          "full_name": "ZhongZheng782/Synology-Photo-Tagger",
+          "html_url": "https://github.com/ZhongZheng782/Synology-Photo-Tagger",
+          "is_private": false,
+          "workflow_count": 5,
+          "workflows": [
+            "deploy-pages.yml",
+            "probe-synology-photos-api.yml",
+            "probe-tailnet-mlx.yml",
+            "publish-image.yml",
+            "scout-image.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": true,
+            "url": "https://zhongzheng782.github.io/Synology-Photo-Tagger/",
+            "status": "built",
+            "build_type": "workflow"
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -2886,6 +2902,68 @@
         },
         {
           "org": "ZhongZheng782",
+          "name": "YoutubeAudio.Fetch",
+          "full_name": "ZhongZheng782/YoutubeAudio.Fetch",
+          "html_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch",
+          "is_private": false,
+          "workflow_count": 5,
+          "workflows": [
+            "daily-channel-fetch.yml",
+            "deploy-pages.yml",
+            "sync-to-biztrends.yml",
+            "update-readme-index.yml",
+            "update-source-settings.yml"
+          ],
+          "schedules": [
+            {
+              "repo": "ZhongZheng782/YoutubeAudio.Fetch",
+              "workflow_name": "Daily channel fetch",
+              "file": "daily-channel-fetch.yml",
+              "path": ".github/workflows/daily-channel-fetch.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "cancelled",
+              "latest_run_at": "2026-11-26T13:13:58Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45827133792",
+              "annotations": []
+            }
+          ],
+          "pages": {
+            "enabled": true,
+            "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
+            "status": "built",
+            "build_type": "workflow"
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "disabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "ZhongZheng782",
           "name": "Llm-Cli-APIServer",
           "full_name": "ZhongZheng782/Llm-Cli-APIServer",
           "html_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer",
@@ -2920,54 +2998,6 @@
           "security": {
             "secret_scanning": "disabled",
             "push_protection": "disabled",
-            "dependabot_updates": "disabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "ZhongZheng782",
-          "name": "Synology-Photo-Tagger",
-          "full_name": "ZhongZheng782/Synology-Photo-Tagger",
-          "html_url": "https://github.com/ZhongZheng782/Synology-Photo-Tagger",
-          "is_private": false,
-          "workflow_count": 4,
-          "workflows": [
-            "probe-synology-photos-api.yml",
-            "probe-tailnet-mlx.yml",
-            "publish-image.yml",
-            "scout-image.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://zhongzheng782.github.io/Synology-Photo-Tagger/",
-            "status": "built",
-            "build_type": "legacy"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
             "dependabot_updates": "disabled"
           },
           "alerts": {
@@ -3080,74 +3110,6 @@
             "secret_scanning": "enabled",
             "push_protection": "enabled",
             "dependabot_updates": "enabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "ZhongZheng782",
-          "name": "YoutubeAudio.Fetch",
-          "full_name": "ZhongZheng782/YoutubeAudio.Fetch",
-          "html_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch",
-          "is_private": false,
-          "workflow_count": 4,
-          "workflows": [
-            "daily-channel-fetch.yml",
-            "sync-to-biztrends.yml",
-            "update-readme-index.yml",
-            "update-source-settings.yml"
-          ],
-          "schedules": [
-            {
-              "repo": "ZhongZheng782/YoutubeAudio.Fetch",
-              "workflow_name": "Daily channel fetch",
-              "file": "daily-channel-fetch.yml",
-              "path": ".github/workflows/daily-channel-fetch.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "cancelled",
-              "latest_run_at": "2026-11-26T01:44:37Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45737796075",
-              "annotations": [
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "The job has exceeded the maximum execution time of 6h0m0s",
-                  "job_name": "fetch"
-                }
-              ]
-            }
-          ],
-          "pages": {
-            "enabled": true,
-            "url": "https://zhongzheng782.github.io/YoutubeAudio.Fetch/",
-            "status": "built",
-            "build_type": "legacy"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "disabled"
           },
           "alerts": {
             "dependabot": {
@@ -3705,7 +3667,7 @@
           "is_private": true,
           "workflow_count": 1,
           "workflows": [
-            "mail-portal-deploy-synology.yml"
+            "portal-pages-deploy.yml"
           ],
           "schedules": [
             {
@@ -3770,7 +3732,7 @@
           "is_private": true,
           "workflow_count": 1,
           "workflows": [
-            "photo-portal-deploy-synology.yml"
+            "portal-pages-deploy.yml"
           ],
           "schedules": [],
           "pages": {
@@ -4330,7 +4292,7 @@
     "wenchiehlee": {
       "total_repos": 32,
       "repos_with_actions": 30,
-      "total_workflows": 67,
+      "total_workflows": 70,
       "repos": [
         {
           "org": "wenchiehlee",
@@ -4386,6 +4348,102 @@
             "url": null,
             "status": null,
             "build_type": null
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "wenchiehlee",
+          "name": "mkdocs-investment",
+          "full_name": "wenchiehlee/mkdocs-investment",
+          "html_url": "https://github.com/wenchiehlee/mkdocs-investment",
+          "is_private": false,
+          "workflow_count": 4,
+          "workflows": [
+            "deploy-pages.yml",
+            "mkdocs-deploy-gh-pages.yml",
+            "sync-up-名單清單.yml",
+            "sync-up-配置檔案.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": true,
+            "url": "https://wenchiehlee.github.io/mkdocs-investment/",
+            "status": "built",
+            "build_type": "workflow"
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "wenchiehlee",
+          "name": "mkdocs-life",
+          "full_name": "wenchiehlee/mkdocs-life",
+          "html_url": "https://github.com/wenchiehlee/mkdocs-life",
+          "is_private": false,
+          "workflow_count": 4,
+          "workflows": [
+            "deploy-pages.yml",
+            "mkdocs-deploy-gh-pages.yml",
+            "sync-up-名單清單.yml",
+            "sync-up-配置檔案.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": true,
+            "url": "https://wenchiehlee.github.io/mkdocs-life/",
+            "status": "built",
+            "build_type": "workflow"
           },
           "security": {
             "secret_scanning": "enabled",
@@ -4517,7 +4575,7 @@
           "is_private": false,
           "workflow_count": 3,
           "workflows": [
-            "mkdocs-deploy-gh-pages.yml",
+            "deploy-pages.yml",
             "sync-up-名單清單.yml",
             "sync-up-配置檔案.yml"
           ],
@@ -4527,100 +4585,6 @@
             "url": "https://wenchiehlee.github.io/mkdocs/",
             "status": "built",
             "build_type": "workflow"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "enabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee",
-          "name": "mkdocs-investment",
-          "full_name": "wenchiehlee/mkdocs-investment",
-          "html_url": "https://github.com/wenchiehlee/mkdocs-investment",
-          "is_private": false,
-          "workflow_count": 3,
-          "workflows": [
-            "mkdocs-deploy-gh-pages.yml",
-            "sync-up-名單清單.yml",
-            "sync-up-配置檔案.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee.github.io/mkdocs-investment/",
-            "status": "built",
-            "build_type": "legacy"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "enabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee",
-          "name": "mkdocs-life",
-          "full_name": "wenchiehlee/mkdocs-life",
-          "html_url": "https://github.com/wenchiehlee/mkdocs-life",
-          "is_private": false,
-          "workflow_count": 3,
-          "workflows": [
-            "mkdocs-deploy-gh-pages.yml",
-            "sync-up-名單清單.yml",
-            "sync-up-配置檔案.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee.github.io/mkdocs-life/",
-            "status": "built",
-            "build_type": "legacy"
           },
           "security": {
             "secret_scanning": "enabled",
@@ -4937,8 +4901,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T04:51:02Z",
-              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45757793530",
+              "latest_run_at": "2026-11-26T14:54:35Z",
+              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45843718855",
               "annotations": [
                 {
                   "level": "warning",
@@ -5313,6 +5277,52 @@
         },
         {
           "org": "wenchiehlee",
+          "name": "wenchiehlee.github.io",
+          "full_name": "wenchiehlee/wenchiehlee.github.io",
+          "html_url": "https://github.com/wenchiehlee/wenchiehlee.github.io",
+          "is_private": false,
+          "workflow_count": 2,
+          "workflows": [
+            "deploy-pages.yml",
+            "jekyll.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": true,
+            "url": "https://wenchiehlee.github.io/",
+            "status": "built",
+            "build_type": "workflow"
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "wenchiehlee",
           "name": "whisper",
           "full_name": "wenchiehlee/whisper",
           "html_url": "https://github.com/wenchiehlee/whisper",
@@ -5481,7 +5491,7 @@
           "is_private": false,
           "workflow_count": 1,
           "workflows": [
-            "renew-analytics.yml"
+            "deploy-pages.yml"
           ],
           "schedules": [
             {
@@ -5490,18 +5500,11 @@
               "file": "renew-analytics.yml",
               "path": ".github/workflows/renew-analytics.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅❌❌",
+              "recent_4_icons": "✅✅✅❌",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T01:26:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45735805122",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "deploy-pages"
-                }
-              ]
+              "latest_run_at": "2026-11-26T16:12:18Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45856538696",
+              "annotations": []
             }
           ],
           "pages": {
@@ -5759,7 +5762,7 @@
           "is_private": false,
           "workflow_count": 1,
           "workflows": [
-            "renew-pipeline-telemetry.yml"
+            "deploy-pages.yml"
           ],
           "schedules": [
             {
@@ -5990,51 +5993,6 @@
             "secret_scanning": "enabled",
             "push_protection": "enabled",
             "dependabot_updates": "disabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee",
-          "name": "wenchiehlee.github.io",
-          "full_name": "wenchiehlee/wenchiehlee.github.io",
-          "html_url": "https://github.com/wenchiehlee/wenchiehlee.github.io",
-          "is_private": false,
-          "workflow_count": 1,
-          "workflows": [
-            "jekyll.yml"
-          ],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee.github.io/",
-            "status": "built",
-            "build_type": "legacy"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
@@ -7440,8 +7398,8 @@
     },
     "wenchiehlee-investment": {
       "total_repos": 16,
-      "repos_with_actions": 12,
-      "total_workflows": 29,
+      "repos_with_actions": 13,
+      "total_workflows": 30,
       "repos": [
         {
           "org": "wenchiehlee-investment",
@@ -8321,6 +8279,51 @@
         },
         {
           "org": "wenchiehlee-investment",
+          "name": "wenchiehlee-investment.github.io",
+          "full_name": "wenchiehlee-investment/wenchiehlee-investment.github.io",
+          "html_url": "https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io",
+          "is_private": false,
+          "workflow_count": 1,
+          "workflows": [
+            "deploy-pages.yml"
+          ],
+          "schedules": [],
+          "pages": {
+            "enabled": true,
+            "url": "https://wenchiehlee-investment.github.io/",
+            "status": "built",
+            "build_type": "workflow"
+          },
+          "security": {
+            "secret_scanning": "enabled",
+            "push_protection": "enabled",
+            "dependabot_updates": "enabled"
+          },
+          "alerts": {
+            "dependabot": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "code_scanning": {
+              "total": 0,
+              "critical": 0,
+              "high": 0,
+              "medium": 0,
+              "low": 0,
+              "items": []
+            },
+            "malware": {
+              "total": 0,
+              "items": []
+            }
+          }
+        },
+        {
+          "org": "wenchiehlee-investment",
           "name": "3034.TW",
           "full_name": "wenchiehlee-investment/3034.TW",
           "html_url": "https://github.com/wenchiehlee-investment/3034.TW",
@@ -8424,49 +8427,6 @@
             "secret_scanning": "enabled",
             "push_protection": "enabled",
             "dependabot_updates": "disabled"
-          },
-          "alerts": {
-            "dependabot": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "code_scanning": {
-              "total": 0,
-              "critical": 0,
-              "high": 0,
-              "medium": 0,
-              "low": 0,
-              "items": []
-            },
-            "malware": {
-              "total": 0,
-              "items": []
-            }
-          }
-        },
-        {
-          "org": "wenchiehlee-investment",
-          "name": "wenchiehlee-investment.github.io",
-          "full_name": "wenchiehlee-investment/wenchiehlee-investment.github.io",
-          "html_url": "https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io",
-          "is_private": false,
-          "workflow_count": 0,
-          "workflows": [],
-          "schedules": [],
-          "pages": {
-            "enabled": true,
-            "url": "https://wenchiehlee-investment.github.io/",
-            "status": "built",
-            "build_type": "legacy"
-          },
-          "security": {
-            "secret_scanning": "enabled",
-            "push_protection": "enabled",
-            "dependabot_updates": "enabled"
           },
           "alerts": {
             "dependabot": {
