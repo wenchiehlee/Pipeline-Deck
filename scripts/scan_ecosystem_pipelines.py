@@ -777,7 +777,7 @@ def generate_markdown(data) -> str:
     lines.append("")
 
     # --- SECTION: GITHUB PAGES DEPLOYMENTS ---
-    lines.append(f"### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)")
+    lines.append(f"### 🌐 線上發布門戶觀測 (Deployment Portals)")
     lines.append("")
     lines.append(f"- **門戶站點總數**：`{pg.get('total_portals', pg.get('total_sites', 0))}`（GitHub Pages `{pg.get('total_sites', 0)}` + Synology `{len(pg.get('synology_portals', []))}`）")
     lines.append(f"- **GitHub Pages 站點數**：`{pg.get('total_sites', 0)}` 個")

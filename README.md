@@ -116,7 +116,7 @@
 
 ---
 
-### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)
+### 🌐 線上發布門戶觀測 (Deployment Portals)
 
 - **門戶站點總數**：`20`（GitHub Pages `17` + Synology `3`）
 - **GitHub Pages 站點數**：`17` 個

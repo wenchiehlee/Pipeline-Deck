@@ -1875,12 +1875,12 @@ def generate_portal_html(data: dict, index_html_path: Path):
       </details>
     </section>
 
-    <!-- SECTION 3: 🌐 GitHub Pages 線上發布門戶觀測 -->
+    <!-- SECTION 3: 🌐 線上發布門戶觀測 -->
     <section id="pages-deployments" class="section-block">
       <div class="section-header">
         <div class="section-title-wrap">
           <div class="section-badge badge-pages">PORTAL OBSERVABILITY · {total_portals} SITES</div>
-          <h2 class="section-heading">🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)</h2>
+          <h2 class="section-heading">🌐 線上發布門戶觀測 (Deployment Portals)</h2>
         </div>
         <div class="health-summary-pill-group">
           <span class="health-pill pill-total">發布門戶總數：<strong>{total_portals}</strong>（Pages {total_sites} + Synology {len(synology_portals)}）</span>
