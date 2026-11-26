@@ -21,9 +21,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-26 07:11:53 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **74 個儲存庫** 具備自動化工作流，累計運行 **224 個工作流程 YAML 檔案**、**17 個 GitHub Pages 線上門戶**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-26 13:16:00 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`224 / 74 / 1 / 7`**（**224** 個工作流程 YAML · **74** 個活躍 Actions 庫 · **1** 個嚴重警報 · **7** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`224 / 74 / 2 / 6`**（**224** 個工作流程 YAML · **74** 個活躍 Actions 庫 · **2** 個嚴重警報 · **6** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -42,86 +42,87 @@
 
 ### 🚨 常態排程健康度與連續失敗監測 (Scheduled Consecutive Failures)
 
-- **常態排程監測總數**：`66` 個工作流程
-- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`1` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`7` 個
-- **🟢 正常運行（最新一次執行成功）**：`58` 個
+- **常態排程監測總數**：`65` 個工作流程
+- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`2` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`6` 個
+- **🟢 正常運行（最新一次執行成功）**：`57` 個
 
 #### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | Analyze Alerts | `analyze.yml` | **4 次** | `❌❌❌❌` | `2026-11-26T05:50:16` | [Run ↗](https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45764168853) |
+| 2 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | Fetch Alerts | `fetch.yml` | **4 次** | `❌❌❌❌` | `2026-11-26T12:05:16` | [Run ↗](https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45816382574) |
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | Fetch Alerts | `fetch.yml` | **3 次** | `❌❌❌✅` | `2026-11-25T23:30:16` | [Run ↗](https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45721855517) |
+| 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **3 次** | `❌❌❌` | `2026-11-26T12:58:21` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019) |
 | 2 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Company Financials | `update_company_financials.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T06:28:06` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916) |
 | 3 | [wenchiehlee-investment/ConceptStocks](https://github.com/wenchiehlee-investment/ConceptStocks) | Update Concept Stocks | `update_conceptstocks.yml` | **2 次** | `❌❌✅✅` | `2026-11-26T04:07:09` | [Run ↗](https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502) |
 | 4 | [wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo) | Update Company Info | `Actions.yaml` | **2 次** | `❌❌✅✅` | `2026-11-25T18:31:09` | [Run ↗](https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45675971453) |
-| 5 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **2 次** | `❌❌` | `2026-11-25T13:17:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45622133359) |
+| 5 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **2 次** | `❌❌✅❌` | `2026-11-26T07:10:32` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470) |
 | 6 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 7 | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | Daily Ecosystem Pipelines & Failure Telemetry Renew | `renew-pipeline-telemetry.yml` | **1 次** | `❌✅❌❌` | `2026-11-25T07:21:35` | [Run ↗](https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45567510091) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
-- **常態排程最新一次執行中偵測到的 Runner 告警**：`64` 筆，影響 `32` 個排程工作流程
+- **常態排程最新一次執行中偵測到的 Runner 告警**：`64` 筆，影響 `33` 個排程工作流程
 
 | # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |
 |---|:---:|---|:---:|:---:|
 | 1 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 11 | 8 |
 | 2 | 🔴 failure | Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10` | 5 | 3 |
-| 3 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 5 | 4 |
+| 3 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 4 | 3 |
 | 4 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 3 | 3 |
 | 5 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 3 | 2 |
 | 6 | 🔴 failure | Nothing was fetched | 3 | 1 |
 | 7 | 🔴 failure | The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings | 2 | 1 |
 | 8 | ⚠️ warning | Source data/reports/wayback_yahoo_finance_consensus.csv not found | 2 | 1 |
-| 9 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later. | 1 | 1 |
-| 10 | 🔴 failure | Error: No artifacts named "github-pages" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.
-    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)
+| 9 | 🔴 failure | Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2. | 1 | 1 |
+| 10 | 🔴 failure | Error: Multiple artifacts named "github-pages" were unexpectedly found for this workflow run. Artifact count is 2.
+    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)
     at processTicksAndRejections (node:internal/process/task_queues:104:5)
     at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)
     at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1) | 1 | 1 |
 | 11 | 🔴 failure | Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time. | 1 | 1 |
 | 12 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
 | 13 | ⚠️ warning | CDP scrape skipped or yielded empty payload. Skipping downstream extraction gracefully. | 1 | 1 |
-| 14 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
-| 15 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
-| 16 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
-| 17 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
-| 18 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
-| 19 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
-| 20 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
-| 21 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
-| 22 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
-| 23 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
-| 24 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
-| 25 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
-| 26 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
-| 27 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
+| 14 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
+| 15 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
+| 16 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
+| 17 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
+| 18 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
+| 19 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
+| 20 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
+| 21 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
+| 22 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
+| 23 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
+| 24 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
+| 25 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
+| 26 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
+| 27 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
 | 28 | ⚠️ warning | The `python-version` input is not set.  The version of Python currently in `PATH` will be used. | 1 | 1 |
-| 29 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 30 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 31 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 32 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: peter-evans/repository-dispatch@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 33 | 🔴 failure | Bad credentials | 1 | 1 |
-| 34 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 35 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
-| 36 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 37 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 38 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 29 | 🔴 failure | The job has exceeded the maximum execution time of 6h0m0s | 1 | 1 |
+| 30 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 31 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 32 | 🔴 failure | Process completed with exit code 1. | 1 | 1 |
+| 33 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: peter-evans/repository-dispatch@v3. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 34 | 🔴 failure | Bad credentials | 1 | 1 |
+| 35 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 36 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
+| 37 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 38 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 39 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
 
 ---
 
 ### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)
 
 - **Pages 發布站點總數**：`17` 個站點
-- **🟢 正常發布 (`built`)**：`15` 個
+- **🟢 正常發布 (`built`)**：`16` 個
 - **🔴 建置異常 (`errored`)**：`1` 個
-- **⚪ 其他/初始待命中 (`other`)**：`1` 個
+- **⚪ 其他/初始待命中 (`other`)**：`0` 個
 
 | # | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |
 |---|---|---|---|:---:|:---:|:---:|
@@ -141,7 +142,7 @@
 | 14 | [wenchiehlee/skills](https://github.com/wenchiehlee/skills) | 🐇 敏捷白兔 (`共享技能登錄庫`) | [https://wenchiehlee.github.io/skills/](https://wenchiehlee.github.io/skills/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 15 | [wenchiehlee/wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | 👤 個人旗艦 (`個人官方主站門戶`) | [https://wenchiehlee.github.io/](https://wenchiehlee.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 | 16 | [ZhongZheng782/Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | 🐿️ 採集松鼠 (`AI 相片智慧標籤`) | [https://zhongzheng782.github.io/Synology-Photo-Tagger/](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 17 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | ⚪ building | `legacy` | 🌍 公開 |
+| 17 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
 
 ---
 
@@ -176,7 +177,7 @@
 | 7 | [Llm-Cli-APIServer](https://github.com/ZhongZheng782/Llm-Cli-APIServer) | **4** | - | ⚪ 預設 | 0 | `deploy-synology-nas.yml`, `docker-publish.yml`, `stop-nas.yml`, `update-stats.yml` |
 | 8 | [Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | **4** | [🟢 built](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🛡️ 啟用 | 0 | `probe-synology-photos-api.yml`, `probe-tailnet-mlx.yml`, `publish-image.yml`, `scout-image.yml` |
 | 9 | [Yahoo.Finance](https://github.com/ZhongZheng782/Yahoo.Finance) | **4** | - | 🛡️ 啟用 | 0 | `Actions-fetch-wayback.yaml`, `Actions-fetch.yaml`, `Actions-update-lists.yaml`, `sync-up-forecast.yml` |
-| 10 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **4** | [🔴 building](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🛡️ 啟用 | 0 | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml`, `update-source-settings.yml` |
+| 10 | [YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | **4** | [🟢 built](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🛡️ 啟用 | 0 | `daily-channel-fetch.yml`, `sync-to-biztrends.yml`, `update-readme-index.yml`, `update-source-settings.yml` |
 | 11 | [LineMonitoring](https://github.com/ZhongZheng782/LineMonitoring) | **3** | - | ⚪ 預設 | 0 | `collect-line-bot-logs.yml`, `deploy-synology-nas.yml`, `mac-runner-smoke.yml` |
 | 12 | [Python-Actions.GoodInfo.Analyzer](https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer) | **2** | - | ⚪ 預設 | 0 | `hybrid-fetch-and-analyze.yml`, `sync.yaml` |
 | 13 | [Win11](https://github.com/ZhongZheng782/Win11) | **2** | - | 🛡️ 啟用 | 0 | `action-runner.yml`, `powershell.yml` |
