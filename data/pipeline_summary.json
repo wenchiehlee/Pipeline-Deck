@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:34:26.991780+00:00",
+  "generated_at": "2026-11-26T14:55:41.844348+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
@@ -1206,8 +1206,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T04:51:43Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45757861516",
+        "latest_run_at": "2026-11-26T14:55:06Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45843804440",
         "annotations": []
       }
     ]
@@ -5371,6 +5371,18 @@
           "schedules": [
             {
               "repo": "wenchiehlee/wjlee-barco",
+              "workflow_name": "Latest blog post workflow",
+              "file": "blog-post-workflow.yml",
+              "path": ".github/workflows/blog-post-workflow.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-26T14:55:06Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45843804440",
+              "annotations": []
+            },
+            {
+              "repo": "wenchiehlee/wjlee-barco",
               "workflow_name": "Latest WP activity",
               "file": "WP-post-workflow.yml",
               "path": ".github/workflows/WP-post-workflow.yml",
@@ -5379,18 +5391,6 @@
               "latest_conclusion": "success",
               "latest_run_at": "2026-11-26T11:54:01Z",
               "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45814687769",
-              "annotations": []
-            },
-            {
-              "repo": "wenchiehlee/wjlee-barco",
-              "workflow_name": "Latest blog post workflow",
-              "file": "blog-post-workflow.yml",
-              "path": ".github/workflows/blog-post-workflow.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T04:51:43Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45757861516",
               "annotations": []
             }
           ],
