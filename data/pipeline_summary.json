@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T13:32:16.980734+00:00",
+  "generated_at": "2026-11-26T14:34:26.991780+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
@@ -440,8 +440,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T04:03:43Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45752790472",
+        "latest_run_at": "2026-11-26T14:00:01Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45834584729",
         "annotations": [
           {
             "level": "warning",
@@ -998,8 +998,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-25T14:42:32Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45636992883",
+        "latest_run_at": "2026-11-26T14:05:46Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45835553731",
         "annotations": [
           {
             "level": "warning",
@@ -2061,7 +2061,7 @@
         "repo": "ZhongZheng782/Win11",
         "workflow_name": "Action Runner",
         "file": "action-runner.yml",
-        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45752790472",
+        "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45834584729",
         "annotations": [
           {
             "level": "warning",
@@ -2337,7 +2337,7 @@
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Sync to biztrends.TW",
         "file": "sync-to-biztrends.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45636992883",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45835553731",
         "annotations": [
           {
             "level": "warning",
@@ -3420,8 +3420,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T04:03:43Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45752790472",
+              "latest_run_at": "2026-11-26T14:00:01Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45834584729",
               "annotations": [
                 {
                   "level": "warning",
@@ -4665,6 +4665,25 @@
           "schedules": [
             {
               "repo": "wenchiehlee/Python-Actions.FinMind",
+              "workflow_name": "Sync to biztrends.TW",
+              "file": "sync-to-biztrends.yml",
+              "path": ".github/workflows/sync-to-biztrends.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-26T14:05:46Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45835553731",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-biztrends"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee/Python-Actions.FinMind",
               "workflow_name": "Daily FinMind status",
               "file": "daily-finmind-status.yml",
               "path": ".github/workflows/daily-finmind-status.yml",
@@ -4679,25 +4698,6 @@
                   "title": "",
                   "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
                   "job_name": "status"
-                }
-              ]
-            },
-            {
-              "repo": "wenchiehlee/Python-Actions.FinMind",
-              "workflow_name": "Sync to biztrends.TW",
-              "file": "sync-to-biztrends.yml",
-              "path": ".github/workflows/sync-to-biztrends.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-25T14:42:32Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45636992883",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "sync-to-biztrends"
                 }
               ]
             }
