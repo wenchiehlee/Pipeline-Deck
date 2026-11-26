@@ -75,6 +75,13 @@ UX_DECK_REGISTRY = {
     "wenchiehlee/mkdocs-material": {"symbol": "📐", "name": "架構樣板", "role": "Material 主題範本"},
 }
 
+# NAS-hosted portals are maintained alongside the 17 GitHub Pages sites.
+SYNOLOGY_PORTALS = [
+    {"repo": "ZhongZheng782/Mail-Deck", "target": "/web/mail-deck/", "workflow": "portal-pages-deploy.yml"},
+    {"repo": "ZhongZheng782/Photo-Deck", "target": "/web/photo-deck/", "workflow": "portal-pages-deploy.yml"},
+    {"repo": "ZhongZheng782/wenchiehlee.quickconnect.to", "target": "/web/", "workflow": "portal-pages-deploy.yml"},
+]
+
 def load_env_file():
     """Load key-value pairs from .env if present."""
     base_dir = Path(__file__).resolve().parent.parent
@@ -471,6 +478,8 @@ def scan_ecosystem():
         },
         "pages_telemetry": {
             "total_sites": 0,
+            "synology_portals": SYNOLOGY_PORTALS,
+            "total_portals": len(SYNOLOGY_PORTALS),
             "built_sites": 0,
             "errored_sites": 0,
             "other_sites": 0,
@@ -621,6 +630,7 @@ def scan_ecosystem():
     # Sort Pages sites by status then repo name
     summary_data["pages_telemetry"]["sites"].sort(key=lambda x: (0 if x["status"] == "errored" else (1 if x["status"] == "built" else 2), x["repo"].lower()))
     summary_data["pages_telemetry"]["total_sites"] = len(summary_data["pages_telemetry"]["sites"])
+    summary_data["pages_telemetry"]["total_portals"] = summary_data["pages_telemetry"]["total_sites"] + len(SYNOLOGY_PORTALS)
 
     # Sort repos with alerts by total alerts descending
     summary_data["security_telemetry"]["repos_with_alerts"].sort(
@@ -686,7 +696,7 @@ def generate_markdown(data) -> str:
         f"<!-- PIPELINE_SUMMARY_START -->",
         f"## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)",
         f"",
-        f"> **全域統計**：涵蓋 **{len(TARGET_ORGS)} 大核心組織**，共有 **{data['total_repos']} 個活躍儲存庫**（排除已封存庫），其中 **{data['total_repos_with_actions']} 個儲存庫** 具備自動化工作流，累計運行 **{data['total_workflows']} 個工作流程 YAML 檔案**、**{pg.get('total_sites', 0)} 個 GitHub Pages 線上門戶**，以及 **{sec.get('secret_scanning_enabled_count', 0)} 個啟用全方位資安防護庫**。（自動掃描更新於：`{now_utc}`）",
+        f"> **全域統計**：涵蓋 **{len(TARGET_ORGS)} 大核心組織**，共有 **{data['total_repos']} 個活躍儲存庫**（排除已封存庫），其中 **{data['total_repos_with_actions']} 個儲存庫** 具備自動化工作流，累計運行 **{data['total_workflows']} 個工作流程 YAML 檔案**、**{pg.get('total_portals', pg.get('total_sites', 0))} 個發布門戶（GitHub Pages {pg.get('total_sites', 0)} + Synology {len(pg.get('synology_portals', []))}）**，以及 **{sec.get('secret_scanning_enabled_count', 0)} 個啟用全方位資安防護庫**。（自動掃描更新於：`{now_utc}`）",
         f">",
         f"> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`{ns_quartet}`**（**{data['total_workflows']}** 個工作流程 YAML · **{data['total_repos_with_actions']}** 個活躍 Actions 庫 · **{sch['critical_consecutive_4_count']}** 個嚴重警報 · **{sch['warning_consecutive_1_to_3_count']}** 個異常警告）",
         f"",
@@ -706,7 +716,7 @@ def generate_markdown(data) -> str:
         lines.append(f"| [`{org}`](https://github.com/{org}) | {o['total_repos']} | {o['repos_with_actions']} | **{o['total_workflows']}** | {org_pages} | {org_sec} | {alert_str} |")
 
     tot_alerts = sec.get("total_open_dependabot_alerts", 0) + sec.get("total_open_codeql_alerts", 0)
-    lines.append(f"| **全域總計** | **{data['total_repos']}** | **{data['total_repos_with_actions']}** | **{data['total_workflows']} 個 YAML** | **{pg.get('total_sites', 0)} 站點** | **{sec.get('secret_scanning_enabled_count', 0)} 庫** | **{tot_alerts} 處** |")
+    lines.append(f"| **全域總計** | **{data['total_repos']}** | **{data['total_repos_with_actions']}** | **{data['total_workflows']} 個 YAML** | **{pg.get('total_portals', pg.get('total_sites', 0))} 門戶（Pages {pg.get('total_sites', 0)} + Synology {len(pg.get('synology_portals', []))}）** | **{sec.get('secret_scanning_enabled_count', 0)} 庫** | **{tot_alerts} 處** |")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -769,7 +779,8 @@ def generate_markdown(data) -> str:
     # --- SECTION: GITHUB PAGES DEPLOYMENTS ---
     lines.append(f"### 🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)")
     lines.append("")
-    lines.append(f"- **Pages 發布站點總數**：`{pg.get('total_sites', 0)}` 個站點")
+    lines.append(f"- **門戶站點總數**：`{pg.get('total_portals', pg.get('total_sites', 0))}`（GitHub Pages `{pg.get('total_sites', 0)}` + Synology `{len(pg.get('synology_portals', []))}`）")
+    lines.append(f"- **GitHub Pages 站點數**：`{pg.get('total_sites', 0)}` 個")
     lines.append(f"- **🟢 正常發布 (`built`)**：`{pg.get('built_sites', 0)}` 個")
     lines.append(f"- **🔴 建置異常 (`errored`)**：`{pg.get('errored_sites', 0)}` 個")
     lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{pg.get('other_sites', 0)}` 個")
@@ -786,6 +797,16 @@ def generate_markdown(data) -> str:
         ux_meta = UX_DECK_REGISTRY.get(s["repo"], {"symbol": "🌐", "name": "線上站點", "role": "GitHub Pages 門戶"})
         ux_display = f"{ux_meta['symbol']} {ux_meta['name']} (`{ux_meta['role']}`)"
         lines.append(f"| {idx} | {repo_link} | {ux_display} | {url_link} | {st_icon} | `{s.get('build_type', 'legacy')}` | {vis} |")
+
+    lines.append("")
+    lines.append("#### Synology Web Station 門戶（3）")
+    lines.append("")
+    lines.append("| # | 儲存庫 | 部署目標 | 工作流程 |")
+    lines.append("|---|---|---|---|")
+    for idx, portal in enumerate(pg.get("synology_portals", []), 1):
+        repo_link = f"[{portal['repo']}](https://github.com/{portal['repo']})"
+        lines.append(f"| {idx} | {repo_link} | `{portal['target']}` | `{portal['workflow']}` |")
+    lines.append("")
 
     lines.append("")
     lines.append("---")
@@ -962,6 +983,8 @@ def main():
             "warning_alerts": sch.get("warning_consecutive_1_to_3_count", 0),
             "monitored_schedules": sch.get("total_monitored_schedules", 0),
             "pages_sites": pg.get("total_sites", 0),
+            "portal_sites": pg.get("total_portals", pg.get("total_sites", 0)),
+            "synology_sites": len(pg.get("synology_portals", [])),
             "pages_built": pg.get("built_sites", 0),
             "pages_errored": pg.get("errored_sites", 0),
             "secret_scanning_repos": sec.get("secret_scanning_enabled_count", 0),
@@ -974,7 +997,7 @@ def main():
             "title": "Pipeline-Deck",
             "tag": "CI/CD & Sec",
             "theme": "theme-pipeline",
-            "stat1": { "label": "工作流程 & 門戶", "value": f"{summary_data['total_workflows']} WFs · {pg.get('total_sites', 0)} Pages" },
+            "stat1": { "label": "工作流程 & 門戶", "value": f"{summary_data['total_workflows']} WFs · {pg.get('total_portals', pg.get('total_sites', 0))} 門戶" },
             "stat2": { "label": "資安防護 & 警報", "value": f"{sec.get('secret_scanning_enabled_count', 0)} 庫防護 · {sec.get('total_open_dependabot_alerts', 0) + sec.get('total_open_codeql_alerts', 0)} 處待處置" },
             "bottom_line": f"⚡ CI/CD: {ns_val}",
             "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
@@ -1010,7 +1033,7 @@ def main():
     print(f"    - Repos with Actions: {summary_data['total_repos_with_actions']}")
     print(f"    - Total Workflows: {summary_data['total_workflows']}")
     print(f"    - Monitored Schedules: {sch['total_monitored_schedules']} (🚨 {sch['critical_consecutive_4_count']} Crit | ⚠️ {sch['warning_consecutive_1_to_3_count']} Warn)")
-    print(f"    - 🌐 GitHub Pages Sites: {pg.get('total_sites', 0)} (🟢 {pg.get('built_sites', 0)} Built | 🔴 {pg.get('errored_sites', 0)} Errored)")
+    print(f"    - 🌐 Deployment Portals: {pg.get('total_portals', pg.get('total_sites', 0))} (GitHub Pages {pg.get('total_sites', 0)} + Synology {len(pg.get('synology_portals', []))})")
     print(f"    - 🛡️ Secret Scanning Repos: {sec.get('secret_scanning_enabled_count', 0)}")
     print(f"    - 🛡️ Push Protection Repos: {sec.get('push_protection_enabled_count', 0)}")
     print(f"    - 📦 Dependabot Open Alerts: {sec.get('total_open_dependabot_alerts', 0)}")

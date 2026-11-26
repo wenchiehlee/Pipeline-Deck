@@ -56,6 +56,8 @@ def generate_portal_html(data: dict, index_html_path: Path):
     monitored_schedules = sch.get("total_monitored_schedules", 0)
 
     total_sites = pg.get("total_sites", 0)
+    synology_portals = pg.get("synology_portals", [])
+    total_portals = pg.get("total_portals", total_sites + len(synology_portals))
     built_sites = pg.get("built_sites", 0)
     errored_sites = pg.get("errored_sites", 0)
     other_sites = pg.get("other_sites", 0)
@@ -312,6 +314,19 @@ def generate_portal_html(data: dict, index_html_path: Path):
                   <td style="text-align: center;">{st_pill}</td>
                   <td style="text-align: center;"><code>{build_type}</code></td>
                   <td style="text-align: center;">{vis_pill}</td>
+                </tr>
+"""
+
+    synology_rows = ""
+    for idx, portal in enumerate(synology_portals, 1):
+        repo = portal["repo"]
+        repo_url = f"https://github.com/{repo}"
+        workflow_url = f"{repo_url}/blob/main/.github/workflows/{portal['workflow']}"
+        synology_rows += f"""                <tr>
+                  <td>{idx}</td>
+                  <td><a href="{repo_url}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{repo}</strong></a></td>
+                  <td><code>{portal['target']}</code></td>
+                  <td><a href="{workflow_url}" target="_blank" rel="noopener noreferrer"><code>{portal['workflow']}</code></a></td>
                 </tr>
 """
 
@@ -1671,7 +1686,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
       <div class="header-badge">⚙️ PIPELINE-DECK UNIFIED AUTOMATION ENGINE · GITOPS & CI/CD</div>
       <h1>Pipeline-Deck</h1>
       <div class="subtitle">
-        跨生態系 {total_orgs_count} 大核心組織、{data['total_repos_with_actions']} 個活躍儲存庫、{data['total_workflows']} 個工作流程 YAML、{total_sites} 個 GitHub Pages 發布門戶，以及 {sec_repos} 庫全方位資安防護之全域觀測中樞。
+        跨生態系 {total_orgs_count} 大核心組織、{data['total_repos_with_actions']} 個活躍儲存庫、{data['total_workflows']} 個工作流程 YAML、{total_portals} 個發布門戶（GitHub Pages {total_sites} + Synology {len(synology_portals)}），以及 {sec_repos} 庫全方位資安防護之全域觀測中樞。
       </div>
 
       <div class="telemetry-nav-strip">
@@ -1685,7 +1700,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
           🚨 排程健康 ⬇
         </a>
         <a href="#pages-deployments" class="live-url-pill" title="查看 GitHub Pages 發布門戶">
-          🌐 Pages 門戶 ({total_sites}) ⬇
+          🌐 發布門戶 ({total_portals}) ⬇
         </a>
         <a href="#security-posture" class="live-url-pill" title="查看資安防護與代碼品質">
           🛡️ 資安與品質 ({total_alerts} 警報) ⬇
@@ -1711,7 +1726,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
         </div>
       </div>
       <p class="section-desc">
-        全域統計涵蓋 <strong>{total_orgs_count} 大核心組織</strong>，共有 <strong>{data['total_repos']} 個活躍儲存庫</strong>，其中 <strong>{data['total_repos_with_actions']} 個儲存庫</strong> 具備自動化工作流，累計運行 <strong>{data['total_workflows']} 個工作流程 YAML 檔案</strong>、<strong>{total_sites} 個 GitHub Pages 發布門戶</strong> 與 <strong>{sec_repos} 個資安防護啟用庫</strong>。
+        全域統計涵蓋 <strong>{total_orgs_count} 大核心組織</strong>，共有 <strong>{data['total_repos']} 個活躍儲存庫</strong>，其中 <strong>{data['total_repos_with_actions']} 個儲存庫</strong> 具備自動化工作流，累計運行 <strong>{data['total_workflows']} 個工作流程 YAML 檔案</strong>、<strong>{total_portals} 個發布門戶（GitHub Pages {total_sites} + Synology {len(synology_portals)}）</strong> 與 <strong>{sec_repos} 個資安防護啟用庫</strong>。
       </p>
 
       <!-- NORTH STAR QUARTET HIGHLIGHT BANNER -->
@@ -1754,8 +1769,9 @@ def generate_portal_html(data: dict, index_html_path: Path):
             <span>🌐</span>
           </div>
           <div class="kpi-body">
-            <div class="kpi-label">GitHub Pages 線上發布門戶</div>
-            <div class="kpi-value" style="color: #2563eb;">{total_sites} <span class="kpi-unit">個站點</span></div>
+            <div class="kpi-label">線上發布門戶</div>
+            <div class="kpi-value" style="color: #2563eb;">{total_portals} <span class="kpi-unit">個門戶</span></div>
+            <div class="kpi-sub">GitHub Pages {total_sites} · Synology {len(synology_portals)}</div>
             <div class="kpi-sub">🟢 <strong>{built_sites}</strong> 正常 · 🔴 <strong>{errored_sites}</strong> 異常</div>
           </div>
         </div>
@@ -1863,23 +1879,24 @@ def generate_portal_html(data: dict, index_html_path: Path):
     <section id="pages-deployments" class="section-block">
       <div class="section-header">
         <div class="section-title-wrap">
-          <div class="section-badge badge-pages">PAGES OBSERVABILITY · {total_sites} SITES</div>
+          <div class="section-badge badge-pages">PORTAL OBSERVABILITY · {total_portals} SITES</div>
           <h2 class="section-heading">🌐 GitHub Pages 線上發布門戶觀測 (GitHub Pages Deployments)</h2>
         </div>
         <div class="health-summary-pill-group">
-          <span class="health-pill pill-total">Pages 站點總數：<strong>{total_sites}</strong></span>
+          <span class="health-pill pill-total">發布門戶總數：<strong>{total_portals}</strong>（Pages {total_sites} + Synology {len(synology_portals)}）</span>
+          <span class="health-pill pill-total">GitHub Pages：<strong>{total_sites}</strong></span>
           <span class="health-pill pill-ok">🟢 正常發布：<strong>{built_sites}</strong></span>
           <span class="health-pill pill-crit" style="color: {'#059669' if errored_sites == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_sites == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_sites}</strong></span>
           <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_sites}</strong></span>
         </div>
       </div>
       <p class="section-desc">
-        全域跨組織即時監控 GitHub Pages 站點之部署健康狀態、線上公開網址以及建置引擎類型。
+        全域追蹤 {total_portals} 個發布門戶：{total_sites} 個 GitHub Pages 與 {len(synology_portals)} 個 Synology Web Station；Pages 建置狀態統計僅涵蓋 GitHub Pages 站點。
       </p>
 
       <div class="table-card">
         <div class="table-card-head">
-          <div class="table-card-title">🌐 GitHub Pages 線上發布站點清單</div>
+          <div class="table-card-title">🌐 GitHub Pages 線上發布站點清單（{total_sites}）</div>
           <span class="table-hint">包含 Deck Family 與各專案即時門戶</span>
         </div>
         <div class="table-responsive">
@@ -1897,6 +1914,19 @@ def generate_portal_html(data: dict, index_html_path: Path):
             </thead>
             <tbody>
 {pages_rows}            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="table-card" style="margin-top: 1rem;">
+        <div class="table-card-head">
+          <div class="table-card-title">🗄️ Synology Web Station 門戶（{len(synology_portals)}）</div>
+          <span class="table-hint">與 GitHub Pages 合計 {total_portals} 個發布門戶</span>
+        </div>
+        <div class="table-responsive">
+          <table class="telemetry-table">
+            <thead><tr><th>#</th><th>組織 / 儲存庫</th><th>部署目標</th><th>工作流程</th></tr></thead>
+            <tbody>
+{synology_rows}            </tbody>
           </table>
         </div>
       </div>
@@ -2102,7 +2132,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <div class="deck-numbers-compact">
             <div class="stat-line">
               <span class="stat-lbl">工作流程</span>
-              <span class="stat-val">{data['total_workflows']} WFs · {total_sites} Pages</span>
+              <span class="stat-val">{data['total_workflows']} WFs · {total_portals} 門戶</span>
             </div>
             <div class="stat-line">
               <span class="stat-lbl">資安防護</span>
