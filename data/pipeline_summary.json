@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-26T13:28:28.480893+00:00",
+  "generated_at": "2026-11-26T13:32:16.980734+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 74,
   "total_workflows": 224,
   "scheduled_telemetry": {
     "total_monitored_schedules": 65,
-    "critical_consecutive_4_count": 2,
-    "warning_consecutive_1_to_3_count": 6,
+    "critical_consecutive_4_count": 3,
+    "warning_consecutive_1_to_3_count": 5,
     "healthy_count": 57,
     "critical_alerts": [
       {
@@ -46,6 +46,43 @@
             "job_name": "fetch"
           }
         ]
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "renew-pipeline-telemetry.yml",
+        "path": ".github/workflows/renew-pipeline-telemetry.yml",
+        "consecutive_failures": 4,
+        "recent_4_icons": "❌❌❌❌",
+        "latest_conclusion": "failure",
+        "latest_run_at": "2026-11-26T07:10:32Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+            "job_name": "deploy-pages"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
+            "job_name": "deploy-pages"
+          }
+        ]
       }
     ],
     "warning_alerts": [
@@ -65,43 +102,6 @@
             "title": "",
             "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
             "job_name": "check"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
-        "file": "renew-pipeline-telemetry.yml",
-        "path": ".github/workflows/renew-pipeline-telemetry.yml",
-        "consecutive_failures": 3,
-        "recent_4_icons": "❌❌❌✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T13:14:21Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
-        "annotations": [
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
-            "job_name": "deploy-pages"
-          },
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
-            "job_name": "deploy-pages"
           }
         ]
       },
@@ -287,8 +287,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T13:01:03Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45825048372",
+        "latest_run_at": "2026-11-26T08:26:59Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45783245537",
         "annotations": [
           {
             "level": "warning",
@@ -717,8 +717,8 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T13:00:55Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45825027203",
+        "latest_run_at": "2026-11-26T10:36:52Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45802967262",
         "annotations": [
           {
             "level": "warning",
@@ -791,10 +791,10 @@
         "file": "monthly-cbc-update.yaml",
         "path": ".github/workflows/monthly-cbc-update.yaml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅✅✅",
+        "recent_4_icons": "✅✅❌❌",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-09T05:27:03Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+        "latest_run_at": "2026-11-02T10:23:29Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
         "annotations": [
           {
             "level": "notice",
@@ -1214,19 +1214,10 @@
   },
   "pages_telemetry": {
     "total_sites": 17,
-    "built_sites": 16,
-    "errored_sites": 1,
+    "built_sites": 17,
+    "errored_sites": 0,
     "other_sites": 0,
     "sites": [
-      {
-        "org": "wenchiehlee",
-        "name": "Pipeline-Deck",
-        "repo": "wenchiehlee/Pipeline-Deck",
-        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -1333,6 +1324,15 @@
         "url": "https://wenchiehlee.github.io/mkdocs-life/",
         "status": "built",
         "build_type": "legacy",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
+        "name": "Pipeline-Deck",
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
+        "status": "built",
+        "build_type": "workflow",
         "is_private": false
       },
       {
@@ -1541,7 +1541,7 @@
       },
       {
         "level": "failure",
-        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+        "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
         "count": 1,
         "repos": [
           "wenchiehlee/Pipeline-Deck"
@@ -1549,7 +1549,7 @@
       },
       {
         "level": "failure",
-        "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+        "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
         "count": 1,
         "repos": [
           "wenchiehlee/Pipeline-Deck"
@@ -1818,24 +1818,10 @@
         ]
       },
       {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
-            "job_name": "check"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/Pipeline-Deck",
         "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
         "file": "renew-pipeline-telemetry.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
         "annotations": [
           {
             "level": "warning",
@@ -1846,13 +1832,13 @@
           {
             "level": "failure",
             "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
             "job_name": "deploy-pages"
           },
           {
             "level": "failure",
             "title": "",
-            "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+            "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
             "job_name": "deploy-pages"
           },
           {
@@ -1860,6 +1846,20 @@
             "title": "",
             "message": "Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.",
             "job_name": "deploy-pages"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "check"
           }
         ]
       },
@@ -1923,7 +1923,7 @@
         "repo": "ZhongZheng782/Mail-Deck",
         "workflow_name": "Build and deploy Mail-Deck portal to Synology",
         "file": "mail-portal-deploy-synology.yml",
-        "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45825048372",
+        "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45783245537",
         "annotations": [
           {
             "level": "warning",
@@ -2171,7 +2171,7 @@
         "repo": "wenchiehlee-investment/MOPS",
         "workflow_name": "Sync to Downstream",
         "file": "sync-to-Downstream.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45825027203",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45802967262",
         "annotations": [
           {
             "level": "warning",
@@ -2227,7 +2227,7 @@
         "repo": "wenchiehlee-investment/TaiwanLoanInterest",
         "workflow_name": "Monthly CBC Data Update",
         "file": "monthly-cbc-update.yaml",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
         "annotations": [
           {
             "level": "notice",
@@ -3716,8 +3716,8 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T13:01:03Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45825048372",
+              "latest_run_at": "2026-11-26T08:26:59Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45783245537",
               "annotations": [
                 {
                   "level": "warning",
@@ -5767,11 +5767,11 @@
               "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
               "file": "renew-pipeline-telemetry.yml",
               "path": ".github/workflows/renew-pipeline-telemetry.yml",
-              "consecutive_failures": 3,
-              "recent_4_icons": "❌❌❌✅",
+              "consecutive_failures": 4,
+              "recent_4_icons": "❌❌❌❌",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T13:14:21Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45827199664",
+              "latest_run_at": "2026-11-26T07:10:32Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45773366470",
               "annotations": [
                 {
                   "level": "warning",
@@ -5782,13 +5782,13 @@
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.",
+                  "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.",
                   "job_name": "deploy-pages"
                 },
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Error: No artifacts named \"github-pages\" were found for this workflow run. Ensure artifacts are uploaded with actions/upload-artifact@v4 or later.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:85:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
+                  "message": "Error: Multiple artifacts named \"github-pages\" were unexpectedly found for this workflow run. Artifact count is 2.\n    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/api-client.js:89:1)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)\n    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v5/src/internal/deployment.js:74:1)\n    at main (/home/runner/work/_actions/actions/deploy-pages/v5/src/index.js:30:1)",
                   "job_name": "deploy-pages"
                 },
                 {
@@ -5803,7 +5803,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
@@ -7792,25 +7792,6 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/MOPS",
-              "workflow_name": "Sync to Downstream",
-              "file": "sync-to-Downstream.yml",
-              "path": ".github/workflows/sync-to-Downstream.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T13:00:55Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45825027203",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "sync-to-downstream"
-                }
-              ]
-            },
-            {
-              "repo": "wenchiehlee-investment/MOPS",
               "workflow_name": "Early Filer Download",
               "file": "EarlyFilerDownload.yaml",
               "path": ".github/workflows/EarlyFilerDownload.yaml",
@@ -7820,6 +7801,25 @@
               "latest_run_at": "2026-11-26T12:59:37Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45824807657",
               "annotations": []
+            },
+            {
+              "repo": "wenchiehlee-investment/MOPS",
+              "workflow_name": "Sync to Downstream",
+              "file": "sync-to-Downstream.yml",
+              "path": ".github/workflows/sync-to-Downstream.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_run_at": "2026-11-26T10:36:52Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45802967262",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "sync-to-downstream"
+                }
+              ]
             },
             {
               "repo": "wenchiehlee-investment/MOPS",
@@ -8259,10 +8259,10 @@
               "file": "monthly-cbc-update.yaml",
               "path": ".github/workflows/monthly-cbc-update.yaml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
+              "recent_4_icons": "✅✅❌❌",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-09T05:27:03Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
+              "latest_run_at": "2026-11-02T10:23:29Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
               "annotations": [
                 {
                   "level": "notice",
