@@ -152,7 +152,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
                   <th>工作流程名稱</th>
                   <th>YAML 檔案</th>
                   <th style="text-align: center;">連續失敗次數</th>
-                  <th style="text-align: center;">最近 4 次狀態</th>
+                  <th style="text-align: center;">最近 4 次結果（含 push/手動）</th>
                   <th>最新失敗時間 (UTC)</th>
                   <th style="text-align: center;">執行日誌</th>
                 </tr>
@@ -199,7 +199,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
                   <th>工作流程名稱</th>
                   <th>YAML 檔案</th>
                   <th style="text-align: center;">連續失敗次數</th>
-                  <th style="text-align: center;">最近 4 次狀態</th>
+                  <th style="text-align: center;">最近 4 次結果（含 push/手動）</th>
                   <th>最新失敗時間 (UTC)</th>
                   <th style="text-align: center;">執行日誌</th>
                 </tr>
@@ -1845,7 +1845,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
         </div>
       </div>
       <p class="section-desc">
-        針對生態系中配置有 <code>schedule: - cron:</code> 的常態工作流程，追蹤最新執行紀錄與連續失敗次數。連續失敗 ≥ 4 次標記為嚴重警報，連續失敗 1~3 次標記為異常警告；同時擷取最新一次執行的 Job Annotations（如 Node.js 版本棄用通知）。
+        針對配置有排程的工作流程，追蹤其排程、push 與手動執行紀錄；失敗後只要有較新的成功執行，連續失敗即歸零。連續失敗 ≥ 4 次標記為嚴重警報，連續失敗 1~3 次標記為異常警告；同時擷取最新一次執行的 Job Annotations（如 Node.js 版本棄用通知）。
       </p>
 
 {crit_section_html}
@@ -1867,7 +1867,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
                   <th>工作流程名稱</th>
                   <th>YAML 檔案</th>
                   <th style="text-align: center;">狀態</th>
-                  <th style="text-align: center;">最近 4 次結論</th>
+                  <th style="text-align: center;">最近 4 次結果（含 push/手動）</th>
                   <th>最新成功時間 (UTC)</th>
                   <th style="text-align: center;">執行紀錄</th>
                 </tr>

@@ -400,13 +400,13 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
             scheduled_paths -= disabled_paths
 
             if scheduled_paths:
-                all_resp = session.get(f"{repo_url}/actions/runs?per_page=50")
+                all_resp = session.get(f"{repo_url}/actions/runs?per_page=100")
                 all_runs = all_resp.json().get("workflow_runs", []) if all_resp.status_code == 200 else sched_runs
-                
+
                 by_path = {}
                 for r in all_runs:
                     p = r.get("path")
-                    if p and p in scheduled_paths and r.get("event") == "schedule":
+                    if p and p in scheduled_paths:
                         by_path.setdefault(p, []).append(r)
                 for r in sched_runs:
                     p = r.get("path")
@@ -414,18 +414,25 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
                         by_path.setdefault(p, []).append(r)
 
                 for p, wruns in by_path.items():
-                    completed = [run for run in wruns if run.get("status") == "completed"]
+                    completed = [
+                        run for run in wruns
+                        if run.get("status") == "completed"
+                        and run.get("conclusion") in ("success", "failure", "timed_out", "startup_failure")
+                    ]
                     if not completed:
                         continue
                     completed.sort(key=lambda x: x.get("created_at", ""), reverse=True)
                     recent_4 = completed[:4]
                     consecutive_failures = 0
                     for run in completed:
-                        if run.get("conclusion") == "failure":
+                        if run.get("conclusion") in ("failure", "timed_out", "startup_failure"):
                             consecutive_failures += 1
-                        else:
+                        elif run.get("conclusion") == "success":
                             break
-                    run_icons = ["❌" if x.get("conclusion") == "failure" else "✅" for x in recent_4]
+                    run_icons = [
+                        "✅" if x.get("conclusion") == "success" else "❌"
+                        for x in recent_4
+                    ]
                     file_name = p.split("/")[-1] if "/" in p else p
                     annotations = get_run_annotations(session, full_name, completed[0].get("id"))
                     schedules.append({
@@ -436,6 +443,7 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
                         "consecutive_failures": consecutive_failures,
                         "recent_4_icons": "".join(run_icons),
                         "latest_conclusion": completed[0].get("conclusion"),
+                        "latest_event": completed[0].get("event"),
                         "latest_run_at": completed[0].get("created_at"),
                         "latest_run_url": completed[0].get("html_url"),
                         "annotations": annotations
@@ -735,12 +743,13 @@ def generate_markdown(data) -> str:
     lines.append(f"- **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`{sch['critical_consecutive_4_count']}` 個")
     lines.append(f"- **⚠️ 異常警告（連續失敗 1~3 次）**：`{sch['warning_consecutive_1_to_3_count']}` 個")
     lines.append(f"- **🟢 正常運行（最新一次執行成功）**：`{sch['healthy_count']}` 個")
+    lines.append("- **恢復判定**：排程 workflow 的排程、push 或手動執行中，較新的成功會清除先前連續失敗。")
     lines.append("")
 
     if sch["critical_consecutive_4_count"] > 0:
         lines.append("#### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單")
         lines.append("")
-        lines.append("| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |")
+        lines.append("| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次結果（含 push/手動） | 最新失敗時間 | 執行日誌 |")
         lines.append("|---|---|---|---|:---:|:---:|---|:---:|")
         for idx, item in enumerate(sch["critical_alerts"], 1):
             repo_link = f"[{item['repo']}](https://github.com/{item['repo']})"
@@ -751,7 +760,7 @@ def generate_markdown(data) -> str:
     if sch["warning_consecutive_1_to_3_count"] > 0:
         lines.append("#### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）")
         lines.append("")
-        lines.append("| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次狀態 | 最新失敗時間 | 執行日誌 |")
+        lines.append("| # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次結果（含 push/手動） | 最新失敗時間 | 執行日誌 |")
         lines.append("|---|---|---|---|:---:|:---:|---|:---:|")
         for idx, item in enumerate(sch["warning_alerts"], 1):
             repo_link = f"[{item['repo']}](https://github.com/{item['repo']})"
