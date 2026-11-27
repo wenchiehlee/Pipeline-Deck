@@ -1,81 +1,23 @@
 {
-  "generated_at": "2026-11-27T01:57:55.612461+00:00",
+  "generated_at": "2026-11-27T02:18:29.102182+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 230,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 2,
-    "warning_consecutive_1_to_3_count": 8,
-    "healthy_count": 54,
+    "warning_consecutive_1_to_3_count": 3,
+    "healthy_count": 59,
     "critical_alerts": [
-      {
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "workflow_name": "Analyze Alerts",
-        "file": "analyze.yml",
-        "path": ".github/workflows/analyze.yml",
-        "consecutive_failures": 5,
-        "recent_4_icons": "❌❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-27T00:05:13Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45914656015",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "analyze"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "workflow_name": "Fetch Alerts",
-        "file": "fetch.yml",
-        "path": ".github/workflows/fetch.yml",
-        "consecutive_failures": 5,
-        "recent_4_icons": "❌❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T23:36:49Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45911969305",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "fetch"
-          }
-        ]
-      }
-    ],
-    "warning_alerts": [
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "path": ".github/workflows/check-data-health.yml",
-        "consecutive_failures": 3,
-        "recent_4_icons": "❌❌❌",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T12:58:21Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
-            "job_name": "check"
-          }
-        ]
-      },
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
         "workflow_name": "Daily channel fetch",
         "file": "daily-channel-fetch.yml",
         "path": ".github/workflows/daily-channel-fetch.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
+        "consecutive_failures": 6,
+        "recent_4_icons": "❌❌❌❌",
         "latest_conclusion": "failure",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T22:26:40Z",
         "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45904828034",
         "annotations": [
@@ -106,43 +48,27 @@
         ]
       },
       {
-        "repo": "wenchiehlee-investment/ConceptStocks",
-        "workflow_name": "Update Company Financials",
-        "file": "update_company_financials.yml",
-        "path": ".github/workflows/update_company_financials.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "path": ".github/workflows/check-data-health.yml",
+        "consecutive_failures": 5,
+        "recent_4_icons": "❌❌❌❌",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T06:28:06Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916",
+        "latest_event": "schedule",
+        "latest_run_at": "2026-11-26T12:58:21Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
         "annotations": [
           {
             "level": "failure",
             "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "update"
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "check"
           }
         ]
-      },
-      {
-        "repo": "wenchiehlee-investment/ConceptStocks",
-        "workflow_name": "Update Concept Stocks",
-        "file": "update_conceptstocks.yml",
-        "path": ".github/workflows/update_conceptstocks.yml",
-        "consecutive_failures": 2,
-        "recent_4_icons": "❌❌✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T04:07:09Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "update"
-          }
-        ]
-      },
+      }
+    ],
+    "warning_alerts": [
       {
         "repo": "wenchiehlee-money/biztrends.TW",
         "workflow_name": "Update Cycle Indices",
@@ -151,6 +77,7 @@
         "consecutive_failures": 1,
         "recent_4_icons": "❌",
         "latest_conclusion": "failure",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-23T10:16:53Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
         "annotations": [
@@ -168,8 +95,9 @@
         "file": "deploy-pages.yml",
         "path": ".github/workflows/deploy-pages.yml",
         "consecutive_failures": 1,
-        "recent_4_icons": "❌",
+        "recent_4_icons": "❌✅",
         "latest_conclusion": "failure",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:32:21Z",
         "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673",
         "annotations": [
@@ -182,34 +110,16 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Selenium-Actions.IPO",
-        "workflow_name": "Run Selenium On GitHub Action",
-        "file": "Selenium-Action.yaml",
-        "path": ".github/workflows/Selenium-Action.yaml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅✅",
-        "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T17:29:17Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45868135741",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Process completed with exit code 1.",
-            "job_name": "scrape"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/llm",
         "workflow_name": "Update README Stats",
         "file": "update-stats.yml",
         "path": ".github/workflows/update-stats.yml",
         "consecutive_failures": 1,
-        "recent_4_icons": "❌✅✅✅",
+        "recent_4_icons": "❌✅❌✅",
         "latest_conclusion": "failure",
-        "latest_run_at": "2026-11-26T22:34:40Z",
-        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45905675732",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T01:59:57Z",
+        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45925715992",
         "annotations": [
           {
             "level": "failure",
@@ -229,6 +139,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T05:39:29Z",
         "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45763019728",
         "annotations": []
@@ -241,6 +152,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T18:41:07Z",
         "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45877886244",
         "annotations": []
@@ -253,6 +165,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T17:45:49Z",
         "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45870456721",
         "annotations": []
@@ -265,6 +178,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:11:02Z",
         "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45921091101",
         "annotations": []
@@ -277,6 +191,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:17:48Z",
         "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45921751975",
         "annotations": []
@@ -289,6 +204,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:28:46Z",
         "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45922791739",
         "annotations": []
@@ -301,8 +217,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T19:04:31Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45880856786",
+        "latest_event": "schedule",
+        "latest_run_at": "2026-11-27T02:13:44Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45927077616",
         "annotations": []
       },
       {
@@ -313,6 +230,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:30:50Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45922982037",
         "annotations": []
@@ -323,8 +241,9 @@
         "file": "portal-pages-deploy.yml",
         "path": ".github/workflows/portal-pages-deploy.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅",
+        "recent_4_icons": "✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T00:37:26Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45917800647",
         "annotations": []
@@ -337,6 +256,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T22:29:23Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45905098547",
         "annotations": [
@@ -356,50 +276,15 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T11:13:19Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45808590415",
+        "latest_event": "push",
+        "latest_run_at": "2026-11-27T02:00:42Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45925801018",
         "annotations": [
           {
             "level": "warning",
             "title": "",
             "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
-            "job_name": "sync-to-money"
+            "job_name": "sync-to-market-cost-distribution"
           },
           {
             "level": "warning",
@@ -459,7 +344,43 @@
             "level": "warning",
             "title": "",
             "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "sync-to-market-cost-distribution"
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+            "job_name": "sync-to-money"
           }
         ]
       },
@@ -471,6 +392,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T23:04:07Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45908669709",
         "annotations": [
@@ -488,8 +410,9 @@
         "file": "powershell.yml",
         "path": ".github/workflows/powershell.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-23T23:38:28Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295",
         "annotations": []
@@ -502,6 +425,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T08:44:26Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45785711999",
         "annotations": [
@@ -527,8 +451,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T02:22:52Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45742024674",
+        "latest_event": "push",
+        "latest_run_at": "2026-11-27T02:00:49Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
         "annotations": [
           {
             "level": "warning",
@@ -552,6 +477,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:29:50Z",
         "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45922882594",
         "annotations": []
@@ -564,6 +490,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T00:11:49Z",
         "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45915312588",
         "annotations": []
@@ -576,6 +503,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T21:18:31Z",
         "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45897219625",
         "annotations": []
@@ -588,6 +516,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T10:20:59Z",
         "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45800486690",
         "annotations": []
@@ -600,6 +529,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:29:25Z",
         "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45922848510",
         "annotations": []
@@ -612,9 +542,43 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T09:18:38Z",
         "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45790772968",
         "annotations": []
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "workflow_name": "Update Company Financials",
+        "file": "update_company_financials.yml",
+        "path": ".github/workflows/update_company_financials.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌✅",
+        "latest_conclusion": "success",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T00:44:47Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45918519824",
+        "annotations": []
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "workflow_name": "Update Concept Stocks",
+        "file": "update_conceptstocks.yml",
+        "path": ".github/workflows/update_conceptstocks.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅✅❌❌",
+        "latest_conclusion": "success",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T00:44:49Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45918523474",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-investment/Gemini-CLI",
@@ -624,6 +588,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-23T04:13:22Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319",
         "annotations": [
@@ -643,6 +608,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-23T08:23:36Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582",
         "annotations": [
@@ -662,6 +628,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-01T09:36:55Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527",
         "annotations": [
@@ -679,8 +646,9 @@
         "file": "weekly-dividends.yml",
         "path": ".github/workflows/weekly-dividends.yml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-23T09:29:34Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096",
         "annotations": []
@@ -693,6 +661,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T09:09:34Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45789372472",
         "annotations": []
@@ -705,6 +674,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T10:15:00Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45799544889",
         "annotations": []
@@ -717,6 +687,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T12:59:37Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45824807657",
         "annotations": []
@@ -729,6 +700,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T21:09:33Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45896158834",
         "annotations": [
@@ -748,6 +720,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅❌❌✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T18:14:41Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45874345478",
         "annotations": []
@@ -760,6 +733,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T18:44:07Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45878268314",
         "annotations": [
@@ -779,6 +753,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T17:50:55Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45871152970",
         "annotations": [
@@ -798,6 +773,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-01T05:30:35Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846",
         "annotations": [
@@ -815,10 +791,11 @@
         "file": "monthly-cbc-update.yaml",
         "path": ".github/workflows/monthly-cbc-update.yaml",
         "consecutive_failures": 0,
-        "recent_4_icons": "✅✅❌❌",
+        "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-02T10:23:29Z",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-09T05:27:03Z",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
         "annotations": [
           {
             "level": "notice",
@@ -848,6 +825,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-22T05:34:22Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056",
         "annotations": []
@@ -860,6 +838,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T18:10:31Z",
         "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45873789055",
         "annotations": []
@@ -872,9 +851,56 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T09:22:20Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45791341763",
         "annotations": []
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Analyze Alerts",
+        "file": "analyze.yml",
+        "path": ".github/workflows/analyze.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌❌",
+        "latest_conclusion": "success",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T01:10:34Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921047351",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "analyze"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Fetch Alerts",
+        "file": "fetch.yml",
+        "path": ".github/workflows/fetch.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌❌",
+        "latest_conclusion": "success",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T01:17:11Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921693997",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          }
+        ]
       },
       {
         "repo": "wenchiehlee-money/InvestorConference",
@@ -884,6 +910,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T10:22:34Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45800734416",
         "annotations": [
@@ -903,6 +930,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T02:54:34Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45745499392",
         "annotations": []
@@ -915,6 +943,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T00:51:26Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45919181327",
         "annotations": []
@@ -927,6 +956,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T22:42:45Z",
         "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45906511702",
         "annotations": [
@@ -946,6 +976,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T01:29:54Z",
         "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45922888152",
         "annotations": []
@@ -958,8 +989,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_run_at": "2026-11-26T02:00:36Z",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45739523890",
+        "latest_event": "schedule",
+        "latest_run_at": "2026-11-27T02:00:09Z",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45925740160",
         "annotations": [
           {
             "level": "warning",
@@ -977,6 +1009,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-27T00:44:27Z",
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45918486984",
         "annotations": [
@@ -996,6 +1029,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T14:05:46Z",
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45835553731",
         "annotations": [
@@ -1015,6 +1049,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T10:46:09Z",
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45804384476",
         "annotations": []
@@ -1027,6 +1062,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T17:21:54Z",
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45867103219",
         "annotations": []
@@ -1039,6 +1075,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T17:37:46Z",
         "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45869343618",
         "annotations": []
@@ -1051,8 +1088,22 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T22:55:38Z",
         "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45907813040",
+        "annotations": []
+      },
+      {
+        "repo": "wenchiehlee/Selenium-Actions.IPO",
+        "workflow_name": "Run Selenium On GitHub Action",
+        "file": "Selenium-Action.yaml",
+        "path": ".github/workflows/Selenium-Action.yaml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌❌❌",
+        "latest_conclusion": "success",
+        "latest_event": "push",
+        "latest_run_at": "2026-11-27T02:01:18Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45925864584",
         "annotations": []
       },
       {
@@ -1063,6 +1114,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T22:25:09Z",
         "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45904666403",
         "annotations": []
@@ -1075,6 +1127,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T23:39:26Z",
         "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45912215855",
         "annotations": [
@@ -1142,6 +1195,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T03:26:26Z",
         "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45748919358",
         "annotations": []
@@ -1154,6 +1208,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T20:56:08Z",
         "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45894577909",
         "annotations": []
@@ -1166,6 +1221,7 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
+        "latest_event": "schedule",
         "latest_run_at": "2026-11-26T23:39:49Z",
         "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45912251439",
         "annotations": []
@@ -1192,9 +1248,9 @@
       }
     ],
     "total_portals": 20,
-    "built_sites": 15,
+    "built_sites": 16,
     "errored_sites": 1,
-    "other_sites": 1,
+    "other_sites": 0,
     "sites": [
       {
         "org": "wenchiehlee",
@@ -1237,6 +1293,15 @@
         "name": "InvestorConference",
         "repo": "wenchiehlee-money/InvestorConference",
         "url": "https://wenchiehlee-money.github.io/InvestorConference/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "My-TW-Coverage",
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -1339,15 +1404,6 @@
         "status": "built",
         "build_type": "workflow",
         "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "My-TW-Coverage",
-        "repo": "wenchiehlee-money/My-TW-Coverage",
-        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-        "status": "building",
-        "build_type": "workflow",
-        "is_private": false
       }
     ]
   },
@@ -1436,18 +1492,19 @@
     ]
   },
   "runner_telemetry": {
-    "total_annotation_count": 60,
-    "affected_schedule_count": 29,
+    "total_annotation_count": 59,
+    "affected_schedule_count": 27,
     "message_groups": [
       {
         "level": "warning",
         "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-        "count": 11,
+        "count": 12,
         "repos": [
           "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
           "wenchiehlee-investment/MOPS",
           "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
           "wenchiehlee-investment/TaiwanLoanInterest",
+          "wenchiehlee-money/GoogleAlertManager",
           "wenchiehlee-money/InvestorConference",
           "wenchiehlee-money/VIX",
           "wenchiehlee/GoogleSearch.Factset",
@@ -1456,11 +1513,22 @@
       },
       {
         "level": "failure",
-        "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
+        "message": "Process completed with exit code 1.",
         "count": 4,
         "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+          "wenchiehlee-money/GoogleAlertManager",
+          "wenchiehlee/llm"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+        "count": 4,
+        "repos": [
+          "ZhongZheng782/Yahoo.Finance",
           "wenchiehlee-investment/ConceptStocks",
-          "wenchiehlee-money/GoogleAlertManager"
+          "wenchiehlee-investment/TAIFEX"
         ]
       },
       {
@@ -1479,25 +1547,6 @@
         "count": 4,
         "repos": [
           "wenchiehlee/rss2md"
-        ]
-      },
-      {
-        "level": "failure",
-        "message": "Process completed with exit code 1.",
-        "count": 3,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-          "wenchiehlee/Selenium-Actions.IPO",
-          "wenchiehlee/llm"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-        "count": 3,
-        "repos": [
-          "ZhongZheng782/Yahoo.Finance",
-          "wenchiehlee-investment/TAIFEX"
         ]
       },
       {
@@ -1554,54 +1603,6 @@
         "count": 1,
         "repos": [
           "wenchiehlee/Analytics-Deck"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-2454.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-3034.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-2480.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-8299.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-2382.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
-        ]
-      },
-      {
-        "level": "warning",
-        "message": "Source reports/dividends-report/dividends-report-2412.md not found",
-        "count": 1,
-        "repos": [
-          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
         ]
       },
       {
@@ -1663,6 +1664,54 @@
       {
         "level": "warning",
         "message": "Source reports/dividends-report not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+        "count": 1,
+        "repos": [
+          "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
+        ]
+      },
+      {
+        "level": "warning",
+        "message": "Source reports/dividends-report/dividends-report-2412.md not found",
         "count": 1,
         "repos": [
           "ZhongZheng782/Python-Actions.GoodInfo.Analyzer"
@@ -1735,48 +1784,6 @@
     ],
     "affected_schedules": [
       {
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "workflow_name": "Analyze Alerts",
-        "file": "analyze.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45914656015",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "analyze"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee-money/GoogleAlertManager",
-        "workflow_name": "Fetch Alerts",
-        "file": "fetch.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45911969305",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "fetch"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee-money/biztrends.TW",
-        "workflow_name": "Check Data Health",
-        "file": "check-data-health.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
-            "job_name": "check"
-          }
-        ]
-      },
-      {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
         "workflow_name": "Daily channel fetch",
         "file": "daily-channel-fetch.yml",
@@ -1809,30 +1816,16 @@
         ]
       },
       {
-        "repo": "wenchiehlee-investment/ConceptStocks",
-        "workflow_name": "Update Company Financials",
-        "file": "update_company_financials.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916",
+        "repo": "wenchiehlee-money/biztrends.TW",
+        "workflow_name": "Check Data Health",
+        "file": "check-data-health.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
         "annotations": [
           {
             "level": "failure",
             "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "update"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee-investment/ConceptStocks",
-        "workflow_name": "Update Concept Stocks",
-        "file": "update_conceptstocks.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-            "job_name": "update"
+            "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+            "job_name": "check"
           }
         ]
       },
@@ -1865,24 +1858,10 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Selenium-Actions.IPO",
-        "workflow_name": "Run Selenium On GitHub Action",
-        "file": "Selenium-Action.yaml",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45868135741",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Process completed with exit code 1.",
-            "job_name": "scrape"
-          }
-        ]
-      },
-      {
         "repo": "wenchiehlee/llm",
         "workflow_name": "Update README Stats",
         "file": "update-stats.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45905675732",
+        "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45925715992",
         "annotations": [
           {
             "level": "failure",
@@ -1910,49 +1889,13 @@
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
         "workflow_name": "Sync Analyzer Data to Downstream Repositories",
         "file": "sync.yaml",
-        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45808590415",
+        "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45925801018",
         "annotations": [
           {
             "level": "warning",
             "title": "",
             "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
-            "job_name": "sync-to-money"
-          },
-          {
-            "level": "warning",
-            "title": "",
-            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
-            "job_name": "sync-to-money"
+            "job_name": "sync-to-market-cost-distribution"
           },
           {
             "level": "warning",
@@ -2012,7 +1955,43 @@
             "level": "warning",
             "title": "",
             "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-            "job_name": "sync-to-market-cost-distribution"
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+            "job_name": "sync-to-money"
+          },
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+            "job_name": "sync-to-money"
           }
         ]
       },
@@ -2054,7 +2033,7 @@
         "repo": "ZhongZheng782/Yahoo.Finance",
         "workflow_name": "Daily Yahoo Finance Fetch",
         "file": "Actions-fetch.yaml",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45742024674",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
         "annotations": [
           {
             "level": "warning",
@@ -2067,6 +2046,20 @@
             "title": "",
             "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
             "job_name": "fetch"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-investment/ConceptStocks",
+        "workflow_name": "Update Concept Stocks",
+        "file": "update_conceptstocks.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45918523474",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "update"
           }
         ]
       },
@@ -2172,7 +2165,7 @@
         "repo": "wenchiehlee-investment/TaiwanLoanInterest",
         "workflow_name": "Monthly CBC Data Update",
         "file": "monthly-cbc-update.yaml",
-        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
+        "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
         "annotations": [
           {
             "level": "notice",
@@ -2191,6 +2184,40 @@
             "title": "",
             "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
             "job_name": "sync-to-biztrends"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Analyze Alerts",
+        "file": "analyze.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921047351",
+        "annotations": [
+          {
+            "level": "warning",
+            "title": "",
+            "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+            "job_name": "analyze"
+          }
+        ]
+      },
+      {
+        "repo": "wenchiehlee-money/GoogleAlertManager",
+        "workflow_name": "Fetch Alerts",
+        "file": "fetch.yml",
+        "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921693997",
+        "annotations": [
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
+          },
+          {
+            "level": "failure",
+            "title": "",
+            "message": "Process completed with exit code 1.",
+            "job_name": "fetch"
           }
         ]
       },
@@ -2226,7 +2253,7 @@
         "repo": "wenchiehlee/GoogleSearch.Factset",
         "workflow_name": "Sync to Analyzer",
         "file": "sync-to-Analyzer.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45739523890",
+        "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45925740160",
         "annotations": [
           {
             "level": "warning",
@@ -2425,6 +2452,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:30:50Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Mac-mini/actions/runs/45922982037",
               "annotations": []
@@ -2492,6 +2520,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T00:11:49Z",
               "latest_run_url": "https://github.com/ZhongZheng782/andy/actions/runs/45915312588",
               "annotations": []
@@ -2559,6 +2588,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:28:46Z",
               "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45922791739",
               "annotations": []
@@ -2571,6 +2601,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:17:48Z",
               "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45921751975",
               "annotations": []
@@ -2583,6 +2614,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:11:02Z",
               "latest_run_url": "https://github.com/ZhongZheng782/HomeAssistant/actions/runs/45921091101",
               "annotations": []
@@ -2648,6 +2680,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:29:25Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45922848510",
               "annotations": []
@@ -2660,6 +2693,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T21:18:31Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45897219625",
               "annotations": []
@@ -2672,6 +2706,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T10:20:59Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/45800486690",
               "annotations": []
@@ -2783,6 +2818,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T09:18:38Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to-Container.Manager/actions/runs/45790772968",
               "annotations": []
@@ -2842,9 +2878,10 @@
               "workflow_name": "Daily channel fetch",
               "file": "daily-channel-fetch.yml",
               "path": ".github/workflows/daily-channel-fetch.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
+              "consecutive_failures": 6,
+              "recent_4_icons": "❌❌❌❌",
               "latest_conclusion": "failure",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T22:26:40Z",
               "latest_run_url": "https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/45904828034",
               "annotations": [
@@ -2931,8 +2968,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T19:04:31Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45880856786",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-27T02:13:44Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Llm-Cli-APIServer/actions/runs/45927077616",
               "annotations": []
             }
           ],
@@ -2986,12 +3024,39 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Yahoo.Finance",
+              "workflow_name": "Daily Yahoo Finance Fetch",
+              "file": "Actions-fetch.yaml",
+              "path": ".github/workflows/Actions-fetch.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "push",
+              "latest_run_at": "2026-11-27T02:00:49Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "fetch"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
+                  "job_name": "fetch"
+                }
+              ]
+            },
+            {
+              "repo": "ZhongZheng782/Yahoo.Finance",
               "workflow_name": "Update Stock Lists",
               "file": "Actions-update-lists.yaml",
               "path": ".github/workflows/Actions-update-lists.yaml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:29:50Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45922882594",
               "annotations": []
@@ -3004,6 +3069,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T08:44:26Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45785711999",
               "annotations": [
@@ -3018,31 +3084,6 @@
                   "title": "",
                   "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
                   "job_name": "wayback"
-                }
-              ]
-            },
-            {
-              "repo": "ZhongZheng782/Yahoo.Finance",
-              "workflow_name": "Daily Yahoo Finance Fetch",
-              "file": "Actions-fetch.yaml",
-              "path": ".github/workflows/Actions-fetch.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T02:22:52Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45742024674",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "fetch"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source data/reports/wayback_yahoo_finance_consensus.csv not found",
-                  "job_name": "fetch"
                 }
               ]
             }
@@ -3142,75 +3183,21 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
-              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
-              "file": "hybrid-fetch-and-analyze.yml",
-              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T22:29:23Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45905098547",
-              "annotations": [
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "Process completed with exit code 1.",
-                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
-                }
-              ]
-            },
-            {
-              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
               "workflow_name": "Sync Analyzer Data to Downstream Repositories",
               "file": "sync.yaml",
               "path": ".github/workflows/sync.yaml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T11:13:19Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45808590415",
+              "latest_event": "push",
+              "latest_run_at": "2026-11-27T02:00:42Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45925801018",
               "annotations": [
                 {
                   "level": "warning",
                   "title": "",
                   "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-2454.md not found",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-3034.md not found",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-2480.md not found",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-8299.md not found",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-2382.md not found",
-                  "job_name": "sync-to-money"
-                },
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Source reports/dividends-report/dividends-report-2412.md not found",
-                  "job_name": "sync-to-money"
+                  "job_name": "sync-to-market-cost-distribution"
                 },
                 {
                   "level": "warning",
@@ -3270,7 +3257,63 @@
                   "level": "warning",
                   "title": "",
                   "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "sync-to-market-cost-distribution"
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2454.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-3034.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2480.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-8299.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2382.md not found",
+                  "job_name": "sync-to-money"
+                },
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Source reports/dividends-report/dividends-report-2412.md not found",
+                  "job_name": "sync-to-money"
+                }
+              ]
+            },
+            {
+              "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
+              "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
+              "file": "hybrid-fetch-and-analyze.yml",
+              "path": ".github/workflows/hybrid-fetch-and-analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-26T22:29:23Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Python-Actions.GoodInfo.Analyzer/actions/runs/45905098547",
+              "annotations": [
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "Materialize & Stage 1 Extraction (GitHub-Hosted)"
                 }
               ]
             }
@@ -3329,6 +3372,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T23:04:07Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45908669709",
               "annotations": [
@@ -3346,8 +3390,9 @@
               "file": "powershell.yml",
               "path": ".github/workflows/powershell.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅",
+              "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-23T23:38:28Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Win11/actions/runs/45290566295",
               "annotations": []
@@ -3406,6 +3451,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T05:39:29Z",
               "latest_run_url": "https://github.com/ZhongZheng782/AI-Usage/actions/runs/45763019728",
               "annotations": []
@@ -3464,6 +3510,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T18:41:07Z",
               "latest_run_url": "https://github.com/ZhongZheng782/FamilyHealthyCheck/actions/runs/45877886244",
               "annotations": []
@@ -3522,6 +3569,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T17:45:49Z",
               "latest_run_url": "https://github.com/ZhongZheng782/GoogleAnalytics/actions/runs/45870456721",
               "annotations": []
@@ -3623,8 +3671,9 @@
               "file": "portal-pages-deploy.yml",
               "path": ".github/workflows/portal-pages-deploy.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅",
+              "recent_4_icons": "✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T00:37:26Z",
               "latest_run_url": "https://github.com/ZhongZheng782/Mail-Deck/actions/runs/45917800647",
               "annotations": []
@@ -4253,26 +4302,15 @@
           "schedules": [
             {
               "repo": "wenchiehlee/GoogleSearch.Factset",
-              "workflow_name": "Update Stock Lists",
-              "file": "Actions-update-lists.yaml",
-              "path": ".github/workflows/Actions-update-lists.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-27T01:29:54Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45922888152",
-              "annotations": []
-            },
-            {
-              "repo": "wenchiehlee/GoogleSearch.Factset",
               "workflow_name": "Sync to Analyzer",
               "file": "sync-to-Analyzer.yml",
               "path": ".github/workflows/sync-to-Analyzer.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T02:00:36Z",
-              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45739523890",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-27T02:00:09Z",
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45925740160",
               "annotations": [
                 {
                   "level": "warning",
@@ -4281,6 +4319,19 @@
                   "job_name": "sync-analyzer-workflow"
                 }
               ]
+            },
+            {
+              "repo": "wenchiehlee/GoogleSearch.Factset",
+              "workflow_name": "Update Stock Lists",
+              "file": "Actions-update-lists.yaml",
+              "path": ".github/workflows/Actions-update-lists.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-27T01:29:54Z",
+              "latest_run_url": "https://github.com/wenchiehlee/GoogleSearch.Factset/actions/runs/45922888152",
+              "annotations": []
             }
           ],
           "pages": {
@@ -4575,6 +4626,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T00:44:27Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45918486984",
               "annotations": [
@@ -4594,6 +4646,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T14:05:46Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45835553731",
               "annotations": [
@@ -4661,6 +4714,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T10:46:09Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAI/actions/runs/45804384476",
               "annotations": []
@@ -4721,6 +4775,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T17:21:54Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.OpenAPI/actions/runs/45867103219",
               "annotations": []
@@ -4781,6 +4836,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T17:37:46Z",
               "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.PER/actions/runs/45869343618",
               "annotations": []
@@ -4841,6 +4897,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T23:39:26Z",
               "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/45912215855",
               "annotations": [
@@ -4956,6 +5013,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T22:55:38Z",
               "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/45907813040",
               "annotations": []
@@ -5013,19 +5071,13 @@
               "workflow_name": "Run Selenium On GitHub Action",
               "file": "Selenium-Action.yaml",
               "path": ".github/workflows/Selenium-Action.yaml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T17:29:17Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45868135741",
-              "annotations": [
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "Process completed with exit code 1.",
-                  "job_name": "scrape"
-                }
-              ]
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌❌",
+              "latest_conclusion": "success",
+              "latest_event": "push",
+              "latest_run_at": "2026-11-27T02:01:18Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.IPO/actions/runs/45925864584",
+              "annotations": []
             }
           ],
           "pages": {
@@ -5083,6 +5135,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T03:26:26Z",
               "latest_run_url": "https://github.com/wenchiehlee/skills/actions/runs/45748919358",
               "annotations": []
@@ -5327,6 +5380,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T23:39:49Z",
               "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45912251439",
               "annotations": []
@@ -5339,6 +5393,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T20:56:08Z",
               "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/45894577909",
               "annotations": []
@@ -5440,8 +5495,9 @@
               "file": "deploy-pages.yml",
               "path": ".github/workflows/deploy-pages.yml",
               "consecutive_failures": 1,
-              "recent_4_icons": "❌",
+              "recent_4_icons": "❌✅",
               "latest_conclusion": "failure",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T01:32:21Z",
               "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673",
               "annotations": [
@@ -5552,6 +5608,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T22:25:09Z",
               "latest_run_url": "https://github.com/wenchiehlee/dockers/actions/runs/45904666403",
               "annotations": []
@@ -5653,10 +5710,11 @@
               "file": "update-stats.yml",
               "path": ".github/workflows/update-stats.yml",
               "consecutive_failures": 1,
-              "recent_4_icons": "❌✅✅✅",
+              "recent_4_icons": "❌✅❌✅",
               "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T22:34:40Z",
-              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45905675732",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T01:59:57Z",
+              "latest_run_url": "https://github.com/wenchiehlee/llm/actions/runs/45925715992",
               "annotations": [
                 {
                   "level": "failure",
@@ -6041,9 +6099,10 @@
               "workflow_name": "Check Data Health",
               "file": "check-data-health.yml",
               "path": ".github/workflows/check-data-health.yml",
-              "consecutive_failures": 3,
-              "recent_4_icons": "❌❌❌",
+              "consecutive_failures": 5,
+              "recent_4_icons": "❌❌❌❌",
               "latest_conclusion": "failure",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T12:58:21Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45824620019",
               "annotations": [
@@ -6063,6 +6122,7 @@
               "consecutive_failures": 1,
               "recent_4_icons": "❌",
               "latest_conclusion": "failure",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-23T10:16:53Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866",
               "annotations": [
@@ -6134,6 +6194,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T10:22:34Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45800734416",
               "annotations": [
@@ -6153,6 +6214,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T02:54:34Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/InvestorConference/actions/runs/45745499392",
               "annotations": []
@@ -6209,39 +6271,47 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Analyze Alerts",
-              "file": "analyze.yml",
-              "path": ".github/workflows/analyze.yml",
-              "consecutive_failures": 5,
-              "recent_4_icons": "❌❌❌❌",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-27T00:05:13Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45914656015",
+              "workflow_name": "Fetch Alerts",
+              "file": "fetch.yml",
+              "path": ".github/workflows/fetch.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌❌",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T01:17:11Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921693997",
               "annotations": [
                 {
                   "level": "failure",
                   "title": "",
-                  "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-                  "job_name": "analyze"
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "fetch"
+                },
+                {
+                  "level": "failure",
+                  "title": "",
+                  "message": "Process completed with exit code 1.",
+                  "job_name": "fetch"
                 }
               ]
             },
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Fetch Alerts",
-              "file": "fetch.yml",
-              "path": ".github/workflows/fetch.yml",
-              "consecutive_failures": 5,
-              "recent_4_icons": "❌❌❌❌",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T23:36:49Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45911969305",
+              "workflow_name": "Analyze Alerts",
+              "file": "analyze.yml",
+              "path": ".github/workflows/analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌❌",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T01:10:34Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921047351",
               "annotations": [
                 {
-                  "level": "failure",
+                  "level": "warning",
                   "title": "",
-                  "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-                  "job_name": "fetch"
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "analyze"
                 }
               ]
             }
@@ -6302,6 +6372,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T09:22:20Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/Facebook.Fetch/actions/runs/45791341763",
               "annotations": []
@@ -6409,6 +6480,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-27T00:51:26Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/45919181327",
               "annotations": []
@@ -6417,7 +6489,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-            "status": "building",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
@@ -6468,6 +6540,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T22:42:45Z",
               "latest_run_url": "https://github.com/wenchiehlee-money/VIX/actions/runs/45906511702",
               "annotations": [
@@ -7326,6 +7399,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T09:09:34Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45789372472",
               "annotations": []
@@ -7336,8 +7410,9 @@
               "file": "weekly-dividends.yml",
               "path": ".github/workflows/weekly-dividends.yml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅",
+              "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-23T09:29:34Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/45147497096",
               "annotations": []
@@ -7350,6 +7425,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-01T09:36:55Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/InvestorEvents/actions/runs/41289607527",
               "annotations": [
@@ -7412,41 +7488,36 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
-              "workflow_name": "Update Company Financials",
-              "file": "update_company_financials.yml",
-              "path": ".github/workflows/update_company_financials.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T06:28:06Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45768390916",
+              "workflow_name": "Update Concept Stocks",
+              "file": "update_conceptstocks.yml",
+              "path": ".github/workflows/update_conceptstocks.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅❌❌",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T00:44:49Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45918523474",
               "annotations": [
                 {
-                  "level": "failure",
+                  "level": "warning",
                   "title": "",
-                  "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
                   "job_name": "update"
                 }
               ]
             },
             {
               "repo": "wenchiehlee-investment/ConceptStocks",
-              "workflow_name": "Update Concept Stocks",
-              "file": "update_conceptstocks.yml",
-              "path": ".github/workflows/update_conceptstocks.yml",
-              "consecutive_failures": 2,
-              "recent_4_icons": "❌❌✅✅",
-              "latest_conclusion": "failure",
-              "latest_run_at": "2026-11-26T04:07:09Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45753157502",
-              "annotations": [
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "Unable to resolve action `astral-sh/setup-uv@v10`, unable to find version `v10`",
-                  "job_name": "update"
-                }
-              ]
+              "workflow_name": "Update Company Financials",
+              "file": "update_company_financials.yml",
+              "path": ".github/workflows/update_company_financials.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌✅",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T00:44:47Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/ConceptStocks/actions/runs/45918519824",
+              "annotations": []
             }
           ],
           "pages": {
@@ -7512,6 +7583,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-23T08:23:36Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45138243582",
               "annotations": [
@@ -7531,6 +7603,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-23T04:13:22Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/Gemini-CLI/actions/runs/45110517319",
               "annotations": [
@@ -7598,6 +7671,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-22T05:34:22Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/ic.tpex.org.tw/actions/runs/44989984056",
               "annotations": []
@@ -7658,6 +7732,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T21:09:33Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45896158834",
               "annotations": [
@@ -7677,6 +7752,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T12:59:37Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45824807657",
               "annotations": []
@@ -7689,6 +7765,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T10:15:00Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/MOPS/actions/runs/45799544889",
               "annotations": []
@@ -7743,12 +7820,26 @@
           "schedules": [
             {
               "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
+              "workflow_name": "Update Company Info",
+              "file": "Actions.yaml",
+              "path": ".github/workflows/Actions.yaml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌✅",
+              "latest_conclusion": "success",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-26T18:14:41Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45874345478",
+              "annotations": []
+            },
+            {
+              "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
               "workflow_name": "Sync to Analyzer",
               "file": "sync-to-Analyzer.yml",
               "path": ".github/workflows/sync-to-Analyzer.yml",
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T18:44:07Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45878268314",
               "annotations": [
@@ -7759,18 +7850,6 @@
                   "job_name": "sync-file"
                 }
               ]
-            },
-            {
-              "repo": "wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo",
-              "workflow_name": "Update Company Info",
-              "file": "Actions.yaml",
-              "path": ".github/workflows/Actions.yaml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅❌❌✅",
-              "latest_conclusion": "success",
-              "latest_run_at": "2026-11-26T18:14:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/Python-Actions.GoodInfo.CompanyInfo/actions/runs/45874345478",
-              "annotations": []
             }
           ],
           "pages": {
@@ -7881,6 +7960,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-01T05:30:35Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanHouse/actions/runs/41277206846",
               "annotations": [
@@ -7991,6 +8071,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T18:10:31Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/poorstock/actions/runs/45873789055",
               "annotations": []
@@ -8049,6 +8130,7 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
+              "latest_event": "schedule",
               "latest_run_at": "2026-11-26T17:50:55Z",
               "latest_run_url": "https://github.com/wenchiehlee-investment/TAIFEX/actions/runs/45871152970",
               "annotations": [
@@ -8112,10 +8194,11 @@
               "file": "monthly-cbc-update.yaml",
               "path": ".github/workflows/monthly-cbc-update.yaml",
               "consecutive_failures": 0,
-              "recent_4_icons": "✅✅❌❌",
+              "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_run_at": "2026-11-02T10:23:29Z",
-              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/41428424726",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-09T05:27:03Z",
+              "latest_run_url": "https://github.com/wenchiehlee-investment/TaiwanLoanInterest/actions/runs/42567382664",
               "annotations": [
                 {
                   "level": "notice",
