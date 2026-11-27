@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T05:26:19.789532+00:00",
+  "generated_at": "2026-11-27T05:50:06.889662+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 230,
   "scheduled_telemetry": {
-    "total_monitored_schedules": 64,
+    "total_monitored_schedules": 65,
     "critical_consecutive_4_count": 2,
     "warning_consecutive_1_to_3_count": 1,
-    "healthy_count": 61,
+    "healthy_count": 62,
     "critical_alerts": [
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
@@ -962,6 +962,19 @@
             "job_name": "sync-analyzer-workflow"
           }
         ]
+      },
+      {
+        "repo": "wenchiehlee/Pipeline-Deck",
+        "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+        "file": "deploy-pages.yml",
+        "path": ".github/workflows/deploy-pages.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅✅✅✅",
+        "latest_conclusion": "success",
+        "latest_event": "push",
+        "latest_run_at": "2026-11-27T05:26:12Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45945794679",
+        "annotations": []
       },
       {
         "repo": "wenchiehlee/Python-Actions.FinMind",
@@ -5648,7 +5661,21 @@
           "workflows": [
             "deploy-pages.yml"
           ],
-          "schedules": [],
+          "schedules": [
+            {
+              "repo": "wenchiehlee/Pipeline-Deck",
+              "workflow_name": "Daily Ecosystem Pipelines & Failure Telemetry Renew",
+              "file": "deploy-pages.yml",
+              "path": ".github/workflows/deploy-pages.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "push",
+              "latest_run_at": "2026-11-27T05:26:12Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/45945794679",
+              "annotations": []
+            }
+          ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Pipeline-Deck/",
@@ -6150,6 +6177,26 @@
           "schedules": [
             {
               "repo": "wenchiehlee-money/GoogleAlertManager",
+              "workflow_name": "Analyze Alerts",
+              "file": "analyze.yml",
+              "path": ".github/workflows/analyze.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌❌❌",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T01:10:34Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921047351",
+              "annotations": [
+                {
+                  "level": "warning",
+                  "title": "",
+                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
+                  "job_name": "analyze"
+                }
+              ]
+            },
+            {
+              "repo": "wenchiehlee-money/GoogleAlertManager",
               "workflow_name": "Fetch Alerts",
               "file": "fetch.yml",
               "path": ".github/workflows/fetch.yml",
@@ -6171,26 +6218,6 @@
                   "title": "",
                   "message": "Process completed with exit code 1.",
                   "job_name": "fetch"
-                }
-              ]
-            },
-            {
-              "repo": "wenchiehlee-money/GoogleAlertManager",
-              "workflow_name": "Analyze Alerts",
-              "file": "analyze.yml",
-              "path": ".github/workflows/analyze.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅❌❌❌",
-              "latest_conclusion": "success",
-              "latest_event": "workflow_dispatch",
-              "latest_run_at": "2026-11-27T01:10:34Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/GoogleAlertManager/actions/runs/45921047351",
-              "annotations": [
-                {
-                  "level": "warning",
-                  "title": "",
-                  "message": "Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/",
-                  "job_name": "analyze"
                 }
               ]
             }

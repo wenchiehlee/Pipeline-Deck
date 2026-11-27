@@ -8,7 +8,7 @@
     "total_repos": 106,
     "critical_alerts": 2,
     "warning_alerts": 1,
-    "monitored_schedules": 64,
+    "monitored_schedules": 65,
     "pages_sites": 17,
     "portal_sites": 20,
     "synology_sites": 3,
@@ -36,5 +36,5 @@
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-27T05:26:19.789532+00:00"
+  "updated_at": "2026-11-27T05:50:06.889662+00:00"
 }
