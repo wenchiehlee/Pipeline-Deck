@@ -1,9 +1,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **230 個工作流程 YAML 檔案**、**20 個發布門戶（GitHub Pages 17 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-27 02:19:28 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **230 個工作流程 YAML 檔案**、**20 個發布門戶（GitHub Pages 17 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-27 02:24:01 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`230 / 75 / 2 / 3`**（**230** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **3** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`230 / 75 / 2 / 2`**（**230** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **2** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -24,8 +24,8 @@
 
 - **常態排程監測總數**：`64` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`2` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`3` 個
-- **🟢 正常運行（最新一次執行成功）**：`59` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
+- **🟢 正常運行（最新一次執行成功）**：`60` 個
 - **恢復判定**：排程 workflow 的排程、push 或手動執行中，較新的成功會清除先前連續失敗。
 
 #### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
@@ -41,19 +41,18 @@
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
 | 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `deploy-pages.yml` | **1 次** | `❌✅` | `2026-11-27T01:32:21` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673) |
-| 3 | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | Update README Stats | `update-stats.yml` | **1 次** | `❌✅❌✅` | `2026-11-27T01:59:57` | [Run ↗](https://github.com/wenchiehlee/llm/actions/runs/45925715992) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
-- **常態排程最新一次執行中偵測到的 Runner 告警**：`59` 筆，影響 `27` 個排程工作流程
+- **常態排程最新一次執行中偵測到的 Runner 告警**：`58` 筆，影響 `26` 個排程工作流程
 
 | # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |
 |---|:---:|---|:---:|:---:|
 | 1 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@latest. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 12 | 9 |
-| 2 | 🔴 failure | Process completed with exit code 1. | 4 | 3 |
-| 3 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 4 | 3 |
-| 4 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 4 | 3 |
-| 5 | 🔴 failure | Nothing was fetched | 4 | 1 |
+| 2 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: BetaHuhn/repo-file-sync-action@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 4 | 3 |
+| 3 | ℹ️ notice | "The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748" | 4 | 3 |
+| 4 | 🔴 failure | Nothing was fetched | 4 | 1 |
+| 5 | 🔴 failure | Process completed with exit code 1. | 3 | 2 |
 | 6 | 🔴 failure | The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings | 2 | 1 |
 | 7 | ⚠️ warning | Source data/reports/wayback_yahoo_finance_consensus.csv not found | 2 | 1 |
 | 8 | 🔴 failure | The action 'Fetch each tracked channel' has timed out after 60 minutes. | 1 | 1 |
