@@ -308,6 +308,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
         pages_rows += f"""                <tr>
                   <td>{idx}</td>
+                  <td>🌐 GitHub Pages</td>
                   <td><a href="https://github.com/{s['repo']}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{s['repo']}</strong></a></td>
                   <td>{mascot_html}</td>
                   <td>{url_link}</td>
@@ -323,10 +324,14 @@ def generate_portal_html(data: dict, index_html_path: Path):
         repo_url = f"https://github.com/{repo}"
         workflow_url = f"{repo_url}/blob/main/.github/workflows/{portal['workflow']}"
         synology_rows += f"""                <tr>
-                  <td>{idx}</td>
+                  <td>{len(pg.get('sites', [])) + idx}</td>
+                  <td>🗄️ Synology Web Station</td>
                   <td><a href="{repo_url}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{repo}</strong></a></td>
+                  <td><span class="mascot-tag"><span class="mascot-symbol">🗄️</span> <strong>Synology 門戶</strong> <span class="mascot-role">· NAS Web Station</span></span></td>
                   <td><code>{portal['target']}</code></td>
+                  <td style="text-align: center;">⚙️ NAS 部署目標</td>
                   <td><a href="{workflow_url}" target="_blank" rel="noopener noreferrer"><code>{portal['workflow']}</code></a></td>
+                  <td style="text-align: center;">🌍 公開</td>
                 </tr>
 """
 
@@ -1896,37 +1901,25 @@ def generate_portal_html(data: dict, index_html_path: Path):
 
       <div class="table-card">
         <div class="table-card-head">
-          <div class="table-card-title">🌐 GitHub Pages 線上發布站點清單（{total_sites}）</div>
-          <span class="table-hint">包含 Deck Family 與各專案即時門戶</span>
+          <div class="table-card-title">🌐 線上發布站點清單（{total_portals}）</div>
+          <span class="table-hint">GitHub Pages {total_sites} + Synology Web Station {len(synology_portals)}</span>
         </div>
         <div class="table-responsive">
           <table class="telemetry-table" id="pages-table">
             <thead>
               <tr>
                 <th>#</th>
+                <th>發布平台</th>
                 <th>組織 / 儲存庫</th>
                 <th>UX 意象與定位 (UX-Deck)</th>
-                <th>線上訪問題站</th>
-                <th style="text-align: center;">建置狀態</th>
-                <th style="text-align: center;">建置管道</th>
+                <th>線上網址 / 部署目標</th>
+                <th style="text-align: center;">發布狀態</th>
+                <th style="text-align: center;">部署流程</th>
                 <th style="text-align: center;">可見性</th>
               </tr>
             </thead>
             <tbody>
-{pages_rows}            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="table-card" style="margin-top: 1rem;">
-        <div class="table-card-head">
-          <div class="table-card-title">🗄️ Synology Web Station 門戶（{len(synology_portals)}）</div>
-          <span class="table-hint">與 GitHub Pages 合計 {total_portals} 個發布門戶</span>
-        </div>
-        <div class="table-responsive">
-          <table class="telemetry-table">
-            <thead><tr><th>#</th><th>組織 / 儲存庫</th><th>部署目標</th><th>工作流程</th></tr></thead>
-            <tbody>
-{synology_rows}            </tbody>
+{pages_rows}{synology_rows}            </tbody>
           </table>
         </div>
       </div>

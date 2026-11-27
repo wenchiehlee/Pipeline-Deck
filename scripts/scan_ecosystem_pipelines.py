@@ -792,8 +792,10 @@ def generate_markdown(data) -> str:
     lines.append(f"- **🔴 建置異常 (`errored`)**：`{pg.get('errored_sites', 0)}` 個")
     lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{pg.get('other_sites', 0)}` 個")
     lines.append("")
-    lines.append("| # | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | Pages 線上網址 | 建置狀態 | 建置管道 | 可見性 |")
-    lines.append("|---|---|---|---|:---:|:---:|:---:|")
+    lines.append(f"#### 🌐 線上發布站點清單（{pg.get('total_portals', pg.get('total_sites', 0))}）")
+    lines.append("")
+    lines.append("| # | 發布平台 | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | 線上網址 / 部署目標 | 發布狀態 | 部署流程 | 可見性 |")
+    lines.append("|---:|---|---|---|---|:---:|:---:|:---:|")
 
     status_icon_map = {"built": "🟢 正常 (built)", "errored": "🔴 異常 (errored)"}
     for idx, s in enumerate(pg.get("sites", []), 1):
@@ -803,16 +805,12 @@ def generate_markdown(data) -> str:
         vis = "🔒 私有" if s.get("is_private") else "🌍 公開"
         ux_meta = UX_DECK_REGISTRY.get(s["repo"], {"symbol": "🌐", "name": "線上站點", "role": "GitHub Pages 門戶"})
         ux_display = f"{ux_meta['symbol']} {ux_meta['name']} (`{ux_meta['role']}`)"
-        lines.append(f"| {idx} | {repo_link} | {ux_display} | {url_link} | {st_icon} | `{s.get('build_type', 'legacy')}` | {vis} |")
+        lines.append(f"| {idx} | GitHub Pages | {repo_link} | {ux_display} | {url_link} | {st_icon} | `{s.get('build_type', 'legacy')}` | {vis} |")
 
     lines.append("")
-    lines.append("#### Synology Web Station 門戶（3）")
-    lines.append("")
-    lines.append("| # | 儲存庫 | 部署目標 | 工作流程 |")
-    lines.append("|---|---|---|---|")
-    for idx, portal in enumerate(pg.get("synology_portals", []), 1):
+    for idx, portal in enumerate(pg.get("synology_portals", []), len(pg.get("sites", [])) + 1):
         repo_link = f"[{portal['repo']}](https://github.com/{portal['repo']})"
-        lines.append(f"| {idx} | {repo_link} | `{portal['target']}` | `{portal['workflow']}` |")
+        lines.append(f"| {idx} | Synology Web Station | {repo_link} | 🗄️ Synology 門戶 (`NAS Web Station`) | `{portal['target']}` | ⚙️ NAS 部署目標 | `{portal['workflow']}` | 🌍 公開 |")
     lines.append("")
 
     lines.append("")
