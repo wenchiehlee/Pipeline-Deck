@@ -705,6 +705,7 @@ def generate_markdown(data) -> str:
     sch = data["scheduled_telemetry"]
     pg = data.get("pages_telemetry", {})
     sec = data.get("security_telemetry", {})
+    normal_portals = pg.get("built_sites", 0) + len(pg.get("synology_portals", []))
     ns_quartet = f"{data['total_workflows']} / {data['total_repos_with_actions']} / {sch['critical_consecutive_4_count']} / {sch['warning_consecutive_1_to_3_count']}"
     
     lines = [
@@ -797,7 +798,7 @@ def generate_markdown(data) -> str:
     lines.append("")
     lines.append(f"- **門戶站點總數**：`{pg.get('total_portals', pg.get('total_sites', 0))}`（GitHub Pages `{pg.get('total_sites', 0)}` + Synology `{len(pg.get('synology_portals', []))}`）")
     lines.append(f"- **GitHub Pages 站點數**：`{pg.get('total_sites', 0)}` 個")
-    lines.append(f"- **🟢 正常發布 (`built`)**：`{pg.get('built_sites', 0)}` 個")
+    lines.append(f"- **🟢 正常發布門戶**：`{normal_portals}` 個（Pages built + Synology）")
     lines.append(f"- **🔴 建置異常 (`errored`)**：`{pg.get('errored_sites', 0)}` 個")
     lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{pg.get('other_sites', 0)}` 個")
     lines.append("")

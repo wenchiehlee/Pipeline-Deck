@@ -61,6 +61,9 @@ def generate_portal_html(data: dict, index_html_path: Path):
     built_sites = pg.get("built_sites", 0)
     errored_sites = pg.get("errored_sites", 0)
     other_sites = pg.get("other_sites", 0)
+    # Synology portals are registered live sites, so include them in the healthy
+    # portal count while keeping build-error and pending counts Pages-specific.
+    normal_portals = built_sites + len(synology_portals)
 
     sec_repos = sec.get("secret_scanning_enabled_count", 0)
     push_repos = sec.get("push_protection_enabled_count", 0)
@@ -1777,7 +1780,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
             <div class="kpi-label">線上發布門戶</div>
             <div class="kpi-value" style="color: #2563eb;">{total_portals} <span class="kpi-unit">個門戶</span></div>
             <div class="kpi-sub">GitHub Pages {total_sites} · Synology {len(synology_portals)}</div>
-            <div class="kpi-sub">🟢 <strong>{built_sites}</strong> 正常 · 🔴 <strong>{errored_sites}</strong> 異常</div>
+            <div class="kpi-sub">🟢 <strong>{normal_portals}</strong> 正常 · 🔴 <strong>{errored_sites}</strong> 異常</div>
           </div>
         </div>
         <div class="kpi-card" style="border-color: {'#a7f3d0' if total_alerts == 0 else '#fde68a'};">
@@ -1890,13 +1893,13 @@ def generate_portal_html(data: dict, index_html_path: Path):
         <div class="health-summary-pill-group">
           <span class="health-pill pill-total">發布門戶總數：<strong>{total_portals}</strong>（Pages {total_sites} + Synology {len(synology_portals)}）</span>
           <span class="health-pill pill-total">GitHub Pages：<strong>{total_sites}</strong></span>
-          <span class="health-pill pill-ok">🟢 正常發布：<strong>{built_sites}</strong></span>
+          <span class="health-pill pill-ok">🟢 正常發布：<strong>{normal_portals}</strong></span>
           <span class="health-pill pill-crit" style="color: {'#059669' if errored_sites == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_sites == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_sites}</strong></span>
           <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_sites}</strong></span>
         </div>
       </div>
       <p class="section-desc">
-        全域追蹤 {total_portals} 個發布門戶：{total_sites} 個 GitHub Pages 與 {len(synology_portals)} 個 Synology Web Station；Pages 建置狀態統計僅涵蓋 GitHub Pages 站點。
+        全域追蹤 {total_portals} 個發布門戶：正常發布數包含 {len(synology_portals)} 個 Synology Web Station 門戶；建置異常與待命數僅統計 {total_sites} 個 GitHub Pages 站點。
       </p>
 
       <div class="table-card">
