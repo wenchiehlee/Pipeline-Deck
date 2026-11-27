@@ -12,8 +12,8 @@
     "pages_sites": 17,
     "portal_sites": 20,
     "synology_sites": 3,
-    "pages_built": 17,
-    "pages_errored": 0,
+    "pages_built": 16,
+    "pages_errored": 1,
     "secret_scanning_repos": 77,
     "push_protection_repos": 77,
     "dependabot_alerts_total": 2,
@@ -36,5 +36,5 @@
     "portal_url": "https://wenchiehlee.github.io/Pipeline-Deck/",
     "repo_url": "https://github.com/wenchiehlee/Pipeline-Deck"
   },
-  "updated_at": "2026-11-27T02:31:27.064525+00:00"
+  "updated_at": "2026-11-27T05:26:19.789532+00:00"
 }
