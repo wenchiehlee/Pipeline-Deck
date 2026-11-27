@@ -389,7 +389,14 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
         sched_resp = session.get(f"{repo_url}/actions/runs?event=schedule&per_page=30")
         if sched_resp.status_code == 200:
             sched_runs = sched_resp.json().get("workflow_runs", [])
-            scheduled_paths = {r.get("path") for r in sched_runs if r.get("path")}
+            # Workflow runs retain their original path after a file is renamed.
+            # Ignore those historical paths once the workflow file no longer
+            # exists, otherwise an obsolete schedule can remain a permanent alert.
+            current_workflow_paths = {f".github/workflows/{name}" for name in workflows}
+            scheduled_paths = {
+                r.get("path") for r in sched_runs
+                if r.get("path") in current_workflow_paths
+            }
             scheduled_paths -= disabled_paths
 
             if scheduled_paths:
