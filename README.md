@@ -21,9 +21,9 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **230 個工作流程 YAML 檔案**、**20 個發布門戶（GitHub Pages 17 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-27 02:24:01 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **230 個工作流程 YAML 檔案**、**20 個發布門戶（GitHub Pages 17 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-27 02:32:21 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`230 / 75 / 2 / 2`**（**230** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **2** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`230 / 75 / 2 / 1`**（**230** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
@@ -44,8 +44,8 @@
 
 - **常態排程監測總數**：`64` 個工作流程
 - **🚨 嚴重警報（連續失敗 ≥ 4 次）**：`2` 個
-- **⚠️ 異常警告（連續失敗 1~3 次）**：`2` 個
-- **🟢 正常運行（最新一次執行成功）**：`60` 個
+- **⚠️ 異常警告（連續失敗 1~3 次）**：`1` 個
+- **🟢 正常運行（最新一次執行成功）**：`61` 個
 - **恢復判定**：排程 workflow 的排程、push 或手動執行中，較新的成功會清除先前連續失敗。
 
 #### 🔴 嚴重警報：常態排程連續失敗 ≥ 4 次清單
@@ -60,11 +60,10 @@
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次結果（含 push/手動） | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
 | 1 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Update Cycle Indices | `update_indices.yml` | **1 次** | `❌` | `2026-11-23T10:16:53` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/45154643866) |
-| 2 | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 4-Times-Daily Analytics Telemetry Renew | `deploy-pages.yml` | **1 次** | `❌✅` | `2026-11-27T01:32:21` | [Run ↗](https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673) |
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
-- **常態排程最新一次執行中偵測到的 Runner 告警**：`58` 筆，影響 `26` 個排程工作流程
+- **常態排程最新一次執行中偵測到的 Runner 告警**：`57` 筆，影響 `25` 個排程工作流程
 
 | # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |
 |---|:---:|---|:---:|:---:|
@@ -79,29 +78,28 @@
 | 9 | ⚠️ warning | YouTube Data API listing failed for yutinghaofinance (KeyError); falling back to yt-dlp | 1 | 1 |
 | 10 | ⚠️ warning | fetch failed for fubonsec (exit 1) | 1 | 1 |
 | 11 | ⚠️ warning | YouTube Data API listing failed for fubonsec (KeyError); falling back to yt-dlp | 1 | 1 |
-| 12 | 🔴 failure | Deployment failed, try again later. | 1 | 1 |
-| 13 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
-| 14 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
-| 15 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
-| 16 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
-| 17 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
-| 18 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
-| 19 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
-| 20 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
-| 21 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
-| 22 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
-| 23 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
-| 24 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
-| 25 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
-| 26 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
-| 27 | ⚠️ warning | The `python-version` input is not set.  The version of Python currently in `PATH` will be used. | 1 | 1 |
-| 28 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 29 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 30 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 31 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
-| 32 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 33 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 34 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 12 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
+| 13 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
+| 14 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
+| 15 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
+| 16 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
+| 17 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
+| 18 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
+| 19 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
+| 20 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
+| 21 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
+| 22 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
+| 23 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
+| 24 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
+| 25 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
+| 26 | ⚠️ warning | The `python-version` input is not set.  The version of Python currently in `PATH` will be used. | 1 | 1 |
+| 27 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 28 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 29 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 30 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
+| 31 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 32 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 33 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
 
 ---
 
@@ -109,22 +107,22 @@
 
 - **門戶站點總數**：`20`（GitHub Pages `17` + Synology `3`）
 - **GitHub Pages 站點數**：`17` 個
-- **🟢 正常發布 (`built`)**：`16` 個
-- **🔴 建置異常 (`errored`)**：`1` 個
+- **🟢 正常發布 (`built`)**：`17` 個
+- **🔴 建置異常 (`errored`)**：`0` 個
 - **⚪ 其他/初始待命中 (`other`)**：`0` 個
 
 #### 🌐 線上發布站點清單（20）
 
 | # | 發布平台 | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | 線上網址 / 部署目標 | 發布狀態 | 部署流程 | 可見性 |
 |---:|---|---|---|---|:---:|:---:|:---:|
-| 1 | GitHub Pages | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🔴 異常 (errored) | `workflow` | 🌍 公開 |
-| 2 | GitHub Pages | [wenchiehlee-investment/wenchiehlee-investment.github.io](https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io) | 💼 投資機構 (`投資組織官方入口`) | [https://wenchiehlee-investment.github.io/](https://wenchiehlee-investment.github.io/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 3 | GitHub Pages | [wenchiehlee-life/wenchiehlee-life.github.io](https://github.com/wenchiehlee-life/wenchiehlee-life.github.io) | 🌱 人文生活 (`生活組織官方門戶`) | [https://wenchiehlee-life.github.io/](https://wenchiehlee-life.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 4 | GitHub Pages | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | 🐦 破曉警報鳥 (`SaaS 情報過濾雷達`) | [https://wenchiehlee-money.github.io/GoogleAlertManager/](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 5 | GitHub Pages | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 6 | GitHub Pages | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | 🦉 拍拍翅萌萌鴞 (`台股個股深度調研`) | [https://wenchiehlee-money.github.io/My-TW-Coverage/](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 7 | GitHub Pages | [wenchiehlee-money/VIX](https://github.com/wenchiehlee-money/VIX) | 🦢 幾何黑天鵝 (`全球波動率黑天鵝雷達`) | [https://wenchiehlee-money.github.io/VIX/](https://wenchiehlee-money.github.io/VIX/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
-| 8 | GitHub Pages | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 1 | GitHub Pages | [wenchiehlee-investment/wenchiehlee-investment.github.io](https://github.com/wenchiehlee-investment/wenchiehlee-investment.github.io) | 💼 投資機構 (`投資組織官方入口`) | [https://wenchiehlee-investment.github.io/](https://wenchiehlee-investment.github.io/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 2 | GitHub Pages | [wenchiehlee-life/wenchiehlee-life.github.io](https://github.com/wenchiehlee-life/wenchiehlee-life.github.io) | 🌱 人文生活 (`生活組織官方門戶`) | [https://wenchiehlee-life.github.io/](https://wenchiehlee-life.github.io/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 3 | GitHub Pages | [wenchiehlee-money/GoogleAlertManager](https://github.com/wenchiehlee-money/GoogleAlertManager) | 🐦 破曉警報鳥 (`SaaS 情報過濾雷達`) | [https://wenchiehlee-money.github.io/GoogleAlertManager/](https://wenchiehlee-money.github.io/GoogleAlertManager/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 4 | GitHub Pages | [wenchiehlee-money/InvestorConference](https://github.com/wenchiehlee-money/InvestorConference) | 🦅 領航雄鷹 (`法人說明會與 IR 庫`) | [https://wenchiehlee-money.github.io/InvestorConference/](https://wenchiehlee-money.github.io/InvestorConference/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 5 | GitHub Pages | [wenchiehlee-money/My-TW-Coverage](https://github.com/wenchiehlee-money/My-TW-Coverage) | 🦉 拍拍翅萌萌鴞 (`台股個股深度調研`) | [https://wenchiehlee-money.github.io/My-TW-Coverage/](https://wenchiehlee-money.github.io/My-TW-Coverage/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 6 | GitHub Pages | [wenchiehlee-money/VIX](https://github.com/wenchiehlee-money/VIX) | 🦢 幾何黑天鵝 (`全球波動率黑天鵝雷達`) | [https://wenchiehlee-money.github.io/VIX/](https://wenchiehlee-money.github.io/VIX/) | 🟢 正常 (built) | `legacy` | 🌍 公開 |
+| 7 | GitHub Pages | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 8 | GitHub Pages | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 9 | GitHub Pages | [wenchiehlee/dockers](https://github.com/wenchiehlee/dockers) | 🐳 貨櫃藍鯨 (`Docker 映像目錄與部署`) | [https://wenchiehlee.github.io/dockers/](https://wenchiehlee.github.io/dockers/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 10 | GitHub Pages | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 11 | GitHub Pages | [wenchiehlee/mkdocs-investment](https://github.com/wenchiehlee/mkdocs-investment) | 🐂🐻 幾何狂牛/守護熊 (`大盤資產配置與避險`) | [https://wenchiehlee.github.io/mkdocs-investment/](https://wenchiehlee.github.io/mkdocs-investment/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
@@ -210,7 +208,7 @@
 | 18 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
 | 19 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |
 | 20 | [AI-Benchmark](https://github.com/wenchiehlee/AI-Benchmark) | **1** | - | 🛡️ 啟用 | 0 | `benchmark.yml` |
-| 21 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🔴 errored](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
+| 21 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 22 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
 | 23 | [dockers](https://github.com/wenchiehlee/dockers) | **1** | [🟢 built](https://wenchiehlee.github.io/dockers/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 24 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | 🛡️ 啟用 | 0 | `action.yml` |

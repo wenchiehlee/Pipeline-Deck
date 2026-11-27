@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-11-27T02:23:02.889449+00:00",
+  "generated_at": "2026-11-27T02:31:27.064525+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 230,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 2,
-    "warning_consecutive_1_to_3_count": 2,
-    "healthy_count": 60,
+    "warning_consecutive_1_to_3_count": 1,
+    "healthy_count": 61,
     "critical_alerts": [
       {
         "repo": "ZhongZheng782/YoutubeAudio.Fetch",
@@ -86,26 +86,6 @@
             "title": "",
             "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
             "job_name": "update"
-          }
-        ]
-      },
-      {
-        "repo": "wenchiehlee/Analytics-Deck",
-        "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
-        "file": "deploy-pages.yml",
-        "path": ".github/workflows/deploy-pages.yml",
-        "consecutive_failures": 1,
-        "recent_4_icons": "❌✅",
-        "latest_conclusion": "failure",
-        "latest_event": "schedule",
-        "latest_run_at": "2026-11-27T01:32:21Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Deployment failed, try again later.",
-            "job_name": "deploy-pages"
           }
         ]
       }
@@ -431,9 +411,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_event": "push",
-        "latest_run_at": "2026-11-27T02:00:49Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
+        "latest_event": "schedule",
+        "latest_run_at": "2026-11-27T02:21:09Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45927809949",
         "annotations": [
           {
             "level": "warning",
@@ -949,6 +929,19 @@
         ]
       },
       {
+        "repo": "wenchiehlee/Analytics-Deck",
+        "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
+        "file": "deploy-pages.yml",
+        "path": ".github/workflows/deploy-pages.yml",
+        "consecutive_failures": 0,
+        "recent_4_icons": "✅❌✅",
+        "latest_conclusion": "success",
+        "latest_event": "workflow_dispatch",
+        "latest_run_at": "2026-11-27T02:29:49Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45928658877",
+        "annotations": []
+      },
+      {
         "repo": "wenchiehlee/GoogleSearch.Factset",
         "workflow_name": "Update Stock Lists",
         "file": "Actions-update-lists.yaml",
@@ -990,8 +983,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-27T00:44:27Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45918486984",
+        "latest_run_at": "2026-11-27T02:18:34Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45927557026",
         "annotations": [
           {
             "level": "warning",
@@ -1241,19 +1234,10 @@
       }
     ],
     "total_portals": 20,
-    "built_sites": 16,
-    "errored_sites": 1,
+    "built_sites": 17,
+    "errored_sites": 0,
     "other_sites": 0,
     "sites": [
-      {
-        "org": "wenchiehlee",
-        "name": "Analytics-Deck",
-        "repo": "wenchiehlee/Analytics-Deck",
-        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
-        "status": "errored",
-        "build_type": "workflow",
-        "is_private": false
-      },
       {
         "org": "wenchiehlee-investment",
         "name": "wenchiehlee-investment.github.io",
@@ -1313,6 +1297,15 @@
         "name": "UX-Deck",
         "repo": "wenchiehlee-ux/UX-Deck",
         "url": "https://wenchiehlee-ux.github.io/UX-Deck/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
+        "name": "Analytics-Deck",
+        "repo": "wenchiehlee/Analytics-Deck",
+        "url": "https://wenchiehlee.github.io/Analytics-Deck/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -1485,8 +1478,8 @@
     ]
   },
   "runner_telemetry": {
-    "total_annotation_count": 58,
-    "affected_schedule_count": 26,
+    "total_annotation_count": 57,
+    "affected_schedule_count": 25,
     "message_groups": [
       {
         "level": "warning",
@@ -1587,14 +1580,6 @@
         "count": 1,
         "repos": [
           "ZhongZheng782/YoutubeAudio.Fetch"
-        ]
-      },
-      {
-        "level": "failure",
-        "message": "Deployment failed, try again later.",
-        "count": 1,
-        "repos": [
-          "wenchiehlee/Analytics-Deck"
         ]
       },
       {
@@ -1836,20 +1821,6 @@
         ]
       },
       {
-        "repo": "wenchiehlee/Analytics-Deck",
-        "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
-        "file": "deploy-pages.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673",
-        "annotations": [
-          {
-            "level": "failure",
-            "title": "",
-            "message": "Deployment failed, try again later.",
-            "job_name": "deploy-pages"
-          }
-        ]
-      },
-      {
         "repo": "ZhongZheng782/Python-Actions.GoodInfo.Analyzer",
         "workflow_name": "Hybrid Scrape & Stage1 Extraction (main)",
         "file": "hybrid-fetch-and-analyze.yml",
@@ -2011,7 +1982,7 @@
         "repo": "ZhongZheng782/Yahoo.Finance",
         "workflow_name": "Daily Yahoo Finance Fetch",
         "file": "Actions-fetch.yaml",
-        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
+        "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45927809949",
         "annotations": [
           {
             "level": "warning",
@@ -2245,7 +2216,7 @@
         "repo": "wenchiehlee/Python-Actions.FinMind",
         "workflow_name": "Daily FinMind status",
         "file": "daily-finmind-status.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45918486984",
+        "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45927557026",
         "annotations": [
           {
             "level": "warning",
@@ -3008,9 +2979,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_event": "push",
-              "latest_run_at": "2026-11-27T02:00:49Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45925813129",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-27T02:21:09Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/Yahoo.Finance/actions/runs/45927809949",
               "annotations": [
                 {
                   "level": "warning",
@@ -4605,8 +4576,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_event": "schedule",
-              "latest_run_at": "2026-11-27T00:44:27Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45918486984",
+              "latest_run_at": "2026-11-27T02:18:34Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Python-Actions.FinMind/actions/runs/45927557026",
               "annotations": [
                 {
                   "level": "warning",
@@ -5472,26 +5443,19 @@
               "workflow_name": "4-Times-Daily Analytics Telemetry Renew",
               "file": "deploy-pages.yml",
               "path": ".github/workflows/deploy-pages.yml",
-              "consecutive_failures": 1,
-              "recent_4_icons": "❌✅",
-              "latest_conclusion": "failure",
-              "latest_event": "schedule",
-              "latest_run_at": "2026-11-27T01:32:21Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45923127673",
-              "annotations": [
-                {
-                  "level": "failure",
-                  "title": "",
-                  "message": "Deployment failed, try again later.",
-                  "job_name": "deploy-pages"
-                }
-              ]
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅❌✅",
+              "latest_conclusion": "success",
+              "latest_event": "workflow_dispatch",
+              "latest_run_at": "2026-11-27T02:29:49Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Analytics-Deck/actions/runs/45928658877",
+              "annotations": []
             }
           ],
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee.github.io/Analytics-Deck/",
-            "status": "errored",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
