@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:10:04.907757+00:00",
+  "generated_at": "2026-11-28T10:14:45.320911+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 231,
@@ -970,8 +970,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "push",
-        "latest_run_at": "2026-11-28T10:00:03Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133049594",
+        "latest_run_at": "2026-11-28T10:09:56Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133853187",
         "annotations": []
       },
       {
@@ -1062,8 +1062,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T09:25:28Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/46130410511",
+        "latest_run_at": "2026-11-28T10:10:46Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/46133923683",
         "annotations": []
       },
       {
@@ -1239,9 +1239,9 @@
       }
     ],
     "total_portals": 21,
-    "built_sites": 16,
+    "built_sites": 17,
     "errored_sites": 0,
-    "other_sites": 1,
+    "other_sites": 0,
     "sites": [
       {
         "org": "wenchiehlee-investment",
@@ -1275,6 +1275,15 @@
         "name": "InvestorConference",
         "repo": "wenchiehlee-money/InvestorConference",
         "url": "https://wenchiehlee-money.github.io/InvestorConference/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "My-TW-Coverage",
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -1386,21 +1395,12 @@
         "status": "built",
         "build_type": "workflow",
         "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "My-TW-Coverage",
-        "repo": "wenchiehlee-money/My-TW-Coverage",
-        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-        "status": "building",
-        "build_type": "workflow",
-        "is_private": false
       }
     ],
     "status_counts": {
-      "normal": 19,
+      "normal": 20,
       "errored": 0,
-      "other": 2
+      "other": 1
     }
   },
   "security_telemetry": {
@@ -4960,8 +4960,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T09:25:28Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/46130410511",
+              "latest_run_at": "2026-11-28T10:10:46Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Selenium-Actions.Auction/actions/runs/46133923683",
               "annotations": []
             }
           ],
@@ -5712,8 +5712,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_event": "push",
-              "latest_run_at": "2026-11-28T10:00:03Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133049594",
+              "latest_run_at": "2026-11-28T10:09:56Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133853187",
               "annotations": []
             }
           ],
@@ -6443,7 +6443,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-            "status": "building",
+            "status": "built",
             "build_type": "workflow"
           },
           "security": {
