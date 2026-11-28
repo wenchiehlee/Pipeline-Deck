@@ -1903,11 +1903,11 @@ def generate_portal_html(data: dict, index_html_path: Path):
           <span class="health-pill pill-total">發布門戶總數：<strong>{total_portals}</strong>（Pages {total_sites} + Synology {len(synology_portals)}）</span>
           <span class="health-pill pill-ok">🟢 正常發布：<strong>{normal_portals}</strong></span>
           <span class="health-pill pill-crit" style="color: {'#059669' if errored_portals == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_portals == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_portals}</strong></span>
-          <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_portals}</strong></span>
+          <span class="health-pill pill-total">⚪ 進行中/待部署：<strong>{other_portals}</strong></span>
         </div>
       </div>
       <p class="section-desc">
-        共追蹤 {total_portals} 個發布門戶（GitHub Pages {total_sites} + Synology Web Station {len(synology_portals)}）；發布狀態涵蓋全部平台：正常 {normal_portals} 個、異常 {errored_portals} 個、待命/初始 {other_portals} 個。
+        共追蹤 {total_portals} 個發布門戶（GitHub Pages {total_sites} + Synology Web Station {len(synology_portals)}）；發布狀態涵蓋全部平台：正常 {normal_portals} 個、異常 {errored_portals} 個、進行中/待部署 {other_portals} 個。
       </p>
 
       <div class="table-card">

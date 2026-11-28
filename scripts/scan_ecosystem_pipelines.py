@@ -815,7 +815,7 @@ def generate_markdown(data) -> str:
     lines.append(f"- **GitHub Pages 站點數**：`{pg.get('total_sites', 0)}` 個")
     lines.append(f"- **🟢 正常發布門戶**：`{normal_portals}` 個（全部 Pages + Synology）")
     lines.append(f"- **🔴 建置異常 (`errored`)**：`{errored_portals}` 個")
-    lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{other_portals}` 個")
+    lines.append(f"- **⚪ 進行中/待部署 (`other`)**：`{other_portals}` 個")
     lines.append("")
     lines.append(f"#### 🌐 線上發布站點清單（{pg.get('total_portals', pg.get('total_sites', 0))}）")
     lines.append("")
