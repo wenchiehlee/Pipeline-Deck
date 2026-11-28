@@ -1,7 +1,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 10:01:17 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 10:09:16 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`231 / 75 / 2 / 1`**（**231** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
@@ -91,9 +91,9 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 
 - **門戶站點總數**：`21`（GitHub Pages `17` + Synology `4`）
 - **GitHub Pages 站點數**：`17` 個
-- **🟢 正常發布門戶**：`21` 個（Pages built + Synology）
+- **🟢 正常發布門戶**：`20` 個（全部 Pages + Synology）
 - **🔴 建置異常 (`errored`)**：`0` 個
-- **⚪ 其他/初始待命中 (`other`)**：`0` 個
+- **⚪ 其他/初始待命中 (`other`)**：`1` 個
 
 #### 🌐 線上發布站點清單（21）
 
@@ -117,10 +117,10 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 16 | GitHub Pages | [ZhongZheng782/Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | 🐿️ 採集松鼠 (`AI 相片智慧標籤`) | [https://zhongzheng782.github.io/Synology-Photo-Tagger/](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 17 | GitHub Pages | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 
-| 18 | Synology Web Station | [ZhongZheng782/Mail-Deck](https://github.com/ZhongZheng782/Mail-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/mail-deck/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 19 | Synology Web Station | [ZhongZheng782/Photo-Deck](https://github.com/ZhongZheng782/Photo-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/photo-deck/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 20 | Synology Web Station | [ZhongZheng782/wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 21 | Synology Web Station | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | 🗄️ Synology 門戶 (`NAS Web Station`) | [https://newton.tail28f10.ts.net/llm/](https://newton.tail28f10.ts.net/llm/) · `/web/llm/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🔒 Tailnet |
+| 18 | Synology Web Station | [ZhongZheng782/Mail-Deck](https://github.com/ZhongZheng782/Mail-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/mail-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 19 | Synology Web Station | [ZhongZheng782/Photo-Deck](https://github.com/ZhongZheng782/Photo-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/photo-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 20 | Synology Web Station | [ZhongZheng782/wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 21 | Synology Web Station | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | 🗄️ Synology 門戶 (`NAS Web Station`) | [https://newton.tail28f10.ts.net/llm/](https://newton.tail28f10.ts.net/llm/) · `/web/llm/` | ⚪ 待部署/初始 | `portal-pages-deploy.yml` | 🔒 Tailnet |
 
 
 ---

@@ -61,9 +61,14 @@ def generate_portal_html(data: dict, index_html_path: Path):
     built_sites = pg.get("built_sites", 0)
     errored_sites = pg.get("errored_sites", 0)
     other_sites = pg.get("other_sites", 0)
-    # Synology portals are registered live sites, so include them in the healthy
-    # portal count while keeping build-error and pending counts Pages-specific.
-    normal_portals = built_sites + len(synology_portals)
+    status_counts = pg.get("status_counts") or {
+        "normal": built_sites + sum(p.get("status", "built") == "built" for p in synology_portals),
+        "errored": errored_sites + sum(p.get("status") == "errored" for p in synology_portals),
+        "other": other_sites + sum(p.get("status", "built") not in ("built", "errored") for p in synology_portals),
+    }
+    normal_portals = status_counts["normal"]
+    errored_portals = status_counts["errored"]
+    other_portals = status_counts["other"]
 
     sec_repos = sec.get("secret_scanning_enabled_count", 0)
     push_repos = sec.get("push_protection_enabled_count", 0)
@@ -329,13 +334,14 @@ def generate_portal_html(data: dict, index_html_path: Path):
         portal_url = portal.get("url")
         target_html = f'<a href="{portal_url}" target="_blank" rel="noopener noreferrer"><code>{portal["target"]}</code></a>' if portal_url else f'<code>{portal["target"]}</code>'
         visibility = portal.get("visibility", "🌍 公開")
+        portal_status = {"built": "🟢 正常發布", "errored": "🔴 建置異常"}.get(portal.get("status", "built"), "⚪ 待部署/初始")
         synology_rows += f"""                <tr>
                   <td>{len(pg.get('sites', [])) + idx}</td>
                   <td>🗄️ Synology Web Station</td>
                   <td><a href="{repo_url}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{repo}</strong></a></td>
                   <td><span class="mascot-tag"><span class="mascot-symbol">🗄️</span> <strong>Synology 門戶</strong> <span class="mascot-role">· NAS Web Station</span></span></td>
                   <td>{target_html}</td>
-                  <td style="text-align: center;">⚙️ NAS 部署目標</td>
+                  <td style="text-align: center;">{portal_status}</td>
                   <td><a href="{workflow_url}" target="_blank" rel="noopener noreferrer"><code>{portal['workflow']}</code></a></td>
                   <td style="text-align: center;">{visibility}</td>
                 </tr>
@@ -1783,7 +1789,7 @@ def generate_portal_html(data: dict, index_html_path: Path):
             <div class="kpi-label">線上發布門戶</div>
             <div class="kpi-value" style="color: #2563eb;">{total_portals} <span class="kpi-unit">個門戶</span></div>
             <div class="kpi-sub">GitHub Pages {total_sites} · Synology {len(synology_portals)}</div>
-            <div class="kpi-sub">🟢 <strong>{normal_portals}</strong> 正常 · 🔴 <strong>{errored_sites}</strong> 異常</div>
+            <div class="kpi-sub">🟢 <strong>{normal_portals}</strong> 正常 · 🔴 <strong>{errored_portals}</strong> 異常</div>
           </div>
         </div>
         <div class="kpi-card" style="border-color: {'#a7f3d0' if total_alerts == 0 else '#fde68a'};">
@@ -1895,14 +1901,13 @@ def generate_portal_html(data: dict, index_html_path: Path):
         </div>
         <div class="health-summary-pill-group">
           <span class="health-pill pill-total">發布門戶總數：<strong>{total_portals}</strong>（Pages {total_sites} + Synology {len(synology_portals)}）</span>
-          <span class="health-pill pill-total">GitHub Pages：<strong>{total_sites}</strong></span>
           <span class="health-pill pill-ok">🟢 正常發布：<strong>{normal_portals}</strong></span>
-          <span class="health-pill pill-crit" style="color: {'#059669' if errored_sites == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_sites == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_sites}</strong></span>
-          <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_sites}</strong></span>
+          <span class="health-pill pill-crit" style="color: {'#059669' if errored_portals == 0 else '#dc2626'}; background: {'#ecfdf5' if errored_portals == 0 else '#fef2f2'};">🔴 建置異常：<strong>{errored_portals}</strong></span>
+          <span class="health-pill pill-total">⚪ 待命/初始：<strong>{other_portals}</strong></span>
         </div>
       </div>
       <p class="section-desc">
-        全域追蹤 {total_portals} 個發布門戶：正常發布數包含 {len(synology_portals)} 個 Synology Web Station 門戶；建置異常與待命數僅統計 {total_sites} 個 GitHub Pages 站點。
+        共追蹤 {total_portals} 個發布門戶（GitHub Pages {total_sites} + Synology Web Station {len(synology_portals)}）；發布狀態涵蓋全部平台：正常 {normal_portals} 個、異常 {errored_portals} 個、待命/初始 {other_portals} 個。
       </p>
 
       <div class="table-card">

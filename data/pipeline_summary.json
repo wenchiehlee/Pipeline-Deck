@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:00:10.660200+00:00",
+  "generated_at": "2026-11-28T10:09:15+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 231,
@@ -1214,24 +1214,28 @@
       {
         "repo": "ZhongZheng782/Mail-Deck",
         "target": "/web/mail-deck/",
-        "workflow": "portal-pages-deploy.yml"
+        "workflow": "portal-pages-deploy.yml",
+        "status": "built"
       },
       {
         "repo": "ZhongZheng782/Photo-Deck",
         "target": "/web/photo-deck/",
-        "workflow": "portal-pages-deploy.yml"
+        "workflow": "portal-pages-deploy.yml",
+        "status": "built"
       },
       {
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
         "target": "/web/",
-        "workflow": "portal-pages-deploy.yml"
+        "workflow": "portal-pages-deploy.yml",
+        "status": "built"
       },
       {
         "repo": "wenchiehlee/llm",
         "target": "/web/llm/",
         "url": "https://newton.tail28f10.ts.net/llm/",
         "workflow": "portal-pages-deploy.yml",
-        "visibility": "🔒 Tailnet"
+        "visibility": "🔒 Tailnet",
+        "status": "pending"
       }
     ],
     "total_portals": 21,
@@ -1392,7 +1396,12 @@
         "build_type": "workflow",
         "is_private": false
       }
-    ]
+    ],
+    "status_counts": {
+      "normal": 20,
+      "errored": 0,
+      "other": 1
+    }
   },
   "security_telemetry": {
     "secret_scanning_enabled_count": 77,

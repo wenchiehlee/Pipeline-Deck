@@ -77,10 +77,10 @@ UX_DECK_REGISTRY = {
 
 # NAS-hosted portals are maintained alongside GitHub Pages deployment telemetry.
 SYNOLOGY_PORTALS = [
-    {"repo": "ZhongZheng782/Mail-Deck", "target": "/web/mail-deck/", "workflow": "portal-pages-deploy.yml"},
-    {"repo": "ZhongZheng782/Photo-Deck", "target": "/web/photo-deck/", "workflow": "portal-pages-deploy.yml"},
-    {"repo": "ZhongZheng782/wenchiehlee.quickconnect.to", "target": "/web/", "workflow": "portal-pages-deploy.yml"},
-    {"repo": "wenchiehlee/llm", "target": "/web/llm/", "url": "https://newton.tail28f10.ts.net/llm/", "workflow": "portal-pages-deploy.yml", "visibility": "🔒 Tailnet"},
+    {"repo": "ZhongZheng782/Mail-Deck", "target": "/web/mail-deck/", "workflow": "portal-pages-deploy.yml", "status": "built"},
+    {"repo": "ZhongZheng782/Photo-Deck", "target": "/web/photo-deck/", "workflow": "portal-pages-deploy.yml", "status": "built"},
+    {"repo": "ZhongZheng782/wenchiehlee.quickconnect.to", "target": "/web/", "workflow": "portal-pages-deploy.yml", "status": "built"},
+    {"repo": "wenchiehlee/llm", "target": "/web/llm/", "url": "https://newton.tail28f10.ts.net/llm/", "workflow": "portal-pages-deploy.yml", "visibility": "🔒 Tailnet", "status": "pending"},
 ]
 
 def load_env_file():
@@ -468,6 +468,16 @@ def scan_single_repo(session: requests.Session, org: str, repo_basic: dict) -> d
         }
     }
 
+def portal_status_counts(pg: dict) -> dict[str, int]:
+    """Return publication states across GitHub Pages and Synology portals."""
+    synology = pg.get("synology_portals", [])
+    return {
+        "normal": pg.get("built_sites", 0) + sum(p.get("status", "built") == "built" for p in synology),
+        "errored": pg.get("errored_sites", 0) + sum(p.get("status") == "errored" for p in synology),
+        "other": pg.get("other_sites", 0) + sum(p.get("status", "built") not in ("built", "errored") for p in synology),
+    }
+
+
 def scan_ecosystem():
     token = get_github_token()
     session = create_session(token)
@@ -647,6 +657,7 @@ def scan_ecosystem():
     summary_data["pages_telemetry"]["sites"].sort(key=lambda x: (0 if x["status"] == "errored" else (1 if x["status"] == "built" else 2), x["repo"].lower()))
     summary_data["pages_telemetry"]["total_sites"] = len(summary_data["pages_telemetry"]["sites"])
     summary_data["pages_telemetry"]["total_portals"] = summary_data["pages_telemetry"]["total_sites"] + len(SYNOLOGY_PORTALS)
+    summary_data["pages_telemetry"]["status_counts"] = portal_status_counts(summary_data["pages_telemetry"])
 
     # Sort repos with alerts by total alerts descending
     summary_data["security_telemetry"]["repos_with_alerts"].sort(
@@ -706,7 +717,10 @@ def generate_markdown(data) -> str:
     sch = data["scheduled_telemetry"]
     pg = data.get("pages_telemetry", {})
     sec = data.get("security_telemetry", {})
-    normal_portals = pg.get("built_sites", 0) + len(pg.get("synology_portals", []))
+    status_counts = pg.get("status_counts") or portal_status_counts(pg)
+    normal_portals = status_counts["normal"]
+    errored_portals = status_counts["errored"]
+    other_portals = status_counts["other"]
     ns_quartet = f"{data['total_workflows']} / {data['total_repos_with_actions']} / {sch['critical_consecutive_4_count']} / {sch['warning_consecutive_1_to_3_count']}"
     
     lines = [
@@ -799,9 +813,9 @@ def generate_markdown(data) -> str:
     lines.append("")
     lines.append(f"- **門戶站點總數**：`{pg.get('total_portals', pg.get('total_sites', 0))}`（GitHub Pages `{pg.get('total_sites', 0)}` + Synology `{len(pg.get('synology_portals', []))}`）")
     lines.append(f"- **GitHub Pages 站點數**：`{pg.get('total_sites', 0)}` 個")
-    lines.append(f"- **🟢 正常發布門戶**：`{normal_portals}` 個（Pages built + Synology）")
-    lines.append(f"- **🔴 建置異常 (`errored`)**：`{pg.get('errored_sites', 0)}` 個")
-    lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{pg.get('other_sites', 0)}` 個")
+    lines.append(f"- **🟢 正常發布門戶**：`{normal_portals}` 個（全部 Pages + Synology）")
+    lines.append(f"- **🔴 建置異常 (`errored`)**：`{errored_portals}` 個")
+    lines.append(f"- **⚪ 其他/初始待命中 (`other`)**：`{other_portals}` 個")
     lines.append("")
     lines.append(f"#### 🌐 線上發布站點清單（{pg.get('total_portals', pg.get('total_sites', 0))}）")
     lines.append("")
@@ -823,7 +837,8 @@ def generate_markdown(data) -> str:
         repo_link = f"[{portal['repo']}](https://github.com/{portal['repo']})"
         portal_target = f"[{portal['url']}]({portal['url']}) · `{portal['target']}`" if portal.get("url") else f"`{portal['target']}`"
         visibility = portal.get("visibility", "🌍 公開")
-        lines.append(f"| {idx} | Synology Web Station | {repo_link} | 🗄️ Synology 門戶 (`NAS Web Station`) | {portal_target} | ⚙️ NAS 部署目標 | `{portal['workflow']}` | {visibility} |")
+        portal_status = {"built": "🟢 正常發布", "errored": "🔴 建置異常"}.get(portal.get("status", "built"), "⚪ 待部署/初始")
+        lines.append(f"| {idx} | Synology Web Station | {repo_link} | 🗄️ Synology 門戶 (`NAS Web Station`) | {portal_target} | {portal_status} | `{portal['workflow']}` | {visibility} |")
     lines.append("")
 
     lines.append("")
@@ -1005,6 +1020,9 @@ def main():
             "synology_sites": len(pg.get("synology_portals", [])),
             "pages_built": pg.get("built_sites", 0),
             "pages_errored": pg.get("errored_sites", 0),
+            "portals_normal": pg.get("status_counts", portal_status_counts(pg))["normal"],
+            "portals_errored": pg.get("status_counts", portal_status_counts(pg))["errored"],
+            "portals_pending": pg.get("status_counts", portal_status_counts(pg))["other"],
             "secret_scanning_repos": sec.get("secret_scanning_enabled_count", 0),
             "push_protection_repos": sec.get("push_protection_enabled_count", 0),
             "dependabot_alerts_total": sec.get("total_open_dependabot_alerts", 0),
