@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 10:15:39 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 18 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 11:09:32 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`231 / 75 / 2 / 1`**（**231** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
@@ -36,7 +36,7 @@
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 1 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 1 | 0 |
-| **全域總計** | **106** | **75** | **231 個 YAML** | **21 門戶（Pages 17 + Synology 4）** | **77 庫** | **2 處** |
+| **全域總計** | **106** | **75** | **231 個 YAML** | **21 門戶（Pages 18 + Synology 3）** | **77 庫** | **2 處** |
 
 ---
 
@@ -109,11 +109,11 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 
 ### 🌐 線上發布門戶觀測 (Deployment Portals)
 
-- **門戶站點總數**：`21`（GitHub Pages `17` + Synology `4`）
-- **GitHub Pages 站點數**：`17` 個
-- **🟢 正常發布門戶**：`20` 個（全部 Pages + Synology）
+- **門戶站點總數**：`21`（GitHub Pages `18` + Synology `3`）
+- **GitHub Pages 站點數**：`18` 個
+- **🟢 正常發布門戶**：`21` 個（全部 Pages + Synology）
 - **🔴 建置異常 (`errored`)**：`0` 個
-- **⚪ 進行中/待部署 (`other`)**：`1` 個
+- **⚪ 進行中/待部署 (`other`)**：`0` 個
 
 #### 🌐 線上發布站點清單（21）
 
@@ -128,19 +128,19 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 7 | GitHub Pages | [wenchiehlee-ux/UX-Deck](https://github.com/wenchiehlee-ux/UX-Deck) | 🦌 幾何靈鹿 (`UX 設計系統中樞`) | [https://wenchiehlee-ux.github.io/UX-Deck/](https://wenchiehlee-ux.github.io/UX-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 8 | GitHub Pages | [wenchiehlee/Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | 📊 觀測航線 (`全端點流量遙測中樞`) | [https://wenchiehlee.github.io/Analytics-Deck/](https://wenchiehlee.github.io/Analytics-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 | 9 | GitHub Pages | [wenchiehlee/dockers](https://github.com/wenchiehlee/dockers) | 🐳 貨櫃藍鯨 (`Docker 映像目錄與部署`) | [https://wenchiehlee.github.io/dockers/](https://wenchiehlee.github.io/dockers/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 10 | GitHub Pages | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 11 | GitHub Pages | [wenchiehlee/mkdocs-investment](https://github.com/wenchiehlee/mkdocs-investment) | 🐂🐻 幾何狂牛/守護熊 (`大盤資產配置與避險`) | [https://wenchiehlee.github.io/mkdocs-investment/](https://wenchiehlee.github.io/mkdocs-investment/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 12 | GitHub Pages | [wenchiehlee/mkdocs-life](https://github.com/wenchiehlee/mkdocs-life) | 🦌 幾何林鹿 (`溫潤人文生活誌`) | [https://wenchiehlee.github.io/mkdocs-life/](https://wenchiehlee.github.io/mkdocs-life/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 13 | GitHub Pages | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | ⚙️ 齒輪引擎 (`CI/CD 與自動化管道中樞`) | [https://wenchiehlee.github.io/Pipeline-Deck/](https://wenchiehlee.github.io/Pipeline-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 14 | GitHub Pages | [wenchiehlee/skills](https://github.com/wenchiehlee/skills) | 🐇 敏捷白兔 (`共享技能登錄庫`) | [https://wenchiehlee.github.io/skills/](https://wenchiehlee.github.io/skills/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 15 | GitHub Pages | [wenchiehlee/wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | 👤 個人旗艦 (`個人官方主站門戶`) | [https://wenchiehlee.github.io/](https://wenchiehlee.github.io/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 16 | GitHub Pages | [ZhongZheng782/Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | 🐿️ 採集松鼠 (`AI 相片智慧標籤`) | [https://zhongzheng782.github.io/Synology-Photo-Tagger/](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
-| 17 | GitHub Pages | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 10 | GitHub Pages | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | 🧠 智慧大腦 (`LLM 多模型智能路由庫`) | [https://wenchiehlee.github.io/llm/](https://wenchiehlee.github.io/llm/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 11 | GitHub Pages | [wenchiehlee/mkdocs](https://github.com/wenchiehlee/mkdocs) | 📚 知識基底 (`工程技術文件中心`) | [https://wenchiehlee.github.io/mkdocs/](https://wenchiehlee.github.io/mkdocs/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 12 | GitHub Pages | [wenchiehlee/mkdocs-investment](https://github.com/wenchiehlee/mkdocs-investment) | 🐂🐻 幾何狂牛/守護熊 (`大盤資產配置與避險`) | [https://wenchiehlee.github.io/mkdocs-investment/](https://wenchiehlee.github.io/mkdocs-investment/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 13 | GitHub Pages | [wenchiehlee/mkdocs-life](https://github.com/wenchiehlee/mkdocs-life) | 🦌 幾何林鹿 (`溫潤人文生活誌`) | [https://wenchiehlee.github.io/mkdocs-life/](https://wenchiehlee.github.io/mkdocs-life/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 14 | GitHub Pages | [wenchiehlee/Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | ⚙️ 齒輪引擎 (`CI/CD 與自動化管道中樞`) | [https://wenchiehlee.github.io/Pipeline-Deck/](https://wenchiehlee.github.io/Pipeline-Deck/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 15 | GitHub Pages | [wenchiehlee/skills](https://github.com/wenchiehlee/skills) | 🐇 敏捷白兔 (`共享技能登錄庫`) | [https://wenchiehlee.github.io/skills/](https://wenchiehlee.github.io/skills/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 16 | GitHub Pages | [wenchiehlee/wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | 👤 個人旗艦 (`個人官方主站門戶`) | [https://wenchiehlee.github.io/](https://wenchiehlee.github.io/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 17 | GitHub Pages | [ZhongZheng782/Synology-Photo-Tagger](https://github.com/ZhongZheng782/Synology-Photo-Tagger) | 🐿️ 採集松鼠 (`AI 相片智慧標籤`) | [https://zhongzheng782.github.io/Synology-Photo-Tagger/](https://zhongzheng782.github.io/Synology-Photo-Tagger/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
+| 18 | GitHub Pages | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | 🐋 聲波座頭鯨 (`影音 Podcast 萃取`) | [https://zhongzheng782.github.io/YoutubeAudio.Fetch/](https://zhongzheng782.github.io/YoutubeAudio.Fetch/) | 🟢 正常 (built) | `workflow` | 🌍 公開 |
 
-| 18 | Synology Web Station | [ZhongZheng782/Mail-Deck](https://github.com/ZhongZheng782/Mail-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/mail-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 19 | Synology Web Station | [ZhongZheng782/Photo-Deck](https://github.com/ZhongZheng782/Photo-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/photo-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 20 | Synology Web Station | [ZhongZheng782/wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
-| 21 | Synology Web Station | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | 🗄️ Synology 門戶 (`NAS Web Station`) | [https://newton.tail28f10.ts.net/llm/](https://newton.tail28f10.ts.net/llm/) · `/web/llm/` | ⚪ 待部署/初始 | `portal-pages-deploy.yml` | 🔒 Tailnet |
+| 19 | Synology Web Station | [ZhongZheng782/Mail-Deck](https://github.com/ZhongZheng782/Mail-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/mail-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 20 | Synology Web Station | [ZhongZheng782/Photo-Deck](https://github.com/ZhongZheng782/Photo-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/photo-deck/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 21 | Synology Web Station | [ZhongZheng782/wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/` | 🟢 正常發布 | `portal-pages-deploy.yml` | 🌍 公開 |
 
 
 ---
@@ -209,7 +209,7 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 14 | [skills](https://github.com/wenchiehlee/skills) | **3** | [🟢 built](https://wenchiehlee.github.io/skills/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `publish-scribd-pdf-fetch.yml`, `update-skills-index.yml` |
 | 15 | [twstock](https://github.com/wenchiehlee/twstock) | **3** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml`, `twstock-Action.yaml` |
 | 16 | [GoPublic](https://github.com/wenchiehlee/GoPublic) | **2** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml` |
-| 17 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `portal-pages-deploy.yml`, `update-stats.yml` |
+| 17 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `update-stats.yml` |
 | 18 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **2** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `jekyll.yml` |
 | 19 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
 | 20 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |

@@ -1209,7 +1209,7 @@
     ]
   },
   "pages_telemetry": {
-    "total_sites": 17,
+    "total_sites": 18,
     "synology_portals": [
       {
         "repo": "ZhongZheng782/Mail-Deck",
@@ -1228,18 +1228,10 @@
         "target": "/web/",
         "workflow": "portal-pages-deploy.yml",
         "status": "built"
-      },
-      {
-        "repo": "wenchiehlee/llm",
-        "target": "/web/llm/",
-        "url": "https://newton.tail28f10.ts.net/llm/",
-        "workflow": "portal-pages-deploy.yml",
-        "visibility": "🔒 Tailnet",
-        "status": "pending"
       }
     ],
     "total_portals": 21,
-    "built_sites": 17,
+    "built_sites": 18,
     "errored_sites": 0,
     "other_sites": 0,
     "sites": [
@@ -1326,6 +1318,15 @@
       },
       {
         "org": "wenchiehlee",
+        "name": "llm",
+        "repo": "wenchiehlee/llm",
+        "url": "https://wenchiehlee.github.io/llm/",
+        "status": "built",
+        "build_type": "workflow",
+        "is_private": false
+      },
+      {
+        "org": "wenchiehlee",
         "name": "mkdocs",
         "repo": "wenchiehlee/mkdocs",
         "url": "https://wenchiehlee.github.io/mkdocs/",
@@ -1398,9 +1399,9 @@
       }
     ],
     "status_counts": {
-      "normal": 20,
+      "normal": 21,
       "errored": 0,
-      "other": 1
+      "other": 0
     }
   },
   "security_telemetry": {
@@ -5222,7 +5223,7 @@
           "is_private": false,
           "workflow_count": 2,
           "workflows": [
-            "portal-pages-deploy.yml",
+            "deploy-pages.yml",
             "update-stats.yml"
           ],
           "schedules": [

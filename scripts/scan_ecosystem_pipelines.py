@@ -80,7 +80,6 @@ SYNOLOGY_PORTALS = [
     {"repo": "ZhongZheng782/Mail-Deck", "target": "/web/mail-deck/", "workflow": "portal-pages-deploy.yml", "status": "built"},
     {"repo": "ZhongZheng782/Photo-Deck", "target": "/web/photo-deck/", "workflow": "portal-pages-deploy.yml", "status": "built"},
     {"repo": "ZhongZheng782/wenchiehlee.quickconnect.to", "target": "/web/", "workflow": "portal-pages-deploy.yml", "status": "built"},
-    {"repo": "wenchiehlee/llm", "target": "/web/llm/", "url": "https://newton.tail28f10.ts.net/llm/", "workflow": "portal-pages-deploy.yml", "visibility": "🔒 Tailnet", "status": "pending"},
 ]
 
 def load_env_file():
