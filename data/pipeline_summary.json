@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-28T05:29:20.335901+00:00",
+  "generated_at": "2026-11-28T09:59:42+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
-  "total_workflows": 230,
+  "total_workflows": 231,
   "scheduled_telemetry": {
     "total_monitored_schedules": 64,
     "critical_consecutive_4_count": 2,
@@ -1219,9 +1219,16 @@
         "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
         "target": "/web/",
         "workflow": "portal-pages-deploy.yml"
+      },
+      {
+        "repo": "wenchiehlee/llm",
+        "target": "/web/llm/",
+        "url": "https://newton.tail28f10.ts.net/llm/",
+        "workflow": "portal-pages-deploy.yml",
+        "visibility": "🔒 Tailnet"
       }
     ],
-    "total_portals": 20,
+    "total_portals": 21,
     "built_sites": 17,
     "errored_sites": 0,
     "other_sites": 0,
@@ -4191,7 +4198,7 @@
     "wenchiehlee": {
       "total_repos": 32,
       "repos_with_actions": 30,
-      "total_workflows": 70,
+      "total_workflows": 71,
       "repos": [
         {
           "org": "wenchiehlee",
@@ -5596,8 +5603,9 @@
           "full_name": "wenchiehlee/llm",
           "html_url": "https://github.com/wenchiehlee/llm",
           "is_private": false,
-          "workflow_count": 1,
+          "workflow_count": 2,
           "workflows": [
+            "portal-pages-deploy.yml",
             "update-stats.yml"
           ],
           "schedules": [

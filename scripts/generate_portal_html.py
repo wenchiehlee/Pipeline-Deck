@@ -326,15 +326,18 @@ def generate_portal_html(data: dict, index_html_path: Path):
         repo = portal["repo"]
         repo_url = f"https://github.com/{repo}"
         workflow_url = f"{repo_url}/blob/main/.github/workflows/{portal['workflow']}"
+        portal_url = portal.get("url")
+        target_html = f'<a href="{portal_url}" target="_blank" rel="noopener noreferrer"><code>{portal["target"]}</code></a>' if portal_url else f'<code>{portal["target"]}</code>'
+        visibility = portal.get("visibility", "🌍 公開")
         synology_rows += f"""                <tr>
                   <td>{len(pg.get('sites', [])) + idx}</td>
                   <td>🗄️ Synology Web Station</td>
                   <td><a href="{repo_url}" target="_blank" rel="noopener noreferrer" class="repo-inline-link"><strong>{repo}</strong></a></td>
                   <td><span class="mascot-tag"><span class="mascot-symbol">🗄️</span> <strong>Synology 門戶</strong> <span class="mascot-role">· NAS Web Station</span></span></td>
-                  <td><code>{portal['target']}</code></td>
+                  <td>{target_html}</td>
                   <td style="text-align: center;">⚙️ NAS 部署目標</td>
                   <td><a href="{workflow_url}" target="_blank" rel="noopener noreferrer"><code>{portal['workflow']}</code></a></td>
-                  <td style="text-align: center;">🌍 公開</td>
+                  <td style="text-align: center;">{visibility}</td>
                 </tr>
 """
 

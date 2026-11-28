@@ -21,22 +21,22 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **230 個工作流程 YAML 檔案**、**20 個發布門戶（GitHub Pages 17 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 05:30:27 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 09:59:42 UTC`）
 >
-> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`230 / 75 / 2 / 1`**（**230** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
+> 🎯 **北極星核心維運指標 (North Star Quartet)**：**`231 / 75 / 2 / 1`**（**231** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
 ### 📊 組織工作流程、Pages 與資安分佈總覽
 
 | 組織 / 帳號 (`Owner`) | 活躍儲存庫數 | 具備 Actions 的 Repo | 工作流程 YAML 數 | Pages 發布站點 | 資安防護啟用庫 | 待處置警報總數 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | [`ZhongZheng782`](https://github.com/ZhongZheng782) | 31 | 20 | **94** | 2 | 5 | 0 |
-| [`wenchiehlee`](https://github.com/wenchiehlee) | 32 | 30 | **70** | 8 | 30 | 0 |
+| [`wenchiehlee`](https://github.com/wenchiehlee) | 32 | 30 | **71** | 8 | 30 | 0 |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 24 | 0 |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 13 | **30** | 1 | 16 | **2** |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 1 | 0 |
 | [`wenchiehlee-alert`](https://github.com/wenchiehlee-alert) | 0 | 0 | **0** | 0 | 0 | 0 |
 | [`wenchiehlee-life`](https://github.com/wenchiehlee-life) | 1 | 0 | **0** | 1 | 1 | 0 |
-| **全域總計** | **106** | **75** | **230 個 YAML** | **20 門戶（Pages 17 + Synology 3）** | **77 庫** | **2 處** |
+| **全域總計** | **106** | **75** | **231 個 YAML** | **21 門戶（Pages 17 + Synology 4）** | **77 庫** | **2 處** |
 
 ---
 
@@ -108,13 +108,13 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 
 ### 🌐 線上發布門戶觀測 (Deployment Portals)
 
-- **門戶站點總數**：`20`（GitHub Pages `17` + Synology `3`）
+- **門戶站點總數**：`21`（GitHub Pages `17` + Synology `4`）
 - **GitHub Pages 站點數**：`17` 個
-- **🟢 正常發布門戶**：`20` 個（Pages built + Synology）
+- **🟢 正常發布門戶**：`21` 個（Pages built + Synology）
 - **🔴 建置異常 (`errored`)**：`0` 個
 - **⚪ 其他/初始待命中 (`other`)**：`0` 個
 
-#### 🌐 線上發布站點清單（20）
+#### 🌐 線上發布站點清單（21）
 
 | # | 發布平台 | 組織 / 儲存庫 | UX 意象與定位 (UX-Deck) | 線上網址 / 部署目標 | 發布狀態 | 部署流程 | 可見性 |
 |---:|---|---|---|---|:---:|:---:|:---:|
@@ -139,6 +139,7 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 18 | Synology Web Station | [ZhongZheng782/Mail-Deck](https://github.com/ZhongZheng782/Mail-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/mail-deck/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
 | 19 | Synology Web Station | [ZhongZheng782/Photo-Deck](https://github.com/ZhongZheng782/Photo-Deck) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/photo-deck/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
 | 20 | Synology Web Station | [ZhongZheng782/wenchiehlee.quickconnect.to](https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to) | 🗄️ Synology 門戶 (`NAS Web Station`) | `/web/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🌍 公開 |
+| 21 | Synology Web Station | [wenchiehlee/llm](https://github.com/wenchiehlee/llm) | 🗄️ Synology 門戶 (`NAS Web Station`) | [https://newton.tail28f10.ts.net/llm/](https://newton.tail28f10.ts.net/llm/) · `/web/llm/` | ⚙️ NAS 部署目標 | `portal-pages-deploy.yml` | 🔒 Tailnet |
 
 
 ---
@@ -187,7 +188,7 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 20 | [TravelAPP](https://github.com/ZhongZheng782/TravelAPP) | **1** | - | ⚪ 預設 | 0 | `deploy-synology-nas.yml` |
 | - | *其餘 11 個 Repo* | 0 | - | - | - | *(無 Actions)* |
 
-### 📁 `wenchiehlee` (30 個 Repo · 共 70 個 YAML)
+### 📁 `wenchiehlee` (30 個 Repo · 共 71 個 YAML)
 
 | # | 儲存庫名稱 | YAML 數 | Pages 狀態 | 資安防護 | 待處置警報 | 工作流程 YAML 清單 |
 |---|---|:---:|:---:|:---:|:---:|---|
@@ -215,7 +216,7 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 22 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
 | 23 | [dockers](https://github.com/wenchiehlee/dockers) | **1** | [🟢 built](https://wenchiehlee.github.io/dockers/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 24 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | 🛡️ 啟用 | 0 | `action.yml` |
-| 25 | [llm](https://github.com/wenchiehlee/llm) | **1** | - | 🛡️ 啟用 | 0 | `update-stats.yml` |
+| 25 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `portal-pages-deploy.yml`, `update-stats.yml` |
 | 26 | [Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Pipeline-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 27 | [Python-Actions.ChatGPTAutomation](https://github.com/wenchiehlee/Python-Actions.ChatGPTAutomation) | **1** | - | 🛡️ 啟用 | 0 | `Actions.yaml` |
 | 28 | [Python.TWSE-History](https://github.com/wenchiehlee/Python.TWSE-History) | **1** | - | 🛡️ 啟用 | 0 | `TWSE-API-Action.yaml` |

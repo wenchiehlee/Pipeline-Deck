@@ -75,11 +75,12 @@ UX_DECK_REGISTRY = {
     "wenchiehlee/mkdocs-material": {"symbol": "📐", "name": "架構樣板", "role": "Material 主題範本"},
 }
 
-# NAS-hosted portals are maintained alongside the 17 GitHub Pages sites.
+# NAS-hosted portals are maintained alongside GitHub Pages deployment telemetry.
 SYNOLOGY_PORTALS = [
     {"repo": "ZhongZheng782/Mail-Deck", "target": "/web/mail-deck/", "workflow": "portal-pages-deploy.yml"},
     {"repo": "ZhongZheng782/Photo-Deck", "target": "/web/photo-deck/", "workflow": "portal-pages-deploy.yml"},
     {"repo": "ZhongZheng782/wenchiehlee.quickconnect.to", "target": "/web/", "workflow": "portal-pages-deploy.yml"},
+    {"repo": "wenchiehlee/llm", "target": "/web/llm/", "url": "https://newton.tail28f10.ts.net/llm/", "workflow": "portal-pages-deploy.yml", "visibility": "🔒 Tailnet"},
 ]
 
 def load_env_file():
@@ -820,7 +821,9 @@ def generate_markdown(data) -> str:
     lines.append("")
     for idx, portal in enumerate(pg.get("synology_portals", []), len(pg.get("sites", [])) + 1):
         repo_link = f"[{portal['repo']}](https://github.com/{portal['repo']})"
-        lines.append(f"| {idx} | Synology Web Station | {repo_link} | 🗄️ Synology 門戶 (`NAS Web Station`) | `{portal['target']}` | ⚙️ NAS 部署目標 | `{portal['workflow']}` | 🌍 公開 |")
+        portal_target = f"[{portal['url']}]({portal['url']}) · `{portal['target']}`" if portal.get("url") else f"`{portal['target']}`"
+        visibility = portal.get("visibility", "🌍 公開")
+        lines.append(f"| {idx} | Synology Web Station | {repo_link} | 🗄️ Synology 門戶 (`NAS Web Station`) | {portal_target} | ⚙️ NAS 部署目標 | `{portal['workflow']}` | {visibility} |")
     lines.append("")
 
     lines.append("")
