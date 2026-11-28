@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 18 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 11:09:32 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 18 + Synology 3）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 11:10:50 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`231 / 75 / 2 / 1`**（**231** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
@@ -30,7 +30,7 @@
 | 組織 / 帳號 (`Owner`) | 活躍儲存庫數 | 具備 Actions 的 Repo | 工作流程 YAML 數 | Pages 發布站點 | 資安防護啟用庫 | 待處置警報總數 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | [`ZhongZheng782`](https://github.com/ZhongZheng782) | 31 | 20 | **94** | 2 | 5 | 0 |
-| [`wenchiehlee`](https://github.com/wenchiehlee) | 32 | 30 | **71** | 8 | 30 | 0 |
+| [`wenchiehlee`](https://github.com/wenchiehlee) | 32 | 30 | **71** | 9 | 30 | 0 |
 | [`wenchiehlee-money`](https://github.com/wenchiehlee-money) | 25 | 11 | **35** | 4 | 24 | 0 |
 | [`wenchiehlee-investment`](https://github.com/wenchiehlee-investment) | 16 | 13 | **30** | 1 | 16 | **2** |
 | [`wenchiehlee-ux`](https://github.com/wenchiehlee-ux) | 1 | 1 | **1** | 1 | 1 | 0 |
@@ -76,20 +76,20 @@
 | 7 | 🔴 failure | The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings | 2 | 1 |
 | 8 | 🔴 failure | The action 'Fetch each tracked channel' has timed out after 60 minutes. | 1 | 1 |
 | 9 | ⚠️ warning | CDP scrape skipped or yielded empty payload. Skipping downstream extraction gracefully. | 1 | 1 |
-| 10 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
-| 11 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
-| 12 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
-| 13 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
-| 14 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
-| 15 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
-| 16 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
-| 17 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
-| 18 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
-| 19 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
-| 20 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
-| 21 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
-| 22 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
-| 23 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
+| 10 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report-tr-all.md not found | 1 | 1 |
+| 11 | ⚠️ warning | Source reports/market-analysis-pe-forward-return-report not found | 1 | 1 |
+| 12 | ⚠️ warning | Source reports/market-analysis-drawdown-report-all.md not found | 1 | 1 |
+| 13 | ⚠️ warning | Source reports/market-analysis-drawdown-report not found | 1 | 1 |
+| 14 | ⚠️ warning | Source reports/roa-roe-report-all.md not found | 1 | 1 |
+| 15 | ⚠️ warning | Source reports/roa-roe-report not found | 1 | 1 |
+| 16 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
+| 17 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
+| 18 | ⚠️ warning | Source reports/dividends-report/dividends-report-2454.md not found | 1 | 1 |
+| 19 | ⚠️ warning | Source reports/dividends-report/dividends-report-3034.md not found | 1 | 1 |
+| 20 | ⚠️ warning | Source reports/dividends-report/dividends-report-2480.md not found | 1 | 1 |
+| 21 | ⚠️ warning | Source reports/dividends-report/dividends-report-8299.md not found | 1 | 1 |
+| 22 | ⚠️ warning | Source reports/dividends-report/dividends-report-2382.md not found | 1 | 1 |
+| 23 | ⚠️ warning | Source reports/dividends-report/dividends-report-2412.md not found | 1 | 1 |
 | 24 | ⚠️ warning | The `python-version` input is not set.  The version of Python currently in `PATH` will be used. | 1 | 1 |
 | 25 | ⚠️ warning | Could not connect to the runner's Chromium over CDP at http://10.222.0.10:9222: BrowserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell | 1 | 1 |
 | 26 | 🔴 failure | Command failed: git push https://***@github.com/wenchiehlee-money/biztrends.TW.git --force
@@ -209,7 +209,7 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 14 | [skills](https://github.com/wenchiehlee/skills) | **3** | [🟢 built](https://wenchiehlee.github.io/skills/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `publish-scribd-pdf-fetch.yml`, `update-skills-index.yml` |
 | 15 | [twstock](https://github.com/wenchiehlee/twstock) | **3** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml`, `twstock-Action.yaml` |
 | 16 | [GoPublic](https://github.com/wenchiehlee/GoPublic) | **2** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml` |
-| 17 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `update-stats.yml` |
+| 17 | [llm](https://github.com/wenchiehlee/llm) | **2** | [🟢 built](https://wenchiehlee.github.io/llm/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `update-stats.yml` |
 | 18 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **2** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `jekyll.yml` |
 | 19 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
 | 20 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |
