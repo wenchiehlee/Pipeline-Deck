@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T10:09:15+00:00",
+  "generated_at": "2026-11-28T10:10:04.907757+00:00",
   "total_repos": 106,
   "total_repos_with_actions": 75,
   "total_workflows": 231,
@@ -464,8 +464,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T01:17:42Z",
-        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/46092370070",
+        "latest_run_at": "2026-11-28T10:05:45Z",
+        "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/46133523318",
         "annotations": []
       },
       {
@@ -884,8 +884,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T04:26:47Z",
-        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46107573932",
+        "latest_run_at": "2026-11-28T09:41:30Z",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46131646592",
         "annotations": [
           {
             "level": "failure",
@@ -969,9 +969,9 @@
         "consecutive_failures": 0,
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
-        "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T05:29:03Z",
-        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46112303444",
+        "latest_event": "push",
+        "latest_run_at": "2026-11-28T10:00:03Z",
+        "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133049594",
         "annotations": []
       },
       {
@@ -1114,8 +1114,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T01:50:27Z",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46095113956",
+        "latest_run_at": "2026-11-28T10:05:03Z",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46133463189",
         "annotations": [
           {
             "level": "warning",
@@ -1202,8 +1202,8 @@
         "recent_4_icons": "✅✅✅✅",
         "latest_conclusion": "success",
         "latest_event": "schedule",
-        "latest_run_at": "2026-11-28T01:50:41Z",
-        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/46095133260",
+        "latest_run_at": "2026-11-28T10:06:18Z",
+        "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/46133566628",
         "annotations": []
       }
     ]
@@ -1239,9 +1239,9 @@
       }
     ],
     "total_portals": 21,
-    "built_sites": 17,
+    "built_sites": 16,
     "errored_sites": 0,
-    "other_sites": 0,
+    "other_sites": 1,
     "sites": [
       {
         "org": "wenchiehlee-investment",
@@ -1275,15 +1275,6 @@
         "name": "InvestorConference",
         "repo": "wenchiehlee-money/InvestorConference",
         "url": "https://wenchiehlee-money.github.io/InvestorConference/",
-        "status": "built",
-        "build_type": "workflow",
-        "is_private": false
-      },
-      {
-        "org": "wenchiehlee-money",
-        "name": "My-TW-Coverage",
-        "repo": "wenchiehlee-money/My-TW-Coverage",
-        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
         "status": "built",
         "build_type": "workflow",
         "is_private": false
@@ -1395,12 +1386,21 @@
         "status": "built",
         "build_type": "workflow",
         "is_private": false
+      },
+      {
+        "org": "wenchiehlee-money",
+        "name": "My-TW-Coverage",
+        "repo": "wenchiehlee-money/My-TW-Coverage",
+        "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
+        "status": "building",
+        "build_type": "workflow",
+        "is_private": false
       }
     ],
     "status_counts": {
-      "normal": 20,
+      "normal": 19,
       "errored": 0,
-      "other": 1
+      "other": 2
     }
   },
   "security_telemetry": {
@@ -2183,7 +2183,7 @@
         "repo": "wenchiehlee-money/My-TW-Coverage",
         "workflow_name": "Daily Update Financials & Valuation",
         "file": "daily_update.yml",
-        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46107573932",
+        "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46131646592",
         "annotations": [
           {
             "level": "failure",
@@ -2253,7 +2253,7 @@
         "repo": "wenchiehlee/rss2md",
         "workflow_name": "RSS to MD",
         "file": "rss2md.yml",
-        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46095113956",
+        "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46133463189",
         "annotations": [
           {
             "level": "warning",
@@ -2626,6 +2626,19 @@
           "schedules": [
             {
               "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
+              "workflow_name": "Action Runner",
+              "file": "action-runner.yml",
+              "path": ".github/workflows/action-runner.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-28T10:05:45Z",
+              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/46133523318",
+              "annotations": []
+            },
+            {
+              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
               "workflow_name": "Sync & Verify Master Table in README",
               "file": "sync-ddns-table.yml",
               "path": ".github/workflows/sync-ddns-table.yml",
@@ -2635,19 +2648,6 @@
               "latest_event": "schedule",
               "latest_run_at": "2026-11-28T09:42:38Z",
               "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/46131733011",
-              "annotations": []
-            },
-            {
-              "repo": "ZhongZheng782/wenchiehlee.quickconnect.to",
-              "workflow_name": "Action Runner",
-              "file": "action-runner.yml",
-              "path": ".github/workflows/action-runner.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T01:17:42Z",
-              "latest_run_url": "https://github.com/ZhongZheng782/wenchiehlee.quickconnect.to/actions/runs/46092370070",
               "annotations": []
             },
             {
@@ -4850,8 +4850,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T01:50:27Z",
-              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46095113956",
+              "latest_run_at": "2026-11-28T10:05:03Z",
+              "latest_run_url": "https://github.com/wenchiehlee/rss2md/actions/runs/46133463189",
               "annotations": [
                 {
                   "level": "warning",
@@ -5380,6 +5380,19 @@
           "schedules": [
             {
               "repo": "wenchiehlee/wjlee-barco",
+              "workflow_name": "Latest blog post workflow",
+              "file": "blog-post-workflow.yml",
+              "path": ".github/workflows/blog-post-workflow.yml",
+              "consecutive_failures": 0,
+              "recent_4_icons": "✅✅✅✅",
+              "latest_conclusion": "success",
+              "latest_event": "schedule",
+              "latest_run_at": "2026-11-28T10:06:18Z",
+              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/46133566628",
+              "annotations": []
+            },
+            {
+              "repo": "wenchiehlee/wjlee-barco",
               "workflow_name": "Latest WP activity",
               "file": "WP-post-workflow.yml",
               "path": ".github/workflows/WP-post-workflow.yml",
@@ -5389,19 +5402,6 @@
               "latest_event": "schedule",
               "latest_run_at": "2026-11-28T04:30:32Z",
               "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/46107863126",
-              "annotations": []
-            },
-            {
-              "repo": "wenchiehlee/wjlee-barco",
-              "workflow_name": "Latest blog post workflow",
-              "file": "blog-post-workflow.yml",
-              "path": ".github/workflows/blog-post-workflow.yml",
-              "consecutive_failures": 0,
-              "recent_4_icons": "✅✅✅✅",
-              "latest_conclusion": "success",
-              "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T01:50:41Z",
-              "latest_run_url": "https://github.com/wenchiehlee/wjlee-barco/actions/runs/46095133260",
               "annotations": []
             }
           ],
@@ -5711,9 +5711,9 @@
               "consecutive_failures": 0,
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
-              "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T05:29:03Z",
-              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46112303444",
+              "latest_event": "push",
+              "latest_run_at": "2026-11-28T10:00:03Z",
+              "latest_run_url": "https://github.com/wenchiehlee/Pipeline-Deck/actions/runs/46133049594",
               "annotations": []
             }
           ],
@@ -6428,8 +6428,8 @@
               "recent_4_icons": "✅✅✅✅",
               "latest_conclusion": "success",
               "latest_event": "schedule",
-              "latest_run_at": "2026-11-28T04:26:47Z",
-              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46107573932",
+              "latest_run_at": "2026-11-28T09:41:30Z",
+              "latest_run_url": "https://github.com/wenchiehlee-money/My-TW-Coverage/actions/runs/46131646592",
               "annotations": [
                 {
                   "level": "failure",
@@ -6443,7 +6443,7 @@
           "pages": {
             "enabled": true,
             "url": "https://wenchiehlee-money.github.io/My-TW-Coverage/",
-            "status": "built",
+            "status": "building",
             "build_type": "workflow"
           },
           "security": {
