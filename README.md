@@ -21,7 +21,7 @@
 <!-- PIPELINE_SUMMARY_START -->
 ## 🌐 全域工作流程、發布門戶與資安遙測統計 (Ecosystem Telemetry)
 
-> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 09:59:42 UTC`）
+> **全域統計**：涵蓋 **7 大核心組織**，共有 **106 個活躍儲存庫**（排除已封存庫），其中 **75 個儲存庫** 具備自動化工作流，累計運行 **231 個工作流程 YAML 檔案**、**21 個發布門戶（GitHub Pages 17 + Synology 4）**，以及 **77 個啟用全方位資安防護庫**。（自動掃描更新於：`2026-11-28 10:01:17 UTC`）
 >
 > 🎯 **北極星核心維運指標 (North Star Quartet)**：**`231 / 75 / 2 / 1`**（**231** 個工作流程 YAML · **75** 個活躍 Actions 庫 · **2** 個嚴重警報 · **1** 個異常警告）
 
@@ -52,7 +52,7 @@
 
 | # | 儲存庫 | 工作流程名稱 | YAML 檔案 | 連續失敗次數 | 最近 4 次結果（含 push/手動） | 最新失敗時間 | 執行日誌 |
 |---|---|---|---|:---:|:---:|---|:---:|
-| 1 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **13 次** | `❌❌❌❌` | `2026-11-28T01:24:16` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/46092934555) |
+| 1 | [ZhongZheng782/YoutubeAudio.Fetch](https://github.com/ZhongZheng782/YoutubeAudio.Fetch) | Daily channel fetch | `daily-channel-fetch.yml` | **14 次** | `❌❌❌❌` | `2026-11-28T04:30:50` | [Run ↗](https://github.com/ZhongZheng782/YoutubeAudio.Fetch/actions/runs/46107889334) |
 | 2 | [wenchiehlee-money/biztrends.TW](https://github.com/wenchiehlee-money/biztrends.TW) | Check Data Health | `check-data-health.yml` | **4 次** | `❌❌❌❌` | `2026-11-27T12:54:38` | [Run ↗](https://github.com/wenchiehlee-money/biztrends.TW/actions/runs/46002578492) |
 
 #### 🟡 異常警告：常態排程最新一次失敗（連續失敗 1~3 次）
@@ -63,7 +63,7 @@
 
 #### ⚙️ Runner 環境告警（如 Node.js 版本棄用通知）
 
-- **常態排程最新一次執行中偵測到的 Runner 告警**：`55` 筆，影響 `25` 個排程工作流程
+- **常態排程最新一次執行中偵測到的 Runner 告警**：`56` 筆，影響 `25` 個排程工作流程
 
 | # | 告警等級 | 訊息內容 | 出現次數 | 受影響儲存庫數 |
 |---|:---:|---|:---:|:---:|
@@ -91,18 +91,19 @@
 | 22 | ⚠️ warning | Source reports/dividends-report-all.md not found | 1 | 1 |
 | 23 | ⚠️ warning | Source reports/dividends-report not found | 1 | 1 |
 | 24 | ⚠️ warning | The `python-version` input is not set.  The version of Python currently in `PATH` will be used. | 1 | 1 |
-| 25 | 🔴 failure | Command failed: git push https://***@github.com/wenchiehlee-money/biztrends.TW.git --force
+| 25 | ⚠️ warning | Could not connect to the runner's Chromium over CDP at http://10.222.0.10:9222: BrowserType.launch: Executable doesn't exist at /root/.cache/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell | 1 | 1 |
+| 26 | 🔴 failure | Command failed: git push https://***@github.com/wenchiehlee-money/biztrends.TW.git --force
 To https://github.com/wenchiehlee-money/biztrends.TW.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at e71678b36b80dd1ea9ecf1a3eb0dc1d5aab544f2 but expected 83341e6c0c1cb605b3ab7b84353d040223f3d497)
 error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztrends.TW.git'
  | 1 | 1 |
-| 26 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 27 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 28 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
-| 29 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
-| 30 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 31 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
-| 32 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 27 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: google-github-actions/auth@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 28 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 29 | ⚠️ warning | Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: sarisia/actions-readme-feed@v1. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/ | 1 | 1 |
+| 30 | 🔴 failure | [feed 1/1] max retry count exceeded. Abort. | 1 | 1 |
+| 31 | 🔴 failure | [feed 1/1][try 3/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 32 | 🔴 failure | [feed 1/1][try 2/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
+| 33 | 🔴 failure | [feed 1/1][try 1/3] failed to get feed: Error: Request timed out after 5000ms | 1 | 1 |
 
 ---
 
@@ -208,15 +209,15 @@ error: failed to push some refs to 'https://github.com/wenchiehlee-money/biztren
 | 14 | [skills](https://github.com/wenchiehlee/skills) | **3** | [🟢 built](https://wenchiehlee.github.io/skills/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `publish-scribd-pdf-fetch.yml`, `update-skills-index.yml` |
 | 15 | [twstock](https://github.com/wenchiehlee/twstock) | **3** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml`, `twstock-Action.yaml` |
 | 16 | [GoPublic](https://github.com/wenchiehlee/GoPublic) | **2** | - | 🛡️ 啟用 | 0 | `sync-up-名單清單.yml`, `sync-up-配置檔案.yml` |
-| 17 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **2** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `jekyll.yml` |
-| 18 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
-| 19 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |
-| 20 | [AI-Benchmark](https://github.com/wenchiehlee/AI-Benchmark) | **1** | - | 🛡️ 啟用 | 0 | `benchmark.yml` |
-| 21 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
-| 22 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
-| 23 | [dockers](https://github.com/wenchiehlee/dockers) | **1** | [🟢 built](https://wenchiehlee.github.io/dockers/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
-| 24 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | 🛡️ 啟用 | 0 | `action.yml` |
-| 25 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `portal-pages-deploy.yml`, `update-stats.yml` |
+| 17 | [llm](https://github.com/wenchiehlee/llm) | **2** | - | 🛡️ 啟用 | 0 | `portal-pages-deploy.yml`, `update-stats.yml` |
+| 18 | [wenchiehlee.github.io](https://github.com/wenchiehlee/wenchiehlee.github.io) | **2** | [🟢 built](https://wenchiehlee.github.io/) | 🛡️ 啟用 | 0 | `deploy-pages.yml`, `jekyll.yml` |
+| 19 | [whisper](https://github.com/wenchiehlee/whisper) | **2** | - | 🛡️ 啟用 | 0 | `python-publish.yml`, `test.yml` |
+| 20 | [wjlee-barco](https://github.com/wenchiehlee/wjlee-barco) | **2** | - | 🛡️ 啟用 | 0 | `WP-post-workflow.yml`, `blog-post-workflow.yml` |
+| 21 | [AI-Benchmark](https://github.com/wenchiehlee/AI-Benchmark) | **1** | - | 🛡️ 啟用 | 0 | `benchmark.yml` |
+| 22 | [Analytics-Deck](https://github.com/wenchiehlee/Analytics-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Analytics-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
+| 23 | [chromium](https://github.com/wenchiehlee/chromium) | **1** | - | 🛡️ 啟用 | 0 | `docker-publish.yml` |
+| 24 | [dockers](https://github.com/wenchiehlee/dockers) | **1** | [🟢 built](https://wenchiehlee.github.io/dockers/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
+| 25 | [influxdb-action](https://github.com/wenchiehlee/influxdb-action) | **1** | - | 🛡️ 啟用 | 0 | `action.yml` |
 | 26 | [Pipeline-Deck](https://github.com/wenchiehlee/Pipeline-Deck) | **1** | [🟢 built](https://wenchiehlee.github.io/Pipeline-Deck/) | 🛡️ 啟用 | 0 | `deploy-pages.yml` |
 | 27 | [Python-Actions.ChatGPTAutomation](https://github.com/wenchiehlee/Python-Actions.ChatGPTAutomation) | **1** | - | 🛡️ 啟用 | 0 | `Actions.yaml` |
 | 28 | [Python.TWSE-History](https://github.com/wenchiehlee/Python.TWSE-History) | **1** | - | 🛡️ 啟用 | 0 | `TWSE-API-Action.yaml` |
